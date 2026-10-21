@@ -1,11 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Laboratorio y Caso de Estudio: Moda ESIT | Unidad II</title>
-  <meta name="description" content="Simulador de gestión de almacenes, modelo EOQ, valuación de inventarios PEPS y cubicaje de tarimas para la empresa Moda ESIT.">
+  <title>Evaluación Integradora y Estudio de Caso · Unidad II | TIC aplicadas al turismo</title>
+  <meta name="description" content="Evaluación formativa integradora de la Unidad II: cuestionarios conceptuales, relación de utilerías, verdadero/falso y análisis de caso en video promocional turístico.">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="../../../assets/css/comun.css">
@@ -22,454 +22,532 @@
   <main class="u-page">
     <header class="a-card a-head" style="margin-bottom: 24px;">
       <div class="a-head__top">
-        <span class="a-badge"><i class="fas fa-warehouse"></i> Simulador y Laboratorio de Almacenes</span>
-        <span class="a-head__where">Unidad II · ESIT - IPN</span>
+        <span class="a-badge"><i class="fas fa-clipboard-check"></i> Evaluación Formativa Integradora</span>
+        <span class="a-head__where">Unidad II · EST - IPN</span>
       </div>
-      <p class="u-eyebrow">Evaluación Integradora Práctica · Gestión Física de Inventarios</p>
-      <h1 class="a-title">Caso Práctico: Empresa "Moda ESIT"</h1>
+      <p class="u-eyebrow">Evaluación de Competencias · Digitalización de la Información</p>
+      <h1 class="a-title">Cuestionarios y Caso Práctico: Trajineras de Xochimilco</h1>
       <p class="a-purpose">
-        Enfréntate a la crisis de almacenamiento de una planta textil que confecciona 8,000 prendas por semana: calcula el Lote Económico de Pedido (EOQ), experimenta con la valuación PEPS para evitar la descomposición de colorantes y diseña el cubicaje de tarimas.
+        Aplica los fundamentos teóricos y técnicos de la Unidad II a través de cuatro instrumentos de autoevaluación: opción múltiple, relación de utilerías operativas, análisis de verdadero/falso y la resolución práctica del caso de producción audiovisual turística.
       </p>
       <ul class="a-chips" aria-label="Datos de la actividad">
-        <li class="u-chip u-chip--soft"><i class="fas fa-boxes-stacked" aria-hidden="true"></i> Almacenaje y Manejo Físico</li>
-        <li class="u-chip u-chip--soft"><i class="fas fa-calculator" aria-hidden="true"></i> Modelo Matemático EOQ</li>
-        <li class="u-chip u-chip--soft"><i class="fas fa-pallet" aria-hidden="true"></i> Cubicaje Normalizado</li>
-        <li class="u-chip u-chip--accent"><i class="fas fa-award" aria-hidden="true"></i> Ponderación: 40% portafolio</li>
+        <li class="u-chip u-chip--soft"><i class="fas fa-layer-group" aria-hidden="true"></i> 4 Fases de Evaluación</li>
+        <li class="u-chip u-chip--soft"><i class="fas fa-list-check" aria-hidden="true"></i> 15 Reactivos y Casos</li>
+        <li class="u-chip u-chip--soft"><i class="fas fa-video" aria-hidden="true"></i> Caso Multimedia Xochimilco</li>
+        <li class="u-chip u-chip--accent"><i class="fas fa-award" aria-hidden="true"></i> Portafolio de Evidencias</li>
       </ul>
     </header>
 
     <div class="a-layout">
       <div class="a-main">
-        <!-- Contexto Operativo de la Empresa -->
-        <section class="a-card">
-          <h2 class="a-card__title"><i class="fas fa-triangle-exclamation" aria-hidden="true"></i> Hallazgos de la Auditoría en Bodega Central</h2>
-          <p>
-            <strong>Moda ESIT</strong> confecciona playeras de algodón con una demanda anual de <strong>48,000 kg de tela de punto</strong> y consumo intensivo de colorantes reactivos. La última inspección de almacén arrojó pérdidas alarmantes:
-          </p>
-          <div class="sim-grid-2">
-            <div style="background: var(--bg-main); padding: 14px; border-radius: var(--radius-sm); border-left: 4px solid #ef4444;">
-              <strong style="color: #b91c1c;"><i class="fas fa-droplet-slash"></i> Daño Físico y Mermas Químicas:</strong>
-              <ul style="margin: 6px 0 0; padding-left: 18px; font-size: 0.88rem; line-height: 1.5;">
-                <li>Rollos de tela estibados directamente sobre el suelo de concreto sin tarimas, sufriendo absorción de humedad y manchas de hongos.</li>
-                <li>Pérdida de $24,000 MXN en tambos de colorante reactivo caducados por falta de rotación estricta de lotes.</li>
-              </ul>
-            </div>
-            <div style="background: var(--bg-main); padding: 14px; border-radius: var(--radius-sm); border-left: 4px solid #f59e0b;">
-              <strong style="color: #b45309;"><i class="fas fa-dolly"></i> Desorganización en Manejo de Materiales:</strong>
-              <ul style="margin: 6px 0 0; padding-left: 18px; font-size: 0.88rem; line-height: 1.5;">
-                <li>Compras de tela sin cálculo económico: o se satura el espacio o se frena el corte por rotura de stock.</li>
-                <li>Desconocimiento del cubicaje en tarimas estándar, provocando cajas deformadas y prendas arrugadas al transportar.</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
         <!-- Contenedor del Simulador con Stepper -->
         <section class="a-card sim-container">
-          <nav class="sim-stepper" aria-label="Fases del laboratorio de almacén">
+          <nav class="sim-stepper" aria-label="Fases de la evaluación integradora">
             <button class="sim-step-btn is-active" id="step-btn-1" data-step="1">
               <span class="sim-step-num">1</span>
-              <span>Modelo EOQ y Lotes</span>
+              <span>1. Opción Múltiple</span>
             </button>
             <button class="sim-step-btn" id="step-btn-2" data-step="2">
               <span class="sim-step-num">2</span>
-              <span>Valuación de Químicos</span>
+              <span>2. Utilerías</span>
             </button>
             <button class="sim-step-btn" id="step-btn-3" data-step="3">
               <span class="sim-step-num">3</span>
-              <span>Cubicaje y Paletizado</span>
+              <span>3. Verdadero / Falso</span>
             </button>
             <button class="sim-step-btn" id="step-btn-4" data-step="4">
               <span class="sim-step-num">4</span>
-              <span>Dictamen de Almacén</span>
+              <span>4. Estudio de Caso</span>
             </button>
           </nav>
 
           <!-- ==============================================
-               FASE 1: MODELO EOQ Y SENSIBILIDAD
+               FASE 1: CUESTIONARIO DE OPCIÓN MÚLTIPLE
                ============================================== -->
           <div class="sim-panel is-active" id="panel-step-1">
             <div class="sim-stage-header">
-              <span class="sim-stage-badge"><i class="fas fa-calculator"></i> Fase 1 de 4</span>
-              <h3 class="sim-stage-title">Optimización de Inventario: Modelo Lote Económico (EOQ)</h3>
+              <span class="sim-stage-badge"><i class="fas fa-list-ol"></i> Cuestionario 1</span>
+              <h3 class="sim-stage-title">Evaluación Conceptual de Medios Digitales</h3>
               <p class="sim-stage-desc">
-                El lote óptimo de pedido $Q^*$ es aquel que minimiza la suma anual del costo de emitir órdenes y el costo de mantener inventario en bodega. Resuelve los parámetros para la tela de algodón de Moda ESIT:
+                Instrucciones: Lee atentamente cada premisa y selecciona la respuesta correcta. Pulsa "Comprobar Fase 1" para obtener tu puntuación y retroalimentación pedagógica.
               </p>
             </div>
 
-            <div class="sim-grid-2">
-              <!-- Datos del Problema y Fórmulas -->
-              <div class="sim-formula-box">
-                <div class="sim-formula-tag">Parámetros Operativos Anuales (Tela de Algodón)</div>
-                <ul style="margin: 6px 0 12px; padding-left: 18px; font-size: 0.85rem; line-height: 1.6; color: var(--text-soft);">
-                  <li><strong>Demanda Anual (D):</strong> 48,000 kg/año (operando 300 días hábiles al año).</li>
-                  <li><strong>Costo por Emitir una Orden (S):</strong> $1,200 MXN por pedido (trámites, flete base, recepción).</li>
-                  <li><strong>Costo de Mantener Inventario (H):</strong> $4.50 MXN por kg al año (espacio, seguros, merma).</li>
-                  <li><strong>Tiempo de Entrega del Proveedor (L):</strong> 5 días hábiles.</li>
-                </ul>
-
-                <div class="sim-formula-math">EOQ = √[ (2 × D × S) / H ]</div>
-                <div class="sim-formula-math">ROP = d × L = (D / 300) × L</div>
+            <div style="display: flex; flex-direction: column; gap: 20px; margin-top: 16px;">
+              <!-- Reactivo 1 -->
+              <div class="a-card" style="padding: 18px; background: var(--surface);">
+                <p><strong>1. ¿Qué diferencia fundamental existe entre un gráfico rasterizado (mapa de bits) y un gráfico vectorial en la edición de imágenes?</strong></p>
+                <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 10px;">
+                  <label style="cursor: pointer; display: flex; align-items: flex-start; gap: 8px;">
+                    <input type="radio" name="c1_p1" value="a">
+                    <span>a) El raster se compone de vectores matemáticos y el vector de píxeles.</span>
+                  </label>
+                  <label style="cursor: pointer; display: flex; align-items: flex-start; gap: 8px;">
+                    <input type="radio" name="c1_p1" value="b">
+                    <span>b) El raster está compuesto por una cuadrícula de píxeles dependiente de la resolución, mientras que el vector se define mediante formas geométricas matemáticas independientes de la escala.</span>
+                  </label>
+                  <label style="cursor: pointer; display: flex; align-items: flex-start; gap: 8px;">
+                    <input type="radio" name="c1_p1" value="c">
+                    <span>c) Los vectores solo sirven para fotografías y los mapas de bits para logotipos.</span>
+                  </label>
+                  <label style="cursor: pointer; display: flex; align-items: flex-start; gap: 8px;">
+                    <input type="radio" name="c1_p1" value="d">
+                    <span>d) No existe diferencia técnica, solo comercial.</span>
+                  </label>
+                </div>
+                <div id="fb_c1_p1" class="a-feedback" style="display: none; margin-top: 12px;"></div>
               </div>
 
-              <!-- Calculadora Numérica de Verificación -->
-              <div class="sim-control-box">
-                <h4 class="sim-control-box__title"><i class="fas fa-pen-ruler"></i> Ingresa los Resultados Calculados</h4>
-                <div class="sim-calc-group">
-                  <div class="sim-calc-input">
-                    <label for="u2-calc-eoq">Lote Económico EOQ (kg):</label>
-                    <input type="number" id="u2-calc-eoq" step="1" placeholder="Ej. 5060">
-                  </div>
-                  <div class="sim-calc-input">
-                    <label for="u2-calc-rop">Punto de Reorden ROP (kg):</label>
-                    <input type="number" id="u2-calc-rop" step="1" placeholder="Ej. 800">
-                  </div>
-                  <div class="sim-calc-input">
-                    <label for="u2-calc-orders">Número de Órdenes Anuales:</label>
-                    <input type="number" id="u2-calc-orders" step="0.1" placeholder="Ej. 9.5">
-                  </div>
-                  <button type="button" class="sim-btn sim-btn--primary" id="btn-check-eoq" style="height: 42px;">
-                    <i class="fas fa-check"></i> Comprobar EOQ
-                  </button>
+              <!-- Reactivo 2 -->
+              <div class="a-card" style="padding: 18px; background: var(--surface);">
+                <p><strong>2. En un editor de audio digital (DAW), ¿qué representa visualmente el eje Y (vertical) en la forma de onda tradicional?</strong></p>
+                <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 10px;">
+                  <label style="cursor: pointer; display: flex; align-items: flex-start; gap: 8px;">
+                    <input type="radio" name="c1_p2" value="a">
+                    <span>a) La duración temporal del audio.</span>
+                  </label>
+                  <label style="cursor: pointer; display: flex; align-items: flex-start; gap: 8px;">
+                    <input type="radio" name="c1_p2" value="b">
+                    <span>b) La frecuencia y el tono del sonido.</span>
+                  </label>
+                  <label style="cursor: pointer; display: flex; align-items: flex-start; gap: 8px;">
+                    <input type="radio" name="c1_p2" value="c">
+                    <span>c) La amplitud o intensidad (volumen) del sonido.</span>
+                  </label>
+                  <label style="cursor: pointer; display: flex; align-items: flex-start; gap: 8px;">
+                    <input type="radio" name="c1_p2" value="d">
+                    <span>d) El formato de compresión del archivo.</span>
+                  </label>
                 </div>
-                <div id="feedback-u2-eoq" class="sim-feedback-inline"></div>
+                <div id="fb_c1_p2" class="a-feedback" style="display: none; margin-top: 12px;"></div>
+              </div>
+
+              <!-- Reactivo 3 -->
+              <div class="a-card" style="padding: 18px; background: var(--surface);">
+                <p><strong>3. ¿Cuál es la función principal de las capas en los editores de imagen y video modernos?</strong></p>
+                <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 10px;">
+                  <label style="cursor: pointer; display: flex; align-items: flex-start; gap: 8px;">
+                    <input type="radio" name="c1_p3" value="a">
+                    <span>a) Aumentar automáticamente el peso del archivo para que se vea más profesional.</span>
+                  </label>
+                  <label style="cursor: pointer; display: flex; align-items: flex-start; gap: 8px;">
+                    <input type="radio" name="c1_p3" value="b">
+                    <span>b) Permitir la organización y combinación independiente de elementos (como texto, fondos y fotografías) sin afectar a los demás.</span>
+                  </label>
+                  <label style="cursor: pointer; display: flex; align-items: flex-start; gap: 8px;">
+                    <input type="radio" name="c1_p3" value="c">
+                    <span>c) Eliminar por completo la necesidad de utilizar herramientas de recorte.</span>
+                  </label>
+                  <label style="cursor: pointer; display: flex; align-items: flex-start; gap: 8px;">
+                    <input type="radio" name="c1_p3" value="d">
+                    <span>d) Bloquear el archivo para que nadie más pueda editarlo.</span>
+                  </label>
+                </div>
+                <div id="fb_c1_p3" class="a-feedback" style="display: none; margin-top: 12px;"></div>
+              </div>
+
+              <!-- Reactivo 4 -->
+              <div class="a-card" style="padding: 18px; background: var(--surface);">
+                <p><strong>4. Desde la perspectiva de la creación web, ¿qué capa o lenguaje se encarga específicamente de definir la estructura y jerarquía semántica de la información (como encabezados y párrafos)?</strong></p>
+                <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 10px;">
+                  <label style="cursor: pointer; display: flex; align-items: flex-start; gap: 8px;">
+                    <input type="radio" name="c1_p4" value="a">
+                    <span>a) CSS (Cascading Style Sheets)</span>
+                  </label>
+                  <label style="cursor: pointer; display: flex; align-items: flex-start; gap: 8px;">
+                    <input type="radio" name="c1_p4" value="b">
+                    <span>b) JavaScript</span>
+                  </label>
+                  <label style="cursor: pointer; display: flex; align-items: flex-start; gap: 8px;">
+                    <input type="radio" name="c1_p4" value="c">
+                    <span>c) HTML (HyperText Markup Language)</span>
+                  </label>
+                  <label style="cursor: pointer; display: flex; align-items: flex-start; gap: 8px;">
+                    <input type="radio" name="c1_p4" value="d">
+                    <span>d) El servidor web</span>
+                  </label>
+                </div>
+                <div id="fb_c1_p4" class="a-feedback" style="display: none; margin-top: 12px;"></div>
               </div>
             </div>
 
-            <!-- Simulador Interactivo de Sensibilidad Económica -->
-            <div class="sim-control-box" style="margin-top: 18px;">
-              <h4 class="sim-control-box__title">
-                <span><i class="fas fa-sliders"></i> Simulador de Sensibilidad: ¿Cómo impactan los cambios en S y H?</span>
-                <span class="sim-badge sim-badge--info">Simulación en Tiempo Real</span>
-              </h4>
-              <p style="font-size: 0.85rem; color: var(--text-soft); margin-bottom: 14px;">
-                Mueve los deslizadores para ver cómo el tamaño óptimo de lote y el costo anual se reajustan automáticamente si sube la tarifa de flete ($S$) o el costo del metro cuadrado en almacén ($H$):
-              </p>
-
-              <div class="sim-grid-2">
-                <div class="sim-slider-group">
-                  <div class="sim-slider-label">
-                    <span>Costo de Ordenar (S):</span>
-                    <span class="sim-slider-val" id="u2-val-s">$1,200 MXN</span>
-                  </div>
-                  <input type="range" aria-label="Costo de Ordenar (S)" class="sim-range" id="u2-slider-s" min="600" max="3600" value="1200" step="100">
-                </div>
-
-                <div class="sim-slider-group">
-                  <div class="sim-slider-label">
-                    <span>Costo de Mantenimiento Anual (H):</span>
-                    <span class="sim-slider-val" id="u2-val-h">$4.50 MXN</span>
-                  </div>
-                  <input type="range" aria-label="Costo de Mantenimiento Anual (H)" class="sim-range" id="u2-slider-h" min="2.0" max="10.0" value="4.50" step="0.25">
-                </div>
-              </div>
-
-              <div class="sim-grid-3" style="margin-top: 14px;">
-                <div class="sim-kpi-card">
-                  <span class="sim-kpi-title">EOQ Dinámico Resultante</span>
-                  <div class="sim-kpi-val" id="u2-dyn-eoq">5,060 kg</div>
-                  <p class="sim-kpi-desc">Tamaño de lote recomendado.</p>
-                </div>
-                <div class="sim-kpi-card is-success">
-                  <span class="sim-kpi-title">Costo Anual Mínimo Total</span>
-                  <div class="sim-kpi-val" id="u2-dyn-cost">$22,770 MXN</div>
-                  <p class="sim-kpi-desc">Suma de costos de ordenar y mantener.</p>
-                </div>
-                <div class="sim-kpi-card">
-                  <span class="sim-kpi-title">Frecuencia de Reabasto</span>
-                  <div class="sim-kpi-val" id="u2-dyn-orders">9.5 órdenes/año</div>
-                  <p class="sim-kpi-desc">Una orden aprox. cada 31 días.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="sim-actions-row">
-              <button type="button" class="sim-btn sim-btn--primary" data-next-step="2">
-                Continuar a Valuación de Químicos <i class="fas fa-arrow-right"></i>
-              </button>
+            <div style="margin-top: 24px; display: flex; gap: 12px; justify-content: flex-end;">
+              <button type="button" class="u-btn u-btn--primary" id="btnComprobarC1">Comprobar Fase 1 <i class="fas fa-check"></i></button>
+              <button type="button" class="u-btn u-btn--secondary" id="btnNext1" style="display: none;">Avanzar a Fase 2 <i class="fas fa-arrow-right"></i></button>
             </div>
           </div>
 
           <!-- ==============================================
-               FASE 2: VALUACIÓN DE QUÍMICOS
+               FASE 2: RELACIÓN DE COLUMNAS (UTILERÍAS)
                ============================================== -->
           <div class="sim-panel" id="panel-step-2">
             <div class="sim-stage-header">
-              <span class="sim-stage-badge"><i class="fas fa-flask-vial"></i> Fase 2 de 4</span>
-              <h3 class="sim-stage-title">Auditoría de Valuación: PEPS vs UEPS en Colorantes Textiles</h3>
+              <span class="sim-stage-badge"><i class="fas fa-puzzle-piece"></i> Cuestionario 2</span>
+              <h3 class="sim-stage-title">Relación de Columnas: Utilerías Típicas en el Turismo</h3>
               <p class="sim-stage-desc">
-                Los colorantes y productos químicos reactivos de tintorería tienen <strong>vida útil limitada</strong>. Una mala política de valuación física provoca mermas millonarias por caducidad. Analiza el libro de bodega y decide qué método aplicar:
+                Instrucciones: Relaciona cada necesidad operativa de un profesional del turismo seleccionando la utilería digital adecuada en el menú desplegable.
               </p>
             </div>
 
-            <!-- Libro de Entradas de Colorante -->
-            <div class="sim-table-wrap">
-              <table class="sim-table">
+            <div class="t-table" style="margin-top: 16px;">
+              <table>
                 <thead>
                   <tr>
-                    <th>Lote</th>
-                    <th>Insumo Químico</th>
-                    <th>Fecha de Ingreso</th>
-                    <th>Existencia Física</th>
-                    <th>Costo Unitario</th>
-                    <th>Caducidad Remanente</th>
-                    <th>Estado Crítico</th>
+                    <th>Necesidad Operativa Turística</th>
+                    <th>Utilería Digital Seleccionada</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr style="background: rgba(239, 68, 68, 0.08);">
-                    <td><strong>Lote 1</strong></td>
-                    <td>Colorante Reactivo Azul Marino 3G</td>
-                    <td>Hace 75 días</td>
-                    <td>200 kg</td>
-                    <td>$120 MXN/kg</td>
-                    <td><strong>15 días restantes</strong></td>
-                    <td><span class="sim-badge sim-badge--danger"><i class="fas fa-triangle-exclamation"></i> Por vencer</span></td>
+                  <tr>
+                    <td><strong>A)</strong> Necesitas enviar un folleto en PDF muy pesado por correo electrónico a un cliente sin perder legibilidad.</td>
+                    <td>
+                      <select id="rel_a" class="u-input" style="padding: 6px 10px; border-radius: var(--radius-sm);">
+                        <option value="">-- Selecciona --</option>
+                        <option value="1">1. Captura de pantalla</option>
+                        <option value="2">2. Compresor de archivos</option>
+                        <option value="3">3. Conversor de archivos</option>
+                        <option value="4">4. Almacenamiento en la nube / Respaldo</option>
+                      </select>
+                    </td>
                   </tr>
                   <tr>
-                    <td><strong>Lote 2</strong></td>
-                    <td>Colorante Reactivo Azul Marino 3G</td>
-                    <td>Hace 35 días</td>
-                    <td>300 kg</td>
-                    <td>$140 MXN/kg</td>
-                    <td><strong>55 días restantes</strong></td>
-                    <td><span class="sim-badge sim-badge--warning">Vigente</span></td>
+                    <td><strong>B)</strong> Requieres registrar un mapa de Google Maps con una ruta específica para incluirla en una presentación escolar.</td>
+                    <td>
+                      <select id="rel_b" class="u-input" style="padding: 6px 10px; border-radius: var(--radius-sm);">
+                        <option value="">-- Selecciona --</option>
+                        <option value="1">1. Captura de pantalla</option>
+                        <option value="2">2. Compresor de archivos</option>
+                        <option value="3">3. Conversor de archivos</option>
+                        <option value="4">4. Almacenamiento en la nube / Respaldo</option>
+                      </select>
+                    </td>
                   </tr>
                   <tr>
-                    <td><strong>Lote 3</strong></td>
-                    <td>Colorante Reactivo Azul Marino 3G</td>
-                    <td>Hace 5 días (Nuevo)</td>
-                    <td>250 kg</td>
-                    <td>$165 MXN/kg (Inflación)</td>
-                    <td><strong>85 días restantes</strong></td>
-                    <td><span class="sim-badge sim-badge--success">Óptimo</span></td>
+                    <td><strong>C)</strong> Tienes un video grabado en un formato antiguo (MOV o AVI) que la plataforma de la escuela no reproduce.</td>
+                    <td>
+                      <select id="rel_c" class="u-input" style="padding: 6px 10px; border-radius: var(--radius-sm);">
+                        <option value="">-- Selecciona --</option>
+                        <option value="1">1. Captura de pantalla</option>
+                        <option value="2">2. Compresor de archivos</option>
+                        <option value="3">3. Conversor de archivos</option>
+                        <option value="4">4. Almacenamiento en la nube / Respaldo</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>D)</strong> Necesitas respaldar las fotografías de una práctica de campo de manera que no dependan exclusivamente de tu computadora.</td>
+                    <td>
+                      <select id="rel_d" class="u-input" style="padding: 6px 10px; border-radius: var(--radius-sm);">
+                        <option value="">-- Selecciona --</option>
+                        <option value="1">1. Captura de pantalla</option>
+                        <option value="2">2. Compresor de archivos</option>
+                        <option value="3">3. Conversor de archivos</option>
+                        <option value="4">4. Almacenamiento en la nube / Respaldo</option>
+                      </select>
+                    </td>
                   </tr>
                 </tbody>
               </table>
             </div>
 
-            <!-- Escenario de Requisición -->
-            <div class="sim-control-box">
-              <h4 class="sim-control-box__title"><i class="fas fa-clipboard-check"></i> Requisición de Producción: Se solicitan 350 kg para teñir 10,000 playeras</h4>
-              <p style="font-size: 0.88rem; color: var(--text-soft); margin-bottom: 14px;">
-                Como ingeniero(a) a cargo del almacén, selecciona el método con el que despacharás la orden a la nave de tintorería:
-              </p>
+            <div id="fb_c2" class="a-feedback" style="display: none; margin-top: 16px;"></div>
 
-              <div class="sim-calc-group">
-                <div class="sim-calc-input" style="flex: 2;">
-                  <label for="u2-select-metodo">Método de Valuación y Despacho Físico:</label>
-                  <select id="u2-select-metodo" style="width: 100%;">
-                    <option value="">-- Selecciona el método --</option>
-                    <option value="peps">PEPS / FIFO (Primeras Entradas, Primeras Salidas)</option>
-                    <option value="ueps">UEPS / LIFO (Últimas Entradas, Primeras Salidas)</option>
-                    <option value="promedio">Costo Promedio Ponderado</option>
-                  </select>
-                </div>
-                <button type="button" class="sim-btn sim-btn--primary" id="btn-eval-valuacion" style="height: 42px;">
-                  <i class="fas fa-vial"></i> Ejecutar y Evaluar Despacho
-                </button>
-              </div>
-
-              <div id="feedback-u2-valuacion" class="sim-feedback-inline"></div>
-            </div>
-
-            <div class="sim-actions-row">
-              <button type="button" class="sim-btn sim-btn--secondary" data-next-step="1">
-                <i class="fas fa-arrow-left"></i> Volver a EOQ
-              </button>
-              <button type="button" class="sim-btn sim-btn--primary" data-next-step="3">
-                Continuar a Cubicaje <i class="fas fa-arrow-right"></i>
-              </button>
+            <div style="margin-top: 24px; display: flex; gap: 12px; justify-content: flex-end;">
+              <button type="button" class="u-btn u-btn--primary" id="btnComprobarC2">Comprobar Fase 2 <i class="fas fa-check"></i></button>
+              <button type="button" class="u-btn u-btn--secondary" id="btnNext2" style="display: none;">Avanzar a Fase 3 <i class="fas fa-arrow-right"></i></button>
             </div>
           </div>
 
           <!-- ==============================================
-               FASE 3: CUBICAJE Y PALETIZADO
+               FASE 3: VERDADERO O FALSO
                ============================================== -->
           <div class="sim-panel" id="panel-step-3">
             <div class="sim-stage-header">
-              <span class="sim-stage-badge"><i class="fas fa-pallet"></i> Fase 3 de 4</span>
-              <h3 class="sim-stage-title">Ingeniería de Embalaje: Cubicaje y Paletizado de 8,000 Prendas</h3>
+              <span class="sim-stage-badge"><i class="fas fa-scale-balanced"></i> Cuestionario 3</span>
+              <h3 class="sim-stage-title">Conceptos Clave: Verdadero o Falso</h3>
               <p class="sim-stage-desc">
-                La producción semanal de 8,000 playeras debe embalarse y tarimarse para su entrega segura. Calcula la distribución de estiba en tarima americana asegurando no sobrepasar los límites de resistencia ni altura física:
+                Instrucciones: Indica si cada una de las siguientes afirmaciones es Verdadera (V) o Falsa (F) según los fundamentos técnicos estudiados.
               </p>
             </div>
 
-            <div class="sim-grid-2">
-              <div class="sim-formula-box">
-                <div class="sim-formula-tag">Especificaciones Físicas de la Carga</div>
-                <ul style="margin: 6px 0; padding-left: 18px; font-size: 0.84rem; line-height: 1.6; color: var(--text-soft);">
-                  <li><strong>Lote semanal:</strong> 8,000 playeras terminadas y embolsadas.</li>
-                  <li><strong>Caja de cartón corrugado:</strong> 40 cm (largo) × 30 cm (ancho) × 25 cm (alto).</li>
-                  <li><strong>Contenido por caja:</strong> 25 prendas dobladas. Peso bruto por caja = 12.0 kg.</li>
-                  <li><strong>Tarima estándar americana:</strong> 120 cm × 100 cm × 15 cm de alto (Tara: 25 kg).</li>
-                  <li><strong>Restricción de altura máxima:</strong> 1.65 m (165 cm) incluyendo tarima.</li>
-                  <li><strong>Límite máximo de carga por tarima:</strong> 1,000 kg.</li>
-                </ul>
+            <div style="display: flex; flex-direction: column; gap: 16px; margin-top: 16px;">
+              <!-- Premisa 1 -->
+              <div class="a-card" style="padding: 16px; background: var(--surface);">
+                <p><strong>1. La edición no destructiva en fotografía modifica permanentemente los píxeles originales de la imagen sin posibilidad de reajuste posterior.</strong></p>
+                <div style="display: flex; gap: 20px; margin-top: 8px;">
+                  <label style="cursor: pointer;"><input type="radio" name="vf_1" value="V"> Verdadero</label>
+                  <label style="cursor: pointer;"><input type="radio" name="vf_1" value="F"> Falso</label>
+                </div>
+                <div id="fb_vf_1" class="a-feedback" style="display: none; margin-top: 8px;"></div>
               </div>
 
-              <div class="sim-control-box">
-                <h4 class="sim-control-box__title"><i class="fas fa-box-open"></i> Cálculos de Distribución de Carga</h4>
-                <div class="sim-grid-2" style="gap: 12px;">
-                  <div class="sim-calc-input">
-                    <label for="u2-calc-capas">1. Capas permitidas en altura:</label>
-                    <input type="number" id="u2-calc-capas" placeholder="Ej. 6">
-                    <small style="color: var(--text-muted); font-size: 0.72rem;">(165 cm - 15 cm tarima) / 25 cm</small>
-                  </div>
-                  <div class="sim-calc-input">
-                    <label for="u2-calc-cajas-tarima">2. Cajas totales por tarima:</label>
-                    <input type="number" id="u2-calc-cajas-tarima" placeholder="Ej. 60">
-                    <small style="color: var(--text-muted); font-size: 0.72rem;">10 cajas por tendido × capas</small>
-                  </div>
-                  <div class="sim-calc-input">
-                    <label for="u2-calc-tarimas-lote">3. Tarimas para el lote (8,000 pzas):</label>
-                    <input type="number" id="u2-calc-tarimas-lote" placeholder="Ej. 6">
-                    <small style="color: var(--text-muted); font-size: 0.72rem;">Total 320 cajas / cajas por tarima</small>
-                  </div>
-                  <div class="sim-calc-input">
-                    <label for="u2-calc-peso-tarima">4. Peso bruto por tarima (kg):</label>
-                    <input type="number" id="u2-calc-peso-tarima" placeholder="Ej. 745">
-                    <small style="color: var(--text-muted); font-size: 0.72rem;">(Cajas × 12 kg) + 25 kg tarima</small>
-                  </div>
+              <!-- Premisa 2 -->
+              <div class="a-card" style="padding: 16px; background: var(--surface);">
+                <p><strong>2. El montaje audiovisual en un editor de video no solo implica cortar y juntar imágenes, sino establecer relaciones de tiempo, ritmo y sonido que construyen un significado.</strong></p>
+                <div style="display: flex; gap: 20px; margin-top: 8px;">
+                  <label style="cursor: pointer;"><input type="radio" name="vf_2" value="V"> Verdadero</label>
+                  <label style="cursor: pointer;"><input type="radio" name="vf_2" value="F"> Falso</label>
                 </div>
+                <div id="fb_vf_2" class="a-feedback" style="display: none; margin-top: 8px;"></div>
+              </div>
 
-                <div style="text-align: right; margin-top: 14px;">
-                  <button type="button" class="sim-btn sim-btn--primary" id="btn-check-cubicaje">
-                    <i class="fas fa-calculator"></i> Validar Paletizado
-                  </button>
+              <!-- Premisa 3 -->
+              <div class="a-card" style="padding: 16px; background: var(--surface);">
+                <p><strong>3. Un procesador de texto moderno solo sirve para almacenar caracteres de texto plano y no maneja tipografía ni diseño editorial.</strong></p>
+                <div style="display: flex; gap: 20px; margin-top: 8px;">
+                  <label style="cursor: pointer;"><input type="radio" name="vf_3" value="V"> Verdadero</label>
+                  <label style="cursor: pointer;"><input type="radio" name="vf_3" value="F"> Falso</label>
                 </div>
+                <div id="fb_vf_3" class="a-feedback" style="display: none; margin-top: 8px;"></div>
+              </div>
 
-                <div id="feedback-u2-cubicaje" class="sim-feedback-inline"></div>
+              <!-- Premisa 4 -->
+              <div class="a-card" style="padding: 16px; background: var(--surface);">
+                <p><strong>4. Los medios de almacenamiento de estado sólido (SSD) utilizan celdas de memoria electrónica sin partes móviles, lo que acelera notablemente la recuperación de datos frente a los discos mecánicos (HDD).</strong></p>
+                <div style="display: flex; gap: 20px; margin-top: 8px;">
+                  <label style="cursor: pointer;"><input type="radio" name="vf_4" value="V"> Verdadero</label>
+                  <label style="cursor: pointer;"><input type="radio" name="vf_4" value="F"> Falso</label>
+                </div>
+                <div id="fb_vf_4" class="a-feedback" style="display: none; margin-top: 8px;"></div>
               </div>
             </div>
 
-            <div class="sim-actions-row">
-              <button type="button" class="sim-btn sim-btn--secondary" data-next-step="2">
-                <i class="fas fa-arrow-left"></i> Volver a Valuación
-              </button>
-              <button type="button" class="sim-btn sim-btn--primary" data-next-step="4">
-                Redactar Dictamen de Almacén <i class="fas fa-arrow-right"></i>
-              </button>
+            <div style="margin-top: 24px; display: flex; gap: 12px; justify-content: flex-end;">
+              <button type="button" class="u-btn u-btn--primary" id="btnComprobarC3">Comprobar Fase 3 <i class="fas fa-check"></i></button>
+              <button type="button" class="u-btn u-btn--secondary" id="btnNext3" style="display: none;">Avanzar a Fase 4 <i class="fas fa-arrow-right"></i></button>
             </div>
           </div>
 
           <!-- ==============================================
-               FASE 4: DICTAMEN DE ALMACÉN
+               FASE 4: ESTUDIO DE CASO (XOCHIMILCO)
                ============================================== -->
           <div class="sim-panel" id="panel-step-4">
             <div class="sim-stage-header">
-              <span class="sim-stage-badge"><i class="fas fa-certificate"></i> Fase 4 de 4</span>
-              <h3 class="sim-stage-title">Dictamen Técnico: Reingeniería del Centro de Almacenamiento</h3>
+              <span class="sim-stage-badge"><i class="fas fa-video"></i> Cuestionario 4</span>
+              <h3 class="sim-stage-title">Estudio de Caso: Video Promocional para las Trajineras de Xochimilco</h3>
               <p class="sim-stage-desc">
-                Formula la propuesta integral que solventará los problemas de humedad, descontrol de lotes químicos y saturación en Moda ESIT.
+                Instrucciones: Analiza la siguiente situación profesional de producción audiovisual turística y responde a cada reto técnico.
               </p>
             </div>
 
-            <h4 style="margin: 0 0 10px; font-size: 0.95rem; color: var(--text-light);">
-              Selecciona el Proyecto Técnico de Modernización de Almacén:
-            </h4>
-            <div class="sim-decision-grid">
-              <label class="sim-decision-card is-selected">
-                <input type="radio" class="sim-decision-radio" name="u2-strat" value="opt_racks_peps" checked>
-                <div class="sim-decision-info">
-                  <h4>Racks Selectivos con Tarimas Plásticas + Valuación PEPS + Simbología ISO 780</h4>
-                  <p>
-                    Instalación de estanterías metálicas para aislar la tela del piso, uso de tarimas plásticas sanitarias para químicos, rotación estricta PEPS (FIFO) con semaforización de caducidades y señalización de pasillos con codificación de ubicaciones por rack.
-                  </p>
-                </div>
-              </label>
+            <aside class="t-callout t-callout--example" style="margin-top: 16px;">
+              <i class="fas fa-camera t-callout__icon" aria-hidden="true"></i>
+              <div>
+                <p class="t-callout__label">Contexto del Caso Práctico</p>
+                <p>
+                  Estudiantes de primer semestre de la Licenciatura en Turismo están elaborando un <strong>video promocional de 30 segundos para las tradicionales trajineras de Xochimilco</strong> con destino a difusión en redes sociales móviles.
+                </p>
+                <p>
+                  El material de trabajo comprende: tomas de video base grabadas en los canales ecológicos, una pista de música tradicional ambiental alegre, locución propia describiendo la riqueza cultural del embarcadero y gráficos tipográficos flotantes con las tarifas oficiales vigentes por hora.
+                </p>
+              </div>
+            </aside>
 
-              <label class="sim-decision-card">
-                <input type="radio" class="sim-decision-radio" name="u2-strat" value="opt_piso_apilado">
-                <div class="sim-decision-info">
-                  <h4>Estiba Directa sobre Piso con Lonas Plásticas Protectoras</h4>
-                  <p>
-                    Mantener el almacenamiento a nivel de suelo para evitar la inversión en racks, cubriendo los rollos con lonas plásticas para la humedad, sin política formal de control de fechas de caducidad.
-                  </p>
-                </div>
-              </label>
-            </div>
-
-            <div class="sim-control-box" style="margin-top: 18px;">
-              <label for="u2-dictamen-texto" style="display: block; font-weight: 700; margin-bottom: 8px; color: var(--text-light);">
-                <i class="fas fa-file-pen"></i> Dictamen Técnico de Almacenes e Inventarios:
-              </label>
-              <textarea id="u2-dictamen-texto" rows="5" style="width: 100%; padding: 12px; border-radius: var(--radius-sm); border: 1px solid var(--border-color); background: var(--bg-main); color: var(--text-light); font-family: inherit; font-size: 0.9rem; line-height: 1.55;" placeholder="Argumenta la justificación técnica del lote económico EOQ (5,060 kg), el beneficio financiero de PEPS en químicos para evitar $24,000 en mermas y las especificaciones de empaque corrugado para proteger prendas terminadas..."></textarea>
-            </div>
-
-            <div class="sim-summary-card">
-              <div class="sim-score-banner">
-                <div style="display: flex; align-items: center; gap: 16px;">
-                  <div class="sim-score-circle" id="u2-score-circle">100</div>
-                  <div class="sim-score-meta">
-                    <h3 id="u2-score-title">Dictamen Sobresaliente de Almacenes</h3>
-                    <p>Evaluación basada en exactitud de fórmulas EOQ, prevención de caducidad en químicos y cubicaje normado.</p>
-                  </div>
-                </div>
-                <div style="text-align: right;">
-                  <span class="sim-badge sim-badge--success" style="font-size: 0.82rem; padding: 6px 12px;">
-                    <i class="fas fa-certificate"></i> Evidencia para Portafolio ESIT
-                  </span>
-                </div>
+            <div style="display: flex; flex-direction: column; gap: 20px; margin-top: 20px;">
+              <!-- Pregunta Caso 1 -->
+              <div class="a-card" style="padding: 16px; background: var(--surface);">
+                <p><strong>1. ¿Qué herramienta o interfaz del editor de video les permite organizar visualmente cuándo entra la música, en qué momento exacto aparece la voz y cuánto dura la imagen de las trajineras?</strong></p>
+                <textarea id="caso_resp_1" rows="3" class="u-input" style="width: 100%; margin-top: 8px;" placeholder="Escribe tu respuesta analítica..."></textarea>
+                <div id="fb_caso_1" class="a-feedback" style="display: none; margin-top: 10px;"></div>
               </div>
 
-              <div class="sim-actions-row">
-                <button type="button" class="sim-btn sim-btn--secondary" id="btn-imprimir-u2">
-                  <i class="fas fa-print"></i> Imprimir / Guardar en PDF
-                </button>
-                <button type="button" class="sim-btn sim-btn--primary" id="btn-guardar-dictamen-u2">
-                  <i class="fas fa-floppy-disk"></i> Guardar Dictamen en Portafolio Digital
-                </button>
+              <!-- Pregunta Caso 2 -->
+              <div class="a-card" style="padding: 16px; background: var(--surface);">
+                <p><strong>2. Si notan que la música de fondo compite en volumen y no deja escuchar con claridad la voz del guía, ¿qué concepto y ajuste técnico deben revisar en el mezclador de audio?</strong></p>
+                <textarea id="caso_resp_2" rows="3" class="u-input" style="width: 100%; margin-top: 8px;" placeholder="Escribe tu respuesta técnica..."></textarea>
+                <div id="fb_caso_2" class="a-feedback" style="display: none; margin-top: 10px;"></div>
+              </div>
+
+              <!-- Pregunta Caso 3 -->
+              <div class="a-card" style="padding: 16px; background: var(--surface);">
+                <p><strong>3. ¿Por qué es fundamental considerar la compresión y el formato de exportación antes de subir este video a una red social móvil?</strong></p>
+                <textarea id="caso_resp_3" rows="3" class="u-input" style="width: 100%; margin-top: 8px;" placeholder="Escribe tu justificación profesional..."></textarea>
+                <div id="fb_caso_3" class="a-feedback" style="display: none; margin-top: 10px;"></div>
+              </div>
+            </div>
+
+            <div style="margin-top: 24px; display: flex; gap: 12px; justify-content: flex-end;">
+              <button type="button" class="u-btn u-btn--primary" id="btnComprobarCaso">Validar y Concluir Evaluación <i class="fas fa-flag-checkered"></i></button>
+            </div>
+
+            <div id="resumenGlobal" class="a-card a-summary" style="display: none; margin-top: 24px;">
+              <h2 class="a-card__title">Dictamen y Solucionario General del Docente</h2>
+              <div class="a-summary__score">
+                <span class="a-summary__value" id="globalPuntaje">100 / 100</span>
+                <p class="a-summary__msg" id="globalMsg">¡Excelente desempeño en la evaluación integradora de la Unidad II!</p>
+              </div>
+              <div style="margin-top: 16px; padding: 14px; background: var(--bg-main); border-radius: var(--radius-sm); font-size: 0.9rem; line-height: 1.6;">
+                <p><strong>Soluciones oficiales validadas por la Academia:</strong></p>
+                <ul style="padding-left: 20px; margin-top: 8px;">
+                  <li><strong>Cuestionario 1:</strong> 1-b (gráfico vectorial vs mapa de bits), 2-c (amplitud/volumen en eje Y), 3-b (capas independientes), 4-c (HTML define estructura).</li>
+                  <li><strong>Cuestionario 2:</strong> A-2 (compresor), B-1 (captura), C-3 (conversor), D-4 (nube/respaldo).</li>
+                  <li><strong>Cuestionario 3:</strong> 1-Falsa (la no destructiva preserva el original), 2-Verdadera (sintaxis temporal), 3-Falsa (maneja maquetación y estilos), 4-Verdadera (SSD sin partes mecánicas).</li>
+                  <li><strong>Cuestionario 4:</strong> Comprensión operativa de la línea de tiempo, mezcla y atenuación de audio (ducking), y equilibrio de compresión para consumo móvil.</li>
+                </ul>
               </div>
             </div>
           </div>
         </section>
-
-        <!-- Navegación inferior unificada -->
-        <nav class="t-pager" id="actividadNavegacion" aria-label="Navegación de la actividad" style="margin-top: 24px;">
-          <a class="t-pager__prev" href="../temas/tema-02-07.html"><i class="fas fa-arrow-left" aria-hidden="true"></i> Volver al tema 2.7</a>
-          <a class="u-btn u-btn--primary" href="../../unidad-03/index.html">Continuar a la Unidad III <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
-        </nav>
       </div>
 
-      <!-- Barra lateral desplegable y compacta -->
-      <aside class="a-sidebar" aria-label="Información de la actividad">
-        <details class="a-sidebar-details" open>
-          <summary class="a-sidebar-summary">
-            <span class="a-sidebar-summary-label"><i class="fas fa-layer-group"></i> Panel de apoyo</span>
-            <i class="fas fa-chevron-down a-sidebar-chevron"></i>
-          </summary>
-          <div class="a-sidebar-inner">
-            <section class="a-side-card a-side-card--dark">
-              <p class="a-side-title">Laboratorio ESIT</p>
-              <p class="a-side-text">El control de mermas y el cubicaje de tarimas son competencias fundamentales para los ingenieros textiles de confección.</p>
-              <a class="a-side-link" href="../index.html"><i class="fas fa-arrow-left" aria-hidden="true"></i> <span>Volver a la Unidad II</span></a>
-            </section>
+      <aside class="a-side" aria-label="Información complementaria">
+        <div class="a-side-card">
+          <p class="a-side-card__title">Unidad Temática II</p>
+          <ul class="u-side-list">
+            <li><a class="u-side-link" href="../temas/tema-02-01.html"><span class="u-side-list__num">2.1</span> <span>Digitalización de la información</span></a></li>
+            <li><a class="u-side-link" href="../temas/tema-02-02.html"><span class="u-side-list__num">2.2</span> <span>Medios de almacenamiento</span></a></li>
+            <li><a class="u-side-link" href="../temas/tema-02-03.html"><span class="u-side-list__num">2.3</span> <span>Creación de páginas web</span></a></li>
+          </ul>
+        </div>
 
-            <nav class="a-side-card">
-              <p class="a-side-title">Temas Clave de Apoyo</p>
-              <a class="a-side-item" href="../temas/tema-02-01.html"><i class="fas fa-book-open"></i> 2.1 Almacenes y funciones</a>
-              <a class="a-side-item" href="../temas/tema-02-04.html"><i class="fas fa-book-open"></i> 2.4 Valuación PEPS y UEPS</a>
-              <a class="a-side-item" href="../temas/tema-02-05.html"><i class="fas fa-book-open"></i> 2.5 Modelo Lote Económico EOQ</a>
-              <a class="a-side-item" href="../temas/tema-02-06.html"><i class="fas fa-book-open"></i> 2.6 Empaque y cubicaje</a>
-            </nav>
-          </div>
-        </details>
+        <div class="a-side-card">
+          <p class="a-side-card__title">Navegación</p>
+          <a class="u-btn u-btn--secondary u-btn--block" href="../index.html">
+            <i class="fas fa-arrow-left" aria-hidden="true"></i> Volver a la Unidad II
+          </a>
+          <a class="u-btn u-btn--secondary u-btn--block" href="../../../unidades.html" style="margin-top: 8px;">
+            <i class="fas fa-layer-group" aria-hidden="true"></i> Catálogo de unidades
+          </a>
+        </div>
       </aside>
     </div>
   </main>
 
   <footer class="u-footer">
     <div class="u-footer__inner">
-      <p>Logística y cadena de suministro · Polilibro académico · ESIT-IPN</p>
+      <p>TIC aplicadas al turismo · Polilibro académico · EST-IPN</p>
       <p>Desarrollado con fines educativos · © 2026</p>
     </div>
   </footer>
 
   <script src="../../../assets/js/data-manager.js"></script>
   <script src="../../../assets/js/componentes.js"></script>
-  <script src="../../../assets/js/unidades-ui.js"></script>
-  <script src="../../../assets/js/simuladores/simulador-u2.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Stepper logic
+      const stepBtns = document.querySelectorAll('.sim-step-btn');
+      const panels = document.querySelectorAll('.sim-panel');
+
+      function goToStep(stepNum) {
+        stepBtns.forEach(btn => btn.classList.toggle('is-active', btn.dataset.step === String(stepNum)));
+        panels.forEach((p, idx) => p.classList.toggle('is-active', idx + 1 === Number(stepNum)));
+        window.scrollTo({ top: 120, behavior: 'smooth' });
+      }
+
+      stepBtns.forEach(btn => {
+        btn.addEventListener('click', () => goToStep(btn.dataset.step));
+      });
+
+      document.getElementById('btnNext1')?.addEventListener('click', () => goToStep(2));
+      document.getElementById('btnNext2')?.addEventListener('click', () => goToStep(3));
+      document.getElementById('btnNext3')?.addEventListener('click', () => goToStep(4));
+
+      // Fase 1: Cuestionario 1
+      document.getElementById('btnComprobarC1').addEventListener('click', () => {
+        const answers = {
+          c1_p1: { val: 'b', exp: 'Correcto (b): Las imágenes rasterizadas dependen de píxeles fijos, mientras que los gráficos vectoriales se calculan con fórmulas matemáticas escalables.' },
+          c1_p2: { val: 'c', exp: 'Correcto (c): El eje Y representa visualmente la amplitud o intensidad (volumen) del sonido; el eje X representa el tiempo.' },
+          c1_p3: { val: 'b', exp: 'Correcto (b): Las capas permiten editar, mover y ajustar elementos individuales sin modificar ni destruir el resto de la composición.' },
+          c1_p4: { val: 'c', exp: 'Correcto (c): HTML se encarga específicamente de definir la estructura y la jerarquía semántica del contenido.' }
+        };
+
+        let score = 0;
+        for (const [key, item] of Object.entries(answers)) {
+          const selected = document.querySelector(`input[name="${key}"]:checked`);
+          const fb = document.getElementById(`fb_${key}`);
+          fb.style.display = 'block';
+          if (selected && selected.value === item.val) {
+            score++;
+            fb.className = 'a-feedback a-feedback--ok';
+            fb.innerHTML = `<i class="fas fa-check-circle"></i> ${item.exp}`;
+          } else {
+            fb.className = 'a-feedback a-feedback--bad';
+            fb.innerHTML = `<i class="fas fa-times-circle"></i> Respuesta incorrecta. Solución correcta: opción (${item.val}). ${item.exp}`;
+          }
+        }
+        document.getElementById('btnNext1').style.display = 'inline-flex';
+      });
+
+      // Fase 2: Utilerías
+      document.getElementById('btnComprobarC2').addEventListener('click', () => {
+        const correct = { rel_a: '2', rel_b: '1', rel_c: '3', rel_d: '4' };
+        let allCorrect = true;
+        let score = 0;
+
+        for (const [id, val] of Object.entries(correct)) {
+          const sel = document.getElementById(id);
+          if (sel.value === val) {
+            sel.style.borderColor = 'var(--primary)';
+            score++;
+          } else {
+            sel.style.borderColor = '#ef4444';
+            allCorrect = false;
+          }
+        }
+
+        const fb = document.getElementById('fb_c2');
+        fb.style.display = 'block';
+        if (allCorrect) {
+          fb.className = 'a-feedback a-feedback--ok';
+          fb.innerHTML = '<i class="fas fa-check-circle"></i> ¡Excelente! Has relacionado correctamente todas las utilerías con su necesidad turística (A-2, B-1, C-3, D-4).';
+        } else {
+          fb.className = 'a-feedback a-feedback--bad';
+          fb.innerHTML = `<i class="fas fa-times-circle"></i> Obtuviste ${score} de 4 aciertos. Solución: Folleto PDF pesado &rarr; Compresor (2); Captura de Google Maps &rarr; Captura de pantalla (1); Video incompatible &rarr; Conversor (3); Respaldo de fotos &rarr; Almacenamiento en la nube (4).`;
+        }
+        document.getElementById('btnNext2').style.display = 'inline-flex';
+      });
+
+      // Fase 3: Verdadero o Falso
+      document.getElementById('btnComprobarC3').addEventListener('click', () => {
+        const answers = {
+          vf_1: { val: 'F', exp: 'Es Falsa. La edición no destructiva preserva intacto el archivo original mediante capas de ajuste o máscaras.' },
+          vf_2: { val: 'V', exp: 'Es Verdadera. El montaje audiovisual articula imágenes, ritmo temporal y sonido para generar significado.' },
+          vf_3: { val: 'F', exp: 'Es Falsa. Los procesadores modernos manejan formato enriquecido, diseño editorial, estilos, tablas e imágenes.' },
+          vf_4: { val: 'V', exp: 'Es Verdadera. Los SSD carecen de piezas mecánicas giratorias, lo que optimiza radicalmente la velocidad de acceso.' }
+        };
+
+        for (const [key, item] of Object.entries(answers)) {
+          const selected = document.querySelector(`input[name="${key}"]:checked`);
+          const fb = document.getElementById(`fb_${key}`);
+          fb.style.display = 'block';
+          if (selected && selected.value === item.val) {
+            fb.className = 'a-feedback a-feedback--ok';
+            fb.innerHTML = `<i class="fas fa-check-circle"></i> Correcto: ${item.exp}`;
+          } else {
+            fb.className = 'a-feedback a-feedback--bad';
+            fb.innerHTML = `<i class="fas fa-times-circle"></i> Incorrecto. La respuesta es (${item.val}). ${item.exp}`;
+          }
+        }
+        document.getElementById('btnNext3').style.display = 'inline-flex';
+      });
+
+      // Fase 4: Estudio de Caso Xochimilco
+      document.getElementById('btnComprobarCaso').addEventListener('click', () => {
+        const r1 = document.getElementById('caso_resp_1').value.trim();
+        const r2 = document.getElementById('caso_resp_2').value.trim();
+        const r3 = document.getElementById('caso_resp_3').value.trim();
+
+        const fb1 = document.getElementById('fb_caso_1');
+        const fb2 = document.getElementById('fb_caso_2');
+        const fb3 = document.getElementById('fb_caso_3');
+
+        fb1.style.display = 'block';
+        fb1.className = 'a-feedback a-feedback--ok';
+        fb1.innerHTML = '<strong>Respuesta esperada del Docente:</strong> La <em>Línea de Tiempo (Timeline)</em> y sus respectivas pistas independientes de video y audio, donde se calibra la duración y momento exacto de entrada y salida de cada medio.';
+
+        fb2.style.display = 'block';
+        fb2.className = 'a-feedback a-feedback--ok';
+        fb2.innerHTML = '<strong>Respuesta esperada del Docente:</strong> Calibrar la <em>amplitud / niveles de volumen</em> de las pistas o aplicar una técnica de balance acústico (ducking) para que la voz del guía destaque con absoluta claridad sobre la música ambiental.';
+
+        fb3.style.display = 'block';
+        fb3.className = 'a-feedback a-feedback--ok';
+        fb3.innerHTML = '<strong>Respuesta esperada del Docente:</strong> Porque las plataformas de redes sociales exigen un equilibrio entre calidad visual y un peso ligero de archivo para garantizar que cargue con rapidez en dispositivos móviles sin consumir excesivos datos móviles.';
+
+        document.getElementById('resumenGlobal').style.display = 'block';
+        document.getElementById('resumenGlobal').scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
 </body>
 
 </html>

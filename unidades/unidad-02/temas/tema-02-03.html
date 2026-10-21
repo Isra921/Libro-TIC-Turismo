@@ -1,11 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>2.3 Creación de páginas web | Unidad II | TIC aplicadas al turismo</title>
-  <meta name="description" content="Fundamentos de diseño, estructura, maquetación y publicación de sitios web destinados a la promoción turística.">
+  <meta name="description" content="Fundamentos de diseño, estructura semántica HTML, presentación CSS, interactividad y publicación de portales web para la promoción turística.">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="../../../assets/css/comun.css">
@@ -40,32 +40,242 @@
         <h1 class="t-title">Creación de páginas web</h1>
 
         <p class="t-lead" id="idea-central" data-toc="Presentación">
-          Fundamentos de diseño, estructura, maquetación y publicación de sitios web destinados a la promoción turística.
+          Metodología de planificación, arquitectura semántica con HTML, maquetación visual responsiva con CSS, interactividad y pautas de accesibilidad para destinos y empresas turísticas.
         </p>
 
         <div class="t-prose">
-          <section id="plan-tema" data-toc="Desglose temático">
-            <h2>Estructura curricular del tema</h2>
-            <aside class="t-callout t-callout--note">
-              <i class="fas fa-info-circle t-callout__icon" aria-hidden="true"></i>
-              <div>
-                <p class="t-callout__label">Tema en desarrollo</p>
+          <section id="concepto-pagina-web" data-toc="2.3 ¿Qué es una página web?">
+            <h2>2.3 La página web en el ecosistema turístico</h2>
+            <p>
+              Una <strong>página web</strong> es un documento electrónico digital estructurado que se interpreta y consulta mediante un navegador web (como Chrome, Firefox, Edge o Safari) a través del protocolo HTTP/HTTPS. Puede incorporar texto, fotografías optimizadas, hipervínculos, listas estructuradas, audio, video y formularios interactivos. Un <strong>sitio web</strong> reúne un conjunto coherente de una o varias páginas enlazadas bajo un mismo dominio (MDN Web Docs, 2025).
+            </p>
+            <p>
+              En el turismo contemporáneo, el portal web es la principal vitrina institucional y comercial de un destino, agencia, hotel o ruta gastronómica. Es el canal donde el viajero busca certeza sobre servicios, consulta tarifas, verifica accesibilidad física y formaliza reservaciones.
+            </p>
+          </section>
+
+          <section id="planificacion-web" data-toc="Planificación de una página turística">
+            <h2>Metodología de planificación de una página turística</h2>
+            <p>
+              Desarrollar una página web eficaz requiere una planeación rigurosa antes de escribir código. Siguiendo las directrices de Mozilla Developer Network (MDN Web Docs, 2025), se recomienda cumplir el siguiente ciclo estructurado:
+            </p>
+
+            <div class="t-grid t-grid--2">
+              <div class="t-card t-card--top t-card--info">
+                <h3><span class="t-key">Paso 1:</span> Definir propósito y público objetivo</h3>
                 <p>
-                  El desarrollo y recursos interactivos de este tema se encuentran en fase de elaboración conforme al programa académico oficial de la <strong>Escuela Superior de Turismo (EST - IPN)</strong> para la asignatura <strong>TIC aplicadas al turismo</strong>.
+                  Clarificar la intención primaria del portal: ¿Se busca informar sobre los horarios de un museo histórico, promocionar una ruta de ecoturismo o brindar un catálogo de servicios hoteleros? El tono y diseño deben adaptarse al perfil del viajero.
+                </p>
+              </div>
+
+              <div class="t-card t-card--top t-card--ok">
+                <h3><span class="t-key">Paso 2:</span> Seleccionar información verificable</h3>
+                <p>
+                  Reunir datos oficiales y contrastados: nombre oficial del destino, ubicación geográfica precisa, descripción rigurosa, horarios de atención actualizados, tarifas vigentes, condiciones de accesibilidad y canales directos de contacto.
+                </p>
+              </div>
+
+              <div class="t-card t-card--top t-card--accent">
+                <h3><span class="t-key">Paso 3:</span> Estructurar la jerarquía de contenidos</h3>
+                <p>
+                  Organizar la arquitectura de la información: encabezado con navegación clara, título principal descriptivo, introducción de bienvenida, cuerpo temático con servicios, datos prácticos de llegada y pie de página con fuentes y derechos legales.
+                </p>
+              </div>
+
+              <div class="t-card t-card--top t-card--warn">
+                <h3><span class="t-key">Paso 4:</span> Elegir recursos visuales y verificar permisos</h3>
+                <p>
+                  Seleccionar fotografías y mapas de alta calidad cromática que representen con veracidad el atractivo. Verificar licencias de propiedad intelectual (Creative Commons o permisos directos de los autores) y optimizar su compresión para carga rápida.
+                </p>
+              </div>
+
+              <div class="t-card t-card--top t-card--info">
+                <h3><span class="t-key">Paso 5:</span> Construcción responsiva</h3>
+                <p>
+                  Programar y validar la maquetación tanto en computadoras de escritorio como en pantallas de teléfonos móviles y tabletas, asegurando que los elementos no se desborden ni exijan zoom horizontal molesto.
+                </p>
+              </div>
+
+              <div class="t-card t-card--top t-card--ok">
+                <h3><span class="t-key">Paso 6:</span> Verificación de usabilidad y accesibilidad</h3>
+                <p>
+                  Comprobar que todos los hipervínculos dirijan a direcciones activas, que el contraste tipográfico sea legible y que cada imagen posea su atributo de texto alternativo (<code>alt</code>) descriptivo para personas con discapacidad visual.
+                </p>
+              </div>
+            </div>
+
+            <aside class="t-callout t-callout--note">
+              <i class="fas fa-arrows-rotate t-callout__icon" aria-hidden="true"></i>
+              <div>
+                <p class="t-callout__label">Paso 7: Actualización continua de datos</p>
+                <p>
+                  Una página web turística nunca es un producto estático: cuando cambien las tarifas de entrada, los reglamentos de preservación ecológica o los calendarios de apertura, la información digital debe actualizarse de inmediato para evitar perjuicios o malentendidos a los visitantes.
                 </p>
               </div>
             </aside>
-            <p>Conforme al plan de estudios oficial, este tema comprende los siguientes contenidos temáticos:</p>
-            <ul>
-              <li><strong>Arquitectura web básica y lenguaje de marcado HTML</strong></li>
-              <li><strong>Estructuración de contenido, hipervínculos e inserción multimedia</strong></li>
-              <li><strong>Criterios de usabilidad, diseño responsivo y publicación en servidores web</strong></li>
-            </ul>
+          </section>
+
+          <section id="tres-capas-web" data-toc="Las tres capas del desarrollo web">
+            <h2>Las tres capas fundamentales del desarrollo web</h2>
+            <p>
+              En la arquitectura web moderna, el contenido, la presentación visual y el comportamiento dinámico se encuentran rigurosamente separados en tres tecnologías estándar:
+            </p>
+
+            <div class="t-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Tecnología</th>
+                    <th>Capa y función específica</th>
+                    <th>Ejemplo concreto en una página turística</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="t-key">HTML (HyperText Markup Language)</td>
+                    <td>
+                      <strong>Estructura y significado semántico:</strong> Define la jerarquía del contenido mediante etiquetas para títulos (<code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code>), párrafos (<code>&lt;p&gt;</code>), listas ordenadas/desordenadas (<code>&lt;ul&gt;</code>, <code>&lt;li&gt;</code>), imágenes (<code>&lt;img&gt;</code>) e hipervínculos (<code>&lt;a&gt;</code>).
+                    </td>
+                    <td>
+                      Publicar el nombre del destino, la ficha técnica del parque natural, la lista de servicios turísticos y el enlace de contacto con guías locales.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="t-key">CSS (Cascading Style Sheets)</td>
+                    <td>
+                      <strong>Presentación visual y maquetación:</strong> Establece la paleta de colores, familias tipográficas, espaciados de margen y relleno (box model), alineaciones en cuadrícula (grid/flexbox) y adaptación a pantallas móviles (diseño responsivo).
+                    </td>
+                    <td>
+                      Diseñar una interfaz legible y atractiva con colores institucionales, fuentes legibles y columnas que se reacomodan fluidamente en teléfonos móviles.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="t-key">JavaScript (JS)</td>
+                    <td>
+                      <strong>Comportamiento e interactividad:</strong> Gestiona la lógica en el lado del cliente, procesa eventos del usuario, valida formularios antes de enviarlos y alimenta componentes interactivos.
+                    </td>
+                    <td>
+                      Validar el formulario de consulta de disponibilidad hotelera o desplegar una galería fotográfica interactiva del destino.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section id="ejemplo-html" data-toc="Estructura básica de una página HTML">
+            <h2>Estructura base de un documento HTML turístico</h2>
+            <p>
+              El siguiente bloque presenta la estructura fundamental mínima para construir una página informativa de un destino turístico según las recomendaciones de MDN Web Docs (2025):
+            </p>
+
+            <div class="t-card t-card--side t-card--info" style="font-family: monospace; font-size: 0.9rem; line-height: 1.5; background: var(--surface); overflow-x: auto;">
+              <pre><code>&lt;!doctype html&gt;
+&lt;html lang="es"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;title&gt;Destino turístico · Guía de visita&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;
+      &lt;h1&gt;Descubre el destino&lt;/h1&gt;
+      &lt;p&gt;Descripción breve basada en información verificada y fuentes oficiales.&lt;/p&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+      &lt;section&gt;
+        &lt;h2&gt;Información para visitantes&lt;/h2&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;strong&gt;Ubicación:&lt;/strong&gt; Indicar coordenadas o dirección postal exacta.&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;Horario:&lt;/strong&gt; Confirmar en la fuente oficial del centro de visitantes.&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;Accesibilidad:&lt;/strong&gt; Rampas para sillas de ruedas y señalización braille.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/section&gt;
+
+      &lt;section&gt;
+        &lt;p&gt;
+          Para mayor información y reservaciones:
+          &lt;a href="https://example.com" target="_blank" rel="noopener noreferrer"&gt;Consultar portal oficial de turismo&lt;/a&gt;
+        &lt;/p&gt;
+      &lt;/section&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+      &lt;p&gt;&copy; 2026 · Guía de Turismo Responsable&lt;/p&gt;
+    &lt;/footer&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </div>
+
+            <p>
+              <em>Nota formativa:</em> Esta plantilla constituye una maqueta estructural de inicio. En un proyecto real, las etiquetas de texto de ejemplo y el enlace de demostración deben reemplazarse por datos reales comprobados ante las autoridades turísticas competentes.
+            </p>
+          </section>
+
+          <section id="autoevaluacion-unidad" data-toc="Autoevaluación de la Unidad II">
+            <h2>Autoevaluación conceptual de la Unidad II</h2>
+            <p>
+              Revisa los conocimientos adquiridos a lo largo de los tres temas de la unidad contrastando tus respuestas con el estándar profesional:
+            </p>
+
+            <div class="t-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Pregunta de autoevaluación</th>
+                    <th>Respuesta esperada y fundamento técnico</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="t-key">¿Cuál es la función principal de un procesador de texto?</td>
+                    <td>Redactar, editar, organizar y dar formato estructurado a documentos para su presentación o distribución en formatos portables como PDF.</td>
+                  </tr>
+                  <tr>
+                    <td class="t-key">¿En qué se diferencian una imagen rasterizada y un gráfico vectorial?</td>
+                    <td>La imagen rasterizada está formada por una cuadrícula fija de píxeles dependiente de la resolución; el gráfico vectorial se define mediante fórmulas geométricas matemáticas independientes de la escala.</td>
+                  </tr>
+                  <tr>
+                    <td class="t-key">¿Qué representa la forma de onda en un editor de audio digital?</td>
+                    <td>Representa la variación de la amplitud o intensidad (volumen) acústica a lo largo de la línea temporal.</td>
+                  </tr>
+                  <tr>
+                    <td class="t-key">¿Para qué sirve la línea de tiempo (timeline) de un editor de video?</td>
+                    <td>Para posicionar, sincronizar y organizar clips de video y pistas sonoras controlando con exactitud su orden y duración en el tiempo.</td>
+                  </tr>
+                  <tr>
+                    <td class="t-key">¿Qué hace un integrador de medios?</td>
+                    <td>Reúne y articula de forma coherente diversos tipos de contenido (texto, fotografías, audio, video, mapas y enlaces) en una experiencia organizada.</td>
+                  </tr>
+                  <tr>
+                    <td class="t-key">Menciona dos utilerías típicas y su función operativa.</td>
+                    <td>Un compresor de archivos (reduce el peso en bytes conservando legibilidad) y una herramienta de subtitulado (incorpora texto sincronizado con el habla para accesibilidad).</td>
+                  </tr>
+                  <tr>
+                    <td class="t-key">¿Qué diferencia técnica existe entre almacenamiento local y almacenamiento en la nube?</td>
+                    <td>El almacenamiento local reside físicamente en dispositivos bajo control directo (HDD, SSD, USB); la nube permite el acceso bajo demanda a través de la red a servidores remotos administrados por un proveedor.</td>
+                  </tr>
+                  <tr>
+                    <td class="t-key">¿Qué función cumple el lenguaje HTML en el desarrollo web?</td>
+                    <td>Define la estructura semántica y el significado del contenido (encabezados, párrafos, listas, imágenes y enlaces).</td>
+                  </tr>
+                  <tr>
+                    <td class="t-key">¿Por qué es indispensable contar con una política de respaldo (backup)?</td>
+                    <td>Porque permite restaurar y recuperar la información ante pérdidas físicas, daños accidentales o ataques informáticos.</td>
+                  </tr>
+                  <tr>
+                    <td class="t-key">¿Qué debe verificarse rigurosamente antes de publicar información turística digital?</td>
+                    <td>Exactitud y vigencia de tarifas y fechas, legitimidad de fuentes, derechos de autor de las imágenes, privacidad y condiciones de accesibilidad universal.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </section>
 
           <section id="comprension" data-toc="Comprueba tu comprensión">
             <h2>Comprueba tu comprensión</h2>
-            <p>Pon a prueba tus conocimientos sobre este tema con la actividad de autoevaluación formativa interactiva.</p>
+            <p>Pon a prueba tus conocimientos sobre diseño web, estructura HTML, CSS responsivo y buenas prácticas digitales con la actividad formativa interactiva.</p>
             <div class="t-activity-action">
               <a class="u-btn u-btn--primary" href="../actividades/actividad-2-3.html">Realizar actividad 2.3 <i class="fas fa-pencil" aria-hidden="true"></i></a>
             </div>
@@ -73,8 +283,8 @@
         </div>
 
         <nav class="t-pager" id="temaNavegacion" aria-label="Navegación entre temas">
-          <a class="t-pager__prev" href="../index.html"><i class="fas fa-arrow-left" aria-hidden="true"></i> Volver a la unidad</a>
-          <a class="u-btn u-btn--secondary" href="../index.html">Finalizar unidad <i class="fas fa-check" aria-hidden="true"></i></a>
+          <a class="t-pager__prev" href="tema-02-02.html"><i class="fas fa-arrow-left" aria-hidden="true"></i> Anterior: tema 2.2: Medios de almacenamiento</a>
+          <a class="u-btn u-btn--primary" href="../actividades/actividad-final.html">Ir a la evaluación formativa y caso integrador <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
         </nav>
       </article>
 
@@ -105,5 +315,3 @@
 </body>
 
 </html>
-
-

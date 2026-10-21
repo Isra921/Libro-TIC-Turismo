@@ -78,81 +78,45 @@
     {
       "id": "unidad-02",
       "pestana": "Unidad 2",
-      "titulo": "Unidad 2: Almacenaje, señalización, codificación y tecnología de empaque",
-      "descripcion": "Laboratorio de diseño de bodegas textiles: cálculo matemático del modelo EOQ y ROP, valuación PEPS para colorantes químicos y optimizador de cubicaje en tarimas.",
-      "nota": "Domina la administración cuantitativa de bodegas textiles y la conservación de telas e insumos.",
+      "titulo": "Unidad 2: Digitalización de la información",
+      "descripcion": "Tratamiento y producción de medios digitales: suites ofimáticas, edición de imágenes, audio y video, almacenamiento seguro y desarrollo de páginas web turísticas.",
+      "nota": "Domina la producción digital y la estructuración web para promover la riqueza turística y patrimonial.",
       "items": [
         {
           "tag": "Actividad formativa",
           "reactivos": "8 reactivos al azar",
           "tiempo": "10 min",
-          "titulo": "Actividad 2.1: El almacén y sus funciones",
-          "descripcion": "Reconoce qué es un almacén y distingue cada una de las funciones que cumple dentro de la operación textil.",
+          "titulo": "Actividad 2.1: Digitalización de la información",
+          "descripcion": "Identifica funciones de procesadores de texto, editores de imagen (ráster y vector), audio, video, integradores de medios y utilerías típicas.",
           "url": "unidades/unidad-02/actividades/actividad-2-1.html",
-          "icono": "fa-warehouse"
+          "icono": "fa-photo-film"
         },
         {
           "tag": "Actividad formativa",
           "reactivos": "8 reactivos al azar",
           "tiempo": "10 min",
-          "titulo": "Actividad 2.2: Almacenes especializados en la industria textil",
-          "descripcion": "Identifica los tipos de almacén que conviven en una planta textil y el material que resguarda cada uno.",
+          "titulo": "Actividad 2.2: Medios de almacenamiento",
+          "descripcion": "Distingue medios magnéticos, flash/SSD, ópticos y servicios en la nube considerando capacidad, velocidad, sincronización y respaldo.",
           "url": "unidades/unidad-02/actividades/actividad-2-2.html",
-          "icono": "fa-boxes-packing"
+          "icono": "fa-hard-drive"
         },
         {
           "tag": "Actividad formativa",
           "reactivos": "8 reactivos al azar",
           "tiempo": "10 min",
-          "titulo": "Actividad 2.3: Diseño (layout) de un almacén",
-          "descripcion": "Ordena el flujo operativo de una bodega y aplica los principios que sostienen un buen layout.",
+          "titulo": "Actividad 2.3: Creación de páginas web",
+          "descripcion": "Comprende la planificación de un sitio turístico, la estructura HTML, diseño CSS, interactividad JS y accesibilidad.",
           "url": "unidades/unidad-02/actividades/actividad-2-3.html",
-          "icono": "fa-ruler-combined"
+          "icono": "fa-globe"
         },
         {
-          "tag": "Actividad formativa",
-          "reactivos": "8 reactivos al azar",
-          "tiempo": "10 min",
-          "titulo": "Actividad 2.4: Sistemas de almacenamiento",
-          "descripcion": "Compara el almacenamiento en piso, en racks y automatizado a partir de sus ventajas y desventajas.",
-          "url": "unidades/unidad-02/actividades/actividad-2-4.html",
-          "icono": "fa-pallet"
-        },
-        {
-          "tag": "Actividad formativa",
-          "reactivos": "8 reactivos al azar",
-          "tiempo": "10 min",
-          "titulo": "Actividad 2.5: Administración de inventarios (método ABC)",
-          "descripcion": "Clasifica los materiales textiles en las categorías A, B y C aplicando el principio de Pareto.",
-          "url": "unidades/unidad-02/actividades/actividad-2-5.html",
-          "icono": "fa-chart-pie"
-        },
-        {
-          "tag": "Actividad formativa",
-          "reactivos": "8 reactivos al azar",
-          "tiempo": "10 min",
-          "titulo": "Actividad 2.6: Rotación de inventarios y picking",
-          "descripcion": "Elige la política de rotación adecuada (FIFO, LIFO o FEFO) y distingue los tipos de preparación de pedidos.",
-          "url": "unidades/unidad-02/actividades/actividad-2-6.html",
-          "icono": "fa-arrows-rotate"
-        },
-        {
-          "tag": "Actividad formativa",
-          "reactivos": "8 reactivos al azar",
-          "tiempo": "10 min",
-          "titulo": "Actividad 2.7: Señalización, codificación, empaque y embalaje",
-          "descripcion": "Reconoce la señalética de seguridad, los sistemas de codificación y la diferencia entre empaque y embalaje.",
-          "url": "unidades/unidad-02/actividades/actividad-2-7.html",
-          "icono": "fa-barcode"
-        },
-        {
-          "tag": "Simulador y Laboratorio ESIT",
-          "reactivos": "Simulador interactivo + 4 Fases",
-          "tiempo": "35 min",
-          "titulo": "Simulador y Caso: Empresa 'Moda ESIT'",
-          "descripcion": "Cálculo de Lote Económico EOQ con análisis de sensibilidad, prevención de mermas con PEPS y cubicaje normalizado de 8,000 prendas.",
+          "tag": "Evaluación Integradora",
+          "reactivos": "4 Cuestionarios y Estudio de Caso",
+          "tiempo": "25 min",
+          "titulo": "Evaluación Formativa y Estudio de Caso: Trajineras de Xochimilco",
+          "descripcion": "Evaluación conceptual, relación de utilerías, verdadero/falso y análisis práctico de edición audiovisual turística.",
           "url": "unidades/unidad-02/actividades/actividad-final.html",
-          "icono": "fa-boxes-stacked",
+          "icono": "fa-clipboard-check",
           "destacada": true
         }
       ]

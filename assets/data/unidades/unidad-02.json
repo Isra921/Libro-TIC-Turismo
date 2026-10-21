@@ -3,25 +3,27 @@
   "numero": 2,
   "titulo": "Digitalización de la información",
   "descripcion": "Produce páginas web a partir de la digitalización y almacenamiento de información.",
-  "lema": "Tratamiento y producción de medios digitales: texto, gráficos, sonido y video para el desarrollo de páginas web turísticas.",
+  "lema": "Tratamiento de texto, imagen, audio y video, medios de almacenamiento y creación de páginas web para la difusión turística.",
   "duracion_horas": 24.0,
   "introduccion": [
-    "La digitalización y gestión de contenidos multimedia es hoy la base fundamental del marketing, la difusión y la comercialización turística.",
-    "En esta segunda unidad temática se abordan las técnicas y herramientas de software para el tratamiento de texto, edición de imagen, producción de audio y video, integradores multimedia, medios de almacenamiento seguro y la creación de páginas web para la promoción de productos y destinos turísticos."
+    "Estimadas alumnas y estimados alumnos de la unidad de aprendizaje de TIC aplicadas para el Turismo perteneciente al primer semestre del programa académico de la Licenciatura en Turismo que se imparte en la Escuela Superior de Turismo del Instituto Politécnico Nacional.",
+    "Les damos la más cordial bienvenida a este Polilibro de la unidad temática 2. Digitalización de la información, el cual tiene la finalidad de servir como apoyo en su proceso de aprendizaje. El propósito fundamental de este polilibro es facilitar la construcción de sus conocimientos profesionales. ¡Esperamos que disfrutes de esta experiencia didáctica!",
+    "El presente material didáctico digital ha sido diseñado para trascender la visión instrumental de la informática, conectando los conceptos teóricos y técnicos de la digitalización de la información con la práctica profesional del turismo en México. Las herramientas digitales (procesadores, editores, utilerías y plataformas web) no son un fin en sí mismas, sino medios estratégicos para comunicar la riqueza del patrimonio natural, cultural, gastronómico y hotelero del país, facilitando la toma de decisiones y la gestión de experiencias turísticas memorables."
   ],
+  "objetivo": "Produce páginas web a partir de la digitalización y almacenamiento de información.",
   "recorrido": "Aprende el uso de herramientas digitales para la edición y tratamiento de textos y archivos multimedia, la gestión de medios de almacenamiento y la creación integral de páginas web orientadas a la actividad turística.",
   "competencias": [
-    "Opera procesadores de texto y suites ofimáticas para la redacción y maquetación de documentos turísticos.",
-    "Emplea herramientas de edición y optimización de imágenes, audio y video en proyectos turísticos.",
-    "Aplica utilerías e integradores de medios digitales para la promoción de servicios turísticos.",
-    "Gestiona dispositivos y servicios de almacenamiento local y en la nube.",
-    "Diseña y produce páginas web funcionales orientadas a la difusión de destinos y atractivos turísticos."
+    "Produce páginas web a partir de la digitalización y almacenamiento de información.",
+    "Desarrolla habilidades de digitalización de la información, análisis y tratamiento de datos con uso de las TIC y herramientas tecnológicas para innovar y diseñar productos, servicios y organizaciones del ámbito turístico.",
+    "Opera procesadores de texto, editores de imagen, audio, video e integradores de medios digitales para la difusión del patrimonio turístico.",
+    "Gestiona medios de almacenamiento magnéticos, flash, ópticos y en la nube aplicando criterios de preservación, organización y respaldo.",
+    "Diseña y produce páginas web estructuradas con HTML, estilos CSS y accesibilidad para la promoción de destinos turísticos."
   ],
   "temas": [
     {
       "numero": "2.1",
       "nombre": "Digitalización de la información",
-      "sintesis": "Procesadores de texto, editores de imágenes, audio y video, integradores de medios y utilerías típicas de digitalización.",
+      "sintesis": "Procesadores de texto, editores de imágenes, audio y video, integradores de medios y utilerías típicas.",
       "url": "unidades/unidad-02/temas/tema-02-01.html",
       "actividad": {
         "nombre": "Actividad de aprendizaje 2.1",
@@ -31,7 +33,7 @@
     {
       "numero": "2.2",
       "nombre": "Medios de almacenamiento",
-      "sintesis": "Medios magnéticos, ópticos, electrónicos y servicios de almacenamiento en la nube para resguardo de información turística.",
+      "sintesis": "Medios magnéticos, estado sólido/flash, ópticos y almacenamiento en la nube; capacidad, velocidad, sincronización y respaldo.",
       "url": "unidades/unidad-02/temas/tema-02-02.html",
       "actividad": {
         "nombre": "Actividad de aprendizaje 2.2",
@@ -41,7 +43,7 @@
     {
       "numero": "2.3",
       "nombre": "Creación de páginas web",
-      "sintesis": "Principios de diseño, estructura, publicación y promoción de páginas web enfocadas al turismo.",
+      "sintesis": "Planificación de páginas turísticas, capas HTML, CSS y JavaScript, estructura semántica y buenas prácticas.",
       "url": "unidades/unidad-02/temas/tema-02-03.html",
       "actividad": {
         "nombre": "Actividad de aprendizaje 2.3",
@@ -50,8 +52,30 @@
     }
   ],
   "actividad_final": {
-    "nombre": "Actividad integradora final y simulador",
-    "descripcion": "Resolución de casos y simulador interactivo de toma de decisiones de la unidad.",
+    "nombre": "Evaluación formativa y estudio de caso de la Unidad II",
+    "descripcion": "Cuestionarios conceptuales, utilerías aplicadas al turismo, verdadero/falso y análisis de caso en video promocional (Xochimilco).",
     "url": "unidades/unidad-02/actividades/actividad-final.html"
-  }
+  },
+  "material_apoyo": [
+    {
+      "nombre": "Acervo y Referencias Bibliográficas de la Unidad II",
+      "url": "unidades/unidad-02/referencias.html"
+    },
+    {
+      "nombre": "MDN Web Docs: Learn Web Development",
+      "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development"
+    },
+    {
+      "nombre": "Adobe Learn: Raster and Vector",
+      "url": "https://www.adobe.com/learn/photoshop/web/raster-vector"
+    },
+    {
+      "nombre": "Audacity Manual: Basic Audio Editing",
+      "url": "https://www.audacityteam.org/manual/getting-started/basic-audio-editing/"
+    },
+    {
+      "nombre": "NIST: The NIST Definition of Cloud Computing",
+      "url": "https://doi.org/10.6028/NIST.SP.800-145"
+    }
+  ]
 }

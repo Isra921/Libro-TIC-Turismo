@@ -2,160 +2,127 @@
   {
     "id": 1,
     "type": "opcion_multiple",
-    "question": "¿Qué es el layout de un almacén?",
+    "question": "Desde la perspectiva de la creación web, ¿qué capa o lenguaje se encarga específicamente de definir la estructura y jerarquía semántica de la información?",
     "options": [
-      "La distribución y organización del trabajo dentro del almacén.",
-      "El inventario valorado de todo lo que se resguarda en la bodega.",
-      "El contrato de arrendamiento del inmueble donde opera la bodega.",
-      "El software que registra las entradas y salidas de mercancía."
+      "CSS (Cascading Style Sheets)",
+      "JavaScript",
+      "HTML (HyperText Markup Language)",
+      "El servidor web"
     ],
-    "answer": "La distribución y organización del trabajo dentro del almacén.",
-    "explicacion": "El layout es cómo se reparte el espacio y el trabajo dentro de la bodega."
+    "answer": "HTML (HyperText Markup Language)",
+    "explicacion": "HTML establece el esqueleto y significado semántico de la página (encabezados, párrafos, tablas, imágenes, hipervínculos)."
   },
   {
     "id": 2,
-    "type": "completar_oracion",
-    "question": "El objetivo principal del layout es minimizar _____, optimizar espacios y facilitar el flujo continuo de _____.",
-    "wordBank": [
-      "recorridos",
-      "materiales",
-      "proveedores",
-      "impuestos"
+    "type": "opcion_multiple",
+    "question": "¿Cuál es la función primordial del lenguaje CSS en un sitio web turístico?",
+    "options": [
+      "Definir la apariencia visual: colores, tipografía, márgenes, cuadrículas y diseño adaptativo a pantallas móviles.",
+      "Almacenar las bases de datos de reservaciones de los vuelos.",
+      "Convertir audio analógico en formato digital MP3.",
+      "Configurar la velocidad física del procesador de la computadora del usuario."
     ],
-    "answer": [
-      "recorridos",
-      "materiales"
-    ],
-    "explicacion": "Menos metros recorridos y un flujo sin interrupciones: esas son las dos metas del diseño."
+    "answer": "Definir la apariencia visual: colores, tipografía, márgenes, cuadrículas y diseño adaptativo a pantallas móviles.",
+    "explicacion": "CSS separa la presentación visual de la estructura HTML, permitiendo que una misma página se adapte estéticamente a celulares y ordenadores."
   },
   {
     "id": 3,
-    "type": "ordenar_oracion",
-    "question": "Ordena las etapas del flujo operativo de un almacén, desde la descarga hasta el embarque.",
-    "segments": [
-      "Recepción",
-      "Inspección y control de calidad",
-      "Área de almacenamiento",
-      "Preparación de pedidos (picking)",
-      "Empaque y embalaje",
-      "Embarques"
+    "type": "opcion_multiple",
+    "question": "¿Para qué se utiliza el lenguaje JavaScript en el desarrollo de portales turísticos?",
+    "options": [
+      "Para añadir interactividad, validar datos en formularios de consulta y crear galerías o comportamientos dinámicos.",
+      "Para diseñar logotipos vectoriales de destinos turísticos.",
+      "Para imprimir físicamente boletos de avión en papel térmico.",
+      "Para comprimir archivos de video en el disco duro del servidor."
     ],
-    "answer": [
-      "Recepción",
-      "Inspección y control de calidad",
-      "Área de almacenamiento",
-      "Preparación de pedidos (picking)",
-      "Empaque y embalaje",
-      "Embarques"
-    ],
-    "explicacion": "Es el recorrido del diagrama del tema: entra, se revisa, se guarda, se surte, se empaca y sale."
+    "answer": "Para añadir interactividad, validar datos en formularios de consulta y crear galerías o comportamientos dinámicos.",
+    "explicacion": "JavaScript aporta dinamismo y lógica del lado del cliente, respondiendo a las acciones e interacciones del visitante."
   },
   {
     "id": 4,
     "type": "opcion_multiple",
-    "question": "El principio de \"aprovechamiento del espacio\" en un layout se refiere a:",
+    "question": "¿Cuál es el primer paso indispensable en la metodología de planificación de una página turística?",
     "options": [
-      "Usar de forma óptima el volumen cúbico y vertical del inmueble.",
-      "Ocupar cada metro cuadrado del piso sin dejar pasillos libres.",
-      "Reducir el número de productos distintos que se almacenan.",
-      "Rentar el espacio sobrante a otras empresas."
+      "Definir el propósito y el público objetivo al que va dirigida.",
+      "Contratar el servidor más costoso del mercado.",
+      "Escribir líneas de código JavaScript sin definir contenidos.",
+      "Descargar cientos de fotos de internet sin verificar sus licencias."
     ],
-    "answer": "Usar de forma óptima el volumen cúbico y vertical del inmueble.",
-    "explicacion": "Se aprovecha el volumen, no solo el piso: la altura de la nave también almacena."
+    "answer": "Definir el propósito y el público objetivo al que va dirigida.",
+    "explicacion": "Clarificar qué se busca comunicar (promover una ruta, informar sobre un museo) y a quién está orientada determina todo el diseño y contenido posterior."
   },
   {
     "id": 5,
     "type": "verdadero_falso",
-    "statement": "El principio de accesibilidad implica poder extraer cualquier lote sin tener que desplazar otros innecesariamente.",
-    "answer": true,
-    "explicacion": "Si para sacar un rollo hay que mover otros diez, el layout está mal resuelto."
+    "statement": "Una vez publicada en internet, una página web turística nunca necesita volver a revisarse ni actualizarse.",
+    "answer": false,
+    "explicacion": "Es falsa. La información turística es dinámica: tarifas, horarios, temporadas y reglamentos cambian constantemente y deben mantenerse vigentes."
   },
   {
     "id": 6,
     "type": "opcion_multiple",
-    "question": "¿Qué principio del layout atiende la delimitación de pasillos peatonales, la señalización y la protección contra incendios?",
+    "question": "¿Por qué es obligatorio incluir texto alternativo (atributo 'alt') en las imágenes de una página turística?",
     "options": [
-      "Seguridad del personal",
-      "Recorridos cortos",
-      "Posibilidad de crecimiento",
-      "Fácil identificación de productos"
+      "Para que los lectores de pantalla describan la imagen a personas con discapacidad visual y garantizar accesibilidad universal.",
+      "Para duplicar automáticamente el tamaño de la imagen en pantalla.",
+      "Para cambiar el color del fondo de la página a blanco y negro.",
+      "Para evitar que el usuario pueda hacer clic sobre la fotografía."
     ],
-    "answer": "Seguridad del personal",
-    "explicacion": "Separar al peatón del montacargas y señalizar el equipo contra incendio protege a quien opera."
+    "answer": "Para que los lectores de pantalla describan la imagen a personas con discapacidad visual y garantizar accesibilidad universal.",
+    "explicacion": "El atributo alt es un pilar fundamental de accesibilidad web (WCAG) y además apoya la indexación en motores de búsqueda (SEO)."
   },
   {
     "id": 7,
-    "type": "opcion_multiple",
-    "question": "La \"posibilidad de crecimiento\" como principio de layout significa que el almacén debe:",
-    "options": [
-      "Ser modular, para admitir futuras ampliaciones de volumen o de líneas de producto.",
-      "Comprarse siempre con el doble de superficie de la que se necesita.",
-      "Cambiar de ubicación cada vez que aumenta la demanda.",
-      "Mantener los racks vacíos la mitad del año."
+    "type": "ordenar_oracion",
+    "question": "Ordena cronológicamente las primeras cuatro fases para planificar una página turística según las directrices de MDN:",
+    "segments": [
+      "Definir propósito y público",
+      "Seleccionar información verificable",
+      "Organizar la estructura de contenidos",
+      "Elegir recursos visuales y verificar permisos"
     ],
-    "answer": "Ser modular, para admitir futuras ampliaciones de volumen o de líneas de producto.",
-    "explicacion": "La modularidad permite crecer sin rediseñar toda la bodega."
+    "answer": [
+      "Definir propósito y público",
+      "Seleccionar información verificable",
+      "Organizar la estructura de contenidos",
+      "Elegir recursos visuales y verificar permisos"
+    ],
+    "explicacion": "Primero se define objetivo y audiencia, luego se recopilan datos verificados, se estructura la maqueta y se seleccionan medios autorizados."
   },
   {
     "id": 8,
-    "type": "completar_oracion",
-    "question": "El principio de recorridos _____ busca disminuir las distancias que recorren operarios y _____.",
-    "wordBank": [
-      "cortos",
-      "montacargas",
-      "largos",
-      "proveedores"
-    ],
-    "answer": [
-      "cortos",
-      "montacargas"
-    ],
-    "explicacion": "Cada metro que se recorre de más es tiempo y costo en cada pedido del día."
+    "type": "verdadero_falso",
+    "statement": "Antes de publicar información turística en un portal web se debe comprobar la exactitud, vigencia, fuentes oficiales, permisos y accesibilidad.",
+    "answer": true,
+    "explicacion": "Publicar datos incorrectos o desactualizados puede perjudicar la experiencia del viajero y la reputación institucional del destino."
   },
   {
     "id": 9,
-    "type": "opcion_multiple",
-    "question": "En un almacén textil, la codificación visible para rollos, hilados y prendas responde al principio de:",
-    "options": [
-      "Fácil identificación de productos",
-      "Aprovechamiento del espacio",
-      "Seguridad del personal",
-      "Posibilidad de crecimiento"
+    "type": "completar_oracion",
+    "question": "En el desarrollo web, el lenguaje _____ define la estructura semántica, mientras que _____ establece la presentación visual.",
+    "wordBank": [
+      "HTML",
+      "CSS",
+      "Python",
+      "SQL"
     ],
-    "answer": "Fácil identificación de productos",
-    "explicacion": "Si el código se lee a simple vista, el operario no abre bultos para saber qué contienen."
+    "answer": [
+      "HTML",
+      "CSS"
+    ],
+    "explicacion": "HTML da significado y orden al contenido; CSS brinda la maquetación estética y estilos de color y tipografía."
   },
   {
     "id": 10,
     "type": "opcion_multiple",
-    "question": "Durante la temporada alta, la zona de picking de una bodega se satura y los pedidos se detienen ahí. ¿Qué falla del layout explica mejor el cuello de botella?",
+    "question": "¿Por qué es crucial probar una página web turística en computadoras y en teléfonos móviles (diseño responsivo)?",
     "options": [
-      "Los recorridos son largos y la zona no permite el flujo continuo de materiales.",
-      "El almacén tiene demasiada señalización de seguridad.",
-      "Los productos están codificados con etiquetas visibles.",
-      "Los racks aprovechan el espacio vertical del inmueble."
+      "Porque una gran proporción de viajeros busca información turística en tiempo real desde sus smartphones durante el viaje.",
+      "Porque los teléfonos inteligentes no pueden interpretar texto HTML ordinario.",
+      "Porque los sitios web móviles no necesitan conexión a Internet.",
+      "Para impedir que los usuarios de computadoras puedan consultar el portal."
     ],
-    "answer": "Los recorridos son largos y la zona no permite el flujo continuo de materiales.",
-    "explicacion": "El cuello de botella aparece donde el flujo se interrumpe; acortar recorridos y ordenar la secuencia lo libera."
-  },
-  {
-    "id": 11,
-    "type": "verdadero_falso",
-    "statement": "Un buen layout ordena las etapas de forma secuencial, desde la descarga hasta el embarque final.",
-    "answer": true,
-    "explicacion": "La secuencia evita cruces y retrocesos del material dentro de la bodega."
-  },
-  {
-    "id": 12,
-    "type": "opcion_multiple",
-    "question": "¿Qué etapa del flujo operativo se ubica inmediatamente después del área de almacenamiento?",
-    "options": [
-      "Preparación de pedidos (picking)",
-      "Recepción",
-      "Embarques",
-      "Inspección y control de calidad"
-    ],
-    "answer": "Preparación de pedidos (picking)",
-    "explicacion": "Del rack el material pasa a picking, y de ahí a empaque y embarques."
+    "answer": "Porque una gran proporción de viajeros busca información turística en tiempo real desde sus smartphones durante el viaje.",
+    "explicacion": "El diseño responsivo asegura legibilidad inmediata y navegación cómoda en cualquier tamaño de pantalla, clave para el turista en ruta."
   }
 ]

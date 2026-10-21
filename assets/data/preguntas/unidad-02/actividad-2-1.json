@@ -2,160 +2,118 @@
   {
     "id": 1,
     "type": "opcion_multiple",
-    "question": "¿Cuál es la definición de almacén que plantea el tema 2.1?",
+    "question": "¿Qué diferencia fundamental existe entre un gráfico rasterizado (mapa de bits) y un gráfico vectorial en la edición de imágenes?",
     "options": [
-      "Instalación destinada a recibir, organizar, cuidar, controlar y surtir los productos primarios requeridos para el desarrollo de un artículo.",
-      "Local cerrado cuya única finalidad es guardar mercancía hasta que alguien la solicite.",
-      "Área de la planta donde se realiza el corte y la confección de las prendas.",
-      "Oficina encargada de negociar los precios de compra con los proveedores de tela."
+      "El raster se compone de vectores matemáticos y el vector de píxeles.",
+      "El raster está compuesto por una cuadrícula de píxeles dependiente de la resolución, mientras que el vector se define mediante formas geométricas matemáticas independientes de la escala.",
+      "Los vectores solo sirven para fotografías y los mapas de bits para logotipos.",
+      "No existe diferencia técnica, solo comercial."
     ],
-    "answer": "Instalación destinada a recibir, organizar, cuidar, controlar y surtir los productos primarios requeridos para el desarrollo de un artículo.",
-    "explicacion": "El almacén no solo guarda: recibe, organiza, cuida, controla y surte los materiales que necesita la producción."
+    "answer": "El raster está compuesto por una cuadrícula de píxeles dependiente de la resolución, mientras que el vector se define mediante formas geométricas matemáticas independientes de la escala.",
+    "explicacion": "Las imágenes rasterizadas (JPEG, PNG) pierden nitidez al ampliarse porque se forman de píxeles fijos. Los gráficos vectoriales (SVG) se calculan mediante fórmulas matemáticas y pueden escalarse infinitamente sin perder calidad."
   },
   {
     "id": 2,
-    "type": "verdadero_falso",
-    "statement": "El almacén es únicamente un lugar para guardar mercancía, sin valor estratégico dentro de la distribución.",
-    "answer": false,
-    "explicacion": "Es un lugar estratégico dentro de la distribución de productos: permite disponer de los materiales cuando los necesitan producción o el cliente."
+    "type": "opcion_multiple",
+    "question": "En un editor de audio digital (DAW), ¿qué representa visualmente el eje Y (vertical) en la forma de onda tradicional?",
+    "options": [
+      "La duración temporal del audio.",
+      "La frecuencia y el tono del sonido.",
+      "La amplitud o intensidad (volumen) del sonido.",
+      "El formato de compresión del archivo."
+    ],
+    "answer": "La amplitud o intensidad (volumen) del sonido.",
+    "explicacion": "En la forma de onda, el eje horizontal representa el tiempo transcurrido y el eje vertical representa la amplitud o intensidad (volumen) de la señal acústica."
   },
   {
     "id": 3,
-    "type": "ordenar_oracion",
-    "question": "Ordena las funciones del almacén según el recorrido que sigue un material desde que llega hasta que se entrega.",
-    "segments": [
-      "Entrada de artículos",
-      "Revisión de calidad",
-      "Identificación",
-      "Colocación del producto en el almacén",
-      "Preparación de productos (picking)",
-      "Surtido"
+    "type": "opcion_multiple",
+    "question": "¿Cuál es la función principal de las capas (layers) en los editores de imagen modernos?",
+    "options": [
+      "Aumentar automáticamente el peso del archivo para que se vea más profesional.",
+      "Permitir la organización y combinación independiente de elementos (como texto, fondos y fotografías) sin afectar a los demás.",
+      "Eliminar por completo la necesidad de utilizar herramientas de recorte.",
+      "Bloquear el archivo para que nadie más pueda editarlo."
     ],
-    "answer": [
-      "Entrada de artículos",
-      "Revisión de calidad",
-      "Identificación",
-      "Colocación del producto en el almacén",
-      "Preparación de productos (picking)",
-      "Surtido"
-    ],
-    "explicacion": "Primero entra y se inspecciona el material, luego se identifica y se ubica; cuando hay un pedido se prepara (picking) y se surte."
+    "answer": "Permitir la organización y combinación independiente de elementos (como texto, fondos y fotografías) sin afectar a los demás.",
+    "explicacion": "Las capas permiten trabajar de forma no destructiva: modificar un texto, aplicar filtros o reposicionar un logotipo sin alterar los píxeles de la fotografía de fondo."
   },
   {
     "id": 4,
     "type": "opcion_multiple",
-    "question": "La inspección de especificaciones y la detección de defectos antes de que el material ingrese corresponde a la función de:",
+    "question": "¿Para qué sirve la línea de tiempo (timeline) en un software de edición de video?",
     "options": [
-      "Revisión de calidad",
-      "Surtido",
-      "Administración de inventarios",
-      "Conservación"
+      "Para posicionar clips, controlar su duración exacta y sincronizar las pistas de audio y video a lo largo del tiempo.",
+      "Para convertir automáticamente el video en una página web estática.",
+      "Para diseñar logotipos vectoriales de empresas turísticas.",
+      "Para almacenar físicamente los discos magnéticos en la nube."
     ],
-    "answer": "Revisión de calidad",
-    "explicacion": "La revisión de calidad filtra los defectos antes del ingreso, de modo que no lleguen a corte ni a confección."
+    "answer": "Para posicionar clips, controlar su duración exacta y sincronizar las pistas de audio y video a lo largo del tiempo.",
+    "explicacion": "La línea de tiempo organiza la dimensión temporal del montaje audiovisual, coordinando cuándo entran y salen las tomas, la música y la locución."
   },
   {
     "id": 5,
-    "type": "opcion_multiple",
-    "question": "El registro de lotes, tipos de fibra y codificación corresponde a la función de:",
-    "options": [
-      "Identificación",
-      "Entrada de artículos",
-      "Picking",
-      "Conservación"
-    ],
-    "answer": "Identificación",
-    "explicacion": "Identificar es registrar lote, tipo de fibra y código para poder localizar y rastrear el material después."
+    "type": "verdadero_falso",
+    "statement": "La edición no destructiva en fotografía modifica permanentemente los píxeles originales de la imagen sin posibilidad de reajuste posterior.",
+    "answer": false,
+    "explicacion": "Es falsa. La edición no destructiva preserva el archivo original intacto utilizando capas de ajuste, máscaras o proyectos editables (como PSD)."
   },
   {
     "id": 6,
-    "type": "completar_oracion",
-    "question": "La función de _____ protege el material frente a humedad, polvo, plagas y variaciones _____.",
-    "wordBank": [
-      "conservación",
-      "surtido",
-      "térmicas",
-      "contables"
-    ],
-    "answer": [
-      "conservación",
-      "térmicas"
-    ],
-    "explicacion": "Conservación es proteger la mercancía de humedad, polvo, plagas y cambios de temperatura."
+    "type": "verdadero_falso",
+    "statement": "El montaje audiovisual en un editor de video no solo implica cortar y juntar imágenes, sino establecer relaciones de tiempo, ritmo y sonido que construyen un significado.",
+    "answer": true,
+    "explicacion": "El video añade la dimensión del tiempo a la imagen. El orden, la duración de cada plano y la sincronía sonora construyen el relato del destino turístico."
   },
   {
     "id": 7,
-    "type": "opcion_multiple",
-    "question": "¿En qué consiste la función de picking dentro del almacén?",
-    "options": [
-      "Seleccionar y extraer las unidades necesarias para surtir un pedido.",
-      "Verificar que la factura del proveedor coincida con el precio pactado.",
-      "Asignar una ubicación fija a cada rack del almacén.",
-      "Destruir el material que no superó la inspección de calidad."
-    ],
-    "answer": "Seleccionar y extraer las unidades necesarias para surtir un pedido.",
-    "explicacion": "El picking es la preparación del pedido: se seleccionan y extraen las unidades solicitadas."
+    "type": "verdadero_falso",
+    "statement": "Un procesador de texto moderno solo sirve para almacenar caracteres de texto plano y no maneja tipografía ni diseño editorial.",
+    "answer": false,
+    "explicacion": "Es falsa. Los procesadores de texto gestionan jerarquías tipográficas, estilos de títulos, márgenes, tablas, imágenes y maquetación estructurada."
   },
   {
     "id": 8,
-    "type": "verdadero_falso",
-    "statement": "La administración de inventarios implica vigilar de manera constante tanto las existencias físicas como las teóricas.",
-    "answer": true,
-    "explicacion": "Se monitorean ambas: la diferencia entre lo que hay en piso y lo que dice el sistema revela mermas o errores de registro."
+    "type": "ordenar_oracion",
+    "question": "Ordena la secuencia metodológica para la selección y aplicación de utilerías digitales en turismo:",
+    "segments": [
+      "Identificar la necesidad operativa",
+      "Determinar la función técnica requerida",
+      "Seleccionar la herramienta adecuada",
+      "Validar la calidad del resultado obtenido"
+    ],
+    "answer": [
+      "Identificar la necesidad operativa",
+      "Determinar la función técnica requerida",
+      "Seleccionar la herramienta adecuada",
+      "Validar la calidad del resultado obtenido"
+    ],
+    "explicacion": "La elección debe partir de la necesidad y función técnica, no de la moda de una aplicación, culminando siempre con la revisión de calidad."
   },
   {
     "id": 9,
     "type": "opcion_multiple",
-    "question": "La consolidación y entrega del material a las líneas de corte y costura o a las áreas de expedición es la función de:",
+    "question": "¿Cuál de las siguientes acciones representa la producción de información digital y no la digitalización en sentido estricto?",
     "options": [
-      "Surtido",
-      "Identificación",
-      "Revisión de calidad",
-      "Entrada de artículos"
+      "Redactar una ficha técnica de atractivo turístico directamente en un procesador de texto.",
+      "Escanear un folleto físico impreso de una zona arqueológica.",
+      "Convertir una grabación en cassette analógico a un archivo MP3.",
+      "Tomar una fotografía de un cartel impreso con una cámara digital."
     ],
-    "answer": "Surtido",
-    "explicacion": "El surtido entrega lo ya preparado a producción o a la zona de embarque."
+    "answer": "Redactar una ficha técnica de atractivo turístico directamente en un procesador de texto.",
+    "explicacion": "La digitalización en sentido estricto convierte un soporte analógico a digital. Redactar directamente en Word es producción originaria de información digital."
   },
   {
     "id": 10,
     "type": "opcion_multiple",
-    "question": "Si el almacén no realiza la inspección de calidad en la recepción, ¿qué ocurre con mayor probabilidad en corte y confección?",
+    "question": "Un integrador de medios se define como un entorno o herramienta digital que:",
     "options": [
-      "Se generan mermas, porque la tela defectuosa se detecta hasta que ya fue cortada.",
-      "No hay efecto alguno: la calidad solo importa al final del proceso.",
-      "Se reduce el costo total, porque se ahorra el tiempo de inspección.",
-      "Se acelera la producción sin ninguna consecuencia."
+      "Reúne y articula de forma coherente diversos tipos de contenido (texto, imágenes, audio, video, mapas y enlaces) en una experiencia organizada.",
+      "Comprime exclusivamente archivos PDF para adjuntarlos a correos electrónicos.",
+      "Convierte señales analógicas en ondas sinusoidales sin compresión.",
+      "Borra automáticamente los metadatos de las fotografías de viaje."
     ],
-    "answer": "Se generan mermas, porque la tela defectuosa se detecta hasta que ya fue cortada.",
-    "explicacion": "Detectar el defecto tarde cuesta más: al material perdido se suma la mano de obra ya invertida en cortarlo."
-  },
-  {
-    "id": 11,
-    "type": "completar_oracion",
-    "question": "El almacén permite disponer de los materiales cuando los necesitan la _____ o el _____.",
-    "wordBank": [
-      "producción",
-      "cliente",
-      "competencia",
-      "auditoría"
-    ],
-    "answer": [
-      "producción",
-      "cliente"
-    ],
-    "explicacion": "Esa disponibilidad oportuna es lo que convierte al almacén en un punto estratégico de la distribución."
-  },
-  {
-    "id": 12,
-    "type": "opcion_multiple",
-    "question": "La asignación estratégica de una ubicación en estanterías o zonas designadas corresponde a:",
-    "options": [
-      "Colocación del producto dentro del espacio del almacén",
-      "Entrada de artículos",
-      "Surtido",
-      "Revisión de calidad"
-    ],
-    "answer": "Colocación del producto dentro del espacio del almacén",
-    "explicacion": "Ubicar bien el material desde el inicio acorta después los recorridos de picking."
+    "answer": "Reúne y articula de forma coherente diversos tipos de contenido (texto, imágenes, audio, video, mapas y enlaces) en una experiencia organizada.",
+    "explicacion": "Integrar significa articular recursos para comunicar con claridad y coherencia el patrimonio o servicio turístico."
   }
 ]

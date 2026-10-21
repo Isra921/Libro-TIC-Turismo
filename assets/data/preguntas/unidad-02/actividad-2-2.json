@@ -2,156 +2,116 @@
   {
     "id": 1,
     "type": "opcion_multiple",
-    "question": "¿Qué material se resguarda en el almacén de materias primas de una planta textil?",
+    "question": "¿Qué diferencia técnica sustancial distingue a los discos duros mecánicos (HDD) de las unidades de estado sólido (SSD)?",
     "options": [
-      "Algodón, poliéster, lana y fibras sintéticas",
-      "Hilos, botones, cierres y etiquetas",
-      "Prendas listas para su distribución",
-      "Componentes de maquinaria textil"
+      "Los SSD emplean celdas electrónicas flash sin piezas móviles mecánicas, mientras que los HDD utilizan platos magnéticos giratorios y cabezales móviles.",
+      "Los HDD son completamente electrónicos y los SSD dependen de tecnología óptica con rayo láser.",
+      "Los SSD solo funcionan conectados a la nube y los HDD no requieren alimentación eléctrica.",
+      "No existe ninguna diferencia técnica en velocidad ni arquitectura."
     ],
-    "answer": "Algodón, poliéster, lana y fibras sintéticas",
-    "explicacion": "La materia prima textil es la fibra con la que arranca el proceso: algodón, poliéster, lana y sintéticas."
+    "answer": "Los SSD emplean celdas electrónicas flash sin piezas móviles mecánicas, mientras que los HDD utilizan platos magnéticos giratorios y cabezales móviles.",
+    "explicacion": "La ausencia de partes mecánicas en los SSD les confiere mayor velocidad de transferencia y alta tolerancia a golpes y traslados físicos."
   },
   {
     "id": 2,
-    "type": "opcion_multiple",
-    "question": "Hilos, botones, cierres y etiquetas se guardan en el almacén de:",
-    "options": [
-      "Insumos",
-      "Materias primas",
-      "Producto en proceso",
-      "Refacciones"
-    ],
-    "answer": "Insumos",
-    "explicacion": "Los insumos son los avíos que se incorporan a la prenda sin ser la fibra base."
+    "type": "verdadero_falso",
+    "statement": "Los medios de almacenamiento de estado sólido (SSD) utilizan celdas de memoria electrónica sin partes móviles, lo que acelera notablemente la recuperación de datos frente a los discos mecánicos (HDD).",
+    "answer": true,
+    "explicacion": "Al no tener cabezales mecánicos que desplazarse sobre pistas físicas, el acceso a datos en un SSD es prácticamente instantáneo."
   },
   {
     "id": 3,
-    "type": "verdadero_falso",
-    "statement": "En una empresa textil pueden coexistir varios almacenes especializados con condiciones ambientales y de estiba estrictamente diferenciadas.",
-    "answer": true,
-    "explicacion": "Cada familia de material exige condiciones distintas, por eso se separan los almacenes."
+    "type": "opcion_multiple",
+    "question": "¿Cuál es la diferencia crítica entre la sincronización en la nube y una copia de respaldo (backup)?",
+    "options": [
+      "La sincronización actualiza y replica cambios entre dispositivos (si se borra en origen se borra en destino); el respaldo conserva una copia histórica independiente que permite recuperar datos perdidos.",
+      "La sincronización crea discos ópticos y el respaldo utiliza únicamente memoria RAM.",
+      "El respaldo se borra cada 24 horas y la sincronización es inalterable para siempre.",
+      "Son términos sinónimos que realizan exactamente el mismo procedimiento técnico."
+    ],
+    "answer": "La sincronización actualiza y replica cambios entre dispositivos (si se borra en origen se borra en destino); el respaldo conserva una copia histórica independiente que permite recuperar datos perdidos.",
+    "explicacion": "La sincronización no protege por sí sola contra borrados accidentales o archivos corruptos. Un respaldo independiente es indispensable para garantizar restauración."
   },
   {
     "id": 4,
     "type": "opcion_multiple",
-    "question": "Los rollos de tela y las piezas ya cortadas pertenecen al almacén de:",
+    "question": "¿Qué significa que la memoria RAM sea 'volátil' en contraste con los medios de almacenamiento masivo?",
     "options": [
-      "Producto en proceso",
-      "Producto terminado",
-      "Materias primas",
-      "Insumos"
+      "Que pierde la totalidad de los datos almacenados al apagarse o perder el suministro eléctrico.",
+      "Que puede transferirse fácilmente en un bolsillo sin sufrir deterioro.",
+      "Que sus datos pueden verse en cualquier navegador web del mundo.",
+      "Que está construida con tecnología magnética giratoria."
     ],
-    "answer": "Producto en proceso",
-    "explicacion": "Ya se transformaron (hay tela y piezas cortadas), pero todavía no son una prenda terminada."
+    "answer": "Que pierde la totalidad de los datos almacenados al apagarse o perder el suministro eléctrico.",
+    "explicacion": "La memoria RAM requiere energía constante para retener datos. Los medios de almacenamiento (HDD, SSD, memorias USB, nube) son no volátiles."
   },
   {
     "id": 5,
-    "type": "completar_oracion",
-    "question": "El almacén de colorantes y productos químicos guarda colorantes, _____ y _____.",
-    "wordBank": [
-      "auxiliares",
-      "suavizantes",
-      "cierres",
-      "tarimas"
+    "type": "opcion_multiple",
+    "question": "De acuerdo con el NIST (SP 800-145), ¿cuál es una característica esencial de los servicios de almacenamiento en la nube?",
+    "options": [
+      "Acceso ubicuo y bajo demanda a través de la red a un fondo común de recursos informáticos compartidos.",
+      "Obligatoriedad de utilizar exclusivamente cables coaxiales para la transmisión de archivos.",
+      "La imposibilidad absoluta de compartir archivos entre diferentes usuarios.",
+      "Que los datos se almacenan exclusivamente dentro del disco duro de la computadora local."
     ],
-    "answer": [
-      "auxiliares",
-      "suavizantes"
-    ],
-    "explicacion": "Son los químicos del área de tintorería y acabados; exigen condiciones ambientales controladas."
+    "answer": "Acceso ubicuo y bajo demanda a través de la red a un fondo común de recursos informáticos compartidos.",
+    "explicacion": "La nube permite acceder a capacidad de cómputo y almacenamiento remoto desde cualquier lugar con conexión a Internet mediante proveedores certificados."
   },
   {
     "id": 6,
-    "type": "opcion_multiple",
-    "question": "¿Qué se almacena en el almacén de refacciones?",
-    "options": [
-      "Componentes de la maquinaria textil",
-      "Prendas listas para distribución",
-      "Colorantes y auxiliares",
-      "Algodón y poliéster"
-    ],
-    "answer": "Componentes de la maquinaria textil",
-    "explicacion": "Las refacciones mantienen operando telares, máquinas de coser y equipo de tintorería."
+    "type": "verdadero_falso",
+    "statement": "Almacenar información en el ámbito turístico implica únicamente guardar archivos en carpetas, sin importar su preservación en el tiempo ni su correcta organización y respaldo.",
+    "answer": false,
+    "explicacion": "Almacenar trasciende el simple guardado: requiere asegurar la preservación a largo plazo, la organización lógica, la integridad y la recuperabilidad de los activos digitales."
   },
   {
     "id": 7,
     "type": "opcion_multiple",
-    "question": "Las prendas listas para su distribución corresponden al almacén de:",
+    "question": "¿Qué medio de almacenamiento físico es más adecuado para capturar y transferir de forma ágil fotografías y grabaciones durante una práctica de campo turística?",
     "options": [
-      "Producto terminado",
-      "Producto en proceso",
-      "Insumos",
-      "Materias primas"
+      "Tarjetas de memoria SD y unidades flash USB de alta velocidad.",
+      "Discos compactos CD-ROM grabables.",
+      "Disquetes magnéticos de 3.5 pulgadas.",
+      "Cintas magnéticas analógicas de carrete abierto."
     ],
-    "answer": "Producto terminado",
-    "explicacion": "El producto terminado ya pasó confección y control de calidad; solo espera su distribución."
+    "answer": "Tarjetas de memoria SD y unidades flash USB de alta velocidad.",
+    "explicacion": "Por su portabilidad, tamaño compacto, resistencia mecánicas y alta velocidad de escritura, las memorias flash son ideales para el trabajo de campo turístico."
   },
   {
     "id": 8,
-    "type": "opcion_multiple",
-    "question": "Según el tema, ¿qué puede provocar una administración deficiente de los almacenes textiles?",
-    "options": [
-      "Pérdidas económicas por deterioro, humedad, contaminación o errores en el surtido.",
-      "Un aumento automático del precio de venta de las prendas.",
-      "La desaparición de la necesidad de inspeccionar la calidad.",
-      "Una reducción garantizada de los tiempos de entrega."
-    ],
-    "answer": "Pérdidas económicas por deterioro, humedad, contaminación o errores en el surtido.",
-    "explicacion": "El daño es económico y llega por cuatro vías: deterioro, humedad, contaminación y errores de surtido."
+    "type": "verdadero_falso",
+    "statement": "Los permisos de acceso en carpetas compartidas permiten restringir privilegios para proteger la privacidad de datos sensibles de clientes e itinerarios confidenciales.",
+    "answer": true,
+    "explicacion": "La asignación controlada de permisos (lectura o edición) previene accesos no autorizados y filtración de datos protegidos por la ley."
   },
   {
     "id": 9,
-    "type": "verdadero_falso",
-    "statement": "Los colorantes y productos químicos pueden guardarse junto con el producto terminado sin ningún riesgo.",
-    "answer": false,
-    "explicacion": "Un derrame o una emanación química contamina y mancha las prendas; por eso se separan los almacenes."
+    "type": "completar_oracion",
+    "question": "Los discos CD, DVD y Blu-ray son medios de almacenamiento de tipo _____, los cuales son leídos mediante un rayo _____.",
+    "wordBank": [
+      "óptico",
+      "láser",
+      "magnético",
+      "mecánico"
+    ],
+    "answer": [
+      "óptico",
+      "láser"
+    ],
+    "explicacion": "Los medios ópticos utilizan un rayo láser para interpretar las ranuras microscópicas grabadas sobre el sustrato de policarbonato."
   },
   {
     "id": 10,
-    "type": "ordenar_oracion",
-    "question": "Ordena los almacenes textiles según el avance del material dentro del proceso productivo.",
-    "segments": [
-      "Materias primas",
-      "Insumos",
-      "Producto en proceso",
-      "Producto terminado"
-    ],
-    "answer": [
-      "Materias primas",
-      "Insumos",
-      "Producto en proceso",
-      "Producto terminado"
-    ],
-    "explicacion": "La fibra entra como materia prima, se le suman los insumos, se vuelve producto en proceso y termina como prenda."
-  },
-  {
-    "id": 11,
-    "type": "completar_oracion",
-    "question": "El almacén de _____ guarda rollos de tela y piezas cortadas, mientras que el de _____ guarda prendas listas para distribución.",
-    "wordBank": [
-      "producto en proceso",
-      "producto terminado",
-      "refacciones",
-      "insumos"
-    ],
-    "answer": [
-      "producto en proceso",
-      "producto terminado"
-    ],
-    "explicacion": "La diferencia está en el grado de avance: piezas cortadas frente a prenda lista."
-  },
-  {
-    "id": 12,
     "type": "opcion_multiple",
-    "question": "Una empresa guarda sus telas importadas en una bodega con filtraciones de agua. ¿Qué consecuencia es la más probable?",
+    "question": "¿Cuál es una buena práctica indispensable para la nomenclatura y organización de archivos en proyectos turísticos?",
     "options": [
-      "Pérdida económica por deterioro de la tela a causa de la humedad.",
-      "Una mejora en la suavidad del tejido.",
-      "Ninguna: las fibras naturales son impermeables.",
-      "Un aumento del valor de inventario registrado."
+      "Utilizar carpetas temáticas y nombres descriptivos con fechas estandarizadas (ej. 2026-10_Guia_Xochimilco_v1.pdf).",
+      "Nombrar todos los archivos como 'documento' o 'entrega' y dejarlos sueltos en el escritorio.",
+      "Guardar los archivos sin extensión para que ocupen menos espacio de almacenamiento.",
+      "Modificar directamente los archivos originales sin generar nunca copias de respaldo."
     ],
-    "answer": "Pérdida económica por deterioro de la tela a causa de la humedad.",
-    "explicacion": "La humedad mancha, pudre y favorece hongos en las fibras: es una de las pérdidas que advierte el tema."
+    "answer": "Utilizar carpetas temáticas y nombres descriptivos con fechas estandarizadas (ej. 2026-10_Guia_Xochimilco_v1.pdf).",
+    "explicacion": "El orden cronológico y descriptivo ahorra tiempo, evita sobreescritura accidental y facilita el trabajo colaborativo en equipos de turismo."
   }
 ]

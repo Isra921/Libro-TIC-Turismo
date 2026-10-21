@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -40,35 +40,452 @@
         <h1 class="t-title">Digitalización de la información</h1>
 
         <p class="t-lead" id="idea-central" data-toc="Presentación">
-          Tratamiento, edición y conversión de medios digitales analógicos a formatos digitales en suites ofimáticas y editores especializados.
+          Fundamentos conceptuales, herramientas de edición de texto, gráficos, sonido y video, integradores multimedia y utilerías de soporte aplicadas a la gestión turística.
         </p>
 
         <div class="t-prose">
-          <section id="plan-tema" data-toc="Desglose temático">
-            <h2>Estructura curricular del tema</h2>
+          <section id="concepto-digitalizacion" data-toc="2.1 Concepto de digitalización">
+            <h2>2.1 ¿Qué es la digitalización de la información?</h2>
+            <p>
+              La <strong>digitalización</strong> consiste, en sentido estricto, en convertir información que se encuentra en un soporte analógico —por ejemplo, una fotografía impresa, un mapa físico o una grabación en cinta magnética— en una representación digital compuesta por bits.
+            </p>
+            <p>
+              En el trabajo profesional cotidiano del turismo, el término también se utiliza para describir la preparación, organización y distribución de contenidos mediante archivos digitales: documentos descriptivos, imágenes promocionales, grabaciones de audioguías, videos promocionales y páginas web interactivas.
+            </p>
+
             <aside class="t-callout t-callout--note">
               <i class="fas fa-info-circle t-callout__icon" aria-hidden="true"></i>
               <div>
-                <p class="t-callout__label">Tema en desarrollo</p>
+                <p class="t-callout__label">Distinción conceptual clave</p>
+                <p>Conviene distinguir dos usos estrechamente relacionados:</p>
+                <ul>
+                  <li><strong>Digitalización en sentido estricto:</strong> Escanear un folleto impreso o transferir una grabación analógica a un archivo de audio.</li>
+                  <li><strong>Producción de información digital:</strong> Redactar una ficha técnica de destino directamente en un procesador de textos o maquetar un portal web.</li>
+                </ul>
+              </div>
+            </aside>
+
+            <p>
+              En el sector turístico, estas acciones agilizan la consulta de folletos, aseguran la preservación del acervo fotográfico patrimonial, facilitan la producción de audioguías multilingües y permiten la actualización inmediata de información para los visitantes. No obstante, <strong>digitalizar no garantiza por sí mismo que los datos sean correctos</strong>: es imperativo comprobar rigurosamente fechas, tarifas, horarios, condiciones de accesibilidad, procedencia legítima y derechos de uso.
+            </p>
+
+            <div class="t-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Concepto</th>
+                    <th>Definición técnica</th>
+                    <th>Ejemplo en turismo</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="t-key">Archivo digital</td>
+                    <td>Información codificada y almacenada electrónicamente, identificada mediante un nombre y una extensión o formato.</td>
+                    <td><code>Ficha_destino.docx</code>, <code>foto_museo.jpg</code>, <code>audioguia_centro.mp3</code></td>
+                  </tr>
+                  <tr>
+                    <td class="t-key">Formato</td>
+                    <td>Estructura y estándar de codificación de un archivo que determina con qué aplicaciones o servicios puede visualizarse o editarse.</td>
+                    <td><code>DOCX</code> para edición de texto; <code>PDF</code> para distribución estable; <code>JPG</code>/<code>PNG</code> para imagen.</td>
+                  </tr>
+                  <tr>
+                    <td class="t-key">Metadatos</td>
+                    <td>Datos estructurados que describen el contenido, contexto, fecha de captura, geolocalización, autoría y condiciones de licenciamiento de un archivo.</td>
+                    <td>Registrar fecha exacta, autor institucional y coordenadas GPS de una fotografía de ruta ecoturística.</td>
+                  </tr>
+                  <tr>
+                    <td class="t-key">Calidad de la información</td>
+                    <td>Grado en el cual los datos resultan exactos, vigentes, pertinentes, accesibles y comprensibles para el usuario final.</td>
+                    <td>Confirmar horarios de apertura, costos de boletería y rampas de accesibilidad antes de publicar la ficha de un museo.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section id="procesadores-texto" data-toc="2.1.1 Procesadores de texto">
+            <h2>2.1.1 Procesadores de texto</h2>
+            <p>
+              Un <strong>procesador de texto</strong> es una aplicación informática que permite redactar, corregir, estructurar y presentar documentos digitales formalmente maquetados. Además de la captura de texto, ofrece potentes funciones para definir jerarquías tipográficas con estilos de título, insertar tablas comparativas, incorporar recursos gráficos, revisar gramática y ortografía, gestionar notas al pie y exportar a formatos portables e inalterables (Microsoft, s. f.).
+            </p>
+
+            <div class="t-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Elemento del procesador</th>
+                    <th>¿Para qué sirve?</th>
+                    <th>Ejemplo de aplicación en Turismo</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="t-key">Estilos de título (H1, H2, H3)</td>
+                    <td>Establecen niveles de encabezados semánticos y mantienen una coherencia estructural en todo el documento.</td>
+                    <td>Separar claramente la descripción general, servicios incluidos, ubicación geográfica y recomendaciones de una guía de viaje.</td>
+                  </tr>
+                  <tr>
+                    <td class="t-key">Tipografía y tamaño</td>
+                    <td>Influyen de manera decisiva en la legibilidad y en la jerarquía visual de la información para el viajero.</td>
+                    <td>Elegir fuentes tipográficas limpias y legibles (sin saturación de fuentes decorativas) en folletos y manuales de servicio.</td>
+                  </tr>
+                  <tr>
+                    <td class="t-key">Márgenes y espaciado</td>
+                    <td>Distribuyen armónicamente el espacio en blanco y facilitan la lectura continua sin fatiga visual.</td>
+                    <td>Brindar aire a una ficha técnica de destino para evitar bloques de texto densos e intimidantes.</td>
+                  </tr>
+                  <tr>
+                    <td class="t-key">Tablas e imágenes</td>
+                    <td>Presentan información estructurada de forma sintética y respaldan visualmente el contenido discursivo.</td>
+                    <td>Comparar itinerarios, costos y horarios de tours, incorporando fotografías de alta resolución con sus créditos de autor.</td>
+                  </tr>
+                  <tr>
+                    <td class="t-key">Exportación (PDF)</td>
+                    <td>Genera una versión digital fija, compatible con cualquier dispositivo e independiente del software instalado.</td>
+                    <td>Distribuir guías de viaje o confirmaciones de itinerario a clientes garantizando que la diagramación no se altere.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <aside class="t-callout t-callout--example">
+              <i class="fas fa-lightbulb t-callout__icon" aria-hidden="true"></i>
+              <div>
+                <p class="t-callout__label">Criterio profesional de maquetación</p>
                 <p>
-                  El desarrollo y recursos interactivos de este tema se encuentran en fase de elaboración conforme al programa académico oficial de la <strong>Escuela Superior de Turismo (EST - IPN)</strong> para la asignatura <strong>TIC aplicadas al turismo</strong>.
+                  En la elaboración de documentos turísticos institucionales, <strong>la prioridad debe ser que la información se comprenda con rapidez y claridad</strong>. Se debe evitar la sobredecoración o el uso indiscriminado de colores que resten formalidad o dificulten la lectura en pantallas móviles.
                 </p>
               </div>
             </aside>
-            <p>Conforme al plan de estudios oficial, este tema comprende los siguientes contenidos temáticos:</p>
-            <ul>
-              <li><strong>2.1.1 Procesadores de texto</strong></li>
-              <li><strong>2.1.2 Editores de imágenes</strong></li>
-              <li><strong>2.1.3 Editores de audio</strong></li>
-              <li><strong>2.1.4 Editores de video</strong></li>
-              <li><strong>2.1.5 Integradores de medios</strong></li>
-              <li><strong>2.1.6 Utilerías típicas</strong></li>
-            </ul>
+          </section>
+
+          <section id="editores-imagenes" data-toc="2.1.2 Editores de imágenes">
+            <h2>2.1.2 Editores de imágenes</h2>
+            <p>
+              Un <strong>editor de imágenes</strong> es una herramienta digital que permite modificar, ajustar, combinar y organizar elementos visuales —fotografías, vectores, tipografías, colores y texturas— para construir una composición armónica destinada a comunicar eficazmente un mensaje, experiencia o destino turístico.
+            </p>
+            <p>
+              En el diseño gráfico digital existe una distinción técnica fundamental entre <strong>imágenes rasterizadas (mapas de bits)</strong> y <strong>gráficos vectoriales</strong> (Adobe, 2023):
+            </p>
+
+            <div class="t-grid t-grid--2">
+              <div class="t-card t-card--top t-card--info">
+                <h3><i class="fas fa-image"></i> Imágenes Rasterizadas (Mapa de Bits)</h3>
+                <p>
+                  Se componen de una matriz o cuadrícula de diminutos puntos de color denominados <strong>píxeles</strong>. Son el estándar natural en la fotografía de paisajes, arquitectura hotelera y patrimonio cultural.
+                </p>
+                <p>
+                  <strong>Limitación:</strong> Al ser dependientes de la resolución, si se amplían por encima de su tamaño original sufren pérdida de nitidez y pixelado.
+                </p>
+                <p class="t-key">Formatos usuales: JPEG, PNG, WEBP.</p>
+              </div>
+              <div class="t-card t-card--top t-card--accent">
+                <h3><i class="fas fa-bezier-curve"></i> Gráficos Vectoriales</h3>
+                <p>
+                  Se construyen a partir de fórmulas matemáticas que definen puntos, líneas, curvas Bezier y polígonos geométricos.
+                </p>
+                <p>
+                  <strong>Ventaja clave:</strong> Son completamente escalables sin ninguna pérdida de calidad ni nitidez, independientemente de cuánto se aumente su escala.
+                </p>
+                <p class="t-key">Formatos usuales: SVG, AI, EPS.</p>
+              </div>
+            </div>
+
+            <div class="t-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Concepto</th>
+                    <th>Explicación técnica</th>
+                    <th>Ejemplo en turismo</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="t-key">Píxel</td>
+                    <td>La menor unidad cromática homogénea que compone una imagen rasterizada.</td>
+                    <td>Cada punto de detalle en la fotografía de una pirámide en Teotihuacán.</td>
+                  </tr>
+                  <tr>
+                    <td class="t-key">Vector</td>
+                    <td>Objeto geométrico definido matemáticamente, escalable al infinito sin pixelación.</td>
+                    <td>Icono de ubicación de un hotel o trazo de una ruta cicloturística en un mapa.</td>
+                  </tr>
+                  <tr>
+                    <td class="t-key">Recorte (Crop)</td>
+                    <td>Eliminación de áreas marginales o sobrantes para mejorar el encuadre y la fuerza visual.</td>
+                    <td>Centrar la fachada de un templo colonial y retirar vehículos o peatones distractores.</td>
+                  </tr>
+                  <tr>
+                    <td class="t-key">Resolución</td>
+                    <td>Densidad de detalle de una imagen, expresada típicamente en píxeles por pulgada (PPI o DPI).</td>
+                    <td>300 DPI requeridos para imprimir un cartel publicitario frente a 72-150 PPI para miniatura web.</td>
+                  </tr>
+                  <tr>
+                    <td class="t-key">Capas (Layers)</td>
+                    <td>Niveles independientes superpuestos que permiten editar elementos sin alterar el resto.</td>
+                    <td>Capa 1: foto de fondo; Capa 2: filtro de contraste; Capa 3: tipografía del titular; Capa 4: logotipo.</td>
+                  </tr>
+                  <tr>
+                    <td class="t-key">Compresión</td>
+                    <td>Algoritmo que reduce el tamaño en bytes del archivo (con o sin pérdida de calidad).</td>
+                    <td>Reducir una fotografía de 12 MB a 250 KB en formato WEBP o JPEG para optimizar la carga web.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <aside class="t-callout t-callout--note">
+              <i class="fas fa-pen-ruler t-callout__icon" aria-hidden="true"></i>
+              <div>
+                <p class="t-callout__label">La sintaxis de la composición visual</p>
+                <p>
+                  Reunir elementos visuales no equivale por sí solo a una comunicación eficaz:
+                </p>
+                <p style="font-weight: 600; text-align: center; margin: 12px 0;">
+                  Elementos visuales &rarr; Organización &rarr; Relaciones &rarr; Composición &rarr; Comunicación
+                </p>
+                <p>
+                  Ante una composición publicitaria turística (fotografía + titular + color corporativo + logotipo + espaciado), el profesional debe responder:
+                </p>
+                <ul>
+                  <li>¿Qué elemento debe captar la atención en primer lugar (punto focal)?</li>
+                  <li>¿Qué información complementaria debe leerse en segundo orden?</li>
+                  <li>¿Cómo armonizan los tonos cromáticos con la identidad del destino?</li>
+                  <li>¿Qué proporciones y jerarquía ocupará cada componente?</li>
+                </ul>
+              </div>
+            </aside>
+          </section>
+
+          <section id="editores-audio" data-toc="2.1.3 Editores de audio">
+            <h2>2.1.3 Editores de audio</h2>
+            <p>
+              Un <strong>editor de audio digital</strong> (o DAW por sus siglas en inglés) permite registrar señales acústicas, recortar fragmentos, limpiar ruidos parásitos, mezclar múltiples canales sonoros y exportar el resultado final a formatos universales de audio (Audacity Team, s. f.). En la industria turística, estas herramientas son el pilar fundamental para producir podcasts de viaje, narraciones patrimoniales y audioguías para museos o recorridos guiados.
+            </p>
+            <p>
+              En la interfaz del editor, la <strong>forma de onda</strong> representa gráficamente el comportamiento del sonido: el eje horizontal ilustra el tiempo cronológico y el eje vertical representa la amplitud o intensidad (volumen) acústico.
+            </p>
+
+            <div class="t-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Concepto</th>
+                    <th>Definición práctica</th>
+                    <th>Aplicación en el sector turístico</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="t-key">Forma de onda</td>
+                    <td>Representación gráfica bidimensional de la amplitud acústica a lo largo de la línea temporal.</td>
+                    <td>Identificar visualmente silencios prolongados, saturaciones (clipping) o ruidos abruptos en la locución.</td>
+                  </tr>
+                  <tr>
+                    <td class="t-key">Pista de audio</td>
+                    <td>Canal independiente dentro del proyecto multipista para gestionar fuentes sonoras aisladas.</td>
+                    <td>Pista 1: locución en español; Pista 2: ambientación sonora (olas del mar); Pista 3: música incidental autorizada.</td>
+                  </tr>
+                  <tr>
+                    <td class="t-key">Recorte y edición</td>
+                    <td>Corte y eliminación precisa de segmentos defectuosos, titubeos o respiraciones excesivas.</td>
+                    <td>Limpiar errores de dicción de la guía grabada durante una práctica de campo.</td>
+                  </tr>
+                  <tr>
+                    <td class="t-key">Mezcla (Mixing)</td>
+                    <td>Ajuste relativo de niveles de ganancia, ecualización y paneo estéreo entre distintas pistas.</td>
+                    <td>Atenuar la música de fondo (ducking) cuando entra la voz del locutor para asegurar inteligibilidad total.</td>
+                  </tr>
+                  <tr>
+                    <td class="t-key">Exportación</td>
+                    <td>Renderizado final a estándares comprimidos (MP3, AAC) o sin pérdida (WAV, FLAC).</td>
+                    <td>Generar archivos MP3 optimizados para descarga rápida en aplicaciones móviles de recorridos turísticos.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section id="editores-video" data-toc="2.1.4 Editores de video">
+            <h2>2.1.4 Editores de video</h2>
+            <p>
+              Un <strong>editor de video</strong> permite organizar secuencias visuales en movimiento, sincronizar pistas sonoras, aplicar transiciones semánticas, sobreponer títulos o subtítulos y compilar la pieza en un archivo audiovisual para difusión en redes sociales o portales institucionales.
+            </p>
+            <p>
+              Desde la perspectiva del lenguaje audiovisual:
+            </p>
+            <div class="t-card t-card--side t-card--ok" style="margin: 16px 0;">
+              <p style="margin: 0; font-weight: 600; font-size: 1.05rem;">
+                Editor de video = Herramienta para estructurar imágenes + sonidos + tiempo.
+              </p>
+              <p style="margin: 8px 0 0; color: var(--text-soft);">
+                A diferencia de la imagen fija, el video incorpora la dimensión temporal como eje central de la narrativa.
+              </p>
+            </div>
+
+            <div class="t-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Concepto</th>
+                    <th>Función técnica</th>
+                    <th>Pregunta guía para el profesional turístico</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="t-key">Clip</td>
+                    <td>Fragmento individual de video o audio importado al proyecto.</td>
+                    <td>¿Qué valor específico aporta esta toma al relato del atractivo turístico?</td>
+                  </tr>
+                  <tr>
+                    <td class="t-key">Línea de tiempo (Timeline)</td>
+                    <td>Espacio de trabajo temporal donde se sitúan, ordenan y ensamblan los clips y pistas.</td>
+                    <td>¿En qué segundo preciso debe comenzar la narración y cuándo remata la toma aérea?</td>
+                  </tr>
+                  <tr>
+                    <td class="t-key">Corte directo</td>
+                    <td>Paso instantáneo de un encuadre al siguiente sin interposición de efectos.</td>
+                    <td>¿El cambio de plano es natural y conserva el ritmo visual del recorrido?</td>
+                  </tr>
+                  <tr>
+                    <td class="t-key">Transición</td>
+                    <td>Efecto visual que une dos tomas (disolvencia, barrido, fundido).</td>
+                    <td>¿Aporta continuidad dramática y geográfica o se trata de un adorno que distrae?</td>
+                  </tr>
+                  <tr>
+                    <td class="t-key">Ritmo</td>
+                    <td>Cadencia y velocidad percibida, determinada por la duración promedio de las tomas.</td>
+                    <td>¿El dinamismo concuerda con la experiencia (relajación en spa vs adrenalina en rafting)?</td>
+                  </tr>
+                  <tr>
+                    <td class="t-key">Subtítulos</td>
+                    <td>Texto sincronizado con la pista vocal que transcribe o traduce el discurso.</td>
+                    <td>¿El video se comprende con claridad en smartphones cuando el turista lo reproduce sin sonido?</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section id="integradores-medios" data-toc="2.1.5 Integradores de medios">
+            <h2>2.1.5 Integradores de medios</h2>
+            <p>
+              Un <strong>integrador de medios</strong> es un ecosistema o herramienta digital que permite articular diversos formatos —textos, fotografías, gráficos interactivos, audio, video, cartografía georreferenciada y enlaces— dentro de una experiencia informativa unificada y coherente.
+            </p>
+            <p>
+              Como subrayan las directrices de Mozilla (MDN Web Docs, 2025), integrar no consiste en aglomerar recursos indiscriminadamente, sino en estructurar con significado, presentar con estilo responsivo y priorizar la accesibilidad universal.
+            </p>
+
+            <div class="t-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Herramienta integradora</th>
+                    <th>Capacidades y medios que reúne</th>
+                    <th>Uso profesional en Turismo</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="t-key">Presentaciones interactivas</td>
+                    <td>Secuencias diapositivas con texto, imágenes de alta resolución, clips de video y enlaces web.</td>
+                    <td>Exponer proyectos de desarrollo ecoturístico o licitaciones de servicios hoteleros.</td>
+                  </tr>
+                  <tr>
+                    <td class="t-key">Infografías y guías digitales</td>
+                    <td>Composiciones sintéticas que combinan diagramas, iconos vectoriales y datos estadísticos.</td>
+                    <td>Comparar etapas de un circuito cultural o resumir medidas sanitarias y de visado para viajeros.</td>
+                  </tr>
+                  <tr>
+                    <td class="t-key">Páginas web y micro-sitios</td>
+                    <td>Estructura hipertextual abierta, interactiva, accesible desde cualquier navegador y dispositivo.</td>
+                    <td>Publicar portales oficiales de destinos, sistemas de reservación, tarifas y agenda de eventos.</td>
+                  </tr>
+                  <tr>
+                    <td class="t-key">Mapas interactivos</td>
+                    <td>Capas de cartografía digital con marcadores georreferenciados, fotografías y enlaces.</td>
+                    <td>Diseñar rutas gastronómicas o turísticas mostrando paradas obligadas y tiempos de traslado.</td>
+                  </tr>
+                  <tr>
+                    <td class="t-key">Plataformas de diseño por plantillas</td>
+                    <td>Composiciones modulares rápidas para folletería, banners promocionales e historias sociales.</td>
+                    <td>Generar piezas gráficas uniformes para campañas de temporada vacacional.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section id="utilerias-tipicas" data-toc="2.1.6 Utilerías típicas">
+            <h2>2.1.6 Utilerías típicas</h2>
+            <p>
+              Las <strong>utilerías</strong> son aplicaciones y herramientas auxiliares diseñadas para resolver tareas técnicas concretas en el tratamiento y preservación digital: comprimir archivos voluminosos, convertir formatos no reconocidos, capturar pantallas, transcribir audio o gestionar copias de seguridad de emergencia.
+            </p>
+
+            <div class="t-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Necesidad operativa en turismo</th>
+                    <th>Tipo de utilería digital</th>
+                    <th>Precaución técnica y ética</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="t-key">Enviar un folleto digital en PDF muy pesado por correo a un cliente</td>
+                    <td>Compresor de PDF (optimización de compresión sin pérdida crítica)</td>
+                    <td>Verificar que los textos conserven legibilidad nítida y las imágenes no presenten artefactos.</td>
+                  </tr>
+                  <tr>
+                    <td class="t-key">Documentar una ruta específica en Google Maps para una presentación</td>
+                    <td>Herramienta de captura o recorte de pantalla</td>
+                    <td>Ocultar datos de navegación personales, correos y respetar la atribución de fuentes cartográficas.</td>
+                  </tr>
+                  <tr>
+                    <td class="t-key">Abrir un video grabado en un formato obsoleto o incompatible (MOV, AVI)</td>
+                    <td>Conversor de formato audiovisual (a estándar universal MP4/H.264)</td>
+                    <td>Conservar intacto el archivo original y comprobar que la tasa de cuadros y sincronía de audio no se alteren.</td>
+                  </tr>
+                  <tr>
+                    <td class="t-key">Facilitar el acceso a un video promocional en redes sociales para usuarios en silencio</td>
+                    <td>Generador de subtitulado y archivos SRT</td>
+                    <td>Revisar manualmente nombres de atractivos patrimoniales, toponimias en lenguas originarias y tarifas.</td>
+                  </tr>
+                  <tr>
+                    <td class="t-key">Proteger las fotografías y evidencias de una práctica de campo</td>
+                    <td>Herramienta de copia de seguridad (Backup) e imágenes de disco</td>
+                    <td>Mantener una réplica independiente en almacenamiento físico externo o en la nube institucional.</td>
+                  </tr>
+                  <tr>
+                    <td class="t-key">Organizar cientos de fotografías tomadas durante una inspección turística</td>
+                    <td>Gestor avanzado de archivos y renombrado masivo</td>
+                    <td>Establecer una nomenclatura homogénea con formato fecha (<code>AAAA-MM-DD_Destino_Consecutivo</code>).</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <aside class="t-callout t-callout--note">
+              <i class="fas fa-check-double t-callout__icon" aria-hidden="true"></i>
+              <div>
+                <p class="t-callout__label">Secuencia metodológica de selección</p>
+                <p>
+                  La adopción de una utilería nunca debe responder a modas pasajeras, sino al método estructurado:
+                </p>
+                <p style="font-weight: 600; text-align: center; margin: 8px 0;">
+                  Necesidad operativa &rarr; Función técnica requerida &rarr; Herramienta adecuada &rarr; Validación de calidad
+                </p>
+              </div>
+            </aside>
           </section>
 
           <section id="comprension" data-toc="Comprueba tu comprensión">
             <h2>Comprueba tu comprensión</h2>
-            <p>Pon a prueba tus conocimientos sobre este tema con la actividad de autoevaluación formativa interactiva.</p>
+            <p>Pon a prueba tus conocimientos sobre herramientas de digitalización, formatos, edición audiovisual y utilerías con la actividad formativa interactiva.</p>
             <div class="t-activity-action">
               <a class="u-btn u-btn--primary" href="../actividades/actividad-2-1.html">Realizar actividad 2.1 <i class="fas fa-pencil" aria-hidden="true"></i></a>
             </div>
@@ -108,5 +525,3 @@
 </body>
 
 </html>
-
-

@@ -15,37 +15,49 @@
       "tipo": "docente",
       "personas": [
         {
-          "grado": "Prof. Ing.",
-          "nombre": "Javier Morales Rosas",
-          "correo": "jmoralesro@ipn.mx",
-          "foto": "assets/img/Javier_Morales_Rosas.png",
+          "grado": "Dra.",
+          "nombre": "Hermelinda Patricia Leyva López",
+          "correo": "hleyval@ipn.mx",
+          "foto": "assets/img/Hermelinda_Patricia_Leyva_Lopez.png",
           "semblanza": [
-            "El Prof. Ing. Javier Morales Rosas es un académico y especialista en ingeniería textil, educación tecnológica, gestión académica y vinculación industrial, con más de 23 años de trayectoria docente en la Escuela Superior de Ingeniería Textil (ESIT) del Instituto Politécnico Nacional (IPN). Se ha desempeñado como Subdirector Académico interino de la ESIT y Presidente del Colegio Nacional de Ingenieros Textiles, impulsando el fortalecimiento de la educación superior, la innovación tecnológica y la colaboración entre los sectores académico e industrial. Su experiencia comprende la enseñanza de mecánica de fluidos, diseño de mecanismos por computadora y programación, así como actividades de investigación relacionadas con la tecnología textil, la sustentabilidad ambiental y la innovación educativa. Asimismo, cuenta con más de 15 años de experiencia en gestión pública educativa, destacando su labor durante una década como responsable de Tecnologías de la Información, desde donde contribuyó al desarrollo de infraestructura tecnológica y a la mejora de los procesos institucionales. Su trayectoria refleja un compromiso con la formación de profesionales, el desarrollo tecnológico y el fortalecimiento de la competitividad de la industria textil mexicana."
+            "Doctora en ciencias de la educación y Metodología de las ciencias del aprendizaje, es docente de la unidad de aprendizaje TIC aplicadas para el Turismo en la Escuela Superior de Turismo del Instituto Politécnico Nacional, Doctor en Educación, Maestría en Administración de Tecnologías de la Información, Maestría en Docencia y Desarrollo de Competencias, Maestría en Educación, Contador Público egresada de ESCA-IPN."
+          ],
+          "areas": [
+            "Neurociencia de la Educación y Redes Neuronales",
+            "Metodología de la Investigación",
+            "Educación en línea con plataformas virtuales"
           ]
         },
         {
           "grado": "Dr.",
-          "nombre": "Edgardo Adrián Franco Martínez",
-          "correo": "edfrancom@ipn.mx",
-          "foto": "assets/img/Edgardo_Adrian_Franco_Martinez.png",
-          "semblanza": [
-            "Doctor en Educación por el Centro Universitario de España y México, maestro en Ciencias de la Computación por el CINVESTAV-IPN e ingeniero en Sistemas Computacionales por la ESCOM-IPN, cuenta con experiencia en docencia, consultoría y gestión de sistemas. Desde 2010 se desempeña como profesor de Ciencias de la Computación en la ESCOM-IPN, donde ha dirigido más de 35 trabajos terminales y ocupado cargos de coordinación académica y jefaturas departamentales. Su trayectoria incluye la coordinación del club de algoritmia, la organización de concursos y la formación de más de 100 equipos para el International Collegiate Programming Contest (ICPC), con participación en finales mundiales y reconocimientos como entrenador en México y Centroamérica. Asimismo, ha sido mentor de proyectos estudiantiles premiados, entre ellos el ganador nacional de Imagine Cup 2015 en la categoría Ciudadanía Global, y coordina el proyecto Aprende ESCOM IPN desde 2022."
-          ]
-        },
-        {
-          "grado": "D. en E.",
           "nombre": "Israel Salas Ramírez",
           "correo": "isalasr@ipn.mx",
           "foto": "assets/img/Israel_Salas_Ramirez.png",
           "semblanza": [
-            "Doctor y maestro en ciencias de la educación, e ingeniero en comunicaciones y electrónica por la ESIME Zacatenco del IPN. Docente de la Escuela Superior de Cómputo del Instituto Politécnico Nacional con amplia trayectoria en las asignaturas de Sistemas Operativos, Aplicaciones para Comunicaciones en Red y Arquitectura de Computadoras. Ha trabajado como responsable de unidades de Informática y generación de proyectos de Inversión Tecnológica."
+            "Doctor en ciencias de la educación y Metodología de las ciencias del aprendizaje, Maestro en ciencias de la educación, e ingeniero en comunicaciones y electrónica por la ESIME Zacatenco del IPN. Docente de la Escuela Superior de Cómputo del Instituto Politécnico Nacional con amplia trayectoria en las asignaturas de Sistemas Operativos, Aplicaciones para Comunicaciones en Red y Arquitectura de Computadoras. Ha trabajado como responsable de unidades de Informática y generación de proyectos de Inversión Tecnológica."
           ],
           "areas": [
-            "Sistemas Operativos",
+            "Cómputo de alto desempeño",
+            "Computer security",
+            "Aplicaciones para comunicaciones en red",
+            "Inteligencia Artificial Aplicada a la Solución de Problemas",
+            "Internet de las Cosas e Inteligencia Artificial"
+          ]
+        },
+        {
+          "grado": "Dr.",
+          "nombre": "Benjamín Cruz Torres",
+          "correo": "bcruzt@ipn.mx",
+          "foto": "assets/img/Benjamin_Cruz_Torres.png",
+          "semblanza": [
+            "Doctor en Ciencias de la Computación y Maestro en Ciencias de la Computación egresado del Centro de Investigación en Computación del Instituto Politécnico Nacional. Entró a trabajar en el Instituto Politécnico Nacional en 2011 como Consultor de alta tecnología y posteriormente encargado de la Unidad Informática del Centro de Incubación de Empresas de Base Tecnológica, ahora la Dirección de Incubación de Empresas Tecnológicas. En 2016 y a la fecha comenzó a trabajar como docente en la Escuela Superior de Cómputo, impartiendo asignaturas del área de Sistemas Distribuidos. Actualmente funge como Presidente de la Academia de Sistemas Distribuidos dentro del Departamento de Ingeniería en Sistemas Computacionales."
+          ],
+          "areas": [
+            "Sistemas distribuidos",
             "Administración de Redes",
-            "Protocolos de Comunicación y Sockets",
-            "Neurociencia en la Educación",
-            "Generación de Simuladores Médicos y Plataformas Virtuales"
+            "Cómputo en la nube",
+            "Inteligencia artificial",
+            "Administración de redes y las tecnologías web"
           ]
         }
       ]
