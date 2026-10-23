@@ -2,154 +2,129 @@
   {
     "id": 1,
     "type": "opcion_multiple",
-    "question": "¿Cuál es la función del departamento de compras?",
+    "question": "¿Con qué carácter obligatorio debe iniciar siempre cualquier fórmula o función en Microsoft Excel?",
     "options": [
-      "Adquirir los materiales necesarios con las mejores condiciones posibles.",
-      "Fabricar las prendas en las líneas de confección.",
-      "Diseñar las rutas de entrega a los clientes.",
-      "Vender el producto terminado a las tiendas."
+      "= (signo igual)",
+      "+ (signo más únicamente)",
+      "@ (arroba)",
+      "; (punto y coma)"
     ],
-    "answer": "Adquirir los materiales necesarios con las mejores condiciones posibles.",
-    "explicacion": "Compras consigue los materiales con el mejor equilibrio de precio, calidad, tiempo y confiabilidad."
+    "answer": "= (signo igual)",
+    "explicacion": "El signo '=' le indica al programa que la celda debe evaluar una expresión matemática o lógica en lugar de almacenar texto simple."
   },
   {
     "id": 2,
     "type": "opcion_multiple",
-    "question": "En la tabla de evaluación de proveedores, ¿qué criterio tiene la mayor ponderación?",
+    "question": "¿Qué ocurre con una referencia relativa como `B2` cuando se copia y arrastra hacia abajo una fila?",
     "options": [
-      "Calidad (35 %)",
-      "Precio (25 %)",
-      "Tiempo de entrega (20 %)",
-      "Flexibilidad (10 %)"
+      "Se adapta automáticamente a la nueva posición relativa, transformándose en B3.",
+      "Permanece inmutable siempre en B2 sin importar a dónde se traslade.",
+      "Genera un error #¡REF! inmediatamente.",
+      "Convierte el valor de la celda en cero."
     ],
-    "answer": "Calidad (35 %)",
-    "explicacion": "La calidad pesa 35 %, seguida del precio (25 %), el tiempo de entrega (20 %), el servicio (10 %) y la flexibilidad (10 %)."
+    "answer": "Se adapta automáticamente a la nueva posición relativa, transformándose en B3.",
+    "explicacion": "Las referencias relativas cambian en función de la distancia y dirección hacia donde se copia la celda."
   },
   {
     "id": 3,
-    "type": "completar_oracion",
-    "question": "En la tabla de evaluación, la calidad pondera _____ y el precio pondera _____.",
-    "wordBank": [
-      "35 %",
-      "25 %",
-      "20 %",
-      "10 %"
+    "type": "opcion_multiple",
+    "question": "En el cálculo de cotizaciones turísticas, si el porcentaje de IVA (16%) está fijo en la celda `$E$1`, ¿qué tipo de referencia se debe utilizar para que no cambie al arrastrar la fórmula?",
+    "options": [
+      "Referencia absoluta ($E$1), fijando tanto la columna como la fila con el signo de pesos ($).",
+      "Referencia relativa (E1).",
+      "Referencia circular involuntaria.",
+      "Referencia textual entre comillas (\"E1\")."
     ],
-    "answer": [
-      "35 %",
-      "25 %"
-    ],
-    "explicacion": "Ponderaciones del tema: calidad 35 %, precio 25 %, tiempo de entrega 20 %, servicio 10 %, flexibilidad 10 %."
+    "answer": "Referencia absoluta ($E$1), fijando tanto la columna como la fila con el signo de pesos ($).",
+    "explicacion": "El signo '$' inmoviliza la fila y columna adyacente para que no varíen al copiar la fórmula a otras celdas."
   },
   {
     "id": 4,
     "type": "verdadero_falso",
-    "statement": "La suma de todas las ponderaciones de la tabla de evaluación de proveedores es 100 %.",
+    "statement": "La tecla de función rápida F4 en Windows permite alternar automáticamente entre referencias relativas, absolutas y mixtas (B2 -> $B$2 -> B$2 -> $B2).",
     "answer": true,
-    "explicacion": "35 % + 25 % + 20 % + 10 % + 10 % = 100 %."
+    "explicacion": "F4 es el atajo oficial para conmutar los signos '$' en la celda o referencia seleccionada en la barra de fórmulas."
   },
   {
     "id": 5,
-    "type": "verdadero_falso",
-    "statement": "El proveedor con la mayor calificación se elige siempre, aunque no cumpla los requisitos técnicos.",
-    "answer": false,
-    "explicacion": "El proveedor con mayor calificación es el más conveniente siempre que cumpla con los requisitos técnicos."
+    "type": "completar_oracion",
+    "question": "En una referencia mixta como `$C4`, la _____ está fija y no cambiará al arrastrar hacia los lados, mientras que la _____ cambiará libremente al arrastrar hacia abajo.",
+    "wordBank": [
+      "columna",
+      "fila",
+      "hoja",
+      "pantalla"
+    ],
+    "answer": [
+      "columna",
+      "fila"
+    ],
+    "explicacion": "El signo '$' colocado antes de la letra fija la columna C, pero la fila 4 queda en modo relativo."
   },
   {
     "id": 6,
     "type": "opcion_multiple",
-    "question": "Un proveedor obtiene (escala de 0 a 10): calidad 8, precio 10, tiempo de entrega 6, servicio 10 y flexibilidad 10. Con las ponderaciones del tema, ¿cuál es su puntuación total?",
+    "question": "Una agencia vende un paquete en la celda B5 por $12,000 pesos y ofrece un descuento registrado en C5 del 10% (0.10). ¿Cuál es la fórmula correcta para obtener el importe final a pagar?",
     "options": [
-      "8.5",
-      "8.8",
-      "9.0",
-      "7.6"
+      "`=B5 - (B5 * C5)` o `=B5 * (1 - C5)`",
+      "`=B5 * C5`",
+      "`=B5 + C5`",
+      "`=B5 / C5`"
     ],
-    "answer": "8.5",
-    "explicacion": "8×0.35 + 10×0.25 + 6×0.20 + 10×0.10 + 10×0.10 = 2.8 + 2.5 + 1.2 + 1 + 1 = 8.5. (8.8 sería el promedio simple, que ignora las ponderaciones.)"
+    "answer": "`=B5 - (B5 * C5)` o `=B5 * (1 - C5)`",
+    "explicacion": "El descuento se calcula multiplicando el precio base por el porcentaje y restándolo del total base."
   },
   {
     "id": 7,
-    "type": "opcion_multiple",
-    "question": "Proveedor A: calidad 10, precio 6, entrega 8, servicio 8, flexibilidad 8. Proveedor B: calidad 6, precio 10, entrega 8, servicio 8, flexibilidad 8. Según la tabla de ponderaciones, ¿cuál conviene más?",
-    "options": [
-      "El proveedor A (8.2 puntos), porque la calidad pesa más que el precio.",
-      "El proveedor B (7.8 puntos), porque tiene el mejor precio.",
-      "Empatan, porque ambos tienen un promedio de 8.",
-      "El proveedor B, porque el precio siempre es el criterio decisivo."
-    ],
-    "answer": "El proveedor A (8.2 puntos), porque la calidad pesa más que el precio.",
-    "explicacion": "A: 3.5 + 1.5 + 1.6 + 0.8 + 0.8 = 8.2. B: 2.1 + 2.5 + 1.6 + 0.8 + 0.8 = 7.8. Su promedio simple es igual, pero la ponderación favorece la calidad."
+    "type": "verdadero_falso",
+    "statement": "El error `#¡DIV/0!` ocurre cuando una fórmula intenta realizar una división entre cero o entre una celda que se encuentra vacía.",
+    "answer": true,
+    "explicacion": "La división entre cero es una indeterminación matemática; Excel emite este aviso para advertir al usuario."
   },
   {
     "id": 8,
-    "type": "opcion_multiple",
-    "question": "¿Cuál de estos NO es un criterio de selección de proveedores mencionado en el tema?",
-    "options": [
-      "El color del logotipo del proveedor",
-      "Certificaciones",
-      "Cumplimiento ambiental",
-      "Responsabilidad social"
+    "type": "ordenar_oracion",
+    "instruction": "Ordena los elementos para construir una fórmula de importe con IVA incluido:",
+    "words": [
+      "=",
+      "Subtotal",
+      "*",
+      "(",
+      "1",
+      "+",
+      "$IVA$",
+      ")"
     ],
-    "answer": "El color del logotipo del proveedor",
-    "explicacion": "Los criterios son precio, calidad, tiempo de ciclo, confiabilidad, capacidad de abastecimiento, certificaciones, cumplimiento ambiental y responsabilidad social."
+    "answer": [
+      "=",
+      "Subtotal",
+      "*",
+      "(",
+      "1",
+      "+",
+      "$IVA$",
+      ")"
+    ],
+    "explicacion": "La fórmula general multiplica el subtotal neto por el factor uno más la tasa impositiva fija."
   },
   {
     "id": 9,
-    "type": "ordenar_oracion",
-    "question": "Ordena estas etapas de la producción textil.",
-    "segments": [
-      "Hilatura",
-      "Tejeduría",
-      "Tintorería",
-      "Acabados",
-      "Corte",
-      "Confección"
+    "type": "opcion_multiple",
+    "question": "¿Qué error muestra Excel cuando se borra o elimina una fila o columna cuya celda formaba parte de una fórmula activa?",
+    "options": [
+      "#¡REF!",
+      "#¡VALOR!",
+      "#¿NOMBRE?",
+      "#N/D"
     ],
-    "answer": [
-      "Hilatura",
-      "Tejeduría",
-      "Tintorería",
-      "Acabados",
-      "Corte",
-      "Confección"
-    ],
-    "explicacion": "La secuencia completa es: apertura y limpieza de fibras → hilatura → tejeduría → tintorería → acabados → corte → confección → empaque."
+    "answer": "#¡REF!",
+    "explicacion": "El error #¡REF! indica que la referencia de celda a la que apuntaba la fórmula ya no es válida o fue eliminada de la hoja."
   },
   {
     "id": 10,
     "type": "verdadero_falso",
-    "statement": "Cada proceso de producción debe sincronizarse para evitar cuellos de botella.",
+    "statement": "Una referencia circular ocurre cuando una fórmula incluye dentro de sus propios argumentos a la misma celda en la que está escrita.",
     "answer": true,
-    "explicacion": "Si una etapa trabaja a otro ritmo, el material se acumula o falta en la siguiente."
-  },
-  {
-    "id": 11,
-    "type": "opcion_multiple",
-    "question": "En una planta de confección, ¿qué es un cuello de botella?",
-    "options": [
-      "Una etapa más lenta que las demás que limita la producción de toda la línea.",
-      "Un defecto de costura en el cuello de una prenda.",
-      "Un proveedor con la calificación más alta.",
-      "Un almacén con exceso de espacio libre."
-    ],
-    "answer": "Una etapa más lenta que las demás que limita la producción de toda la línea.",
-    "explicacion": "La línea avanza solo al ritmo de su etapa más lenta; por eso los procesos deben sincronizarse."
-  },
-  {
-    "id": 12,
-    "type": "completar_oracion",
-    "question": "Después de la tejeduría, la tela pasa a _____ y después a _____.",
-    "wordBank": [
-      "tintorería",
-      "acabados",
-      "hilatura",
-      "apertura de fibras"
-    ],
-    "answer": [
-      "tintorería",
-      "acabados"
-    ],
-    "explicacion": "Tejeduría → tintorería → acabados → corte → confección."
+    "explicacion": "Por ejemplo, escribir en la celda A3 `=A1+A2+A3` provoca un ciclo infinito de recálculo sobre sí misma."
   }
 ]

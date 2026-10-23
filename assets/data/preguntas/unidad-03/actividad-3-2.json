@@ -2,156 +2,129 @@
   {
     "id": 1,
     "type": "opcion_multiple",
-    "question": "¿Cuál es el propósito de la planeación de la cadena de suministro?",
+    "question": "¿Cuál es el orden de prioridad (jerarquía) estándar de los operadores aritméticos en Microsoft Excel?",
     "options": [
-      "Garantizar que los recursos estén disponibles en el momento oportuno.",
-      "Reducir el número de proveedores a uno solo.",
-      "Aumentar el inventario para no quedarse nunca sin producto.",
-      "Fijar el precio de venta de las prendas."
+      "1° Paréntesis, 2° Exponenciación (^), 3° Multiplicación y División (*, /), 4° Suma y Resta (+, -).",
+      "1° Suma, 2° Resta, 3° Multiplicación, 4° División.",
+      "1° División, 2° Multiplicación, 3° Paréntesis, 4° Exponenciación.",
+      "Excel ejecuta todos los operadores de derecha a izquierda sin ninguna jerarquía."
     ],
-    "answer": "Garantizar que los recursos estén disponibles en el momento oportuno.",
-    "explicacion": "La planeación busca que los recursos estén disponibles a tiempo, con eficiencia y al menor costo."
+    "answer": "1° Paréntesis, 2° Exponenciación (^), 3° Multiplicación y División (*, /), 4° Suma y Resta (+, -).",
+    "explicacion": "Los paréntesis alteran cualquier prioridad, seguidos por potencias, luego productos y divisiones, y finalmente adiciones y sustracciones."
   },
   {
     "id": 2,
     "type": "opcion_multiple",
-    "question": "¿Cuál de las siguientes NO es una pregunta propia de la planeación de la cadena de suministro?",
+    "question": "Si una recepcionista calcula el costo en Excel con la fórmula `=100 + 50 * 2`, ¿cuál es el resultado que arroja el sistema?",
     "options": [
-      "¿Qué color tendrá el logotipo de la empresa?",
-      "¿Cuánto producir?",
-      "¿Cuánto inventario mantener?",
-      "¿Qué capacidad instalada se requiere?"
+      "200, porque primero se efectúa la multiplicación 50 * 2 = 100, y luego se suma 100.",
+      "300, porque primero suma 100 + 50 = 150 y luego multiplica por 2.",
+      "150, porque el 100 se descarta.",
+      "Error sintáctico #¡VALOR! por falta de paréntesis obligatorios."
     ],
-    "answer": "¿Qué color tendrá el logotipo de la empresa?",
-    "explicacion": "La planeación responde cuánto y cuándo producir, qué materiales comprar, cuánto inventario mantener, qué capacidad se requiere y cuál será la demanda."
+    "answer": "200, porque primero se efectúa la multiplicación 50 * 2 = 100, y luego se suma 100.",
+    "explicacion": "Por la jerarquía de operadores, la multiplicación (*) tiene precedencia sobre la suma (+)."
   },
   {
     "id": 3,
     "type": "verdadero_falso",
-    "statement": "Una mala planeación puede provocar sobreproducción, desabasto, retrasos, costos elevados y pérdida de clientes.",
+    "statement": "Para forzar a Excel a realizar primero una suma o resta antes de una multiplicación, se deben encerrar dichos términos entre paréntesis, por ejemplo: `=(100 + 50) * 2`.",
     "answer": true,
-    "explicacion": "Estas son las consecuencias de una planeación deficiente que se mencionan en el tema."
+    "explicacion": "Los paréntesis tienen la máxima prioridad y rompen el orden natural de las operaciones."
   },
   {
     "id": 4,
     "type": "opcion_multiple",
-    "question": "¿Cuál de estas consecuencias NO se asocia con una mala planeación?",
+    "question": "¿Qué símbolo se utiliza en Excel para el operador de concatenación (unir cadenas de texto, como nombre y apellido de un huésped)?",
     "options": [
-      "Mayor satisfacción del cliente",
-      "Sobreproducción",
-      "Desabasto",
-      "Pérdida de clientes"
+      "& (ampersand)",
+      "# (numeral)",
+      "@ (arroba)",
+      "% (porcentaje)"
     ],
-    "answer": "Mayor satisfacción del cliente",
-    "explicacion": "Una planeación deficiente provoca retrasos y faltantes, lo que reduce la satisfacción del cliente."
+    "answer": "& (ampersand)",
+    "explicacion": "El carácter '&' une valores alfanuméricos, por ejemplo: `=A2 & \" \" & B2` genera el nombre completo."
   },
   {
     "id": 5,
     "type": "opcion_multiple",
-    "question": "¿A qué tipo de método de pronóstico pertenece el juicio de expertos?",
+    "question": "¿Cuál es el operador aritmético empleado en Excel para calcular potencias o exponenciación (por ejemplo, para proyecciones de interés compuesto en inversión hotelera)?",
     "options": [
-      "Cualitativo",
-      "Cuantitativo",
-      "De inventarios",
-      "De transporte"
+      "^ (acento circunflejo)",
+      "** (doble asterisco)",
+      "// (doble barra)",
+      "p() (función potencia abreviada)"
     ],
-    "answer": "Cualitativo",
-    "explicacion": "Los métodos cualitativos se basan en opiniones y análisis: juicio de expertos, sondeo y análisis de mercado."
+    "answer": "^ (acento circunflejo)",
+    "explicacion": "En Excel, la fórmula `=5^2` eleva 5 al cuadrado, dando como resultado 25."
   },
   {
     "id": 6,
-    "type": "opcion_multiple",
-    "question": "¿Cuál de los siguientes es un método cuantitativo de pronóstico?",
-    "options": [
-      "Media aritmética móvil",
-      "Juicio de expertos",
-      "Sondeo",
-      "Análisis de mercado"
+    "type": "completar_oracion",
+    "question": "Los operadores de comparación como _____ (distinto de) y _____ (menor o igual que) devuelven siempre un valor lógico: VERDADERO o FALSO.",
+    "wordBank": [
+      "<>",
+      "<=",
+      "==",
+      "->"
     ],
-    "answer": "Media aritmética móvil",
-    "explicacion": "Los métodos cuantitativos usan datos numéricos: media aritmética móvil, tendencias, modelado predictivo y datos longitudinales."
+    "answer": [
+      "<>",
+      "<="
+    ],
+    "explicacion": "Los operadores lógicos y de comparación evalúan condiciones y son esenciales para funciones como SI."
   },
   {
     "id": 7,
-    "type": "completar_oracion",
-    "question": "El pronóstico permite estimar la demanda _____ para _____ adecuadamente las operaciones.",
-    "wordBank": [
-      "futura",
-      "pasada",
-      "planificar",
-      "detener"
-    ],
-    "answer": [
-      "futura",
-      "planificar"
-    ],
-    "explicacion": "Con el pronóstico se planifican la compra, la hilatura, el tejido y la confección."
+    "type": "verdadero_falso",
+    "statement": "En Excel, escribir `=200*16%` calcula directamente el 16% de 200, equivalente a multiplicar 200 por 0.16.",
+    "answer": true,
+    "explicacion": "El operador '%' divide automáticamente el valor previo entre 100 dentro de la expresión matemática."
   },
   {
     "id": 8,
-    "type": "verdadero_falso",
-    "statement": "El sondeo y el análisis de mercado son métodos cuantitativos de pronóstico.",
-    "answer": false,
-    "explicacion": "El sondeo y el análisis de mercado son métodos cualitativos."
+    "type": "ordenar_oracion",
+    "instruction": "Ordena de mayor a menor prioridad las operaciones matemáticas en Excel:",
+    "words": [
+      "Paréntesis",
+      "Exponenciación",
+      "Multiplicación",
+      "y",
+      "división",
+      "Suma",
+      "y",
+      "resta"
+    ],
+    "answer": [
+      "Paréntesis",
+      "Exponenciación",
+      "Multiplicación",
+      "y",
+      "división",
+      "Suma",
+      "y",
+      "resta"
+    ],
+    "explicacion": "La regla matemática PEMDAS se aplica estrictamente en el motor de cálculo de hojas electrónicas."
   },
   {
     "id": 9,
     "type": "opcion_multiple",
-    "question": "Una empresa ha vendido 20,000 playeras escolares cada julio durante los últimos cinco años. ¿Qué información usa para planear el siguiente ciclo escolar?",
+    "question": "¿Cuál es el resultado de evaluar la expresión `=10 + 20 / 2 * 3` en Excel?",
     "options": [
-      "Datos históricos de ventas.",
-      "La opinión de un solo vendedor.",
-      "El precio internacional del algodón.",
-      "El número de empleados de la planta."
+      "40, porque la división y multiplicación tienen igual jerarquía y se resuelven de izquierda a derecha (20/2=10; 10*3=30; 10+30=40).",
+      "45, sumando primero 10+20.",
+      "13.33, multiplicando 2*3 y dividiendo 20/6.",
+      "15, resolviendo de derecha a izquierda."
     ],
-    "answer": "Datos históricos de ventas.",
-    "explicacion": "Las ventas de años anteriores son información histórica que permite planear con meses de anticipación."
+    "answer": "40, porque la división y multiplicación tienen igual jerarquía y se resuelven de izquierda a derecha (20/2=10; 10*3=30; 10+30=40).",
+    "explicacion": "Cuando dos operadores tienen la misma prioridad (* y /), Excel evalúa de izquierda a derecha."
   },
   {
     "id": 10,
-    "type": "opcion_multiple",
-    "question": "¿Cómo ayuda un pronóstico de demanda bien calibrado a evitar la sobreproducción?",
-    "options": [
-      "Ajusta la compra de hilo, el tejido y la confección a la cantidad que realmente se espera vender.",
-      "Permite producir el doble de lo necesario por si acaso.",
-      "Elimina la necesidad de tener un almacén.",
-      "Sustituye por completo la planeación de la producción."
-    ],
-    "answer": "Ajusta la compra de hilo, el tejido y la confección a la cantidad que realmente se espera vender.",
-    "explicacion": "Producir lo que se espera vender evita inventarios ociosos y su costo financiero."
-  },
-  {
-    "id": 11,
-    "type": "completar_oracion",
-    "question": "El _____ es un método cualitativo, mientras que las _____ son un método cuantitativo.",
-    "wordBank": [
-      "juicio de expertos",
-      "tendencias",
-      "inventarios",
-      "proveedores"
-    ],
-    "answer": [
-      "juicio de expertos",
-      "tendencias"
-    ],
-    "explicacion": "Cualitativos: juicio de expertos, sondeo, análisis de mercado. Cuantitativos: media móvil, tendencias, modelado predictivo, datos longitudinales."
-  },
-  {
-    "id": 12,
-    "type": "ordenar_oracion",
-    "question": "Ordena la secuencia lógica para preparar la producción de una temporada.",
-    "segments": [
-      "Pronosticar la demanda",
-      "Planear la producción",
-      "Comprar los materiales",
-      "Producir y entregar"
-    ],
-    "answer": [
-      "Pronosticar la demanda",
-      "Planear la producción",
-      "Comprar los materiales",
-      "Producir y entregar"
-    ],
-    "explicacion": "Primero se estima la demanda; con ella se planea la producción, se compran los materiales y, al final, se produce y entrega."
+    "type": "verdadero_falso",
+    "statement": "El operador aritmético de división en Excel es el guion bajo (_).",
+    "answer": false,
+    "explicacion": "El operador aritmético de división es la barra inclinada (/). El guion bajo no es un operador aritmético."
   }
 ]

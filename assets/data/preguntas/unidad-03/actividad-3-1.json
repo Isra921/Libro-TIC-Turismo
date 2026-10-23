@@ -2,165 +2,127 @@
   {
     "id": 1,
     "type": "opcion_multiple",
-    "question": "¿Qué es una cadena de suministro?",
+    "question": "En el procesamiento informático de una agencia de viajes, ¿cuál es la diferencia entre Dato e Información?",
     "options": [
-      "El conjunto de empresas, organizaciones y actividades que participan desde la obtención de la materia prima hasta la entrega del producto terminado al consumidor final.",
-      "El departamento de una empresa que se encarga únicamente de transportar mercancías entre almacenes.",
-      "El grupo de proveedores de algodón que venden a una misma fábrica.",
-      "El sistema informático que registra las ventas de una tienda de ropa."
+      "Un dato es un elemento primario y aislado (como el número '25'), mientras que la información es el conjunto de datos procesados con contexto y significado (como '25 habitaciones reservadas en Cancún').",
+      "El dato es un reporte gráfico final y la información es el cable de red de la computadora.",
+      "No existe diferencia, en hojas de cálculo ambos conceptos son matemáticamente idénticos.",
+      "El dato siempre es alfanumérico y la información solo puede contener números decimales."
     ],
-    "answer": "El conjunto de empresas, organizaciones y actividades que participan desde la obtención de la materia prima hasta la entrega del producto terminado al consumidor final.",
-    "explicacion": "La cadena de suministro abarca a todos los participantes, desde la materia prima hasta el consumidor final."
+    "answer": "Un dato es un elemento primario y aislado (como el número '25'), mientras que la información es el conjunto de datos procesados con contexto y significado (como '25 habitaciones reservadas en Cancún').",
+    "explicacion": "Los datos constituyen la materia prima sin procesar. Al contextualizarlos, ordenarlos y estructurarlos se transforman en información útil para la toma de decisiones."
   },
   {
     "id": 2,
-    "type": "verdadero_falso",
-    "statement": "La cadena de suministro se limita a mover mercancías de un lugar a otro.",
-    "answer": false,
-    "explicacion": "No se trata únicamente de mover mercancías, sino de coordinar eficientemente todas las operaciones para generar valor."
+    "type": "opcion_multiple",
+    "question": "¿Qué representa la Interpretación en el ciclo de análisis de datos turísticos?",
+    "options": [
+      "El juicio crítico y las conclusiones estratégicas que toma el administrador al analizar la información (por ejemplo, detectar una caída en ocupación y lanzar una promoción).",
+      "La traducción automática de las fórmulas de Excel del español al inglés.",
+      "El proceso de guardar el archivo de cálculo en una memoria USB.",
+      "El cambio tipográfico de negritas a cursivas en los títulos de una tabla."
+    ],
+    "answer": "El juicio crítico y las conclusiones estratégicas que toma el administrador al analizar la información (por ejemplo, detectar una caída en ocupación y lanzar una promoción).",
+    "explicacion": "La interpretación dota de sentido estratégico a la información para anticipar tendencias del mercado, corregir desviaciones presupuestales y optimizar servicios."
   },
   {
     "id": 3,
-    "type": "opcion_multiple",
-    "question": "En el contexto textil, ¿qué tres flujos integra la cadena de suministro?",
-    "options": [
-      "Bienes físicos, información y transacciones financieras.",
-      "Materia prima, maquinaria y mano de obra.",
-      "Telas, hilos y colorantes.",
-      "Compras, ventas y publicidad."
-    ],
-    "answer": "Bienes físicos, información y transacciones financieras.",
-    "explicacion": "La cadena integra el flujo bidireccional de bienes físicos, información y transacciones financieras."
+    "type": "verdadero_falso",
+    "statement": "En Microsoft Excel, una celda se identifica mediante la intersección de una columna (letra) y una fila (número), por ejemplo B5.",
+    "answer": true,
+    "explicacion": "Cada celda posee una dirección única o referencia formada por la letra de la columna vertical y el número de la fila horizontal."
   },
   {
     "id": 4,
-    "type": "verdadero_falso",
-    "statement": "La sincronización adecuada entre las etapas de la cadena evita retrasos acumulativos y sobrecostos.",
-    "answer": true,
-    "explicacion": "Cuando las etapas están sincronizadas, un retraso no se va sumando de una etapa a otra."
+    "type": "opcion_multiple",
+    "question": "Por defecto en Microsoft Excel, ¿cómo se alinean automáticamente los datos de texto y los valores numéricos dentro de una celda?",
+    "options": [
+      "El texto se alinea a la izquierda y los números se alinean a la derecha.",
+      "El texto se alinea a la derecha y los números a la izquierda.",
+      "Ambos se centran automáticamente.",
+      "El texto se coloca en negrita y los números en color rojo."
+    ],
+    "answer": "El texto se alinea a la izquierda y los números se alinean a la derecha.",
+    "explicacion": "Esta alineación automática predeterminada permite identificar rápidamente si Excel reconoció un valor como número operable o como cadena de texto."
   },
   {
     "id": 5,
-    "type": "ordenar_oracion",
-    "question": "Ordena las etapas de transformación, desde la fibra hasta la prenda.",
-    "segments": [
-      "Cultivo o producción de fibras",
-      "Hilatura",
-      "Tejeduría",
-      "Tintorería y acabados",
-      "Confección"
+    "type": "completar_oracion",
+    "question": "La barra de _____ muestra el contenido real o la función de la celda activa, mientras que el cuadro de _____ indica su coordenada o nombre.",
+    "wordBank": [
+      "fórmulas",
+      "nombres",
+      "herramientas",
+      "estilos"
     ],
     "answer": [
-      "Cultivo o producción de fibras",
-      "Hilatura",
-      "Tejeduría",
-      "Tintorería y acabados",
-      "Confección"
+      "fórmulas",
+      "nombres"
     ],
-    "explicacion": "Fibra → hilatura (se obtiene el hilo) → tejeduría (se obtiene la tela) → tintorería y acabados (color y propiedades) → confección (prenda)."
+    "explicacion": "La barra de fórmulas permite editar cálculos y texto, mientras que el cuadro de nombres indica la posición de la celda o rango seleccionado."
   },
   {
     "id": 6,
-    "type": "ordenar_oracion",
-    "question": "Ordena las etapas finales, desde la prenda confeccionada hasta el consumidor.",
-    "segments": [
-      "Confección",
-      "Control de calidad",
-      "Almacén de producto terminado",
-      "Centro de distribución",
-      "Cliente final"
+    "type": "opcion_multiple",
+    "question": "¿Qué define a un 'Rango' en una hoja de cálculo turística?",
+    "options": [
+      "Un bloque rectangular continuo de dos o más celdas, representado mediante la celda superior izquierda y la inferior derecha separadas por dos puntos (ej. C3:F12).",
+      "El número total de hojas que contiene un libro de trabajo de contabilidad.",
+      "La velocidad en megabits por segundo a la que se envían correos electrónicos.",
+      "El código de barras impreso en un boleto de avión de abordaje."
     ],
-    "answer": [
-      "Confección",
-      "Control de calidad",
-      "Almacén de producto terminado",
-      "Centro de distribución",
-      "Cliente final"
-    ],
-    "explicacion": "Después de confeccionarse, la prenda se inspecciona, se guarda como producto terminado, pasa al centro de distribución y llega al cliente final."
+    "answer": "Un bloque rectangular continuo de dos o más celdas, representado mediante la celda superior izquierda y la inferior derecha separadas por dos puntos (ej. C3:F12).",
+    "explicacion": "Los rangos permiten aplicar formatos, cálculos y funciones a grupos enteros de celdas simultáneamente."
   },
   {
     "id": 7,
-    "type": "opcion_multiple",
-    "question": "¿En qué etapa de la cadena textil el hilo se convierte en tela?",
-    "options": [
-      "Tejeduría",
-      "Hilatura",
-      "Confección",
-      "Control de calidad"
-    ],
-    "answer": "Tejeduría",
-    "explicacion": "En la tejeduría se entrelazan los hilos para formar la tela."
+    "type": "verdadero_falso",
+    "statement": "Si se ingresa una fecha en Excel, el programa la almacena internamente como un número de serie secuencial, lo que permite realizar sumas y restas de días.",
+    "answer": true,
+    "explicacion": "Las fechas son números de serie (a partir del 1 de enero de 1900), facilitando calcular estancias hoteleras restando la fecha de entrada de la de salida."
   },
   {
     "id": 8,
-    "type": "opcion_multiple",
-    "question": "¿Qué etapa transforma las fibras en hilo?",
-    "options": [
-      "Hilatura",
-      "Tejeduría",
-      "Tintorería y acabados",
-      "Centro de distribución"
+    "type": "ordenar_oracion",
+    "instruction": "Ordena la jerarquía de evolución desde el elemento más simple hasta el análisis estratégico:",
+    "words": [
+      "Dato",
+      "bruto",
+      "Información",
+      "estructurada",
+      "Interpretación",
+      "para",
+      "decisiones"
     ],
-    "answer": "Hilatura",
-    "explicacion": "La hilatura convierte las fibras (algodón o sintéticas) en hilo."
+    "answer": [
+      "Dato",
+      "bruto",
+      "Información",
+      "estructurada",
+      "Interpretación",
+      "para",
+      "decisiones"
+    ],
+    "explicacion": "Primero se recolectan datos brutos, se procesan para generar información comprensible y finalmente se interpretan para guiar acciones de negocio."
   },
   {
     "id": 9,
-    "type": "completar_oracion",
-    "question": "Cada etapa _____ valor al producto y depende de la correcta ejecución de la etapa _____.",
-    "wordBank": [
-      "agrega",
-      "resta",
-      "anterior",
-      "siguiente"
+    "type": "opcion_multiple",
+    "question": "¿Cuál es la extensión de archivo predeterminada de los libros creados en versiones modernas de Microsoft Excel?",
+    "options": [
+      ".xlsx",
+      ".docx",
+      ".pptx",
+      ".pdf"
     ],
-    "answer": [
-      "agrega",
-      "anterior"
-    ],
-    "explicacion": "Este es el principio de interdependencia de valor de la cadena textil."
+    "answer": ".xlsx",
+    "explicacion": "El formato estándar basado en XML abierto de Excel es .xlsx (.xlsm si contiene macros)."
   },
   {
     "id": 10,
-    "type": "opcion_multiple",
-    "question": "Si la tintorería entrega la tela con una semana de retraso, ¿qué ocurre con el área de corte y confección?",
-    "options": [
-      "Su programación también se retrasa, porque depende de la etapa anterior.",
-      "No se ve afectada, porque cada etapa trabaja de forma independiente.",
-      "Adelanta su producción para compensar el retraso.",
-      "Solo se ve afectada el área de ventas."
-    ],
-    "answer": "Su programación también se retrasa, porque depende de la etapa anterior.",
-    "explicacion": "Sin tela teñida no se puede cortar ni coser: el retraso se transmite a las etapas siguientes."
-  },
-  {
-    "id": 11,
-    "type": "opcion_multiple",
-    "question": "¿Cuál es el último eslabón de la cadena de suministro textil?",
-    "options": [
-      "Cliente final",
-      "Centro de distribución",
-      "Almacén de producto terminado",
-      "Confección"
-    ],
-    "answer": "Cliente final",
-    "explicacion": "Toda la cadena trabaja para satisfacer las necesidades del cliente final."
-  },
-  {
-    "id": 12,
-    "type": "completar_oracion",
-    "question": "La cadena textil inicia con el cultivo de _____ o con la producción de fibras _____.",
-    "wordBank": [
-      "algodón",
-      "sintéticas",
-      "botones",
-      "terminadas"
-    ],
-    "answer": [
-      "algodón",
-      "sintéticas"
-    ],
-    "explicacion": "El primer eslabón es la obtención de la fibra: natural (como el algodón) o sintética."
+    "type": "verdadero_falso",
+    "statement": "Una celda con los caracteres '###' indica que la fórmula contiene un virus informático.",
+    "answer": false,
+    "explicacion": "Los símbolos '###' simplemente indican que la columna es demasiado estrecha para visualizar el número o fecha formateado; basta con ensanchar la columna."
   }
 ]

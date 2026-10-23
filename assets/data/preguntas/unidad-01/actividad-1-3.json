@@ -1,126 +1,122 @@
 [
   {
     "id": 1,
-    "type": "verdadero_falso",
-    "statement": "Logística y cadena de suministro son sinónimos.",
-    "answer": false,
-    "explicacion": "Muchos estudiantes lo creen, pero existe una diferencia importante: la logística es una parte del proceso; la cadena de suministro, el proceso completo."
+    "type": "opcion_multiple",
+    "question": "¿Cómo contribuyen las TIC a la productividad y competitividad en las empresas turísticas?",
+    "options": [
+      "Automatizando tareas repetitivas, integrando datos en tiempo real y habilitando canales de comercialización y atención 24/7.",
+      "Aumentando el uso de documentos físicos en papel para cada reservación.",
+      "Impidiendo que los colaboradores puedan comunicarse entre departamentos.",
+      "Obligando a los turistas a acudir presencialmente a pagar en taquilla."
+    ],
+    "answer": "Automatizando tareas repetitivas, integrando datos en tiempo real y habilitando canales de comercialización y atención 24/7.",
+    "explicacion": "La digitalización agiliza procesos, disminuye costos de transacción y expande el alcance de mercado nacional e internacional (OCDE 2021)."
   },
   {
     "id": 2,
     "type": "opcion_multiple",
-    "question": "¿Cuál de las siguientes características corresponde a la cadena de suministro?",
+    "question": "¿Qué beneficio aporta el almacenamiento en la nube en el entorno laboral turístico?",
     "options": [
-      "Administra toda la red.",
-      "Administra operaciones.",
-      "Se enfoca en transporte e inventarios.",
-      "Tiene una visión interna."
+      "Permite el acceso a expedientes, reservaciones y reportes desde cualquier lugar y dispositivo sin depender de una sola computadora local.",
+      "Elimina la necesidad de contar con conexión a Internet en la empresa.",
+      "Garantiza que nadie pueda volver a editar los documentos compartidos.",
+      "Sustituye la necesidad de capacitar al personal de la agencia."
     ],
-    "answer": "Administra toda la red.",
-    "explicacion": "La cadena de suministro administra toda la red; la logística administra operaciones."
+    "answer": "Permite el acceso a expedientes, reservaciones y reportes desde cualquier lugar y dispositivo sin depender de una sola computadora local.",
+    "explicacion": "La nube respalda la colaboración remota, sincronización multidispositivo y continuidad operativa del negocio turístico."
   },
   {
     "id": 3,
-    "type": "opcion_multiple",
-    "question": "¿Qué tipo de visión tiene la logística?",
-    "options": [
-      "Visión interna.",
-      "Visión integral.",
-      "Visión global de toda la red.",
-      "Visión exclusivamente comercial."
-    ],
-    "answer": "Visión interna.",
-    "explicacion": "La logística tiene una visión interna; la cadena de suministro, una visión integral."
+    "type": "verdadero_falso",
+    "statement": "Las redes sociales corporativas como WhatsApp Business, Facebook e Instagram permiten una comunicación directa, inmediata y bidireccional con los turistas.",
+    "answer": true,
+    "explicacion": "Facilitan responder dudas al instante, compartir itinerarios, resolver eventualidades y monitorear la percepción y satisfacción del cliente."
   },
   {
     "id": 4,
-    "type": "completar_oracion",
-    "question": "La logística es una _____ del proceso, mientras que la cadena de suministro es el proceso _____.",
-    "wordBank": [
-      "parte",
-      "completo",
-      "copia",
-      "parcial"
+    "type": "opcion_multiple",
+    "question": "¿Cuál es uno de los principales riesgos de seguridad informática que enfrentan las organizaciones turísticas?",
+    "options": [
+      "Fugas de información sensible de clientes, ciberataques con malware o phishing y caída de servidores de reservaciones.",
+      "Contar con demasiados respaldos de seguridad en ubicaciones independientes.",
+      "Actualizar periódicamente los programas y sistemas operativos.",
+      "Capacitar al personal en el uso responsable de contraseñas seguras."
     ],
-    "answer": [
-      "parte",
-      "completo"
-    ],
-    "explicacion": "La cadena de suministro abarca todo el proceso; la logística es una de sus partes."
+    "answer": "Fugas de información sensible de clientes, ciberataques con malware o phishing y caída de servidores de reservaciones.",
+    "explicacion": "El manejo de datos financieros y personales de viajeros requiere protocolos estrictos de ciberseguridad y prevención de incidentes."
   },
   {
     "id": 5,
-    "type": "opcion_multiple",
-    "question": "La cadena de suministro integra a:",
-    "options": [
-      "Proveedores, fabricantes y clientes.",
-      "Solo el transporte y los inventarios.",
-      "Únicamente los almacenes de la empresa.",
-      "Solo el área de ventas."
+    "type": "completar_oracion",
+    "question": "Para proteger la información corporativa se recomienda implementar autenticación _____, respaldos periódicos y _____ continua del personal.",
+    "wordBank": [
+      "multifactor",
+      "capacitación",
+      "unilateral",
+      "eliminación"
     ],
-    "answer": "Proveedores, fabricantes y clientes.",
-    "explicacion": "Integrar a proveedores, fabricantes y clientes es lo que le da su visión integral."
+    "answer": [
+      "multifactor",
+      "capacitación"
+    ],
+    "explicacion": "La autenticación en dos pasos (2FA/MFA) y la formación del equipo reducen sustancialmente los riesgos de accesos no autorizados."
   },
   {
     "id": 6,
     "type": "verdadero_falso",
-    "statement": "La logística se enfoca en el transporte y los inventarios.",
-    "answer": true,
-    "explicacion": "Ese es su enfoque según el cuadro comparativo del tema."
+    "statement": "La adopción de tecnologías digitales por sí sola garantiza el éxito de una empresa sin necesidad de capacitar a su personal ni rediseñar sus procesos.",
+    "answer": false,
+    "explicacion": "La transformación digital requiere tanto tecnología como formación humana, procedimientos claros y cultura de gestión de datos."
   },
   {
     "id": 7,
     "type": "opcion_multiple",
-    "question": "En el ejemplo del algodón, ¿qué abarca la cadena de suministro?",
+    "question": "¿Qué función cumplen las redes de contactos profesionales (como LinkedIn) en el ámbito laboral turístico?",
     "options": [
-      "Desde el cultivo del algodón hasta que una camisa llega al consumidor.",
-      "Solo el traslado del algodón de la bodega a la planta.",
-      "Únicamente la confección de la camisa.",
-      "Solo la venta de la camisa en tienda."
+      "Fomentar alianzas comerciales, reclutamiento de talento especializado e intercambio de mejores prácticas de la industria.",
+      "Descargar videojuegos para los clientes durante sus traslados.",
+      "Emitir boletos de avión sin autorización de las aerolíneas.",
+      "Sustituir por completo las páginas web oficiales de los hoteles."
     ],
-    "answer": "Desde el cultivo del algodón hasta que una camisa llega al consumidor.",
-    "explicacion": "La cadena de suministro cubre el recorrido completo, del cultivo al consumidor."
+    "answer": "Fomentar alianzas comerciales, reclutamiento de talento especializado e intercambio de mejores prácticas de la industria.",
+    "explicacion": "El networking digital potencia la vinculación entre prestadores de servicios, comités de promoción turística y profesionales del ramo."
   },
   {
     "id": 8,
-    "type": "opcion_multiple",
-    "question": "En el mismo ejemplo, ¿qué administra la logística?",
-    "options": [
-      "Cómo mover ese algodón, almacenarlo, transformarlo y distribuir el producto terminado.",
-      "El cultivo del algodón en el campo.",
-      "La publicidad de la camisa.",
-      "La relación con todos los actores de la red."
+    "type": "ordenar_oracion",
+    "question": "Ordena los pasos de una estrategia segura para compartir archivos de trabajo en equipo:",
+    "segments": [
+      "Crear una carpeta organizada por proyecto en la nube",
+      "Definir permisos específicos de acceso (solo lectura o edición)",
+      "Compartir mediante enlace protegido o correo institucional",
+      "Mantener un respaldo independiente de las versiones clave"
     ],
-    "answer": "Cómo mover ese algodón, almacenarlo, transformarlo y distribuir el producto terminado.",
-    "explicacion": "La logística se ocupa de los movimientos y operaciones: mover, almacenar, transformar y distribuir."
+    "answer": [
+      "Crear una carpeta organizada por proyecto en la nube",
+      "Definir permisos específicos de acceso (solo lectura o edición)",
+      "Compartir mediante enlace protegido o correo institucional",
+      "Mantener un respaldo independiente de las versiones clave"
+    ],
+    "explicacion": "Controlar los accesos y preservar copias de seguridad evita borrados accidentales y protege la confidencialidad."
   },
   {
     "id": 9,
-    "type": "completar_oracion",
-    "question": "La logística administra _____; la cadena de suministro administra toda la _____.",
-    "wordBank": [
-      "operaciones",
-      "red",
-      "ventas",
-      "planta"
+    "type": "opcion_multiple",
+    "question": "En la gestión turística moderna, ¿qué aporta la analítica de datos en el plano laboral?",
+    "options": [
+      "Permite identificar tendencias de demanda, evaluar satisfacción del huésped y orientar presupuestos de mercadotecnia con base en hechos.",
+      "Elimina la necesidad de conocer las opiniones y reseñas de los turistas.",
+      "Impide conocer cuáles son los destinos más vendidos de la temporada.",
+      "Garantiza que los precios permanezcan inmutables durante todo el año."
     ],
-    "answer": [
-      "operaciones",
-      "red"
-    ],
-    "explicacion": "Es la primera fila del cuadro comparativo."
+    "answer": "Permite identificar tendencias de demanda, evaluar satisfacción del huésped y orientar presupuestos de mercadotecnia con base en hechos.",
+    "explicacion": "Tomar decisiones basadas en datos reduce la incertidumbre y maximiza la rentabilidad y calidad del servicio turístico."
   },
   {
     "id": 10,
-    "type": "opcion_multiple",
-    "question": "Elegir la ruta de transporte para llevar un lote de telas a la planta de confección es una decisión de:",
-    "options": [
-      "Logística, porque se enfoca en el transporte.",
-      "Cadena de suministro, porque integra a toda la red.",
-      "Ninguna de las dos.",
-      "Exclusivamente del cliente."
-    ],
-    "answer": "Logística, porque se enfoca en el transporte.",
-    "explicacion": "Mover el material es una operación logística; decidir con qué proveedores trabajar sería una decisión de cadena de suministro."
+    "type": "verdadero_falso",
+    "statement": "El teletrabajo y la colaboración a distancia en el turismo han sido impulsados por la combinación de herramientas en la nube, videollamadas y mensajería corporativa.",
+    "answer": true,
+    "explicacion": "Estas plataformas permiten coordinar equipos distribuidos geográficamente en tiempo real con alta trazabilidad."
   }
 ]

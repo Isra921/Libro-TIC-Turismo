@@ -1,135 +1,128 @@
 [
   {
     "id": 1,
-    "type": "ordenar_oracion",
-    "question": "Ordena los componentes de la cadena de suministro, del primero al último eslabón.",
-    "segments": [
-      "Proveedores",
-      "Compras",
-      "Producción",
-      "Almacenes",
-      "Distribución",
-      "Cliente"
+    "type": "opcion_multiple",
+    "question": "¿Cuál es la diferencia entre comunicación sincrónica y asincrónica en medios digitales?",
+    "options": [
+      "La sincrónica ocurre en tiempo real y simultáneamente entre los participantes; la asincrónica permite interactuar en momentos diferidos con flexibilidad horaria.",
+      "La sincrónica solo utiliza papel y la asincrónica utiliza señales de radio analógicas.",
+      "La sincrónica se realiza exclusivamente por correo postal y la asincrónica por videollamada.",
+      "Son modalidades idénticas que exigen que todos los usuarios estén conectados al mismo segundo."
     ],
-    "answer": [
-      "Proveedores",
-      "Compras",
-      "Producción",
-      "Almacenes",
-      "Distribución",
-      "Cliente"
-    ],
-    "explicacion": "Los proveedores suministran, compras selecciona, producción transforma, almacenes custodian, distribución entrega y el cliente es el último eslabón."
+    "answer": "La sincrónica ocurre en tiempo real y simultáneamente entre los participantes; la asincrónica permite interactuar en momentos diferidos con flexibilidad horaria.",
+    "explicacion": "Ejemplos de comunicación sincrónica son videollamadas y chats en vivo; ejemplos asincrónicos son foros de discusión y correos electrónicos."
   },
   {
     "id": 2,
-    "type": "verdadero_falso",
-    "statement": "En la cadena de suministro, si un proveedor entrega tarde, toda la producción se retrasa.",
-    "answer": true,
-    "explicacion": "Cada elemento depende del anterior, por eso un retraso al inicio afecta a todos los eslabones siguientes."
+    "type": "opcion_multiple",
+    "question": "Para coordinar tareas inmediatas y resolver dudas breves entre el personal de recepción y camaristas en un hotel, ¿qué herramienta resulta más adecuada?",
+    "options": [
+      "Un chat corporativo interno de mensajería instantánea.",
+      "Un memorándum impreso enviado por correo tradicional.",
+      "Un artículo extenso en un blog público mensual.",
+      "Un debate formal de tres semanas en un foro académico."
+    ],
+    "answer": "Un chat corporativo interno de mensajería instantánea.",
+    "explicacion": "La mensajería instantánea ofrece rapidez, dinamismo y contacto directo para resolver imprevistos operativos en minutos."
   },
   {
     "id": 3,
     "type": "opcion_multiple",
-    "question": "¿Qué componente suministra las materias primas?",
+    "question": "¿Cuál es la principal fortaleza de un foro digital de discusión (como los de Moodle)?",
     "options": [
-      "Proveedores",
-      "Compras",
-      "Producción",
-      "Distribución"
+      "Organizar debates estructurados en hilos temáticos, permitiendo argumentar reflexivamente y consultar el histórico de aportaciones.",
+      "Emitir sonidos instantáneos que obliguen a contestar en menos de dos segundos.",
+      "Borrar automáticamente los mensajes una vez que son leídos.",
+      "Limitar los mensajes a 140 caracteres sin permitir archivos adjuntos."
     ],
-    "answer": "Proveedores",
-    "explicacion": "Los proveedores entregan materias primas como algodón, poliéster, colorantes, botones, cierres e hilo."
+    "answer": "Organizar debates estructurados en hilos temáticos, permitiendo argumentar reflexivamente y consultar el histórico de aportaciones.",
+    "explicacion": "Los foros favorecen la deliberación pausada, la construcción comunitaria de conocimiento y el registro permanente de ideas."
   },
   {
     "id": 4,
     "type": "opcion_multiple",
-    "question": "¿Cuál de los siguientes NO es un criterio de compras para seleccionar proveedores?",
+    "question": "¿Qué define formalmente a un Blog (bitácora digital)?",
     "options": [
-      "El color favorito del comprador.",
-      "Costo.",
-      "Periodo de entrega del producto.",
-      "Certificaciones."
+      "Un espacio web donde se publican artículos o entradas de forma periódica, organizados cronológicamente desde el más reciente al más antiguo.",
+      "Un software para editar fórmulas matemáticas complejas en hojas de cálculo.",
+      "Una base de datos cerrada accesible únicamente con contraseña bancaria.",
+      "Un dispositivo de hardware para imprimir tickets de venta."
     ],
-    "answer": "El color favorito del comprador.",
-    "explicacion": "Compras considera costo, excelencia en el producto, periodo de entrega, certificaciones y capacidad de producción."
+    "answer": "Un espacio web donde se publican artículos o entradas de forma periódica, organizados cronológicamente desde el más reciente al más antiguo.",
+    "explicacion": "Los blogs combinan artículos de opinión, guías de viaje, novedades y recursos multimedia con interacción de comentarios de lectores."
   },
   {
     "id": 5,
-    "type": "opcion_multiple",
-    "question": "En una empresa textil, la producción incluye:",
-    "options": [
-      "Hilatura, tejeduría, tintorería, acabados y confección.",
-      "Transporte terrestre, marítimo y aéreo.",
-      "Costo, certificaciones y capacidad de producción.",
-      "Algodón, poliéster y colorantes."
-    ],
-    "answer": "Hilatura, tejeduría, tintorería, acabados y confección.",
-    "explicacion": "Producción transforma la materia prima a través de esos procesos."
+    "type": "verdadero_falso",
+    "statement": "En un foro académico o corporativo, el respeto a las normas de netiqueta, el uso de títulos claros y la citación de fuentes son esenciales para una discusión provechosa.",
+    "answer": true,
+    "explicacion": "La moderación y las pautas explícitas de convivencia digital aseguran diálogos constructivos y pertinentes."
   },
   {
     "id": 6,
     "type": "completar_oracion",
-    "question": "Los almacenes custodian el recurso primario, el proceso y la finalización del producto, con la intención de que exista _____ a bajo _____.",
+    "question": "Un blog turístico comercial permite difundir _____, recomendaciones de viaje y novedades de destinos para atraer a viajeros de las generaciones _____ y Gen Z.",
     "wordBank": [
-      "disponibilidad",
-      "costo",
-      "escasez",
-      "riesgo"
+      "experiencias",
+      "millennials",
+      "reclamaciones",
+      "estáticas"
     ],
     "answer": [
-      "disponibilidad",
-      "costo"
+      "experiencias",
+      "millennials"
     ],
-    "explicacion": "La meta de los almacenes es tener el material disponible sin elevar los costos."
+    "explicacion": "El marketing de contenidos en blogs inspira y orienta a viajeros digitales antes de realizar sus reservaciones (Cajal 2022)."
   },
   {
     "id": 7,
     "type": "opcion_multiple",
-    "question": "¿Qué componente hace llegar el producto terminado al cliente?",
+    "question": "¿Cuál es una limitación habitual de los chats grupales en las organizaciones si no se establecen reglas claras de uso?",
     "options": [
-      "Distribución",
-      "Almacenes",
-      "Compras",
-      "Producción"
+      "Los mensajes importantes pueden perderse o dispersarse fácilmente entre comentarios informales.",
+      "No permiten adjuntar fotografías ni enlaces.",
+      "Solo pueden usarse durante una hora al día.",
+      "Impiden saber quién envió cada mensaje."
     ],
-    "answer": "Distribución",
-    "explicacion": "La distribución puede hacerse por transporte terrestre, marítimo, aéreo, ferroviario o multimodal."
+    "answer": "Los mensajes importantes pueden perderse o dispersarse fácilmente entre comentarios informales.",
+    "explicacion": "El exceso de mensajes en chats dificulta recuperar información crítica, por lo que temas de fondo deben gestionarse en foros o correos."
   },
   {
     "id": 8,
     "type": "verdadero_falso",
-    "statement": "El cliente representa el primer eslabón de la cadena de suministro.",
-    "answer": false,
-    "explicacion": "El cliente es el último eslabón, y toda la cadena trabaja para satisfacer sus necesidades."
+    "statement": "La comunicación digital elimina por completo las barreras geográficas permitiendo la trazabilidad y registro de acuerdos entre sedes distantes.",
+    "answer": true,
+    "explicacion": "Posibilita coordinar operaciones globales conservando registros históricos verificables de las interacciones."
   },
   {
     "id": 9,
-    "type": "opcion_multiple",
-    "question": "¿Cuál de los siguientes es un ejemplo de materia prima que suministran los proveedores en el ramo textil?",
-    "options": [
-      "Cierres",
-      "Tejeduría",
-      "Transporte multimodal",
-      "Certificaciones"
+    "type": "ordenar_oracion",
+    "question": "Ordena de mayor a menor inmediatez de respuesta esperada los canales de comunicación:",
+    "segments": [
+      "Videollamada o llamada sincrónica",
+      "Chat de mensajería instantánea",
+      "Correo electrónico institucional",
+      "Aportación en un foro de discusión temática"
     ],
-    "answer": "Cierres",
-    "explicacion": "Los ejemplos del tema son algodón, poliéster, colorantes, botones, cierres e hilo."
+    "answer": [
+      "Videollamada o llamada sincrónica",
+      "Chat de mensajería instantánea",
+      "Correo electrónico institucional",
+      "Aportación en un foro de discusión temática"
+    ],
+    "explicacion": "La interacción en vivo exige inmediatez, el chat es casi instantáneo, mientras que el correo y el foro admiten tiempos de reflexión diferidos."
   },
   {
     "id": 10,
-    "type": "completar_oracion",
-    "question": "La distribución puede ser terrestre, marítima, aérea, _____ o _____.",
-    "wordBank": [
-      "ferroviaria",
-      "multimodal",
-      "manual",
-      "telefónica"
+    "type": "opcion_multiple",
+    "question": "¿Qué tipo de blog se enfoca en compartir proyectos estudiantiles, reflexiones teóricas y evidencias de aprendizaje?",
+    "options": [
+      "Blog educativo o académico.",
+      "Blog de microtransacciones bursátiles.",
+      "Blog de spam comercial automatizado.",
+      "Blog cerrado de configuración de routers."
     ],
-    "answer": [
-      "ferroviaria",
-      "multimodal"
-    ],
-    "explicacion": "Son los cinco medios de distribución del tema 1.4."
+    "answer": "Blog educativo o académico.",
+    "explicacion": "Los edublogs potencian la escritura reflexiva, la alfabetización digital y la divulgación del conocimiento turístico."
   }
 ]

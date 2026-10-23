@@ -2,122 +2,121 @@
   {
     "id": 1,
     "type": "opcion_multiple",
-    "question": "¿Qué permiten los KPI (indicadores clave de desempeño)?",
+    "question": "¿Qué característica distingue a un sitio web de tipo Wiki?",
     "options": [
-      "Cuantificar el desempeño de una operación logística.",
-      "Diseñar el layout del almacén.",
-      "Elegir el color de las prendas de la temporada.",
-      "Sustituir al área de compras."
+      "Permite que múltiples usuarios colaboren directamente en la creación, edición y actualización consensuada de contenidos desde el navegador.",
+      "Solo el creador original puede escribir y nadie más puede leer el texto.",
+      "Es una hoja de cálculo exclusiva para procesar nóminas hoteleras.",
+      "Se actualiza únicamente una vez al año mediante una revista impresa."
     ],
-    "answer": "Cuantificar el desempeño de una operación logística.",
-    "explicacion": "Los KPI convierten el desempeño en números para poder evaluarlo y compararlo."
+    "answer": "Permite que múltiples usuarios colaboren directamente en la creación, edición y actualización consensuada de contenidos desde el navegador.",
+    "explicacion": "Las wikis se fundamentan en la inteligencia colectiva y el trabajo colaborativo distribuido (ej. Wikipedia o wikis corporativas de destinos)."
   },
   {
     "id": 2,
     "type": "opcion_multiple",
-    "question": "¿Cómo se calcula el nivel de servicio?",
+    "question": "¿Qué es un Ambiente Virtual de Aprendizaje (AVA o LMS)?",
     "options": [
-      "Pedidos entregados correctamente / pedidos totales × 100",
-      "Costo de ventas / inventario promedio",
-      "Inventario correcto / inventario total × 100",
-      "Entregas puntuales / entregas totales × 100"
+      "Una plataforma digital estructurada (como Moodle o Classroom) para gestionar cursos, entregar recursos, realizar foros y evaluar actividades académicas.",
+      "Un simulador de vuelo exclusivo para pilotos comerciales.",
+      "Un router inalámbrico que se coloca en la pared del aula.",
+      "Una base de datos que solo almacena números telefónicos de agencias."
     ],
-    "answer": "Pedidos entregados correctamente / pedidos totales × 100",
-    "explicacion": "El nivel de servicio mide qué porcentaje de los pedidos se entregó correctamente."
+    "answer": "Una plataforma digital estructurada (como Moodle o Classroom) para gestionar cursos, entregar recursos, realizar foros y evaluar actividades académicas.",
+    "explicacion": "Los AVA integran herramientas pedagógicas sincrónicas y asincrónicas que apoyan la formación escolarizada, a distancia o mixta."
   },
   {
     "id": 3,
-    "type": "opcion_multiple",
-    "question": "¿Qué fórmula corresponde a la rotación de inventarios?",
-    "options": [
-      "Costo de ventas / inventario promedio",
-      "Pedidos entregados correctamente / pedidos totales × 100",
-      "Entregas puntuales / entregas totales × 100",
-      "Inventario correcto / inventario total × 100"
-    ],
-    "answer": "Costo de ventas / inventario promedio",
-    "explicacion": "La rotación indica cuántas veces se renueva el inventario en un periodo."
+    "type": "verdadero_falso",
+    "statement": "Una comunidad virtual está formada por un grupo de personas con intereses afines que interactúan y comparten información a través de medios digitales.",
+    "answer": true,
+    "explicacion": "En turismo, existen comunidades virtuales de viajeros, guías certificados o gestores patrimoniales que intercambian consejos y experiencias."
   },
   {
     "id": 4,
-    "type": "verdadero_falso",
-    "statement": "El tiempo de ciclo es el tiempo transcurrido desde el pedido hasta la entrega al cliente.",
-    "answer": true,
-    "explicacion": "Así se define el tiempo de ciclo en la tabla de KPI."
+    "type": "completar_oracion",
+    "question": "En un entorno de trabajo colaborativo en la nube, las herramientas ofimáticas permiten la edición _____ de documentos y el control de _____.",
+    "wordBank": [
+      "simultánea",
+      "versiones",
+      "aislada",
+      "bloqueos"
+    ],
+    "answer": [
+      "simultánea",
+      "versiones"
+    ],
+    "explicacion": "Plataformas como Google Workspace o Microsoft 365 facilitan la coautoría en tiempo real y la reversión a estados previos de los archivos."
   },
   {
     "id": 5,
     "type": "opcion_multiple",
-    "question": "Una empresa entregó correctamente 90 de 100 pedidos. ¿Cuál es su nivel de servicio?",
+    "question": "¿Qué ventaja aporta utilizar suites de aplicación en línea (como Google Docs o Excel Online) en equipos de turismo?",
     "options": [
-      "90 %",
-      "10 %",
-      "100 %",
-      "0.9 %"
+      "Facilita que varios integrantes redacten propuestas o analicen datos al mismo tiempo sin necesidad de enviarse copias dispersas por correo.",
+      "Impide que el archivo pueda ser descargado a una computadora local.",
+      "Obliga a que todos los integrantes usen exactamente la misma marca de computadora.",
+      "Borra automáticamente los comentarios de los docentes o supervisores."
     ],
-    "answer": "90 %",
-    "explicacion": "90 / 100 × 100 = 90 %."
+    "answer": "Facilita que varios integrantes redacten propuestas o analicen datos al mismo tiempo sin necesidad de enviarse copias dispersas por correo.",
+    "explicacion": "Elimina la confusión de múltiples versiones de archivo y centraliza las evidencias de trabajo colaborativo."
   },
   {
     "id": 6,
-    "type": "opcion_multiple",
-    "question": "De 200 entregas, 170 llegaron puntuales. ¿Cuál es el indicador de entregas a tiempo?",
-    "options": [
-      "85 %",
-      "70 %",
-      "117 %",
-      "30 %"
-    ],
-    "answer": "85 %",
-    "explicacion": "170 / 200 × 100 = 85 %."
+    "type": "verdadero_falso",
+    "statement": "Las wikis carecen de historial de cambios, por lo que es imposible saber quién editó o borró una sección de un artículo colaborativo.",
+    "answer": false,
+    "explicacion": "Las plataformas wiki registran cada modificación en un historial con autor, fecha y hora, permitiendo comparar versiones y revertir actos de vandalismo."
   },
   {
     "id": 7,
-    "type": "completar_oracion",
-    "question": "La exactitud del inventario se calcula como inventario _____ entre inventario _____ por 100.",
-    "wordBank": [
-      "correcto",
-      "total",
-      "promedio",
-      "vendido"
+    "type": "opcion_multiple",
+    "question": "¿Qué rol juegan las herramientas de videoconferencia (Zoom, Teams, Meet) dentro de los espacios virtuales de trabajo?",
+    "options": [
+      "Permiten celebrar reuniones remotas, presentaciones interactivas con pantalla compartida y tutorías grupales en tiempo real.",
+      "Almacenar discos duros en estantes físicos de una bodega.",
+      "Convertir automáticamente monedas extranjeras en efectivo físico.",
+      "Reemplazar por completo los sistemas de reservaciones de boletos de avión."
     ],
-    "answer": [
-      "correcto",
-      "total"
-    ],
-    "explicacion": "Compara lo que el registro dice que hay con lo que realmente hay."
+    "answer": "Permiten celebrar reuniones remotas, presentaciones interactivas con pantalla compartida y tutorías grupales en tiempo real.",
+    "explicacion": "Son pilares de la comunicación sincrónica para coordinación ejecutiva, clases virtuales y atención al cliente a distancia."
   },
   {
     "id": 8,
-    "type": "opcion_multiple",
-    "question": "El costo de ventas de una empresa es de $600,000 y su inventario promedio, de $150,000. ¿Cuál es su rotación de inventarios?",
-    "options": [
-      "4 veces",
-      "0.25 veces",
-      "450,000",
-      "40 %"
+    "type": "ordenar_oracion",
+    "question": "Ordena las fases para estructurar un proyecto colaborativo en un espacio virtual:",
+    "segments": [
+      "Crear el espacio compartido y asignar permisos de equipo",
+      "Definir el objetivo común y distribuir roles entre los integrantes",
+      "Elaborar y editar contenidos de forma conjunta en la plataforma",
+      "Revisar el historial, validar consensos y entregar el producto final"
     ],
-    "answer": "4 veces",
-    "explicacion": "600,000 / 150,000 = 4: el inventario se renovó cuatro veces en el periodo."
+    "answer": [
+      "Crear el espacio compartido y asignar permisos de equipo",
+      "Definir el objetivo común y distribuir roles entre los integrantes",
+      "Elaborar y editar contenidos de forma conjunta en la plataforma",
+      "Revisar el historial, validar consensos y entregar el producto final"
+    ],
+    "explicacion": "Una colaboración efectiva requiere orden en accesos, claridad en metas, coedición activa y validación colegiada del resultado."
   },
   {
     "id": 9,
-    "type": "verdadero_falso",
-    "statement": "Un porcentaje bajo en entregas a tiempo indica un buen desempeño logístico.",
-    "answer": false,
-    "explicacion": "Mientras más alto es el porcentaje de entregas puntuales, mejor es el desempeño."
+    "type": "opcion_multiple",
+    "question": "¿Cuál es un beneficio de integrar wikis en la elaboración de guías de viaje y manuales de procedimientos turísticos?",
+    "options": [
+      "La información se enriquece y mantiene vigente mediante aportaciones continuas de especialistas y miembros del equipo.",
+      "Garantiza que el documento nunca vuelva a modificarse bajo ninguna circunstancia.",
+      "Reduce la legibilidad de los textos para que solo expertos puedan comprenderlos.",
+      "Evita que el texto pueda ser consultado en teléfonos móviles."
+    ],
+    "answer": "La información se enriquece y mantiene vigente mediante aportaciones continuas de especialistas y miembros del equipo.",
+    "explicacion": "El formato wiki es ideal para crear bases de conocimiento vivas, enciclopedias de destinos y manuales de bienvenida."
   },
   {
     "id": 10,
-    "type": "opcion_multiple",
-    "question": "¿Qué KPI usarías para evaluar si lo que dice el sistema coincide con lo que hay físicamente en el almacén?",
-    "options": [
-      "Exactitud del inventario",
-      "Tiempo de ciclo",
-      "Nivel de servicio",
-      "Entregas a tiempo"
-    ],
-    "answer": "Exactitud del inventario",
-    "explicacion": "La exactitud del inventario compara el inventario correcto con el total registrado."
+    "type": "verdadero_falso",
+    "statement": "El portafolio de evidencias digital en un AVA permite documentar de forma organizada el progreso, actividades y logros formativos del estudiante de Turismo.",
+    "answer": true,
+    "explicacion": "Reúne organizadores gráficos, prácticas de laboratorio, propuestas de difusión y evaluaciones para una valoración integral de competencias."
   }
 ]

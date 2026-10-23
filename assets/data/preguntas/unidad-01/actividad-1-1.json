@@ -2,119 +2,121 @@
   {
     "id": 1,
     "type": "opcion_multiple",
-    "question": "¿Cuál es la finalidad de la logística según el tema 1.1?",
+    "question": "¿Cuál es la función primordial de las Tecnologías de la Información y la Comunicación (TIC)?",
     "options": [
-      "Administrar de manera eficaz la línea de materiales, productos, datos y medios financieros en todo el recorrido del proceso.",
-      "Transportar mercancías de un punto a otro al menor precio posible.",
-      "Diseñar las prendas que se fabricarán en la siguiente temporada.",
-      "Negociar los precios de venta con las tiendas departamentales."
+      "Capturar, procesar, administrar, almacenar, transmitir y compartir información mediante hardware y software para reducir tiempos, costos y esfuerzos.",
+      "Fabricar exclusivamente componentes físicos de circuitos integrados para computadoras de escritorio.",
+      "Reemplazar por completo el trabajo humano y eliminar la atención personalizada en las agencias de viajes.",
+      "Diseñar únicamente folletos impresos para ferias turísticas tradicionales."
     ],
-    "answer": "Administrar de manera eficaz la línea de materiales, productos, datos y medios financieros en todo el recorrido del proceso.",
-    "explicacion": "La logística no se limita a mover mercancía: administra materiales, productos, datos y medios financieros a lo largo de todo el proceso."
+    "answer": "Capturar, procesar, administrar, almacenar, transmitir y compartir información mediante hardware y software para reducir tiempos, costos y esfuerzos.",
+    "explicacion": "Las TIC integran hardware, software y redes de comunicación para procesar y difundir datos en formatos de texto, voz, imagen o video con alta eficiencia."
   },
   {
     "id": 2,
-    "type": "verdadero_falso",
-    "statement": "El propósito principal de la logística es únicamente transportar mercancías.",
-    "answer": false,
-    "explicacion": "Su propósito es coordinar cada una de las actividades necesarias para que el cliente reciba exactamente lo que necesita; el transporte es solo una parte."
+    "type": "opcion_multiple",
+    "question": "En el contexto de los sistemas computacionales, ¿qué diferencia existe entre Hardware y Software?",
+    "options": [
+      "El hardware corresponde a los componentes físicos tangibles y el software a los programas, instrucciones y procedimientos lógicos que operan el sistema.",
+      "El hardware son los programas de oficina y el software son las pantallas y teclados.",
+      "El hardware solo se utiliza en turismo y el software en la industria manufacturera.",
+      "No existe ninguna diferencia técnica, ambos términos son sinónimos exactos."
+    ],
+    "answer": "El hardware corresponde a los componentes físicos tangibles y el software a los programas, instrucciones y procedimientos lógicos que operan el sistema.",
+    "explicacion": "El hardware es la parte física (computadoras, servidores, terminales POS), mientras que el software son los programas y sistemas operativos que ejecutan las tareas."
   },
   {
     "id": 3,
-    "type": "completar_oracion",
-    "question": "La logística coordina las actividades necesarias para que el _____ reciba _____ lo que necesita.",
-    "wordBank": [
-      "cliente",
-      "exactamente",
-      "proveedor",
-      "aproximadamente"
-    ],
-    "answer": [
-      "cliente",
-      "exactamente"
-    ],
-    "explicacion": "El centro de la logística es el cliente: recibir justo lo que pidió, ni más ni menos."
+    "type": "verdadero_falso",
+    "statement": "El uso de las TIC en las organizaciones turísticas busca optimizar tiempos, disminuir costos operativos y mejorar la calidad en el servicio al viajero.",
+    "answer": true,
+    "explicacion": "La incorporación estratégica de herramientas tecnológicas incrementa la competitividad, agiliza la comunicación y favorece la experiencia del turista."
   },
   {
     "id": 4,
-    "type": "opcion_multiple",
-    "question": "¿Cuál de los siguientes NO es un objetivo de la logística?",
-    "options": [
-      "Aumentar los inventarios para tener siempre material de sobra.",
-      "Minimizar costos operativos.",
-      "Reducir tiempos de entrega.",
-      "Reducir desperdicios."
+    "type": "completar_oracion",
+    "question": "Las TIC se encargan de la _____, almacenamiento, tratamiento y _____ de la información mediante recursos tecnológicos.",
+    "wordBank": [
+      "recogida",
+      "transmisión",
+      "impresión",
+      "distorsión"
     ],
-    "answer": "Aumentar los inventarios para tener siempre material de sobra.",
-    "explicacion": "Entre los objetivos están minimizar costos, reducir tiempos de entrega y reducir desperdicios; acumular inventario de más va en sentido contrario."
+    "answer": [
+      "recogida",
+      "transmisión"
+    ],
+    "explicacion": "El ciclo informático abarca desde la captura y resguardo de datos hasta su procesamiento y difusión a través de redes."
   },
   {
     "id": 5,
     "type": "opcion_multiple",
-    "question": "Una empresa textil revisa sus procesos cada mes para corregir fallas y hacerlos más eficientes. ¿Qué objetivo logístico está atendiendo?",
+    "question": "¿Qué pilar tecnológico permite la interconexión entre dispositivos y el intercambio continuo de datos en el turismo digital?",
     "options": [
-      "Favorecer la mejora continua.",
-      "Incrementar rentabilidad.",
-      "Satisfacer las necesidades del cliente.",
-      "Reducir tiempos de entrega."
+      "Conectividad digital y redes de telecomunicación.",
+      "Almacenamiento exclusivo en papel carbón.",
+      "Instalación de cables analógicos aislados sin conexión externa.",
+      "Uso de disquetes magnéticos de baja capacidad."
     ],
-    "answer": "Favorecer la mejora continua.",
-    "explicacion": "Revisar y corregir de forma constante los procesos es la esencia de la mejora continua."
+    "answer": "Conectividad digital y redes de telecomunicación.",
+    "explicacion": "La conectividad digital es la base sobre la que operan Internet, las plataformas en la nube, las reservas en línea y los dispositivos móviles turísticos."
   },
   {
     "id": 6,
     "type": "verdadero_falso",
-    "statement": "Incrementar la rentabilidad es uno de los objetivos de la logística.",
-    "answer": true,
-    "explicacion": "Al usar bien los recursos y reducir costos y desperdicios, la logística contribuye a incrementar la rentabilidad."
+    "statement": "En el sector educativo y formativo, las TIC son un fin en sí mismas y no un instrumento pedagógico de mediación.",
+    "answer": false,
+    "explicacion": "Las TIC son medios estratégicos e instrumentos didácticos que potencian el aprendizaje colaborativo, la indagación y la resolución de problemas reales."
   },
   {
     "id": 7,
-    "type": "opcion_multiple",
-    "question": "Una empresa entrega un pedido de uniformes escolares completos antes del inicio del ciclo escolar, en la cantidad solicitada y sin defectos. ¿Qué está logrando?",
-    "options": [
-      "Cumplir los objetivos logísticos.",
-      "Solo reducir sus costos de transporte.",
-      "Aumentar sus inventarios de producto terminado.",
-      "Cambiar su cadena tradicional por una digital."
+    "type": "ordenar_oracion",
+    "question": "Ordena el flujo secuencial del tratamiento de datos en un sistema turístico:",
+    "segments": [
+      "Recopilar datos de reservaciones y clientes",
+      "Organizar y validar los registros",
+      "Procesar mediante fórmulas y software",
+      "Interpretar resultados y tomar decisiones"
     ],
-    "answer": "Cumplir los objetivos logísticos.",
-    "explicacion": "Es el ejemplo textil del tema: entregar a tiempo, en la cantidad pedida y sin defectos es cumplir los objetivos logísticos."
+    "answer": [
+      "Recopilar datos de reservaciones y clientes",
+      "Organizar y validar los registros",
+      "Procesar mediante fórmulas y software",
+      "Interpretar resultados y tomar decisiones"
+    ],
+    "explicacion": "El tratamiento inicia con la captura, sigue con la depuración, continúa con el cálculo analítico y culmina con la toma de decisiones informada."
   },
   {
     "id": 8,
-    "type": "completar_oracion",
-    "question": "Dos objetivos de la logística son minimizar costos _____ y utilizar bien los _____.",
-    "wordBank": [
-      "operativos",
-      "recursos",
-      "publicitarios",
-      "clientes"
+    "type": "opcion_multiple",
+    "question": "Según el modelo de transformación digital de Collins (2023), ¿qué elemento salvaguarda la información y asegura la privacidad de los usuarios?",
+    "options": [
+      "Seguridad digital (cifrado y autenticación).",
+      "Diversidad tecnológica sin contraseñas.",
+      "Autogestión sin protocolos de respaldo.",
+      "Uso exclusivo de redes Wi-Fi públicas sin protección."
     ],
-    "answer": [
-      "operativos",
-      "recursos"
-    ],
-    "explicacion": "Minimizar costos operativos y utilizar bien los recursos son dos de los ocho objetivos del tema."
+    "answer": "Seguridad digital (cifrado y autenticación).",
+    "explicacion": "La seguridad digital protege los datos sensibles de los viajeros y de las empresas frente a fugas de información o ciberataques."
   },
   {
     "id": 9,
-    "type": "opcion_multiple",
-    "question": "Si una empresa logra que sus pedidos lleguen en tres días en lugar de diez, ¿qué objetivo logístico cumple de forma directa?",
-    "options": [
-      "Reducir tiempos de entrega.",
-      "Reducir desperdicios.",
-      "Favorecer la mejora continua.",
-      "Minimizar costos operativos."
-    ],
-    "answer": "Reducir tiempos de entrega.",
-    "explicacion": "Acortar el tiempo entre el pedido y la entrega es justamente reducir tiempos de entrega."
+    "type": "verdadero_falso",
+    "statement": "La accesibilidad tecnológica favorece la inclusión digital permitiendo que personas con distintas capacidades utilicen recursos turísticos en línea.",
+    "answer": true,
+    "explicacion": "La accesibilidad digital garantiza entornos universales, usabilidad en diversos dispositivos y derribo de barreras informativas."
   },
   {
     "id": 10,
-    "type": "verdadero_falso",
-    "statement": "Eficientizar el nivel de servicio forma parte de los objetivos de la logística.",
-    "answer": true,
-    "explicacion": "Eficientizar el nivel de servicio es uno de los objetivos listados en el tema 1.1."
+    "type": "opcion_multiple",
+    "question": "¿Cuál es uno de los principales retos para los futuros profesionales del turismo respecto a las TIC?",
+    "options": [
+      "Dominar las herramientas tecnológicas para innovar en productos y servicios con ética y responsabilidad.",
+      "Memorizar comandos obsoletos de sistemas que ya no se utilizan en la industria.",
+      "Evitar el uso de computadoras en las agencias de viajes.",
+      "Depender exclusivamente de intermediarios tradicionales sin presencia digital."
+    ],
+    "answer": "Dominar las herramientas tecnológicas para innovar en productos y servicios con ética y responsabilidad.",
+    "explicacion": "El perfil de egreso en Turismo exige liderazgo tecnológico, análisis de datos, respeto y comunicación efectiva en entornos virtuales."
   }
 ]

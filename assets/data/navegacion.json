@@ -32,6 +32,11 @@
       "url": "unidades.html"
     },
     {
+      "texto": "Prácticas",
+      "icono": "fa-laptop-code",
+      "url": "practicas.html"
+    },
+    {
       "texto": "Referencias",
       "icono": "fa-bookmark",
       "url": "unidades/unidad-01/referencias.html"

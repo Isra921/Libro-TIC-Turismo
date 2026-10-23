@@ -2,119 +2,127 @@
   {
     "id": 1,
     "type": "opcion_multiple",
-    "question": "Según el tema 1.2, una empresa que fabrica la mejor tela del mercado pero tarda semanas en entregarla:",
+    "question": "¿Cuál es la diferencia técnica fundamental entre Internet y la World Wide Web (WWW)?",
     "options": [
-      "Perderá clientes frente a otra empresa que entregue el mismo producto en pocos días.",
-      "Conservará a todos sus clientes porque la calidad es lo único que importa.",
-      "Reducirá sus costos de transporte.",
-      "Aumentará su competitividad."
+      "Internet es la infraestructura física global de redes y dispositivos interconectados (TCP/IP), mientras que la WWW es un sistema de información en hipertexto que opera sobre dicha red.",
+      "Internet solo transmite correos electrónicos y la WWW transmite llamadas telefónicas analógicas.",
+      "La WWW es la red física de servidores y cables submarinos, e Internet es una marca comercial de navegadores.",
+      "Son exactamente lo mismo y no existe ninguna distinción técnica entre ellos."
     ],
-    "answer": "Perderá clientes frente a otra empresa que entregue el mismo producto en pocos días.",
-    "explicacion": "La calidad no basta: sin una logística que entregue a tiempo, la empresa pierde clientes."
+    "answer": "Internet es la infraestructura física global de redes y dispositivos interconectados (TCP/IP), mientras que la WWW es un sistema de información en hipertexto que opera sobre dicha red.",
+    "explicacion": "Internet es la gran autopista de comunicación mundial creada en 1969; la World Wide Web (creada por Tim Berners-Lee) es el servicio de páginas web vinculadas que viaja por esa red."
   },
   {
     "id": 2,
-    "type": "verdadero_falso",
-    "statement": "Para ser competitiva, a una empresa le basta con fabricar productos de muy buena calidad.",
-    "answer": false,
-    "explicacion": "Además de la calidad, necesita cadenas de suministro que permitan distribuir adecuadamente sus productos."
+    "type": "opcion_multiple",
+    "question": "En las campañas de email marketing para empresas turísticas, ¿por qué es indispensable la segmentación de la audiencia?",
+    "options": [
+      "Para enviar propuestas personalizadas basadas en intereses, historial de viajes, presupuestos y preferencias del viajero.",
+      "Para enviar el mismo correo idéntico a millones de personas sin importar su destino de interés.",
+      "Para saturar la bandeja de entrada del cliente con ofertas genéricas.",
+      "Para evitar que el cliente pueda responder el mensaje."
+    ],
+    "answer": "Para enviar propuestas personalizadas basadas en intereses, historial de viajes, presupuestos y preferencias del viajero.",
+    "explicacion": "Segmentar por intereses (aventura, cultura, gastronomía, presupuesto) eleva la receptividad y la tasa de conversión de las reservas turísticas."
   },
   {
     "id": 3,
     "type": "opcion_multiple",
-    "question": "¿Qué resultado se obtiene de tener menores inventarios?",
+    "question": "¿Qué función cumple un navegador web (como Chrome, Safari, Firefox o Edge)?",
     "options": [
-      "Menor capital inmovilizado.",
-      "Clientes satisfechos.",
-      "Mayor productividad.",
-      "Mejor toma de decisiones."
+      "Interpretar el código HTML, estilos CSS y scripts para visualizar e interactuar con páginas web en Internet.",
+      "Almacenar físicamente los servidores de las aerolíneas en la computadora del usuario.",
+      "Conectar físicamente los cables de fibra óptica en la central telefónica.",
+      "Diseñar logotipos vectoriales de empresas hoteleras."
     ],
-    "answer": "Menor capital inmovilizado.",
-    "explicacion": "Con menos inventario hay menos dinero detenido en mercancía que todavía no se vende."
+    "answer": "Interpretar el código HTML, estilos CSS y scripts para visualizar e interactuar con páginas web en Internet.",
+    "explicacion": "El navegador es el software cliente que permite abrir, explorar y renderizar los contenidos de la World Wide Web."
   },
   {
     "id": 4,
     "type": "opcion_multiple",
-    "question": "En la tabla de beneficios, la planeación adecuada se traduce en:",
+    "question": "¿En qué se diferencia un metabuscador de un motor de búsqueda tradicional?",
     "options": [
-      "Mayor productividad.",
-      "Reducción de costos.",
-      "Menor capital inmovilizado.",
-      "Clientes satisfechos."
+      "El metabuscador no posee base de datos propia, sino que consulta y consolida resultados de múltiples motores de búsqueda externos simultáneamente.",
+      "El motor de búsqueda no utiliza internet y el metabuscador sí.",
+      "El metabuscador solo funciona en teléfonos celulares y los motores en computadoras.",
+      "El motor de búsqueda borra las páginas web que encuentra."
     ],
-    "answer": "Mayor productividad.",
-    "explicacion": "Planear bien evita tiempos muertos y reprocesos, lo que aumenta la productividad."
+    "answer": "El metabuscador no posee base de datos propia, sino que consulta y consolida resultados de múltiples motores de búsqueda externos simultáneamente.",
+    "explicacion": "Metabuscadores como Metacrawler o Dogpile (y en turismo Trivago, Kayak o Skyscanner) rastrean en varios portales a la vez y presentan una lista unificada de opciones."
   },
   {
     "id": 5,
-    "type": "completar_oracion",
-    "question": "Un mejor _____ da como resultado una reducción de _____.",
-    "wordBank": [
-      "transporte",
-      "costos",
-      "inventario",
-      "clientes"
-    ],
-    "answer": [
-      "transporte",
-      "costos"
-    ],
-    "explicacion": "En la tabla de beneficios, mejor transporte → reducción de costos."
+    "type": "verdadero_falso",
+    "statement": "Metabuscadores de viajes como Trivago, Skyscanner o Kayak permiten al usuario comparar tarifas de vuelos y hoteles de diversos proveedores en un solo lugar.",
+    "answer": true,
+    "explicacion": "Reúnen la oferta de múltiples agencias online (OTA) y aerolíneas, facilitando comparar precios y disponibilidad de forma ágil."
   },
   {
     "id": 6,
-    "type": "verdadero_falso",
-    "statement": "La información oportuna permite una mejor toma de decisiones.",
-    "answer": true,
-    "explicacion": "Contar con información a tiempo es el beneficio que lleva a decidir mejor."
+    "type": "opcion_multiple",
+    "question": "¿Qué protocolo garantiza que los datos que viajan entre el navegador del turista y el servidor web viajen cifrados y seguros?",
+    "options": [
+      "HTTPS (HyperText Transfer Protocol Secure)",
+      "HTTP sin cifrado",
+      "FTP anónimo",
+      "SMS básico"
+    ],
+    "answer": "HTTPS (HyperText Transfer Protocol Secure)",
+    "explicacion": "HTTPS utiliza certificados SSL/TLS para proteger datos confidenciales como tarjetas bancarias y credenciales de usuario."
   },
   {
     "id": 7,
-    "type": "opcion_multiple",
-    "question": "¿Cuál de las siguientes NO es algo que la logística permite, según el tema 1.2?",
-    "options": [
-      "Aumentar los costos de transporte.",
-      "Reducir inventarios.",
-      "Evitar desperdicios.",
-      "Incrementar la productividad."
-    ],
-    "answer": "Aumentar los costos de transporte.",
-    "explicacion": "La logística permite disminuir —no aumentar— los costos de transporte."
+    "type": "verdadero_falso",
+    "statement": "Una intranet es una red abierta y de acceso público para que cualquier usuario de Internet consulte los manuales confidenciales de una empresa hotelera.",
+    "answer": false,
+    "explicacion": "La intranet es una red interna y privada, restringida únicamente al personal autorizado de la organización."
   },
   {
     "id": 8,
-    "type": "opcion_multiple",
-    "question": "Una empresa mejora su servicio y entrega lo que el cliente pide, cuando lo pide. ¿Qué resultado obtiene?",
-    "options": [
-      "Clientes satisfechos.",
-      "Menor capital inmovilizado.",
-      "Reducción de costos de transporte.",
-      "Mayor inventario disponible."
+    "type": "completar_oracion",
+    "question": "Al elegir un navegador web, los tres criterios técnicos fundamentales son: _____, seguridad y _____ de la experiencia de usuario.",
+    "wordBank": [
+      "velocidad",
+      "personalización",
+      "peso",
+      "costo"
     ],
-    "answer": "Clientes satisfechos.",
-    "explicacion": "En la tabla de beneficios, mejor servicio → clientes satisfechos."
+    "answer": [
+      "velocidad",
+      "personalización"
+    ],
+    "explicacion": "Rapidez en la carga, protección contra rastreadores y flexibilidad para configurar extensiones y sincronización determinan la elección del navegador."
   },
   {
     "id": 9,
-    "type": "completar_oracion",
-    "question": "La logística permite lograr mayor _____ entre los distribuidores de las _____.",
-    "wordBank": [
-      "competitividad",
-      "mercancías",
-      "burocracia",
-      "oficinas"
+    "type": "opcion_multiple",
+    "question": "¿Cuál es una desventaja potencial al utilizar metabuscadores de viajes en línea?",
+    "options": [
+      "Que algunos resultados pueden no estar actualizados en tiempo real respecto al inventario de último minuto de la aerolínea u hotel.",
+      "Que no permiten visualizar tarifas en moneda local.",
+      "Que impiden consultar más de un sitio web a la vez.",
+      "Que obligan a viajar exclusivamente en transporte terrestre."
     ],
-    "answer": [
-      "competitividad",
-      "mercancías"
-    ],
-    "explicacion": "Es uno de los aportes de la logística listados en el tema."
+    "answer": "Que algunos resultados pueden no estar actualizados en tiempo real respecto al inventario de último minuto de la aerolínea u hotel.",
+    "explicacion": "Debido al almacenamiento en caché o retrasos en la respuesta de las APIs externas, las tarifas o disponibilidad pueden variar al redirigir al sitio final."
   },
   {
     "id": 10,
-    "type": "verdadero_falso",
-    "statement": "Reducir inventarios y disminuir costos de transporte son aportes de la logística.",
-    "answer": true,
-    "explicacion": "Ambos aparecen en la lista de lo que la logística permite."
+    "type": "ordenar_oracion",
+    "question": "Ordena los pasos para realizar una indagación efectiva mediante búsqueda avanzada en Google:",
+    "segments": [
+      "Ingresar a la interfaz de búsqueda avanzada",
+      "Definir palabras clave exactas o excluir términos irrelevantes",
+      "Filtrar por dominio, idioma o fecha reciente",
+      "Revisar y validar la confiabilidad de las fuentes encontradas"
+    ],
+    "answer": [
+      "Ingresar a la interfaz de búsqueda avanzada",
+      "Definir palabras clave exactas o excluir términos irrelevantes",
+      "Filtrar por dominio, idioma o fecha reciente",
+      "Revisar y validar la confiabilidad de las fuentes encontradas"
+    ],
+    "explicacion": "La búsqueda avanzada permite acotar con rigor académico la información antes de seleccionar fuentes fidedignas."
   }
 ]

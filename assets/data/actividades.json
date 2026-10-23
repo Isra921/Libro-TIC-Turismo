@@ -1,74 +1,74 @@
 {
-  "titulo": "Actividades de Aprendizaje y Simuladores Prácticos",
+  "titulo": "Prácticas y Actividades de Aprendizaje",
   "boton_cerrar": "Cerrar ventana",
   "secciones": [
     {
       "id": "unidad-01",
       "pestana": "Unidad 1",
-      "titulo": "Unidad 1: Introducción a la logística y cadena de suministro",
-      "descripcion": "Simulador de decisiones logísticas sobre trade-off de costos vs nivel de servicio, diagnóstico causal de cuellos de botella y cálculo de KPIs (OTIF, Fill Rate) en confección deportiva.",
-      "nota": "Aplica los criterios de ingeniería para diagnosticar fallas operativas y optimizar el costo total.",
+      "titulo": "Unidad 1: Las TIC",
+      "descripcion": "Fundamentos de las Tecnologías de la Información y la Comunicación, infraestructura de conectividad, entornos colaborativos y sistemas turísticos especializados.",
+      "nota": "Domina los fundamentos de Internet, comunicación sincrónica/asincrónica y las plataformas operativas clave del turismo (POS, GDS, ERP).",
       "items": [
         {
           "tag": "Actividad formativa",
-          "reactivos": "10 reactivos",
+          "reactivos": "10 reactivos al azar",
           "tiempo": "10 min",
-          "titulo": "Actividad 1.1: Objetivos de la logística",
-          "descripcion": "Identifica la finalidad de la logística y los objetivos que persigue en una empresa textil.",
+          "titulo": "Actividad 1.1: Fundamentos de las TIC",
+          "descripcion": "Reconoce los componentes de hardware, software, telecomunicaciones y el valor estratégico de las TIC en la modernización de servicios turísticos.",
           "url": "unidades/unidad-01/actividades/actividad-1-1.html",
-          "icono": "fa-bullseye"
+          "icono": "fa-laptop"
         },
         {
           "tag": "Actividad formativa",
-          "reactivos": "10 reactivos",
+          "reactivos": "10 reactivos al azar",
           "tiempo": "10 min",
-          "titulo": "Actividad 1.2: Importancia de la logística",
-          "descripcion": "Relaciona lo que permite la logística con los beneficios y resultados que obtiene la empresa.",
+          "titulo": "Actividad 1.2: Principales tecnologías de la información",
+          "descripcion": "Distingue las funciones de Internet frente a la WWW, correo electrónico institucional, navegadores web, buscadores y metabuscadores de viajes.",
           "url": "unidades/unidad-01/actividades/actividad-1-2.html",
-          "icono": "fa-chart-line"
+          "icono": "fa-globe"
         },
         {
           "tag": "Actividad formativa",
-          "reactivos": "10 reactivos",
+          "reactivos": "10 reactivos al azar",
           "tiempo": "10 min",
-          "titulo": "Actividad 1.3: Logística y cadena de suministro",
-          "descripcion": "Distingue la logística de la cadena de suministro por su alcance, su enfoque y su visión.",
+          "titulo": "Actividad 1.3: Las TIC en el ámbito laboral",
+          "descripcion": "Analiza la productividad, automatización, gestión en la nube, impacto de redes sociales corporativas y medidas de ciberseguridad en turismo.",
           "url": "unidades/unidad-01/actividades/actividad-1-3.html",
-          "icono": "fa-code-compare"
+          "icono": "fa-briefcase"
         },
         {
           "tag": "Actividad formativa",
-          "reactivos": "10 reactivos",
+          "reactivos": "10 reactivos al azar",
           "tiempo": "10 min",
-          "titulo": "Actividad 1.4: Componentes de la cadena de suministro",
-          "descripcion": "Reconoce los eslabones de la cadena de suministro textil y la función de cada uno.",
+          "titulo": "Actividad 1.4: La comunicación digital",
+          "descripcion": "Compara canales sincrónicos y asincrónicos, chats corporativos, foros académicos y blogs especializados para difusión turística.",
           "url": "unidades/unidad-01/actividades/actividad-1-4.html",
-          "icono": "fa-link"
+          "icono": "fa-comments"
         },
         {
           "tag": "Actividad formativa",
-          "reactivos": "10 reactivos",
+          "reactivos": "10 reactivos al azar",
           "tiempo": "10 min",
           "titulo": "Actividad 1.5: Tecnologías utilizadas en el turismo",
-          "descripcion": "Distingue la función del POS, el GDS y el ERP en las empresas turísticas y cómo se relacionan en una misma operación.",
+          "descripcion": "Identifica las funciones, diferencias y sinergias operativas entre Puntos de Venta (POS), Sistemas de Distribución Global (GDS) y plataformas ERP.",
           "url": "unidades/unidad-01/actividades/actividad-1-5.html",
-          "icono": "fa-cash-register"
+          "icono": "fa-server"
         },
         {
           "tag": "Actividad formativa",
-          "reactivos": "10 reactivos",
+          "reactivos": "10 reactivos al azar",
           "tiempo": "10 min",
-          "titulo": "Actividad 1.6: Indicadores logísticos (KPI)",
-          "descripcion": "Aplica las fórmulas de los principales KPI logísticos e interpreta sus resultados.",
+          "titulo": "Actividad 1.6: Espacios virtuales de trabajo",
+          "descripcion": "Examina wikis, comunidades virtuales, Ambientes Virtuales de Aprendizaje (AVA) y herramientas en línea para colaboración turística.",
           "url": "unidades/unidad-01/actividades/actividad-1-6.html",
-          "icono": "fa-gauge-high"
+          "icono": "fa-users"
         },
         {
-          "tag": "Simulador y Laboratorio ESIT",
+          "tag": "Evaluación Integradora",
           "reactivos": "Simulador interactivo + 4 Fases",
-          "tiempo": "35 min",
-          "titulo": "Simulador y Caso: Empresa 'Textiles del Centro'",
-          "descripcion": "Diagnóstico de cuellos de botella, sliders de trade-off de costos, auditoría numérica de pedidos reales y dictamen estratégico.",
+          "tiempo": "30 min",
+          "titulo": "Simulador y Caso: Agencia 'Turismo México Global'",
+          "descripcion": "Diagnóstico de infraestructura tecnológica, selección de canales de comunicación, auditoría de POS/GDS/ERP y dictamen estratégico de ciberseguridad.",
           "url": "unidades/unidad-01/actividades/actividad-final.html",
           "icono": "fa-flask",
           "destacada": true
@@ -124,52 +124,52 @@
     {
       "id": "unidad-03",
       "pestana": "Unidad 3",
-      "titulo": "Unidad 3: Cadenas de suministro en la industria textil y del vestido",
-      "descripcion": "Simulador de compras y abastecimiento estratégico: explosión de materiales (BOM/MRP), calibración de matriz multicriterio ponderada y acuerdos SLA.",
-      "nota": "Aprende a eliminar mermas y cuellos de botella mediante homologación y Dual Sourcing.",
+      "titulo": "Unidad 3: Software de tratamiento de datos numéricos",
+      "descripcion": "Modelado de datos en Microsoft Excel para turismo: fórmulas elementales, funciones especializadas (estadísticas, financieras, lógicas), gráficos estadísticos y tablas dinámicas.",
+      "nota": "Desarrolla habilidades analíticas para calcular presupuestos, comisiones, ocupación hotelera y reportes ejecutivos.",
       "items": [
         {
           "tag": "Actividad formativa",
           "reactivos": "8 reactivos al azar",
           "tiempo": "10 min",
-          "titulo": "Actividad 3.1: Cadena de suministro en la empresa textil",
-          "descripcion": "Identifica las etapas de la cadena de suministro textil, su orden y cómo cada una depende de la anterior.",
+          "titulo": "Actividad 3.1: Entorno de la hoja de cálculo",
+          "descripcion": "Distingue dato, información e interpretación, filas, columnas, celdas activas, barra de fórmulas y tipos de datos en Excel.",
           "url": "unidades/unidad-03/actividades/actividad-3-1.html",
-          "icono": "fa-link"
+          "icono": "fa-table"
         },
         {
           "tag": "Actividad formativa",
           "reactivos": "8 reactivos al azar",
           "tiempo": "10 min",
-          "titulo": "Actividad 3.2: Planeación de la cadena y pronóstico de la demanda",
-          "descripcion": "Distingue el propósito de la planeación y los métodos cualitativos y cuantitativos para pronosticar la demanda.",
+          "titulo": "Actividad 3.2: Operadores aritméticos y jerarquía",
+          "descripcion": "Aplica operadores de cálculo (+, -, *, /, %, ^), de comparación y concatenación (&), respetando el orden de prioridad y el uso de paréntesis.",
           "url": "unidades/unidad-03/actividades/actividad-3-2.html",
-          "icono": "fa-chart-line"
+          "icono": "fa-calculator"
         },
         {
           "tag": "Actividad formativa",
           "reactivos": "8 reactivos al azar",
           "tiempo": "10 min",
-          "titulo": "Actividad 3.3: Gestión de compras y producción textil",
-          "descripcion": "Aplica los criterios de selección y la tabla de ponderación de proveedores, y reconoce la secuencia de la producción textil.",
+          "titulo": "Actividad 3.3: Fórmulas elementales y referencias",
+          "descripcion": "Construye fórmulas de cálculo turístico y utiliza referencias relativas (A2), absolutas ($A$2) y mixtas para tarifas y descuentos.",
           "url": "unidades/unidad-03/actividades/actividad-3-3.html",
-          "icono": "fa-scale-balanced"
+          "icono": "fa-square-root-variable"
         },
         {
           "tag": "Actividad formativa",
           "reactivos": "8 reactivos al azar",
-          "tiempo": "10 min",
-          "titulo": "Actividad 3.4: Manufactura esbelta, justo a tiempo (JIT) y Kanban",
-          "descripcion": "Reconoce los desperdicios que elimina la manufactura esbelta y el funcionamiento del justo a tiempo y de Kanban.",
+          "tiempo": "12 min",
+          "titulo": "Actividad 3.4: Funciones de Excel",
+          "descripcion": "Aplica funciones estadísticas (SUMA, PROMEDIO, CONTAR.SI, SUMAR.SI), financieras (PAGO), lógicas (SI, Y, O), de texto y anidadas.",
           "url": "unidades/unidad-03/actividades/actividad-3-4.html",
-          "icono": "fa-layer-group"
+          "icono": "fa-function"
         },
         {
           "tag": "Actividad formativa",
           "reactivos": "8 reactivos al azar",
           "tiempo": "10 min",
           "titulo": "Actividad 3.5: Elaboración de gráficos",
-          "descripcion": "Elige el tipo de gráfico adecuado, ajusta su tamaño y complementa el reporte con imágenes y formas.",
+          "descripcion": "Selecciona gráficos adecuados (columnas, líneas, circular, barras) e inserta imágenes y figuras para comunicar indicadores turísticos.",
           "url": "unidades/unidad-03/actividades/actividad-3-5.html",
           "icono": "fa-chart-column"
         },
@@ -178,128 +178,27 @@
           "reactivos": "8 reactivos al azar",
           "tiempo": "10 min",
           "titulo": "Actividad 3.6: Tablas dinámicas",
-          "descripcion": "Identifica las áreas de una tabla dinámica y resume reservaciones por destino y servicio.",
+          "descripcion": "Estructura campos de filas, columnas, valores y filtros para resumir y cruzar ventas, destinos y tipos de servicio.",
           "url": "unidades/unidad-03/actividades/actividad-3-6.html",
-          "icono": "fa-table"
+          "icono": "fa-chart-pie"
         },
         {
           "tag": "Actividad formativa",
           "reactivos": "8 reactivos al azar",
           "tiempo": "10 min",
-          "titulo": "Actividad 3.7: Impresión",
-          "descripcion": "Configura área de impresión, orientación, márgenes, escala y encabezados para un reporte impreso o en PDF.",
+          "titulo": "Actividad 3.7: Impresión y exportación",
+          "descripcion": "Configura área de impresión, orientación, ajuste de escala a una página, encabezados repetidos y lista de cotejo para PDF.",
           "url": "unidades/unidad-03/actividades/actividad-3-7.html",
           "icono": "fa-print"
         },
         {
-          "tag": "Simulador y Laboratorio interactivo",
+          "tag": "Simulador Integrador",
           "reactivos": "Simulador interactivo + 4 Fases",
           "tiempo": "35 min",
-          "titulo": "Simulador y Caso práctico de la unidad",
-          "descripcion": "Resolución de requerimientos operativos, análisis numérico y toma de decisiones prácticas.",
+          "titulo": "Simulador y Caso: Administración de una Agencia de Viajes",
+          "descripcion": "Gestión financiera y analítica en Excel: base de reservaciones, fórmulas con referencias fijas, modelado de funciones y reporte ejecutivo de ventas.",
           "url": "unidades/unidad-03/actividades/actividad-final.html",
-          "icono": "fa-handshake",
-          "destacada": true
-        }
-      ]
-    },
-    {
-      "id": "unidad-04",
-      "pestana": "Unidad 4",
-      "titulo": "Unidad 4: Transportación y régimen aduanero",
-      "descripcion": "Simulador de comercio exterior y tráfico internacional: cálculo de flete por peso volumétrico, evaluación de rutas frente a ventana de 30 días, Incoterms® 2020 y despacho T-MEC.",
-      "nota": "Gestiona los trámites legales y de transporte de carga para la exportación de prendas a Canadá.",
-      "items": [
-        {
-          "tag": "Actividad formativa",
-          "reactivos": "8 reactivos al azar",
-          "tiempo": "10 min",
-          "titulo": "Actividad 4.1: Importancia y modos de transporte",
-          "descripcion": "Compara los modos de transporte por velocidad, costo, capacidad y flexibilidad, y elige el adecuado para cada caso textil.",
-          "url": "unidades/unidad-04/actividades/actividad-4-1.html",
-          "icono": "fa-truck"
-        },
-        {
-          "tag": "Actividad formativa",
-          "reactivos": "8 reactivos al azar",
-          "tiempo": "10 min",
-          "titulo": "Actividad 4.2: Selección del medio de transporte y rutas de distribución",
-          "descripcion": "Aplica los factores de selección del medio de transporte y los criterios para diseñar rutas de distribución.",
-          "url": "unidades/unidad-04/actividades/actividad-4-2.html",
-          "icono": "fa-route"
-        },
-        {
-          "tag": "Actividad formativa",
-          "reactivos": "8 reactivos al azar",
-          "tiempo": "10 min",
-          "titulo": "Actividad 4.3: Régimen aduanero y documentación de comercio exterior",
-          "descripcion": "Distingue los regímenes aduaneros y la función de cada documento de comercio exterior.",
-          "url": "unidades/unidad-04/actividades/actividad-4-3.html",
-          "icono": "fa-file-contract"
-        },
-        {
-          "tag": "Actividad formativa",
-          "reactivos": "8 reactivos al azar",
-          "tiempo": "10 min",
-          "titulo": "Actividad 4.4: Agente aduanal, Incoterms® 2020 y transporte textil",
-          "descripcion": "Identifica las funciones del agente aduanal y elige el Incoterm® 2020 adecuado según las responsabilidades del vendedor.",
-          "url": "unidades/unidad-04/actividades/actividad-4-4.html",
-          "icono": "fa-globe"
-        },
-        {
-          "tag": "Simulador y Laboratorio ESIT",
-          "reactivos": "Simulador interactivo + 4 Fases",
-          "tiempo": "40 min",
-          "titulo": "Simulador y Caso: Empresa 'Exportaciones Textiles ESIT'",
-          "descripcion": "Cálculo de flete volumétrico para 8,000 chamarras, simulación modal con contingencias de ruta, selección de CIP/CIF y pedimento A1.",
-          "url": "unidades/unidad-04/actividades/actividad-final.html",
-          "icono": "fa-ship",
-          "destacada": true
-        }
-      ]
-    },
-    {
-      "id": "unidad-05",
-      "pestana": "Unidad 5",
-      "titulo": "Unidad 5: Tecnología de la información y configuración de la red de distribución",
-      "descripcion": "Laboratorio de transformación digital e Industria 4.0: arquitectura integrada ERP-WMS-TMS-MRP, calculadora de ROI para tecnología RFID y diseño de red omnicanal Ship-from-Store.",
-      "nota": "Formula proyectos de consultoría tecnológica e innovación omnicanal para empresas textiles.",
-      "items": [
-        {
-          "tag": "Actividad formativa",
-          "reactivos": "10 reactivos",
-          "tiempo": "10 min",
-          "titulo": "Actividad 5.1: Sistemas de información logística",
-          "descripcion": "Distingue qué hace cada sistema de información logística —ERP, MRP, WMS y TMS— y cuándo conviene usarlo.",
-          "url": "unidades/unidad-05/actividades/actividad-5-1.html",
-          "icono": "fa-server"
-        },
-        {
-          "tag": "Actividad formativa",
-          "reactivos": "10 reactivos",
-          "tiempo": "10 min",
-          "titulo": "Actividad 5.2: Tecnologías emergentes",
-          "descripcion": "Reconoce cómo RFID, IoT, Big Data e inteligencia artificial mejoran la operación logística textil.",
-          "url": "unidades/unidad-05/actividades/actividad-5-2.html",
-          "icono": "fa-microchip"
-        },
-        {
-          "tag": "Actividad formativa",
-          "reactivos": "10 reactivos",
-          "tiempo": "10 min",
-          "titulo": "Actividad 5.3: Blockchain, redes de distribución e Industria 4.0",
-          "descripcion": "Identifica los usos del blockchain, los tipos de red de distribución y los beneficios de la Industria 4.0.",
-          "url": "unidades/unidad-05/actividades/actividad-5-3.html",
-          "icono": "fa-network-wired"
-        },
-        {
-          "tag": "Simulador y Laboratorio ESIT",
-          "reactivos": "Simulador interactivo + 4 Fases",
-          "tiempo": "40 min",
-          "titulo": "Simulador y Caso: Empresa 'Innovación Textil ESIT'",
-          "descripcion": "Blueprint de arquitectura de sistemas, análisis financiero de Payback para pórticos RFID y simulación de red omnicanal para entrega en 24h.",
-          "url": "unidades/unidad-05/actividades/actividad-final.html",
-          "icono": "fa-microchip",
+          "icono": "fa-file-excel",
           "destacada": true
         }
       ]

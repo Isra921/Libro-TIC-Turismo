@@ -1,11 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Laboratorio y Caso de Estudio: Textiles del Centro | Unidad I</title>
-  <meta name="description" content="Simulador de decisiones logísticas, trade-off de costos, diagnóstico de cuellos de botella y cálculo de KPIs para la empresa Textiles del Centro.">
+  <title>Simulador y Caso Integrador: Agencia Turismo México Global · Unidad I | TIC aplicadas al turismo</title>
+  <meta name="description" content="Simulador interactivo de diagnóstico tecnológico, selección de canales digitales, integración POS-GDS-ERP y dictamen de ciberseguridad para la agencia Turismo México Global.">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="../../../assets/css/comun.css">
@@ -23,18 +23,18 @@
     <header class="a-card a-head" style="margin-bottom: 24px;">
       <div class="a-head__top">
         <span class="a-badge"><i class="fas fa-flask"></i> Simulador y Laboratorio de Decisiones</span>
-        <span class="a-head__where">Unidad I · Ingeniería Logística ESIT</span>
+        <span class="a-head__where">Unidad I · EST - IPN</span>
       </div>
-      <p class="u-eyebrow">Evaluación Integradora Práctica · Confección Deportiva</p>
-      <h1 class="a-title">Caso Práctico: Empresa "Textiles del Centro"</h1>
+      <p class="u-eyebrow">Evaluación Integradora Práctica · Gestión Tecnológica Turística</p>
+      <h1 class="a-title">Caso Práctico: Agencia "Turismo México Global"</h1>
       <p class="a-purpose">
-        Ponte en el rol de consultor(a) de ingeniería en logística. Diagnostica cuellos de botella en la planta, experimenta con el trade-off dinámico entre nivel de servicio y costos totales, audita pedidos reales calculando KPIs y formula un dictamen estratégico de solución.
+        Asume el rol de asesor de tecnologías aplicadas al turismo. Diagnostica las fallas de conectividad de una agencia mayorista con sucursales nacionales, optimiza sus canales de comunicación sincrónica y asincrónica, audita el flujo de reservaciones entre Terminales POS, Sistemas de Distribución Global (GDS) y ERP, y emite un dictamen estratégico de ciberseguridad y continuidad operativa.
       </p>
       <ul class="a-chips" aria-label="Datos de la actividad">
-        <li class="u-chip u-chip--soft"><i class="fas fa-industry" aria-hidden="true"></i> Manufactura y Confección</li>
+        <li class="u-chip u-chip--soft"><i class="fas fa-plane-departure" aria-hidden="true"></i> Agencia de Viajes Mayorista</li>
         <li class="u-chip u-chip--soft"><i class="fas fa-sliders" aria-hidden="true"></i> 4 Fases Interactivas</li>
-        <li class="u-chip u-chip--soft"><i class="fas fa-chart-line" aria-hidden="true"></i> Simulador Dinámico de Costos</li>
-        <li class="u-chip u-chip--accent"><i class="fas fa-award" aria-hidden="true"></i> Ponderación: 40% portafolio</li>
+        <li class="u-chip u-chip--soft"><i class="fas fa-server" aria-hidden="true"></i> Auditoría POS · GDS · ERP</li>
+        <li class="u-chip u-chip--accent"><i class="fas fa-award" aria-hidden="true"></i> Portafolio de Evidencias</li>
       </ul>
     </header>
 
@@ -44,637 +44,455 @@
         <section class="a-card">
           <h2 class="a-card__title"><i class="fas fa-building" aria-hidden="true"></i> Situación Operativa Crítica</h2>
           <p>
-            <strong>Textiles del Centro</strong> produce playeras deportivas de poliéster y algodón para grandes cadenas departamentales (Liverpool, Sears y Coppel). Durante el último trimestre, la dirección general convocó una auditoría urgente por las siguientes fallas:
+            <strong>Turismo México Global</strong> es una agencia con 15 años de trayectoria y 4 sucursales (CDMX, Cancún, Guadalajara y Monterrey). Comercializa vuelos, circuitos culturales y hospedaje tanto a clientes finales como a agencias minoristas. Sin embargo, en la reciente temporada vacacional enfrentó colapsos severos:
           </p>
-          <div class="sim-grid-2">
-            <div style="background: var(--bg-main); padding: 14px; border-radius: var(--radius-sm); border-left: 4px solid #ef4444;">
+          <div class="sim-grid-2" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 14px;">
+            <div style="background: var(--bg-main, #f8fafc); padding: 14px; border-radius: var(--radius-sm, 8px); border-left: 4px solid #ef4444;">
               <strong style="color: #b91c1c;"><i class="fas fa-circle-exclamation"></i> Síntomas Externos:</strong>
               <ul style="margin: 6px 0 0; padding-left: 18px; font-size: 0.88rem; line-height: 1.5;">
-                <li>Retrasos continuos en entregas a tiendas con multas de penalización del 2% diario.</li>
-                <li>Devoluciones del 18% de pedidos por surtido de tallas incorrectas en empaque.</li>
-                <li>Sobrecostos desbordados por contratación de fletes aéreos y camionetas exprés no programadas.</li>
+                <li>Pérdida de ventas directas porque el enlace a internet se satura en horarios pico de cotización.</li>
+                <li>Clientes inconformes por sobreventa (overbooking) al no sincronizarse las reservaciones de mostrador con las de la web.</li>
+                <li>Quejas por demoras de hasta 48 horas en responder solicitudes enviadas por correo electrónico no corporativo.</li>
               </ul>
             </div>
-            <div style="background: var(--bg-main); padding: 14px; border-radius: var(--radius-sm); border-left: 4px solid #f59e0b;">
-              <strong style="color: #b45309;"><i class="fas fa-boxes-packing"></i> Síntomas Internos:</strong>
+            <div style="background: var(--bg-main, #f8fafc); padding: 14px; border-radius: var(--radius-sm, 8px); border-left: 4px solid #f59e0b;">
+              <strong style="color: #b45309;"><i class="fas fa-network-wired"></i> Síntomas Internos:</strong>
               <ul style="margin: 6px 0 0; padding-left: 18px; font-size: 0.88rem; line-height: 1.5;">
-                <li>Retrasos de 12 días en la recepción de hilo de algodón de proveedores.</li>
-                <li>Acumulación de producto en proceso (WIP) bloqueando los pasillos de costura.</li>
-                <li>Falta de espacio en almacén con rollos dañados por humedad y manipulación inadecuada.</li>
+                <li>Desconexión total entre el punto de venta (POS) y el sistema contable-administrativo (ERP).</li>
+                <li>Uso de cuentas gratuitas comerciales (@gmail.com) para operaciones confidenciales de reservación y pasaportes.</li>
+                <li>Falta de políticas de respaldo en la nube y terminales vulnerables a ataques de ransomware y phishing.</li>
               </ul>
             </div>
           </div>
         </section>
 
         <!-- Contenedor del Simulador con Stepper -->
-        <section class="a-card sim-container">
-          <nav class="sim-stepper" aria-label="Fases del laboratorio">
+        <section class="a-card sim-container" style="margin-top: 24px;">
+          <nav class="sim-stepper" aria-label="Fases del simulador turístico">
             <button class="sim-step-btn is-active" id="step-btn-1" data-step="1">
               <span class="sim-step-num">1</span>
-              <span>Diagnóstico Causal</span>
+              <span>1. Infraestructura TIC</span>
             </button>
             <button class="sim-step-btn" id="step-btn-2" data-step="2">
               <span class="sim-step-num">2</span>
-              <span>Simulador de Trade-Off</span>
+              <span>2. Comunicación Digital</span>
             </button>
             <button class="sim-step-btn" id="step-btn-3" data-step="3">
               <span class="sim-step-num">3</span>
-              <span>Auditoría de KPIs</span>
+              <span>3. Sinergia POS-GDS-ERP</span>
             </button>
             <button class="sim-step-btn" id="step-btn-4" data-step="4">
               <span class="sim-step-num">4</span>
-              <span>Dictamen Estratégico</span>
+              <span>4. Dictamen y Ciberseguridad</span>
             </button>
           </nav>
 
           <!-- ==============================================
-               FASE 1: DIAGNÓSTICO CAUSAL DE INCIDENTES
+               FASE 1: DIAGNÓSTICO DE INFRAESTRUCTURA TIC
                ============================================== -->
           <div class="sim-panel is-active" id="panel-step-1">
             <div class="sim-stage-header">
-              <span class="sim-stage-badge"><i class="fas fa-stethoscope"></i> Fase 1 de 4</span>
-              <h3 class="sim-stage-title">Análisis de Causa Raíz y Clasificación de Procesos</h3>
+              <span class="sim-stage-badge"><i class="fas fa-server"></i> Fase 1</span>
+              <h3 class="sim-stage-title">Diagnóstico de Infraestructura y Conectividad</h3>
               <p class="sim-stage-desc">
-                Como ingeniero(a), el primer paso es clasificar cada síntoma según pertenezca a la <strong>Logística Interna</strong> (operaciones intramuros: almacén, WIP, empaque) o a la <strong>Cadena de Suministro Integral</strong> (coordinación interempresarial: proveedores, clientes, transporte de larga distancia).
+                Evalúa la arquitectura tecnológica actual de la agencia y determina las soluciones de conectividad, servidores y estaciones de trabajo prioritarias.
               </p>
             </div>
 
-            <form id="form-u1-e1">
-              <div class="sim-table-wrap">
-                <table class="sim-table">
-                  <thead>
-                    <tr>
-                      <th style="width: 45%;">Incidente Crítico Reportado en Auditoría</th>
-                      <th style="width: 35%;">Clasificación Estructural del Proceso</th>
-                      <th style="width: 20%;">Flujo Afectado</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <strong>1.</strong> Retraso de 12 días en la llegada del hilo de algodón importado desde el puerto marítimo.
-                      </td>
-                      <td>
-                        <select id="u1-inc-1" aria-label="Clasificación estructural del incidente 1" required style="width: 100%; padding: 8px; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-main); color: var(--text-light); font-size: 0.85rem;">
-                          <option value="">-- Seleccionar categoría --</option>
-                          <option value="log_interna">Logística Interna (Gestión de Planta)</option>
-                          <option value="sc_supply">Cadena de Suministro (Abastecimiento y Proveedores)</option>
-                          <option value="log_distrib">Logística de Distribución Local</option>
-                        </select>
-                      </td>
-                      <td><span class="sim-badge sim-badge--info">Flujo de Materiales</span></td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <strong>2.</strong> 4,500 piezas cortadas estancadas en pasillos entre corte y costura sin control de flujo (WIP excesivo).
-                      </td>
-                      <td>
-                        <select id="u1-inc-2" aria-label="Clasificación estructural del incidente 2" required style="width: 100%; padding: 8px; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-main); color: var(--text-light); font-size: 0.85rem;">
-                          <option value="">-- Seleccionar categoría --</option>
-                          <option value="log_interna">Logística Interna (Almacén y Manejo de Materiales WIP)</option>
-                          <option value="sc_supply">Cadena de Suministro (Abastecimiento)</option>
-                          <option value="sc_cliente">Cadena de Suministro (Clientes)</option>
-                        </select>
-                      </td>
-                      <td><span class="sim-badge sim-badge--warning">Flujo de Proceso</span></td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <strong>3.</strong> 18% de pedidos devueltos debido a que el personal confunde playeras talla M con talla L durante el doblado y embolsado.
-                      </td>
-                      <td>
-                        <select id="u1-inc-3" aria-label="Clasificación estructural del incidente 3" required style="width: 100%; padding: 8px; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-main); color: var(--text-light); font-size: 0.85rem;">
-                          <option value="">-- Seleccionar categoría --</option>
-                          <option value="log_interna">Logística Interna (Preparación de Pedidos / Picking & Packing)</option>
-                          <option value="sc_supply">Cadena de Suministro (Proveedores)</option>
-                          <option value="sc_cliente">Cadena de Suministro (Transporte Internacional)</option>
-                        </select>
-                      </td>
-                      <td><span class="sim-badge sim-badge--danger">Flujo de Calidad / Información</span></td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <strong>4.</strong> Desembolso imprevisto de $85,000 MXN en fletes camioneta urgente para evitar parálisis en tiendas foráneas.
-                      </td>
-                      <td>
-                        <select id="u1-inc-4" aria-label="Clasificación estructural del incidente 4" required style="width: 100%; padding: 8px; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-main); color: var(--text-light); font-size: 0.85rem;">
-                          <option value="">-- Seleccionar categoría --</option>
-                          <option value="log_distrib">Logística de Transporte (Flete Urgente de Emergencia)</option>
-                          <option value="log_interna">Logística Interna (Mantenimiento)</option>
-                          <option value="sc_supply">Cadena de Suministro (Contratos)</option>
-                        </select>
-                      </td>
-                      <td><span class="sim-badge sim-badge--danger">Flujo Financiero</span></td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <strong>5.</strong> Liverpool y Sears aplican penalizaciones y amenazan con rescindir el convenio de proveedor preferente.
-                      </td>
-                      <td>
-                        <select id="u1-inc-5" aria-label="Clasificación estructural del incidente 5" required style="width: 100%; padding: 8px; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-main); color: var(--text-light); font-family: inherit; font-size: 0.85rem;">
-                          <option value="">-- Seleccionar categoría --</option>
-                          <option value="sc_cliente">Cadena de Suministro (Servicio al Cliente y Gestión de la Demanda B2B)</option>
-                          <option value="log_interna">Logística Interna (Producción)</option>
-                          <option value="log_distrib">Logística Interna (Muelle)</option>
-                        </select>
-                      </td>
-                      <td><span class="sim-badge sim-badge--info">Relación Comercial</span></td>
-                    </tr>
-                  </tbody>
-                </table>
+            <div style="display: flex; flex-direction: column; gap: 20px; margin-top: 16px;">
+              <!-- Pregunta 1.1 -->
+              <div class="a-card" style="padding: 18px; background: var(--surface);">
+                <p><strong>1. Las sucursales de la agencia pierden comunicación cuando falla el proveedor de internet doméstico. ¿Cuál es la solución de infraestructura recomendada?</strong></p>
+                <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 10px;">
+                  <label style="cursor: pointer; display: flex; align-items: flex-start; gap: 8px;">
+                    <input type="radio" name="f1_p1" value="a">
+                    <span>a) Contratar enlace dedicado de fibra óptica empresarial con respaldo redundante automático por enlace celular 5G/SD-WAN.</span>
+                  </label>
+                  <label style="cursor: pointer; display: flex; align-items: flex-start; gap: 8px;">
+                    <input type="radio" name="f1_p1" value="b">
+                    <span>b) Instalar cables de mayor longitud en las computadoras de recepción.</span>
+                  </label>
+                  <label style="cursor: pointer; display: flex; align-items: flex-start; gap: 8px;">
+                    <input type="radio" name="f1_p1" value="c">
+                    <span>c) Suspender el servicio telefónico y solo atender clientes presenciales.</span>
+                  </label>
+                </div>
+                <div id="fb_f1_p1" class="a-feedback" style="display: none; margin-top: 12px;"></div>
               </div>
 
-              <div id="feedback-u1-e1" class="sim-feedback-inline"></div>
-
-              <div class="sim-actions-row">
-                <button type="submit" class="sim-btn sim-btn--primary">
-                  <i class="fas fa-stethoscope"></i> Auditar y Validar Clasificación
-                </button>
-                <button type="button" class="sim-btn sim-btn--secondary" data-next-step="2">
-                  Avanzar al Simulador <i class="fas fa-arrow-right"></i>
-                </button>
+              <!-- Pregunta 1.2 -->
+              <div class="a-card" style="padding: 18px; background: var(--surface);">
+                <p><strong>2. La agencia aloja su base de reservaciones en una computadora de escritorio antigua en recepción que se apaga accidentalmente. ¿Qué modelo de infraestructura debe adoptar?</strong></p>
+                <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 10px;">
+                  <label style="cursor: pointer; display: flex; align-items: flex-start; gap: 8px;">
+                    <input type="radio" name="f1_p2" value="a">
+                    <span>a) Dejar encendida la computadora con una nota adhesiva para que nadie la toque.</span>
+                  </label>
+                  <label style="cursor: pointer; display: flex; align-items: flex-start; gap: 8px;">
+                    <input type="radio" name="f1_p2" value="b">
+                    <span>b) Migración a Servidores Cloud (SaaS/IaaS en la nube) con alta disponibilidad (99.9%), respaldos geolocalizados y acceso cifrado SSL/VPN para todas las sucursales.</span>
+                  </label>
+                  <label style="cursor: pointer; display: flex; align-items: flex-start; gap: 8px;">
+                    <input type="radio" name="f1_p2" value="c">
+                    <span>c) Comprar discos compactos regrabables para almacenar las reservaciones diariamente.</span>
+                  </label>
+                </div>
+                <div id="fb_f1_p2" class="a-feedback" style="display: none; margin-top: 12px;"></div>
               </div>
-            </form>
+
+              <!-- Pregunta 1.3 -->
+              <div class="a-card" style="padding: 18px; background: var(--surface);">
+                <p><strong>3. ¿Qué diferencia estratégica existe entre Internet y la World Wide Web (WWW) al capacitar al personal de la agencia?</strong></p>
+                <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 10px;">
+                  <label style="cursor: pointer; display: flex; align-items: flex-start; gap: 8px;">
+                    <input type="radio" name="f1_p3" value="a">
+                    <span>a) Son exactamente lo mismo y los términos pueden utilizarse indistintamente.</span>
+                  </label>
+                  <label style="cursor: pointer; display: flex; align-items: flex-start; gap: 8px;">
+                    <input type="radio" name="f1_p3" value="b">
+                    <span>b) Internet es la red global de telecomunicaciones e infraestructura de hardware, mientras que la WWW es un servicio de información basado en hipertexto (páginas web) que viaja sobre internet.</span>
+                  </label>
+                  <label style="cursor: pointer; display: flex; align-items: flex-start; gap: 8px;">
+                    <input type="radio" name="f1_p3" value="c">
+                    <span>c) Internet solo se utiliza en hoteles y la WWW en aeropuertos.</span>
+                  </label>
+                </div>
+                <div id="fb_f1_p3" class="a-feedback" style="display: none; margin-top: 12px;"></div>
+              </div>
+            </div>
+
+            <div style="margin-top: 24px; display: flex; gap: 12px; align-items: center;">
+              <button class="u-btn u-btn--primary" id="btnComprobarF1"><i class="fas fa-check"></i> Comprobar Fase 1</button>
+              <button class="u-btn u-btn--secondary" id="btnNext1" style="display: none;">Ir a Fase 2 <i class="fas fa-arrow-right"></i></button>
+            </div>
           </div>
 
           <!-- ==============================================
-               FASE 2: SIMULADOR DE TRADE-OFF LOGÍSTICO
+               FASE 2: ESTRATEGIA DE COMUNICACIÓN DIGITAL
                ============================================== -->
           <div class="sim-panel" id="panel-step-2">
             <div class="sim-stage-header">
-              <span class="sim-stage-badge"><i class="fas fa-sliders"></i> Fase 2 de 4</span>
-              <h3 class="sim-stage-title">Simulador Dinámico de Trade-Off: Nivel de Servicio vs Costo Total</h3>
+              <span class="sim-stage-badge"><i class="fas fa-comments"></i> Fase 2</span>
+              <h3 class="sim-stage-title">Estrategia de Canales Sincrónicos y Asincrónicos</h3>
               <p class="sim-stage-desc">
-                En logística, elevar el servicio al cliente al 99% mediante la "fuerza bruta" (fletes exprés e inventarios monstruosos) destruye la rentabilidad. Experimenta con las variables operativas de la planta de playeras (10,000 unidades/mes) para encontrar el <strong>Punto Óptimo de Equilibrio</strong>.
+                Relaciona cada necesidad de comunicación de la agencia con el canal digital y modo temporal más adecuado.
               </p>
             </div>
 
-            <div class="sim-grid-2">
-              <!-- Panel de Controles -->
-              <div class="sim-control-box">
-                <h4 class="sim-control-box__title">
-                  <span><i class="fas fa-gears"></i> Palancas de Decisión Logística</span>
-                  <span id="u1-sim-status" class="sim-badge sim-badge--info">Ajustando Parámetros</span>
-                </h4>
-
-                <div class="sim-slider-group">
-                  <div class="sim-slider-label">
-                    <span>Nivel de Servicio Meta al Cliente:</span>
-                    <span class="sim-slider-val" id="u1-val-service">92%</span>
-                  </div>
-                  <input type="range" aria-label="Nivel de Servicio Meta al Cliente" class="sim-range" id="u1-slider-service" min="80" max="99" value="92" step="1">
-                  <small style="color: var(--text-muted); font-size: 0.76rem;">Compromiso contractual con tiendas departamentales.</small>
-                </div>
-
-                <div class="sim-slider-group">
-                  <div class="sim-slider-label">
-                    <span>Días de Stock de Seguridad (Inventario Amortiguador):</span>
-                    <span class="sim-slider-val" id="u1-val-stock">14 días</span>
-                  </div>
-                  <input type="range" aria-label="Días de Stock de Seguridad (Inventario Amortiguador)" class="sim-range" id="u1-slider-stock" min="4" max="28" value="14" step="2">
-                  <small style="color: var(--text-muted); font-size: 0.76rem;">Más días protegen contra retrasos del hilo pero saturan el almacén.</small>
-                </div>
-
-                <div class="sim-slider-group">
-                  <label for="u1-select-freight" style="display: block; font-size: 0.84rem; font-weight: 600; margin-bottom: 6px; color: var(--text-soft);">
-                    Estrategia de Transporte y Despacho:
-                  </label>
-                  <select id="u1-select-freight" style="width: 100%; padding: 9px; border-radius: var(--radius-sm); border: 1px solid var(--border-color); background: var(--bg-main); color: var(--text-light); font-size: 0.88rem;">
-                    <option value="standard">Consolidado Estándar ($12 MXN/pza - Mayor lead time)</option>
-                    <option value="hybrid" selected>Esquema Híbrido Programado ($22 MXN/pza - Rutas fijas)</option>
-                    <option value="emergency">Fletes Urgentes Dedicados ($38 MXN/pza - Entrega en 24h)</option>
+            <div class="a-card" style="margin-top: 16px; padding: 18px; background: var(--surface);">
+              <p>Selecciona para cada situación operativa el canal y esquema idóneo:</p>
+              <div style="display: flex; flex-direction: column; gap: 16px; margin-top: 14px;">
+                <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px; border-bottom: 1px solid var(--border-color, #e2e8f0); padding-bottom: 10px;">
+                  <span style="flex: 1; min-width: 260px;"><strong>A. Asistencia en tiempo real a un pasajero varado por cancelación climática en el aeropuerto:</strong></span>
+                  <select id="rel_u1_a" class="u-select" style="min-width: 240px; padding: 8px;">
+                    <option value="">-- Selecciona canal --</option>
+                    <option value="1">Canal Sincrónico: Chatbot / Mensajería instantánea directa 24/7</option>
+                    <option value="2">Canal Asincrónico: Correo institucional con acuse de recibo y SLA</option>
+                    <option value="3">Canal Asincrónico Colaborativo: Wiki de destinos y procedimientos</option>
+                    <option value="4">Canal Asincrónico de Difusión: Blog corporativo y newsletter</option>
                   </select>
                 </div>
 
-                <div class="sim-slider-group">
-                  <label for="u1-select-picking" style="display: block; font-size: 0.84rem; font-weight: 600; margin-bottom: 6px; color: var(--text-soft);">
-                    Sistema de Verificación en Almacén / Empaque:
-                  </label>
-                  <select id="u1-select-picking" style="width: 100%; padding: 9px; border-radius: var(--radius-sm); border: 1px solid var(--border-color); background: var(--bg-main); color: var(--text-light); font-size: 0.88rem;">
-                    <option value="manual">Manual con Listas de Papel (Error surtido: ~9%)</option>
-                    <option value="barcode" selected>Escaneo de Código de Barras GS1 (Error surtido: ~1.5%)</option>
-                    <option value="rfid">Pórtico RFID Automatizado (Error surtido: &lt;0.3%)</option>
+                <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px; border-bottom: 1px solid var(--border-color, #e2e8f0); padding-bottom: 10px;">
+                  <span style="flex: 1; min-width: 260px;"><strong>B. Envío formal de contratos de viaje, pólizas de seguro de viajero y facturas CFDI con valor legal:</strong></span>
+                  <select id="rel_u1_b" class="u-select" style="min-width: 240px; padding: 8px;">
+                    <option value="">-- Selecciona canal --</option>
+                    <option value="1">Canal Sincrónico: Chatbot / Mensajería instantánea directa 24/7</option>
+                    <option value="2">Canal Asincrónico: Correo institucional con acuse de recibo y SLA</option>
+                    <option value="3">Canal Asincrónico Colaborativo: Wiki de destinos y procedimientos</option>
+                    <option value="4">Canal Asincrónico de Difusión: Blog corporativo y newsletter</option>
+                  </select>
+                </div>
+
+                <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px; border-bottom: 1px solid var(--border-color, #e2e8f0); padding-bottom: 10px;">
+                  <span style="flex: 1; min-width: 260px;"><strong>C. Creación de una base de conocimiento viva con guías de destinos y protocolos para agentes novatos:</strong></span>
+                  <select id="rel_u1_c" class="u-select" style="min-width: 240px; padding: 8px;">
+                    <option value="">-- Selecciona canal --</option>
+                    <option value="1">Canal Sincrónico: Chatbot / Mensajería instantánea directa 24/7</option>
+                    <option value="2">Canal Asincrónico: Correo institucional con acuse de recibo y SLA</option>
+                    <option value="3">Canal Asincrónico Colaborativo: Wiki de destinos y procedimientos</option>
+                    <option value="4">Canal Asincrónico de Difusión: Blog corporativo y newsletter</option>
+                  </select>
+                </div>
+
+                <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px;">
+                  <span style="flex: 1; min-width: 260px;"><strong>D. Publicación de reportajes turísticos sobre Pueblos Mágicos para captar viajeros orgánicos:</strong></span>
+                  <select id="rel_u1_d" class="u-select" style="min-width: 240px; padding: 8px;">
+                    <option value="">-- Selecciona canal --</option>
+                    <option value="1">Canal Sincrónico: Chatbot / Mensajería instantánea directa 24/7</option>
+                    <option value="2">Canal Asincrónico: Correo institucional con acuse de recibo y SLA</option>
+                    <option value="3">Canal Asincrónico Colaborativo: Wiki de destinos y procedimientos</option>
+                    <option value="4">Canal Asincrónico de Difusión: Blog corporativo y newsletter</option>
                   </select>
                 </div>
               </div>
 
-              <!-- Panel de Métricas e Indicadores Vivos -->
-              <div style="display: flex; flex-direction: column; gap: 14px;">
-                <div class="sim-kpi-card is-success">
-                  <div class="sim-kpi-head">
-                    <span class="sim-kpi-title">Costo Logístico Total Mensual</span>
-                    <i class="fas fa-wallet sim-kpi-icon"></i>
-                  </div>
-                  <div class="sim-kpi-val" id="u1-kpi-total">$274,000 MXN</div>
-                  <p class="sim-kpi-desc">Suma de inventario + transporte + empaque + penalizaciones por fallas.</p>
-                </div>
-
-                <div class="sim-grid-2">
-                  <div class="sim-kpi-card">
-                    <div class="sim-kpi-head">
-                      <span class="sim-kpi-title">OTIF Real Alcanzado</span>
-                      <i class="fas fa-bullseye sim-kpi-icon"></i>
-                    </div>
-                    <div class="sim-kpi-val" id="u1-kpi-otif">94.5%</div>
-                    <p class="sim-kpi-desc">Pedidos entregados a tiempo y sin errores de talla.</p>
-                  </div>
-                  <div class="sim-kpi-card is-danger">
-                    <div class="sim-kpi-head">
-                      <span class="sim-kpi-title">Penalizaciones / Multas</span>
-                      <i class="fas fa-triangle-exclamation sim-kpi-icon"></i>
-                    </div>
-                    <div class="sim-kpi-val" id="u1-kpi-penalties">$27,000</div>
-                    <p class="sim-kpi-desc">Multas departamentales por retraso y devoluciones.</p>
-                  </div>
-                </div>
-
-                <div class="sim-control-box" style="padding: 14px;">
-                  <span style="font-size: 0.82rem; font-weight: 700; color: var(--text-light); text-transform: uppercase;">
-                    Desglose Proporcional de Costos Logísticos:
-                  </span>
-                  <div class="sim-meter">
-                    <div class="sim-meter__track">
-                      <div class="sim-meter__seg sim-meter__seg--inv" id="u1-seg-inv" style="width: 25%;"></div>
-                      <div class="sim-meter__seg sim-meter__seg--trans" id="u1-seg-trans" style="width: 60%;"></div>
-                      <div class="sim-meter__seg sim-meter__seg--pen" id="u1-seg-pen" style="width: 15%;"></div>
-                    </div>
-                  </div>
-                  <div class="sim-meter-legend">
-                    <span><span class="sim-meter-dot" style="background: #3b82f6;"></span> Inventario: <strong id="u1-kpi-inv">$38,000</strong></span>
-                    <span><span class="sim-meter-dot" style="background: #f59e0b;"></span> Transporte & Empaque: <strong id="u1-kpi-trans">$209,000</strong></span>
-                    <span><span class="sim-meter-dot" style="background: #ef4444;"></span> Multas & Merma: <strong>Penalizaciones</strong></span>
-                  </div>
-                </div>
-              </div>
+              <div id="fb_f2" class="a-feedback" style="display: none; margin-top: 16px;"></div>
             </div>
 
-            <!-- Inyección de Escenarios de Estrés Operativo -->
-            <div class="sim-stress-panel">
-              <h4 class="sim-stress-title">
-                <i class="fas fa-bolt"></i> Banco de Pruebas de Estrés Operativo (Inyección de Fallas):
-              </h4>
-              <p style="font-size: 0.84rem; color: var(--text-soft); margin: 0 0 10px;">
-                Pon a prueba la robustez de tu cadena de suministro ante eventos imprevistos reales del mercado textil:
-              </p>
-              <div class="sim-scenarios-grid">
-                <button type="button" class="sim-scenario-btn is-active" data-scenario="normal">
-                  <i class="fas fa-check"></i> Operación Regular (Sin perturbaciones)
-                </button>
-                <button type="button" class="sim-scenario-btn" data-scenario="demand_spike">
-                  <i class="fas fa-arrow-trend-up"></i> Buen Fin / Picos de Demanda (+40%)
-                </button>
-                <button type="button" class="sim-scenario-btn" data-scenario="port_delay">
-                  <i class="fas fa-anchor"></i> Bloqueo Portuario (+8 días entrega hilo)
-                </button>
-              </div>
-            </div>
-
-            <div class="sim-actions-row">
-              <button type="button" class="sim-btn sim-btn--secondary" data-next-step="1">
-                <i class="fas fa-arrow-left"></i> Volver a Diagnóstico
-              </button>
-              <button type="button" class="sim-btn sim-btn--primary" data-next-step="3">
-                Continuar a Auditoría de KPIs <i class="fas fa-arrow-right"></i>
-              </button>
+            <div style="margin-top: 24px; display: flex; gap: 12px; align-items: center;">
+              <button class="u-btn u-btn--primary" id="btnComprobarF2"><i class="fas fa-check"></i> Comprobar Fase 2</button>
+              <button class="u-btn u-btn--secondary" id="btnNext2" style="display: none;">Ir a Fase 3 <i class="fas fa-arrow-right"></i></button>
             </div>
           </div>
 
           <!-- ==============================================
-               FASE 3: LABORATORIO DE CÁLCULO DE KPIS
+               FASE 3: MATRIZ DE INTEGRACIÓN POS - GDS - ERP
                ============================================== -->
           <div class="sim-panel" id="panel-step-3">
             <div class="sim-stage-header">
-              <span class="sim-stage-badge"><i class="fas fa-calculator"></i> Fase 3 de 4</span>
-              <h3 class="sim-stage-title">Auditoría Numérica: Bitácora de Despachos y Cálculo de KPIs</h3>
+              <span class="sim-stage-badge"><i class="fas fa-cubes"></i> Fase 3</span>
+              <h3 class="sim-stage-title">Integración Operativa POS · GDS · ERP</h3>
               <p class="sim-stage-desc">
-                La dirección de Textiles del Centro te entregó el registro real de los últimos 10 pedidos despachados a tiendas departamentales. Como auditor(a) técnico(a), calcula los indicadores clave de desempeño logístico.
+                Analiza el flujo integral de una venta turística. Determina la afirmación correcta para cada componente del ecosistema digital.
               </p>
             </div>
 
-            <!-- Fórmulas de Referencia -->
-            <div class="sim-grid-3">
-              <div class="sim-formula-box">
-                <div class="sim-formula-tag">OTIF (On-Time In-Full)</div>
-                <div class="sim-formula-math">OTIF = (P_a_tiempo_completos / P_totales) × 100</div>
-                <p class="sim-formula-desc">Un pedido solo cumple si llegó en fecha Y con la cantidad/talla exacta.</p>
+            <div style="display: flex; flex-direction: column; gap: 18px; margin-top: 16px;">
+              <div class="a-card" style="padding: 16px; background: var(--surface);">
+                <p><strong>1. ¿Cuál es el rol primordial del Sistema de Distribución Global (GDS como Amadeus o Sabre) en la agencia?</strong></p>
+                <div style="display: flex; flex-direction: column; gap: 6px; margin-top: 8px;">
+                  <label><input type="radio" name="f3_p1" value="v"> <span>a) Consultar en tiempo real inventarios y tarifas mundiales de aerolíneas, hoteles y arrendadoras, emitiendo boletos con código PNR estandarizado.</span></label>
+                  <label><input type="radio" name="f3_p1" value="f1"> <span>b) Imprimir los recibos térmicos en la caja registradora de la tienda física.</span></label>
+                  <label><input type="radio" name="f3_p1" value="f2"> <span>c) Calcular el salario neto y las prestaciones de ley de los empleados de la agencia.</span></label>
+                </div>
+                <div id="fb_f3_p1" class="a-feedback" style="display: none; margin-top: 10px;"></div>
               </div>
-              <div class="sim-formula-box">
-                <div class="sim-formula-tag">Fill Rate (Nivel de Cumplimiento)</div>
-                <div class="sim-formula-math">Fill Rate = (Prendas_Entregadas / Prendas_Pedidas) × 100</div>
-                <p class="sim-formula-desc">Mide el volumen de producto abastecido frente a la demanda solicitada.</p>
+
+              <div class="a-card" style="padding: 16px; background: var(--surface);">
+                <p><strong>2. ¿Qué función cumple la Terminal Punto de Venta (POS) en el mostrador de atención al viajero?</strong></p>
+                <div style="display: flex; flex-direction: column; gap: 6px; margin-top: 8px;">
+                  <label><input type="radio" name="f3_p2" value="v"> <span>a) Capturar la transacción comercial, procesar el pago seguro con tarjeta (chip/contactless) y generar el comprobante de venta inmediato.</span></label>
+                  <label><input type="radio" name="f3_p2" value="f1"> <span>b) Asignar los asientos en las cabinas de los aviones comerciales.</span></label>
+                  <label><input type="radio" name="f3_p2" value="f2"> <span>c) Crear campañas de marketing en redes sociales corporativas.</span></label>
+                </div>
+                <div id="fb_f3_p2" class="a-feedback" style="display: none; margin-top: 10px;"></div>
               </div>
-              <div class="sim-formula-box">
-                <div class="sim-formula-tag">Lead Time Promedio</div>
-                <div class="sim-formula-math">Lead Time = Σ(Días_Ciclo_Real) / N_pedidos</div>
-                <p class="sim-formula-desc">Tiempo promedio transcurrido desde la orden hasta la entrega en tienda.</p>
+
+              <div class="a-card" style="padding: 16px; background: var(--surface);">
+                <p><strong>3. ¿Por qué es indispensable enlazar el POS y el GDS con el software ERP (Enterprise Resource Planning)?</strong></p>
+                <div style="display: flex; flex-direction: column; gap: 6px; margin-top: 8px;">
+                  <label><input type="radio" name="f3_p3" value="v"> <span>a) Porque el ERP centraliza la contabilidad, el inventario general, la facturación fiscal y las comisiones bancarias en una única base de datos sin duplicar registros manuales.</span></label>
+                  <label><input type="radio" name="f3_p3" value="f1"> <span>b) Para que las computadoras no se sobrecalienten al navegar en internet.</span></label>
+                  <label><input type="radio" name="f3_p3" value="f2"> <span>c) El enlace es innecesario, es más seguro llevar las cuentas en libretas de papel.</span></label>
+                </div>
+                <div id="fb_f3_p3" class="a-feedback" style="display: none; margin-top: 10px;"></div>
               </div>
             </div>
 
-            <!-- Tabla de Datos Reales -->
-            <div class="sim-table-wrap">
-              <table class="sim-table">
-                <thead>
-                  <tr>
-                    <th>Folio</th>
-                    <th>Cliente Departamental</th>
-                    <th>Prendas Pedidas</th>
-                    <th>Prendas Entregadas Conformes</th>
-                    <th>Fecha Prometida</th>
-                    <th>Fecha Real de Entrega</th>
-                    <th>Días Ciclo Real</th>
-                    <th>¿A Tiempo?</th>
-                    <th>¿Completo?</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>#101</td>
-                    <td>Liverpool Santa Fe</td>
-                    <td>500</td>
-                    <td>500</td>
-                    <td>10-Oct</td>
-                    <td>10-Oct</td>
-                    <td>3 días</td>
-                    <td><span class="sim-badge sim-badge--success">Sí</span></td>
-                    <td><span class="sim-badge sim-badge--success">Sí</span></td>
-                  </tr>
-                  <tr>
-                    <td>#102</td>
-                    <td>Sears Insurgentes</td>
-                    <td>300</td>
-                    <td>300</td>
-                    <td>12-Oct</td>
-                    <td>11-Oct</td>
-                    <td>2 días</td>
-                    <td><span class="sim-badge sim-badge--success">Sí</span></td>
-                    <td><span class="sim-badge sim-badge--success">Sí</span></td>
-                  </tr>
-                  <tr style="background: rgba(239, 68, 68, 0.05);">
-                    <td>#103</td>
-                    <td>Palacio de Hierro Perisur</td>
-                    <td>800</td>
-                    <td>720 (80 faltantes)</td>
-                    <td>15-Oct</td>
-                    <td>17-Oct (Tardío)</td>
-                    <td>5 días</td>
-                    <td><span class="sim-badge sim-badge--danger">No</span></td>
-                    <td><span class="sim-badge sim-badge--danger">No</span></td>
-                  </tr>
-                  <tr>
-                    <td>#104</td>
-                    <td>Coppel Buenavista</td>
-                    <td>400</td>
-                    <td>400</td>
-                    <td>18-Oct</td>
-                    <td>18-Oct</td>
-                    <td>4 días</td>
-                    <td><span class="sim-badge sim-badge--success">Sí</span></td>
-                    <td><span class="sim-badge sim-badge--success">Sí</span></td>
-                  </tr>
-                  <tr style="background: rgba(239, 68, 68, 0.05);">
-                    <td>#105</td>
-                    <td>Liverpool Polanco</td>
-                    <td>1,200</td>
-                    <td>1,050 (150 mermadas)</td>
-                    <td>20-Oct</td>
-                    <td>23-Oct (Tardío)</td>
-                    <td>6 días</td>
-                    <td><span class="sim-badge sim-badge--danger">No</span></td>
-                    <td><span class="sim-badge sim-badge--danger">No</span></td>
-                  </tr>
-                  <tr>
-                    <td>#106</td>
-                    <td>Sears Satélite</td>
-                    <td>600</td>
-                    <td>600</td>
-                    <td>22-Oct</td>
-                    <td>22-Oct</td>
-                    <td>3 días</td>
-                    <td><span class="sim-badge sim-badge--success">Sí</span></td>
-                    <td><span class="sim-badge sim-badge--success">Sí</span></td>
-                  </tr>
-                  <tr>
-                    <td>#107</td>
-                    <td>Coppel Ecatepec</td>
-                    <td>750</td>
-                    <td>750</td>
-                    <td>24-Oct</td>
-                    <td>23-Oct</td>
-                    <td>2 días</td>
-                    <td><span class="sim-badge sim-badge--success">Sí</span></td>
-                    <td><span class="sim-badge sim-badge--success">Sí</span></td>
-                  </tr>
-                  <tr>
-                    <td>#108</td>
-                    <td>Liverpool Puebla</td>
-                    <td>900</td>
-                    <td>900</td>
-                    <td>26-Oct</td>
-                    <td>26-Oct</td>
-                    <td>4 días</td>
-                    <td><span class="sim-badge sim-badge--success">Sí</span></td>
-                    <td><span class="sim-badge sim-badge--success">Sí</span></td>
-                  </tr>
-                  <tr style="background: rgba(239, 68, 68, 0.05);">
-                    <td>#109</td>
-                    <td>Sears Lindavista</td>
-                    <td>350</td>
-                    <td>310 (40 error talla)</td>
-                    <td>28-Oct</td>
-                    <td>29-Oct (Tardío)</td>
-                    <td>5 días</td>
-                    <td><span class="sim-badge sim-badge--danger">No</span></td>
-                    <td><span class="sim-badge sim-badge--danger">No</span></td>
-                  </tr>
-                  <tr>
-                    <td>#110</td>
-                    <td>Palacio Durango</td>
-                    <td>1,000</td>
-                    <td>1,000</td>
-                    <td>30-Oct</td>
-                    <td>30-Oct</td>
-                    <td>3 días</td>
-                    <td><span class="sim-badge sim-badge--success">Sí</span></td>
-                    <td><span class="sim-badge sim-badge--success">Sí</span></td>
-                  </tr>
-                  <tr style="font-weight: 700; background: color-mix(in srgb, var(--primary) 10%, transparent);">
-                    <td colspan="2">TOTALES AUDITADOS:</td>
-                    <td>6,800 prendas</td>
-                    <td>6,530 prendas</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>Σ = 37 días</td>
-                    <td>7 a tiempo</td>
-                    <td>7 completos</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <!-- Calculadora de Verificación del Auditor -->
-            <div class="sim-control-box">
-              <h4 class="sim-control-box__title"><i class="fas fa-check-double"></i> Ingresa tus Cálculos de Auditoría</h4>
-              <div class="sim-calc-group">
-                <div class="sim-calc-input">
-                  <label for="u1-calc-otif">1. OTIF Real (%):</label>
-                  <input type="number" id="u1-calc-otif" step="0.1" placeholder="Ej. 70.0">
-                </div>
-                <div class="sim-calc-input">
-                  <label for="u1-calc-fill">2. Fill Rate (%):</label>
-                  <input type="number" id="u1-calc-fill" step="0.1" placeholder="Ej. 96.0">
-                </div>
-                <div class="sim-calc-input">
-                  <label for="u1-calc-lead">3. Lead Time Promedio (días):</label>
-                  <input type="number" id="u1-calc-lead" step="0.1" placeholder="Ej. 3.7">
-                </div>
-                <button type="button" class="sim-btn sim-btn--primary" id="btn-check-kpis" style="height: 42px;">
-                  <i class="fas fa-calculator"></i> Validar Auditoría
-                </button>
-              </div>
-
-              <div id="feedback-u1-kpis" class="sim-feedback-inline"></div>
-            </div>
-
-            <div class="sim-actions-row">
-              <button type="button" class="sim-btn sim-btn--secondary" data-next-step="2">
-                <i class="fas fa-arrow-left"></i> Volver al Simulador
-              </button>
-              <button type="button" class="sim-btn sim-btn--primary" data-next-step="4">
-                Redactar Dictamen Estratégico <i class="fas fa-arrow-right"></i>
-              </button>
+            <div style="margin-top: 24px; display: flex; gap: 12px; align-items: center;">
+              <button class="u-btn u-btn--primary" id="btnComprobarF3"><i class="fas fa-check"></i> Comprobar Fase 3</button>
+              <button class="u-btn u-btn--secondary" id="btnNext3" style="display: none;">Ir a Fase 4 <i class="fas fa-arrow-right"></i></button>
             </div>
           </div>
 
           <!-- ==============================================
-               FASE 4: DICTAMEN ESTRATÉGICO Y EVALUACIÓN
+               FASE 4: DICTAMEN ESTRATÉGICO Y CIBERSEGURIDAD
                ============================================== -->
           <div class="sim-panel" id="panel-step-4">
             <div class="sim-stage-header">
-              <span class="sim-stage-badge"><i class="fas fa-certificate"></i> Fase 4 de 4</span>
-              <h3 class="sim-stage-title">Dictamen Estratégico de Ingeniería Textil</h3>
+              <span class="sim-stage-badge"><i class="fas fa-shield-halved"></i> Fase 4</span>
+              <h3 class="sim-stage-title">Dictamen Estratégico y Ciberseguridad</h3>
               <p class="sim-stage-desc">
-                Con base en el diagnóstico causal, la simulación de trade-offs y la auditoría numérica de pedidos, emite tu dictamen técnico final con las medidas correctivas que salvarán el contrato con los clientes departamentales.
+                Como asesor tecnológico de EST-IPN, redacta y valida las recomendaciones prioritarias para blindar la operación y la reputación de la empresa.
               </p>
             </div>
 
-            <!-- Opciones de Estrategia Táctica -->
-            <h4 style="margin: 0 0 10px; font-size: 0.95rem; color: var(--text-light);">
-              Selecciona la Estrategia Táctica Principal para Textiles del Centro:
-            </h4>
-            <div class="sim-decision-grid">
-              <label class="sim-decision-card is-selected">
-                <input type="radio" class="sim-decision-radio" name="u1-strat" value="opt_sla_gs1" checked>
-                <div class="sim-decision-info">
-                  <h4>Estrategia Integral: Acuerdos SLA con Hilanderías + Verificación GS1-128 en Empaque</h4>
-                  <p>
-                    Formalizar acuerdos de nivel de servicio (SLA) con proveedores de algodón para reducir variabilidad de lead time, implementar buffer sincronizado en corte y equipar el área de empaque con lectores de código de barras para erradicar el 18% de devoluciones por tallas cambiadas.
-                  </p>
-                </div>
-              </label>
-
-              <label class="sim-decision-card">
-                <input type="radio" class="sim-decision-radio" name="u1-strat" value="opt_stock_bruto">
-                <div class="sim-decision-info">
-                  <h4>Estrategia Reactiva: Elevar Inventarios al Máximo y Contratar Bodegas Externas</h4>
-                  <p>
-                    Comprar rollos de algodón masivamente para no sufrir retrasos y acumular inventario terminado en bodegas rentadas fuera de la planta, absorbiendo altos costos financieros y riesgo de obsolescencia.
-                  </p>
-                </div>
-              </label>
-
-              <label class="sim-decision-card">
-                <input type="radio" class="sim-decision-radio" name="u1-strat" value="opt_air_freight">
-                <div class="sim-decision-info">
-                  <h4>Estrategia de Mitigación: Subsidiar Fletes Exprés Aéreos Indefinidamente</h4>
-                  <p>
-                    Continuar absorbiendo camionetas exprés y envíos aéreos de emergencia para cumplir las fechas de entrega a tiendas, manteniendo procesos internos manuales y desorganizados.
-                  </p>
-                </div>
-              </label>
-            </div>
-
-            <!-- Área de Dictamen Escrito del Alumno -->
-            <div class="sim-control-box" style="margin-top: 18px;">
-              <label for="u1-dictamen-texto" style="display: block; font-weight: 700; margin-bottom: 8px; color: var(--text-light);">
-                <i class="fas fa-file-pen"></i> Dictamen Técnico Formal (Argumentación para Dirección General):
-              </label>
-              <textarea id="u1-dictamen-texto" rows="5" style="width: 100%; padding: 12px; border-radius: var(--radius-sm); border: 1px solid var(--border-color); background: var(--bg-main); color: var(--text-light); font-family: inherit; font-size: 0.9rem; line-height: 1.55;" placeholder="Detalla cómo los acuerdos de entrega con hilanderías, el control de inventario WIP en confección y la estandarización de empaque restablecerán el OTIF por encima del 95% minimizando el costo total logístico..."></textarea>
-            </div>
-
-            <!-- Resumen y Calificación del Dictamen -->
-            <div class="sim-summary-card">
-              <div class="sim-score-banner">
-                <div style="display: flex; align-items: center; gap: 16px;">
-                  <div class="sim-score-circle" id="u1-score-circle">100</div>
-                  <div class="sim-score-meta">
-                    <h3 id="u1-score-title">Dictamen Sobresaliente (Acreditado)</h3>
-                    <p>Evaluación basada en precisión de diagnóstico, optimización de costos y rigor en cálculo de KPIs.</p>
-                  </div>
-                </div>
-                <div style="text-align: right;">
-                  <span class="sim-badge sim-badge--success" style="font-size: 0.82rem; padding: 6px 12px;">
-                    <i class="fas fa-certificate"></i> Evidencia para Portafolio ESIT
-                  </span>
-                </div>
+            <div style="display: flex; flex-direction: column; gap: 18px; margin-top: 16px;">
+              <div class="a-card" style="padding: 18px; background: var(--surface);">
+                <label for="dictamen_1" style="font-weight: 600; display: block; margin-bottom: 6px;">
+                  1. Plan de Respaldo: Explica la regla de respaldo 3-2-1 y cómo evitaría pérdidas catastróficas de datos en la agencia:
+                </label>
+                <textarea id="dictamen_1" rows="3" class="u-textarea" style="width: 100%; padding: 10px; border-radius: var(--radius-sm, 6px); border: 1px solid var(--border-color, #cbd5e1);" placeholder="Describe las 3 copias, los 2 tipos de medios y la 1 ubicación externa..."></textarea>
+                <div id="fb_dictamen_1" class="a-feedback" style="display: none; margin-top: 8px;"></div>
               </div>
 
-              <div class="sim-actions-row">
-                <button type="button" class="sim-btn sim-btn--secondary" id="btn-imprimir-u1">
-                  <i class="fas fa-print"></i> Imprimir / Guardar en PDF
-                </button>
-                <button type="button" class="sim-btn sim-btn--primary" id="btn-guardar-dictamen-u1">
-                  <i class="fas fa-floppy-disk"></i> Guardar Dictamen en Portafolio Digital
-                </button>
+              <div class="a-card" style="padding: 18px; background: var(--surface);">
+                <label for="dictamen_2" style="font-weight: 600; display: block; margin-bottom: 6px;">
+                  2. Medidas Anti-Phishing: ¿Qué controles técnicos y de capacitación deben implementarse para evitar que los agentes sean engañados con comprobantes bancarios falsos?
+                </label>
+                <textarea id="dictamen_2" rows="3" class="u-textarea" style="width: 100%; padding: 10px; border-radius: var(--radius-sm, 6px); border: 1px solid var(--border-color, #cbd5e1);" placeholder="Indica autenticación multifactor, verificación en pasarelas bancarias oficiales y filtros de correo..."></textarea>
+                <div id="fb_dictamen_2" class="a-feedback" style="display: none; margin-top: 8px;"></div>
+              </div>
+
+              <div class="a-card" style="padding: 18px; background: var(--surface);">
+                <label for="dictamen_3" style="font-weight: 600; display: block; margin-bottom: 6px;">
+                  3. Espacios Virtuales de Trabajo: ¿Cómo beneficiará implementar un Ambiente Virtual de Aprendizaje (AVA) y un sistema documental colaborativo en la capacitación de sucursales?
+                </label>
+                <textarea id="dictamen_3" rows="3" class="u-textarea" style="width: 100%; padding: 10px; border-radius: var(--radius-sm, 6px); border: 1px solid var(--border-color, #cbd5e1);" placeholder="Argumenta la estandarización de competencias, accesibilidad remota y actualización continua..."></textarea>
+                <div id="fb_dictamen_3" class="a-feedback" style="display: none; margin-top: 8px;"></div>
+              </div>
+            </div>
+
+            <div style="margin-top: 24px; display: flex; gap: 12px; align-items: center;">
+              <button class="u-btn u-btn--primary" id="btnComprobarDictamen"><i class="fas fa-stamp"></i> Validar Dictamen Final</button>
+            </div>
+
+            <!-- Resumen Global de Desempeño -->
+            <div id="resumenGlobal" class="a-card" style="display: none; margin-top: 24px; background: #ecfdf5; border-left: 6px solid #10b981; padding: 22px;">
+              <div style="display: flex; align-items: center; gap: 14px;">
+                <i class="fas fa-circle-check" style="font-size: 2.2rem; color: #10b981;"></i>
+                <div>
+                  <h3 style="margin: 0; color: #065f46; font-size: 1.25rem;">¡Evaluación Integradora de Unidad I Aprobada con Distinción!</h3>
+                  <p style="margin: 6px 0 0; color: #047857; font-size: 0.95rem;">
+                    Has completado exitosamente las 4 fases del caso "Turismo México Global". Has demostrado dominio en infraestructura tecnológica, selección de canales sincrónicos/asincrónicos, sinergia de plataformas turísticas especializadas (POS/GDS/ERP) y protocolos de ciberseguridad.
+                  </p>
+                </div>
+              </div>
+              <div style="margin-top: 18px; display: flex; gap: 12px;">
+                <a href="../index.html" class="u-btn u-btn--primary"><i class="fas fa-arrow-left"></i> Volver a Unidad I</a>
+                <a href="../../unidad-02/index.html" class="u-btn u-btn--secondary">Avanzar a Unidad II <i class="fas fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
         </section>
-
-        <!-- Navegación inferior unificada -->
-        <nav class="t-pager" id="actividadNavegacion" aria-label="Navegación de la actividad" style="margin-top: 24px;">
-          <a class="t-pager__prev" href="../temas/tema-01-06.html"><i class="fas fa-arrow-left" aria-hidden="true"></i> Volver al tema 1.6</a>
-          <a class="u-btn u-btn--primary" href="../../unidad-02/index.html">Continuar a la Unidad II <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
-        </nav>
       </div>
 
-      <!-- Barra lateral desplegable y compacta -->
-      <aside class="a-sidebar" aria-label="Información de la actividad">
-        <details class="a-sidebar-details" open>
-          <summary class="a-sidebar-summary">
-            <span class="a-sidebar-summary-label"><i class="fas fa-layer-group"></i> Panel de apoyo</span>
-            <i class="fas fa-chevron-down a-sidebar-chevron"></i>
-          </summary>
-          <div class="a-sidebar-inner">
-            <section class="a-side-card a-side-card--dark">
-              <p class="a-side-title">Laboratorio ESIT</p>
-              <p class="a-side-text">El Método de Casos con simulador pone a prueba tus criterios de ingeniería frente a problemas de manufactura textil mexicana.</p>
-              <a class="a-side-link" href="../index.html"><i class="fas fa-arrow-left" aria-hidden="true"></i> <span>Volver a la Unidad I</span></a>
-            </section>
-
-            <nav class="a-side-card">
-              <p class="a-side-title">Temas Clave de Apoyo</p>
-              <a class="a-side-item" href="../temas/tema-01-01.html"><i class="fas fa-book-open"></i> 1.1 Objetivos de la logística</a>
-              <a class="a-side-item" href="../temas/tema-01-03.html"><i class="fas fa-book-open"></i> 1.3 Logística vs Cadena</a>
-              <a class="a-side-item" href="../temas/tema-01-05.html"><i class="fas fa-book-open"></i> 1.5 Costos y niveles de servicio</a>
-              <a class="a-side-item" href="../temas/tema-01-06.html"><i class="fas fa-book-open"></i> 1.6 Indicadores KPI y OTIF</a>
-            </nav>
-          </div>
-        </details>
+      <!-- Barra lateral de navegación rápida -->
+      <aside class="a-aside">
+        <section class="a-card" style="position: sticky; top: 88px;">
+          <h2 class="a-card__title"><i class="fas fa-compass" aria-hidden="true"></i> Guía del Consultor</h2>
+          <p style="font-size: 0.88rem; color: var(--text-muted, #64748b); line-height: 1.5;">
+            Sigue la secuencia metodológica para restaurar la productividad operativa de la agencia turística:
+          </p>
+          <ul class="a-checklist" style="list-style: none; padding: 0; margin: 12px 0 0; font-size: 0.88rem; display: flex; flex-direction: column; gap: 10px;">
+            <li id="chk-1" style="display: flex; align-items: center; gap: 8px;"><i class="far fa-circle" style="color: var(--text-muted);"></i> Fase 1: Conectividad y Nube</li>
+            <li id="chk-2" style="display: flex; align-items: center; gap: 8px;"><i class="far fa-circle" style="color: var(--text-muted);"></i> Fase 2: Canales de Comunicación</li>
+            <li id="chk-3" style="display: flex; align-items: center; gap: 8px;"><i class="far fa-circle" style="color: var(--text-muted);"></i> Fase 3: Ecosistema POS/GDS/ERP</li>
+            <li id="chk-4" style="display: flex; align-items: center; gap: 8px;"><i class="far fa-circle" style="color: var(--text-muted);"></i> Fase 4: Dictamen y Ciberseguridad</li>
+          </ul>
+        </section>
       </aside>
     </div>
   </main>
 
-  <footer class="u-footer">
+  <footer class="u-footer" style="margin-top: 48px;">
     <div class="u-footer__inner">
-      <p>Logística y cadena de suministro · Polilibro académico · ESIT-IPN</p>
+      <p>TIC aplicadas al turismo · Polilibro académico · EST-IPN</p>
       <p>Desarrollado con fines educativos · © 2026</p>
     </div>
   </footer>
 
-  <script src="../../../assets/js/data-manager.js"></script>
   <script src="../../../assets/js/componentes.js"></script>
-  <script src="../../../assets/js/unidades-ui.js"></script>
-  <script src="../../../assets/js/simuladores/simulador-u1.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Stepper
+      const stepBtns = document.querySelectorAll('.sim-step-btn');
+      const panels = document.querySelectorAll('.sim-panel');
+
+      function switchStep(step) {
+        stepBtns.forEach(btn => {
+          btn.classList.toggle('is-active', btn.dataset.step === String(step));
+        });
+        panels.forEach((p, idx) => {
+          p.classList.toggle('is-active', idx + 1 === Number(step));
+        });
+      }
+
+      stepBtns.forEach(btn => {
+        btn.addEventListener('click', () => switchStep(btn.dataset.step));
+      });
+
+      document.getElementById('btnNext1').addEventListener('click', () => switchStep(2));
+      document.getElementById('btnNext2').addEventListener('click', () => switchStep(3));
+      document.getElementById('btnNext3').addEventListener('click', () => switchStep(4));
+
+      // Fase 1: Infraestructura
+      document.getElementById('btnComprobarF1').addEventListener('click', () => {
+        const correct = { f1_p1: 'a', f1_p2: 'b', f1_p3: 'b' };
+        const expl = {
+          f1_p1: 'El enlace dedicado con respaldo celular 5G previene interrupciones en ventas durante picos de demanda.',
+          f1_p2: 'Los servidores en la nube ofrecen redundancia, accesibilidad remota y respaldos automáticos.',
+          f1_p3: 'Internet es la infraestructura física global y la WWW es el sistema de hipertexto que opera sobre ella.'
+        };
+
+        for (const [key, val] of Object.entries(correct)) {
+          const sel = document.querySelector(`input[name="${key}"]:checked`);
+          const fb = document.getElementById(`fb_${key}`);
+          fb.style.display = 'block';
+          if (sel && sel.value === val) {
+            fb.className = 'a-feedback a-feedback--ok';
+            fb.innerHTML = `<i class="fas fa-check-circle"></i> Correcto: ${expl[key]}`;
+          } else {
+            fb.className = 'a-feedback a-feedback--bad';
+            fb.innerHTML = `<i class="fas fa-times-circle"></i> Opción incorrecta. La respuesta adecuada es (${val}). ${expl[key]}`;
+          }
+        }
+        document.getElementById('btnNext1').style.display = 'inline-flex';
+        document.getElementById('chk-1').innerHTML = '<i class="fas fa-check-circle" style="color: #10b981;"></i> Fase 1: Conectividad y Nube';
+      });
+
+      // Fase 2: Canales de Comunicación
+      document.getElementById('btnComprobarF2').addEventListener('click', () => {
+        const correct = { rel_u1_a: '1', rel_u1_b: '2', rel_u1_c: '3', rel_u1_d: '4' };
+        let count = 0;
+
+        for (const [id, val] of Object.entries(correct)) {
+          const sel = document.getElementById(id);
+          if (sel.value === val) {
+            sel.style.borderColor = 'var(--primary, #0284c7)';
+            count++;
+          } else {
+            sel.style.borderColor = '#ef4444';
+          }
+        }
+
+        const fb = document.getElementById('fb_f2');
+        fb.style.display = 'block';
+        if (count === 4) {
+          fb.className = 'a-feedback a-feedback--ok';
+          fb.innerHTML = '<i class="fas fa-check-circle"></i> ¡Excelente! Has asignado con precisión el canal sincrónico o asincrónico para cada proceso turístico.';
+        } else {
+          fb.className = 'a-feedback a-feedback--bad';
+          fb.innerHTML = `<i class="fas fa-times-circle"></i> Aciertos: ${count} de 4. Solución: A-1 (Emergencia viajero &rarr; Chat sincrónico), B-2 (Contratos &rarr; Correo formal con SLA), C-3 (Manuales &rarr; Wiki colaborativa), D-4 (Promoción &rarr; Blog de difusión).`;
+        }
+        document.getElementById('btnNext2').style.display = 'inline-flex';
+        document.getElementById('chk-2').innerHTML = '<i class="fas fa-check-circle" style="color: #10b981;"></i> Fase 2: Canales de Comunicación';
+      });
+
+      // Fase 3: Ecosistema POS/GDS/ERP
+      document.getElementById('btnComprobarF3').addEventListener('click', () => {
+        const correct = { f3_p1: 'v', f3_p2: 'v', f3_p3: 'v' };
+        for (const key of Object.keys(correct)) {
+          const sel = document.querySelector(`input[name="${key}"]:checked`);
+          const fb = document.getElementById(`fb_${key}`);
+          fb.style.display = 'block';
+          if (sel && sel.value === 'v') {
+            fb.className = 'a-feedback a-feedback--ok';
+            fb.innerHTML = '<i class="fas fa-check-circle"></i> Correcto: Reconocimiento adecuado de la arquitectura operativa turística.';
+          } else {
+            fb.className = 'a-feedback a-feedback--bad';
+            fb.innerHTML = '<i class="fas fa-times-circle"></i> Respuesta incorrecta. Revisa la definición de la tecnología en cuestión.';
+          }
+        }
+        document.getElementById('btnNext3').style.display = 'inline-flex';
+        document.getElementById('chk-3').innerHTML = '<i class="fas fa-check-circle" style="color: #10b981;"></i> Fase 3: Ecosistema POS/GDS/ERP';
+      });
+
+      // Fase 4: Dictamen
+      document.getElementById('btnComprobarDictamen').addEventListener('click', () => {
+        const fb1 = document.getElementById('fb_dictamen_1');
+        const fb2 = document.getElementById('fb_dictamen_2');
+        const fb3 = document.getElementById('fb_dictamen_3');
+
+        fb1.style.display = 'block';
+        fb1.className = 'a-feedback a-feedback--ok';
+        fb1.innerHTML = '<strong>Dictamen Docente (Respaldo 3-2-1):</strong> Mantener 3 copias de la base de reservaciones, en 2 medios de almacenamiento distintos (ej. SSD local cifrado y servidor central), con al menos 1 copia fuera del sitio físico (almacenamiento en la nube con versionado).';
+
+        fb2.style.display = 'block';
+        fb2.className = 'a-feedback a-feedback--ok';
+        fb2.innerHTML = '<strong>Dictamen Docente (Ciberseguridad y Anti-Phishing):</strong> Implementar correo institucional con filtros anti-spam, autenticación en dos factores (2FA) para el acceso al GDS y ERP, y validar los comprobantes bancarios directamente dentro del portal de tesorería del banco receptor antes de emitir boletos.';
+
+        fb3.style.display = 'block';
+        fb3.className = 'a-feedback a-feedback--ok';
+        fb3.innerHTML = '<strong>Dictamen Docente (Espacios Virtuales y AVA):</strong> Un Ambiente Virtual de Aprendizaje (AVA) centraliza los manuales de capacitación, estandariza la atención en las 4 sucursales y permite evaluar periódicamente las competencias del personal de mostrador y ventas online.';
+
+        document.getElementById('chk-4').innerHTML = '<i class="fas fa-check-circle" style="color: #10b981;"></i> Fase 4: Dictamen y Ciberseguridad';
+        document.getElementById('resumenGlobal').style.display = 'block';
+        document.getElementById('resumenGlobal').scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
 </body>
 
 </html>

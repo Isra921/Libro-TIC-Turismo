@@ -1,11 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Laboratorio y Caso de Estudio: Confecciones ESIT | Unidad III</title>
-  <meta name="description" content="Simulador de compras y abastecimiento, explosión de materiales BOM, matriz multicriterio de proveedores y acuerdos SLA para Confecciones ESIT.">
+  <title>Simulador y Caso Integrador: Administración de Agencia en Excel · Unidad III | TIC aplicadas al turismo</title>
+  <meta name="description" content="Simulador de modelado en hoja de cálculo: auditoría de datos, fórmulas con referencias fijas, funciones financieras/estadísticas, tablas dinámicas y reporte ejecutivo impreso.">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="../../../assets/css/comun.css">
@@ -22,19 +22,19 @@
   <main class="u-page">
     <header class="a-card a-head" style="margin-bottom: 24px;">
       <div class="a-head__top">
-        <span class="a-badge"><i class="fas fa-handshake"></i> Simulador y Laboratorio de Adquisiciones</span>
-        <span class="a-head__where">Unidad III · ESIT - IPN</span>
+        <span class="a-badge"><i class="fas fa-file-excel"></i> Simulador y Laboratorio Analítico</span>
+        <span class="a-head__where">Unidad III · EST - IPN</span>
       </div>
-      <p class="u-eyebrow">Evaluación Integradora Práctica · Cadena Textil y Proveedores</p>
-      <h1 class="a-title">Caso Práctico: Negocio "Confecciones ESIT"</h1>
+      <p class="u-eyebrow">Evaluación Integradora Práctica · Software de Tratamiento Numérico</p>
+      <h1 class="a-title">Caso Práctico: Agencia "Caribe Sol y Selva"</h1>
       <p class="a-purpose">
-        Conviértete en el director de adquisiciones de una maquiladora de uniformes industriales de alta resistencia: realiza la explosión de materiales (BOM/MRP), calibra una matriz de decisión multicriterio ponderada, negocia acuerdos SLA y diseña un plan de abasto dual (Dual Sourcing).
+        Conviértete en el analista financiero y operativo de la agencia turística. Realiza una auditoría a la base de datos de reservaciones vacacionales, construye modelos con fórmulas y referencias absolutas para el cálculo de impuestos y comisiones, automatiza indicadores con funciones estadísticas, lógicas y financieras, diseña resúmenes con tablas dinámicas y genera la lista de cotejo de impresión para la dirección general.
       </p>
       <ul class="a-chips" aria-label="Datos de la actividad">
-        <li class="u-chip u-chip--soft"><i class="fas fa-layer-group" aria-hidden="true"></i> Explosión de Materiales BOM</li>
-        <li class="u-chip u-chip--soft"><i class="fas fa-table-list" aria-hidden="true"></i> Matriz Multicriterio Ponderada</li>
-        <li class="u-chip u-chip--soft"><i class="fas fa-handshake-simple" aria-hidden="true"></i> Negociación SLA</li>
-        <li class="u-chip u-chip--accent"><i class="fas fa-award" aria-hidden="true"></i> Ponderación: 40% portafolio</li>
+        <li class="u-chip u-chip--soft"><i class="fas fa-table" aria-hidden="true"></i> Microsoft Excel Turístico</li>
+        <li class="u-chip u-chip--soft"><i class="fas fa-sliders" aria-hidden="true"></i> 4 Fases Interactivas</li>
+        <li class="u-chip u-chip--soft"><i class="fas fa-chart-pie" aria-hidden="true"></i> Fórmulas, Funciones y Tablas</li>
+        <li class="u-chip u-chip--accent"><i class="fas fa-award" aria-hidden="true"></i> Portafolio de Evidencias</li>
       </ul>
     </header>
 
@@ -42,431 +42,456 @@
       <div class="a-main">
         <!-- Tarjeta de Contexto Operativo -->
         <section class="a-card">
-          <h2 class="a-card__title"><i class="fas fa-industry" aria-hidden="true"></i> Crisis de Abastecimiento en Líneas de Ensamble</h2>
+          <h2 class="a-card__title"><i class="fas fa-chart-line" aria-hidden="true"></i> Contexto Operativo: Auditoría Financiera Semestral</h2>
           <p>
-            <strong>Confecciones ESIT</strong> confecciona uniformes industriales de alta resistencia (overoles para Pemex y CFE). La empresa enfrenta cuellos de botella severos debido a fallas en su red de suministro de mezclilla pesada (14 oz) y avíos de seguridad:
+            La agencia <strong>Caribe Sol y Selva</strong> registró ventas por 350 paquetes de viaje en el último semestre hacia la Riviera Maya, Huasteca Potosina y Barrancas del Cobre. La dirección requiere entregar un informe financiero auditado para el consejo directivo, pero el archivo actual de Excel presenta los siguientes desafíos críticos:
           </p>
-          <div class="sim-grid-2">
-            <div style="background: var(--bg-main); padding: 14px; border-radius: var(--radius-sm); border-left: 4px solid #ef4444;">
-              <strong style="color: #b91c1c;"><i class="fas fa-stopwatch-24"></i> Paros de Producción por Desabasto:</strong>
+          <div class="sim-grid-2" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 14px;">
+            <div style="background: var(--bg-main, #f8fafc); padding: 14px; border-radius: var(--radius-sm, 8px); border-left: 4px solid #ef4444;">
+              <strong style="color: #b91c1c;"><i class="fas fa-triangle-exclamation"></i> Inconsistencias Detectadas:</strong>
               <ul style="margin: 6px 0 0; padding-left: 18px; font-size: 0.88rem; line-height: 1.5;">
-                <li>Retrasos de hasta 20 días en entregas de rollos de mezclilla, provocando paros no programados en las 6 líneas de costura.</li>
-                <li>Sobrecompra de avíos innecesarios (cierres ordinarios) que inmovilizan $320,000 MXN de capital de trabajo en bodega.</li>
+                <li>Celdas que muestran <code>###</code> y cifras numéricas guardadas como texto con apóstrofo que arrojan error en las sumas.</li>
+                <li>Fórmulas copiadas que arrojan <code>#¡VALOR!</code> o importes desfasados por no inmovilizar la celda del IVA ($B$1) con referencias absolutas.</li>
+                <li>Cálculos manuales en libretas para saber el total vendido en Cancún o las comisiones de agentes de viaje.</li>
               </ul>
             </div>
-            <div style="background: var(--bg-main); padding: 14px; border-radius: var(--radius-sm); border-left: 4px solid #f59e0b;">
-              <strong style="color: #b45309;"><i class="fas fa-shirt"></i> Riesgo de Cancelación de Contratos:</strong>
+            <div style="background: var(--bg-main, #f8fafc); padding: 14px; border-radius: var(--radius-sm, 8px); border-left: 4px solid #0284c7;">
+              <strong style="color: #0369a1;"><i class="fas fa-bullseye"></i> Metas de la Consultoría:</strong>
               <ul style="margin: 6px 0 0; padding-left: 18px; font-size: 0.88rem; line-height: 1.5;">
-                <li>El cliente corporativo auditó un lote y detectó teñido desigual y desprendimiento de cinta reflejante en lavados industriales.</li>
-                <li>Urgencia inmediata de licitar y seleccionar a un nuevo proveedor con homologación de calidad y entregas Just-in-Time (JIT).</li>
+                <li>Normalizar tipos de datos y corregir dimensiones de filas/columnas.</li>
+                <li>Estructurar fórmulas relativas, absolutas y funciones condicionales robustas.</li>
+                <li>Construir una tabla dinámica cruzando destino vs tipo de paquete y exportar el informe a PDF en formato ejecutivo.</li>
               </ul>
             </div>
           </div>
         </section>
 
         <!-- Contenedor del Simulador con Stepper -->
-        <section class="a-card sim-container">
-          <nav class="sim-stepper" aria-label="Fases del laboratorio de adquisiciones">
+        <section class="a-card sim-container" style="margin-top: 24px;">
+          <nav class="sim-stepper" aria-label="Fases del simulador de Excel">
             <button class="sim-step-btn is-active" id="step-btn-1" data-step="1">
               <span class="sim-step-num">1</span>
-              <span>Explosión BOM (MRP)</span>
+              <span>1. Auditoría de Datos</span>
             </button>
             <button class="sim-step-btn" id="step-btn-2" data-step="2">
               <span class="sim-step-num">2</span>
-              <span>Matriz de Proveedores</span>
+              <span>2. Fórmulas y Referencias</span>
             </button>
             <button class="sim-step-btn" id="step-btn-3" data-step="3">
               <span class="sim-step-num">3</span>
-              <span>Negociación SLA</span>
+              <span>3. Funciones Especializadas</span>
             </button>
             <button class="sim-step-btn" id="step-btn-4" data-step="4">
               <span class="sim-step-num">4</span>
-              <span>Dictamen de Abasto</span>
+              <span>4. Tablas e Impresión</span>
             </button>
           </nav>
 
           <!-- ==============================================
-               FASE 1: BOM Y REQUERIMIENTOS NETOS
+               FASE 1: AUDITORÍA DE DATOS, TIPOS Y FORMATOS
                ============================================== -->
           <div class="sim-panel is-active" id="panel-step-1">
             <div class="sim-stage-header">
-              <span class="sim-stage-badge"><i class="fas fa-layer-group"></i> Fase 1 de 4</span>
-              <h3 class="sim-stage-title">Planeación de Requerimientos: Explosión de Materiales (BOM)</h3>
+              <span class="sim-stage-badge"><i class="fas fa-magnifying-glass"></i> Fase 1</span>
+              <h3 class="sim-stage-title">Auditoría del Entorno, Tipos de Datos y Corrección</h3>
               <p class="sim-stage-desc">
-                La orden de producción en firme es de <strong>12,000 overoles industriales</strong>. Calcula los requerimientos netos de compra considerando los consumos unitarios, el factor de merma de trazo/corte y las existencias actuales en almacén:
+                Identifica las fallas de captura y configuración en la hoja de cálculo de reservaciones y selecciona la acción correctiva adecuada.
               </p>
             </div>
 
-            <div class="sim-grid-2">
-              <div class="sim-formula-box">
-                <div class="sim-formula-tag">Estructura del Producto (BOM) & Inventario</div>
-                <ul style="margin: 6px 0; padding-left: 18px; font-size: 0.84rem; line-height: 1.6; color: var(--text-soft);">
-                  <li><strong>Orden de fabricación:</strong> 12,000 prendas.</li>
-                  <li><strong>Tela Mezclilla 14 oz:</strong> 2.50 metros por prenda + <strong>4% de merma de corte</strong> (factor 1.04). Stock en almacén: 4,200 m.</li>
-                  <li><strong>Cinta Reflejante 3M 2":</strong> 3.0 metros por prenda (sin merma). Stock en almacén: 6,000 m.</li>
-                  <li><strong>Cierres Metálicos 65 cm:</strong> 1 pieza por prenda. Stock en almacén: 2,500 piezas.</li>
-                </ul>
-                <div class="sim-formula-math">Compra Neta = (Demanda Unitaria × Unidades × Factor Merma) - Stock Disponible</div>
+            <div style="display: flex; flex-direction: column; gap: 20px; margin-top: 16px;">
+              <div class="a-card" style="padding: 18px; background: var(--surface);">
+                <p><strong>1. En la columna 'G' (Tarifa Total en Moneda Nacional), varias celdas muestran la cadena '###'. ¿Cuál es la causa y la solución inmediata?</strong></p>
+                <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 10px;">
+                  <label><input type="radio" name="u3_f1_p1" value="a"> <span>a) El archivo está corrupto y debe reiniciarse la computadora.</span></label>
+                  <label><input type="radio" name="u3_f1_p1" value="b"> <span>b) El ancho de la columna es insuficiente para desplegar el valor numérico formateado; se soluciona haciendo doble clic en el separador derecho de la columna G (autoajustar ancho).</span></label>
+                  <label><input type="radio" name="u3_f1_p1" value="c"> <span>c) La celda contiene una fórmula que divide entre cero (#¡DIV/0!).</span></label>
+                </div>
+                <div id="fb_u3_f1_p1" class="a-feedback" style="display: none; margin-top: 12px;"></div>
               </div>
 
-              <div class="sim-control-box">
-                <h4 class="sim-control-box__title"><i class="fas fa-pen-ruler"></i> Cálculo de Requerimientos Netos a Adquirir</h4>
-                <div class="sim-calc-group">
-                  <div class="sim-calc-input">
-                    <label for="u3-calc-tela">1. Mezclilla 14 oz (metros netos):</label>
-                    <input type="number" id="u3-calc-tela" placeholder="Ej. 27000">
-                    <small style="color: var(--text-muted); font-size: 0.72rem;">(12,000 × 2.5 × 1.04) - 4,200</small>
-                  </div>
-                  <div class="sim-calc-input">
-                    <label for="u3-calc-cintas">2. Cinta reflejante (metros netos):</label>
-                    <input type="number" id="u3-calc-cintas" placeholder="Ej. 30000">
-                    <small style="color: var(--text-muted); font-size: 0.72rem;">(12,000 × 3.0) - 6,000</small>
-                  </div>
-                  <div class="sim-calc-input">
-                    <label for="u3-calc-cierres">3. Cierres 65 cm (piezas netas):</label>
-                    <input type="number" id="u3-calc-cierres" placeholder="Ej. 9500">
-                    <small style="color: var(--text-muted); font-size: 0.72rem;">12,000 - 2,500</small>
-                  </div>
+              <div class="a-card" style="padding: 18px; background: var(--surface);">
+                <p><strong>2. Al intentar sumar las noches de hospedaje con la función <code>=SUMA(E2:E30)</code>, el resultado da 0. Observas que los números están alineados a la izquierda y tienen un triángulo verde en la esquina. ¿Qué sucede?</strong></p>
+                <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 10px;">
+                  <label><input type="radio" name="u3_f1_p2" value="a"> <span>a) Los valores fueron ingresados o importados como texto alfanumérico; se deben convertir a tipo de dato numérico operable mediante la etiqueta inteligente 'Convertir en número'.</span></label>
+                  <label><input type="radio" name="u3_f1_p2" value="b"> <span>b) La función SUMA no acepta números enteros mayores a diez.</span></label>
+                  <label><input type="radio" name="u3_f1_p2" value="c"> <span>c) Es obligatorio poner los números en negritas para que Excel los reconozca.</span></label>
                 </div>
+                <div id="fb_u3_f1_p2" class="a-feedback" style="display: none; margin-top: 12px;"></div>
+              </div>
 
-                <div style="text-align: right; margin-top: 14px;">
-                  <button type="button" class="sim-btn sim-btn--primary" id="btn-check-bom">
-                    <i class="fas fa-calculator"></i> Validar Requerimientos Netos
-                  </button>
+              <div class="a-card" style="padding: 18px; background: var(--surface);">
+                <p><strong>3. Se desea calcular la duración en días de una estancia hotelera sabiendo la fecha de llegada en B5 y salida en C5. ¿Es válida la fórmula <code>=C5 - B5</code>?</strong></p>
+                <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 10px;">
+                  <label><input type="radio" name="u3_f1_p3" value="a"> <span>a) Sí, porque en Excel las fechas son números de serie enteros consecutivos, por lo que su resta aritmética da los días exactos de estancia.</span></label>
+                  <label><input type="radio" name="u3_f1_p3" value="b"> <span>b) No, porque las fechas no se pueden restar bajo ninguna circunstancia matemática.</span></label>
+                  <label><input type="radio" name="u3_f1_p3" value="c"> <span>c) Solo si se divide entre doce meses previamente.</span></label>
                 </div>
-
-                <div id="feedback-u3-bom" class="sim-feedback-inline"></div>
+                <div id="fb_u3_f1_p3" class="a-feedback" style="display: none; margin-top: 12px;"></div>
               </div>
             </div>
 
-            <div class="sim-actions-row">
-              <button type="button" class="sim-btn sim-btn--primary" data-next-step="2">
-                Avanzar a Matriz de Proveedores <i class="fas fa-arrow-right"></i>
-              </button>
+            <div style="margin-top: 24px; display: flex; gap: 12px; align-items: center;">
+              <button class="u-btn u-btn--primary" id="btnComprobarU3F1"><i class="fas fa-check"></i> Comprobar Fase 1</button>
+              <button class="u-btn u-btn--secondary" id="btnNextU3_1" style="display: none;">Ir a Fase 2 <i class="fas fa-arrow-right"></i></button>
             </div>
           </div>
 
           <!-- ==============================================
-               FASE 2: MATRIZ DE DECISIÓN MULTICRITERIO
+               FASE 2: FÓRMULAS Y REFERENCIAS
                ============================================== -->
           <div class="sim-panel" id="panel-step-2">
             <div class="sim-stage-header">
-              <span class="sim-stage-badge"><i class="fas fa-table-list"></i> Fase 2 de 4</span>
-              <h3 class="sim-stage-title">Matriz Multicriterio de Decisión: Evaluación Ponderada de Proveedores</h3>
+              <span class="sim-stage-badge"><i class="fas fa-calculator"></i> Fase 2</span>
+              <h3 class="sim-stage-title">Modelado con Fórmulas, Jerarquía y Referencias Fijas</h3>
               <p class="sim-stage-desc">
-                Se licitó el abasto de mezclilla entre 3 proveedores candidatos. Ajusta los <strong>pesos porcentuales</strong> (que deben sumar 100%) según las prioridades de calidad técnica y confiabilidad de entrega requeridas por Confecciones ESIT:
+                Construye y audita las fórmulas para liquidaciones de agentes de viajes y cálculo de impuestos turísticos.
               </p>
             </div>
 
-            <!-- Tabla Comparativa de Ofertas -->
-            <div class="sim-table-wrap">
-              <table class="sim-table">
-                <thead>
-                  <tr>
-                    <th>Criterio Técnico / Comercial</th>
-                    <th>Proveedor A: Textiles Bajío (Nacional)</th>
-                    <th>Proveedor B: Denim Asia (Importador)</th>
-                    <th>Proveedor C: Mezclillas Norte (JIT Certificado)</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><strong>Calidad y Resistencia Textil</strong></td>
-                    <td>8.5 / 10 (Buena resistencia)</td>
-                    <td>6.5 / 10 (Riesgo en teñido)</td>
-                    <td><strong style="color: #047857;">9.8 / 10 (ISO 9001 / Oeko-Tex)</strong></td>
-                  </tr>
-                  <tr>
-                    <td><strong>Lead Time (Tiempo de Entrega)</strong></td>
-                    <td>12 días hábiles (Puntaje: 7.5)</td>
-                    <td>38 días vía marítima (Puntaje: 4.0)</td>
-                    <td><strong style="color: #047857;">4 días hábiles JIT (Puntaje: 10.0)</strong></td>
-                  </tr>
-                  <tr>
-                    <td><strong>Precio Unitario por Metro</strong></td>
-                    <td>$78 MXN/m (Puntaje: 8.0)</td>
-                    <td><strong style="color: #047857;">$58 MXN/m Económico (Puntaje: 10.0)</strong></td>
-                    <td>$86 MXN/m (Puntaje: 6.5)</td>
-                  </tr>
-                  <tr>
-                    <td><strong>Flexibilidad en Lote Mínimo</strong></td>
-                    <td>8.0 / 10 (Lotes medianos)</td>
-                    <td>5.0 / 10 (Obliga contenedores)</td>
-                    <td><strong style="color: #047857;">9.5 / 10 (Entregas fraccionadas)</strong></td>
-                  </tr>
-                  <tr>
-                    <td><strong>Certificaciones de Fábrica</strong></td>
-                    <td>8.0 / 10 (Laboratorio propio)</td>
-                    <td>6.0 / 10 (Sin auditoría local)</td>
-                    <td><strong style="color: #047857;">10.0 / 10 (Laboratorio acreditado)</strong></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <!-- Controles de Ponderación Interactiva -->
-            <div class="sim-control-box">
-              <h4 class="sim-control-box__title">
-                <span><i class="fas fa-sliders"></i> Calibra las Ponderaciones de Decisión (Suma obligatoria: 100%)</span>
-                <span>Suma actual: <strong id="u3-val-suma" style="color: var(--primary);">100%</strong></span>
-              </h4>
-
-              <div class="sim-grid-3">
-                <div class="sim-slider-group">
-                  <div class="sim-slider-label">
-                    <span>Calidad de Mezclilla:</span>
-                    <span class="sim-slider-val" id="u3-val-calidad">35%</span>
+            <div class="a-card" style="margin-top: 16px; padding: 18px; background: var(--surface);">
+              <p>El porcentaje de IVA está en la celda <strong>$K$1 (16%)</strong> y la Tasa de Hospedaje en <strong>$K$2 (4%)</strong>. El Subtotal neto del paquete está en <strong>F5</strong>.</p>
+              
+              <div style="display: flex; flex-direction: column; gap: 16px; margin-top: 14px;">
+                <div style="padding: 12px; background: var(--bg-main, #f8fafc); border-radius: 6px;">
+                  <p><strong>1. ¿Cuál es la fórmula correcta en G5 para calcular el importe del IVA, diseñada para ser arrastrada a las 350 filas de reservaciones?</strong></p>
+                  <div style="margin-top: 8px; display: flex; flex-direction: column; gap: 6px;">
+                    <label><input type="radio" name="u3_f2_p1" value="v"> <span><code>=F5 * $K$1</code> (F5 relativa para que baje a F6, F7... y $K$1 absoluta para que el IVA quede fijo)</span></label>
+                    <label><input type="radio" name="u3_f2_p1" value="f1"> <span><code>=F5 * K1</code> (Ambas relativas)</span></label>
+                    <label><input type="radio" name="u3_f2_p1" value="f2"> <span><code>=$F$5 * K1</code> (Subtotal fijo e IVA relativo)</span></label>
                   </div>
-                  <input type="range" aria-label="Calidad de Mezclilla" class="sim-range" id="u3-w-calidad" min="10" max="60" value="35" step="5">
+                  <div id="fb_u3_f2_p1" class="a-feedback" style="display: none; margin-top: 8px;"></div>
                 </div>
 
-                <div class="sim-slider-group">
-                  <div class="sim-slider-label">
-                    <span>Tiempo de Entrega (Lead Time):</span>
-                    <span class="sim-slider-val" id="u3-val-lead">25%</span>
+                <div style="padding: 12px; background: var(--bg-main, #f8fafc); border-radius: 6px;">
+                  <p><strong>2. Un asesor redactó la fórmula para aplicar un descuento del 15% (celda D5) a un paquete de $20,000 (celda C5) así: <code>=C5 - C5 * D5</code>. ¿Respeta la jerarquía matemática de Excel?</strong></p>
+                  <div style="margin-top: 8px; display: flex; flex-direction: column; gap: 6px;">
+                    <label><input type="radio" name="u3_f2_p2" value="v"> <span>Sí, porque primero resuelve la multiplicación C5 * D5 (descuento) y luego la resta a C5; es equivalente a <code>=C5 * (1 - D5)</code>.</span></label>
+                    <label><input type="radio" name="u3_f2_p2" value="f1"> <span>No, porque Excel primero resta C5 - C5 dando cero y luego multiplica por D5.</span></label>
+                    <label><input type="radio" name="u3_f2_p2" value="f2"> <span>Es un error que arroja #¡VALOR!.</span></label>
                   </div>
-                  <input type="range" aria-label="Tiempo de Entrega (Lead Time)" class="sim-range" id="u3-w-lead" min="10" max="50" value="25" step="5">
+                  <div id="fb_u3_f2_p2" class="a-feedback" style="display: none; margin-top: 8px;"></div>
                 </div>
 
-                <div class="sim-slider-group">
-                  <div class="sim-slider-label">
-                    <span>Precio Unitario:</span>
-                    <span class="sim-slider-val" id="u3-val-precio">20%</span>
+                <div style="padding: 12px; background: var(--bg-main, #f8fafc); border-radius: 6px;">
+                  <p><strong>3. Para concatenar el Código de Aerolínea (A5: "AM") y el Número de Vuelo (B5: "405") con un guion intermedio ("AM-405"), ¿qué expresión con ampersand (&) se utiliza?</strong></p>
+                  <div style="margin-top: 8px; display: flex; flex-direction: column; gap: 6px;">
+                    <label><input type="radio" name="u3_f2_p3" value="v"> <span><code>=A5 & "-" & B5</code></span></label>
+                    <label><input type="radio" name="u3_f2_p3" value="f1"> <span><code>=A5 + "-" + B5</code></span></label>
+                    <label><input type="radio" name="u3_f2_p3" value="f2"> <span><code>=A5 * B5 - "-"</code></span></label>
                   </div>
-                  <input type="range" aria-label="Precio Unitario" class="sim-range" id="u3-w-precio" min="5" max="40" value="20" step="5">
+                  <div id="fb_u3_f2_p3" class="a-feedback" style="display: none; margin-top: 8px;"></div>
                 </div>
-
-                <div class="sim-slider-group">
-                  <div class="sim-slider-label">
-                    <span>Flexibilidad de Entrega:</span>
-                    <span class="sim-slider-val" id="u3-val-flex">10%</span>
-                  </div>
-                  <input type="range" aria-label="Flexibilidad de Entrega" class="sim-range" id="u3-w-flex" min="5" max="30" value="10" step="5">
-                </div>
-
-                <div class="sim-slider-group">
-                  <div class="sim-slider-label">
-                    <span>Certificaciones y Ensayos:</span>
-                    <span class="sim-slider-val" id="u3-val-cert">10%</span>
-                  </div>
-                  <input type="range" aria-label="Certificaciones y Ensayos" class="sim-range" id="u3-w-cert" min="5" max="30" value="10" step="5">
-                </div>
-              </div>
-
-              <!-- Puntuaciones Ponderadas Resultantes -->
-              <div class="sim-grid-3" style="margin-top: 18px;">
-                <div class="sim-kpi-card">
-                  <span class="sim-kpi-title">Proveedor A (Nacional)</span>
-                  <div class="sim-kpi-val" id="u3-score-prov-a">7.85</div>
-                  <p class="sim-kpi-desc">Opción intermedia balanceada.</p>
-                </div>
-                <div class="sim-kpi-card is-danger">
-                  <span class="sim-kpi-title">Proveedor B (Importado)</span>
-                  <div class="sim-kpi-val" id="u3-score-prov-b">6.68</div>
-                  <p class="sim-kpi-desc">Barato, pero alto riesgo de paro.</p>
-                </div>
-                <div class="sim-kpi-card is-success">
-                  <span class="sim-kpi-title">Proveedor C (JIT Certificado)</span>
-                  <div class="sim-kpi-val" id="u3-score-prov-c">8.80</div>
-                  <p class="sim-kpi-desc">Líder en confiabilidad y calidad.</p>
-                </div>
-              </div>
-
-              <div style="margin-top: 14px; text-align: center;">
-                <span id="u3-winner-badge" class="sim-badge sim-badge--success" style="font-size: 0.85rem; padding: 8px 14px;">
-                  <i class="fas fa-trophy"></i> Proveedor Seleccionado: Proveedor C (Mezclillas del Norte)
-                </span>
               </div>
             </div>
 
-            <div class="sim-actions-row">
-              <button type="button" class="sim-btn sim-btn--secondary" data-next-step="1">
-                <i class="fas fa-arrow-left"></i> Volver a BOM
-              </button>
-              <button type="button" class="sim-btn sim-btn--primary" data-next-step="3">
-                Continuar a Negociación SLA <i class="fas fa-arrow-right"></i>
-              </button>
+            <div style="margin-top: 24px; display: flex; gap: 12px; align-items: center;">
+              <button class="u-btn u-btn--primary" id="btnComprobarU3F2"><i class="fas fa-check"></i> Comprobar Fase 2</button>
+              <button class="u-btn u-btn--secondary" id="btnNextU3_2" style="display: none;">Ir a Fase 3 <i class="fas fa-arrow-right"></i></button>
             </div>
           </div>
 
           <!-- ==============================================
-               FASE 3: NEGOCIACIÓN SLA
+               FASE 3: FUNCIONES ESPECIALIZADAS
                ============================================== -->
           <div class="sim-panel" id="panel-step-3">
             <div class="sim-stage-header">
-              <span class="sim-stage-badge"><i class="fas fa-handshake-angle"></i> Fase 3 de 4</span>
-              <h3 class="sim-stage-title">Mesa de Negociación: Acuerdo de Nivel de Servicio (SLA)</h3>
+              <span class="sim-stage-badge"><i class="fas fa-square-root-variable"></i> Fase 3</span>
+              <h3 class="sim-stage-title">Automatización con Funciones Estadísticas, Lógicas y Financieras</h3>
               <p class="sim-stage-desc">
-                Un buen contrato no solo fija el precio, sino las garantías operativas. Diseña las cláusulas técnicas que protegerán a Confecciones ESIT frente a retrasos o defectos:
+                Aplica la sintaxis de funciones oficiales para generar los indicadores clave de desempeño (KPI) turísticos.
               </p>
             </div>
 
-            <div class="sim-control-box">
-              <div class="sim-grid-3">
-                <div class="sim-calc-input">
-                  <label for="u3-sel-aql">1. Límite de Calidad Aceptable (AQL):</label>
-                  <select id="u3-sel-aql">
-                    <option value="4.0">AQL 4.0% (Tolerante - Defectos visibles)</option>
-                    <option value="2.5">AQL 2.5% (Estándar comercial)</option>
-                    <option value="1.0" selected>AQL 1.0% (Estricto - Grado Industrial / CFE)</option>
-                  </select>
+            <div style="display: flex; flex-direction: column; gap: 18px; margin-top: 16px;">
+              <div class="a-card" style="padding: 16px; background: var(--surface);">
+                <p><strong>1. Indicador: Total de dinero recaudado exclusivamente por tours en 'Barrancas del Cobre'. Los destinos están en C2:C350 y los montos cobrados en H2:H350.</strong></p>
+                <div style="margin-top: 8px; display: flex; flex-direction: column; gap: 6px;">
+                  <label><input type="radio" name="u3_f3_p1" value="v"> <span><code>=SUMAR.SI(C2:C350, "Barrancas del Cobre", H2:H350)</code></span></label>
+                  <label><input type="radio" name="u3_f3_p1" value="f1"> <span><code>=CONTAR.SI(C2:C350, "Barrancas del Cobre") * H2:H350</code></span></label>
+                  <label><input type="radio" name="u3_f3_p1" value="f2"> <span><code>=SUMA(C2:C350="Barrancas del Cobre")</code></span></label>
                 </div>
-
-                <div class="sim-calc-input">
-                  <label for="u3-sel-penalizacion">2. Penalización por Día de Demora:</label>
-                  <select id="u3-sel-penalizacion">
-                    <option value="0">Sin penalización (Confiabilidad verbal)</option>
-                    <option value="1.5" selected>1.5% del valor de la orden por día de atraso</option>
-                    <option value="3.0">3.0% diario (Riesgo de rechazo del contrato)</option>
-                  </select>
-                </div>
-
-                <div class="sim-calc-input">
-                  <label for="u3-sel-credito">3. Términos de Pago Comercial:</label>
-                  <select id="u3-sel-credito">
-                    <option value="contado">100% Anticipado de Contado</option>
-                    <option value="30" selected>Crédito a 30 días contra factura y entrega conforme</option>
-                    <option value="60">Crédito a 60 días (Difícil aceptación)</option>
-                  </select>
-                </div>
+                <div id="fb_u3_f3_p1" class="a-feedback" style="display: none; margin-top: 10px;"></div>
               </div>
 
-              <div style="text-align: right; margin-top: 14px;">
-                <button type="button" class="sim-btn sim-btn--primary" id="btn-eval-sla">
-                  <i class="fas fa-gavel"></i> Evaluar Viabilidad del Acuerdo SLA
-                </button>
+              <div class="a-card" style="padding: 16px; background: var(--surface);">
+                <p><strong>2. Comisión Condicionada: Si el agente vendió más de $100,000 (celda I5 > 100000), recibe 8% de comisión sobre sus ventas (I5*0.08); de lo contrario recibe el 4% (I5*0.04).</strong></p>
+                <div style="margin-top: 8px; display: flex; flex-direction: column; gap: 6px;">
+                  <label><input type="radio" name="u3_f3_p2" value="v"> <span><code>=SI(I5 > 100000, I5 * 0.08, I5 * 0.04)</code></span></label>
+                  <label><input type="radio" name="u3_f3_p2" value="f1"> <span><code>=SI(I5 < 100000, I5 * 0.08, I5 * 0.04)</code></span></label>
+                  <label><input type="radio" name="u3_f3_p2" value="f2"> <span><code>=SI.ERROR(I5 * 0.08, 0.04)</code></span></label>
+                </div>
+                <div id="fb_u3_f3_p2" class="a-feedback" style="display: none; margin-top: 10px;"></div>
               </div>
 
-              <div id="feedback-u3-sla" class="sim-feedback-inline"></div>
+              <div class="a-card" style="padding: 16px; background: var(--surface);">
+                <p><strong>3. Cotización de Crédito Vacacional: Paquete financiado a 12 mensualidades con tasa del 2% mensual sobre un saldo insoluto de $36,000 pesos en la celda J5. ¿Qué función calcula el pago fijo mensual?</strong></p>
+                <div style="margin-top: 8px; display: flex; flex-direction: column; gap: 6px;">
+                  <label><input type="radio" name="u3_f3_p3" value="v"> <span><code>=PAGO(0.02, 12, -J5)</code> (o <code>=-PAGO(0.02, 12, J5)</code> para obtener la cuota en positivo)</span></label>
+                  <label><input type="radio" name="u3_f3_p3" value="f1"> <span><code>=J5 / 12 * 0.02</code></span></label>
+                  <label><input type="radio" name="u3_f3_p3" value="f2"> <span><code>=PROMEDIO(0.02, 12, J5)</code></span></label>
+                </div>
+                <div id="fb_u3_f3_p3" class="a-feedback" style="display: none; margin-top: 10px;"></div>
+              </div>
             </div>
 
-            <div class="sim-actions-row">
-              <button type="button" class="sim-btn sim-btn--secondary" data-next-step="2">
-                <i class="fas fa-arrow-left"></i> Volver a Matriz
-              </button>
-              <button type="button" class="sim-btn sim-btn--primary" data-next-step="4">
-                Redactar Dictamen de Compras <i class="fas fa-arrow-right"></i>
-              </button>
+            <div style="margin-top: 24px; display: flex; gap: 12px; align-items: center;">
+              <button class="u-btn u-btn--primary" id="btnComprobarU3F3"><i class="fas fa-check"></i> Comprobar Fase 3</button>
+              <button class="u-btn u-btn--secondary" id="btnNextU3_3" style="display: none;">Ir a Fase 4 <i class="fas fa-arrow-right"></i></button>
             </div>
           </div>
 
           <!-- ==============================================
-               FASE 4: DICTAMEN DE ABASTO
+               FASE 4: TABLAS DINÁMICAS Y LISTA DE IMPRESIÓN
                ============================================== -->
           <div class="sim-panel" id="panel-step-4">
             <div class="sim-stage-header">
-              <span class="sim-stage-badge"><i class="fas fa-certificate"></i> Fase 4 de 4</span>
-              <h3 class="sim-stage-title">Dictamen Técnico: Política de Adquisiciones y Dual Sourcing</h3>
+              <span class="sim-stage-badge"><i class="fas fa-print"></i> Fase 4</span>
+              <h3 class="sim-stage-title">Tablas Dinámicas y Lista de Cotejo para Reporte Ejecutivo</h3>
               <p class="sim-stage-desc">
-                Emite las directrices que blindarán la cadena textil contra la dependencia monopólica de proveedores y asegurarán el suministro continuo a Pemex y CFE.
+                Estructura la tabla dinámica solicitada por el director general y verifica la configuración de página para entregar el reporte impreso o en PDF de forma impecable.
               </p>
             </div>
 
-            <h4 style="margin: 0 0 10px; font-size: 0.95rem; color: var(--text-light);">
-              Selecciona la Estrategia de Abastecimiento recomendada:
-            </h4>
-            <div class="sim-decision-grid">
-              <label class="sim-decision-card is-selected">
-                <input type="radio" class="sim-decision-radio" name="u3-strat" value="opt_dual_sourcing" checked>
-                <div class="sim-decision-info">
-                  <h4>Abastecimiento Dual (Dual Sourcing: 70% Proveedor C + 30% Proveedor A) con JIT</h4>
-                  <p>
-                    Contratar el 70% del volumen principal con el Proveedor C (Mezclillas del Norte) para asegurar calidad certificada y entregas Just-in-Time, y homologar al 30% al Proveedor A (Textiles Bajío) como respaldo estratégico ante contingencias de demanda, eliminando la vulnerabilidad de depender de una sola fuente.
-                  </p>
-                </div>
-              </label>
+            <div style="display: flex; flex-direction: column; gap: 18px; margin-top: 16px;">
+              <div class="a-card" style="padding: 18px; background: var(--surface);">
+                <h4 style="margin: 0 0 10px; color: var(--primary, #0284c7);"><i class="fas fa-table-cells"></i> Configuración de la Tabla Dinámica</h4>
+                <p>Se desea ver en las filas cada <strong>Destino</strong>, en las columnas cada <strong>Tipo de Servicio (Vuelo / Hotel / Paquete)</strong> y en el centro la <strong>Suma de Ventas ($)</strong>. Completa la asignación correcta:</p>
 
-              <label class="sim-decision-card">
-                <input type="radio" class="sim-decision-radio" name="u3-strat" value="opt_single_asia">
-                <div class="sim-decision-info">
-                  <h4>Fuente Única de Bajo Costo (Single Sourcing: 100% Proveedor B Importado)</h4>
-                  <p>
-                    Adquirir todo el volumen al importador asiático por su bajo precio unitario, arriesgando la operación a los tiempos marítimos de 38 días y a rechazos por calidad en pruebas de lavado de Pemex/CFE.
-                  </p>
-                </div>
-              </label>
-            </div>
-
-            <div class="sim-control-box" style="margin-top: 18px;">
-              <label for="u3-dictamen-texto" style="display: block; font-weight: 700; margin-bottom: 8px; color: var(--text-light);">
-                <i class="fas fa-file-pen"></i> Dictamen Técnico de Adquisiciones y Homologación:
-              </label>
-              <textarea id="u3-dictamen-texto" rows="5" style="width: 100%; padding: 12px; border-radius: var(--radius-sm); border: 1px solid var(--border-color); background: var(--bg-main); color: var(--text-light); font-family: inherit; font-size: 0.9rem; line-height: 1.55;" placeholder="Argumenta la justificación matemática del BOM (27,000 m de tela), la ponderación de calidad técnica por encima del precio y las ventajas del abasto dual para garantizar el programa de producción sin paros..."></textarea>
-            </div>
-
-            <div class="sim-summary-card">
-              <div class="sim-score-banner">
-                <div style="display: flex; align-items: center; gap: 16px;">
-                  <div class="sim-score-circle" id="u3-score-circle">100</div>
-                  <div class="sim-score-meta">
-                    <h3 id="u3-score-title">Dictamen Sobresaliente de Abastecimiento</h3>
-                    <p>Evaluación basada en exactitud de BOM, rigor en matriz multicriterio y blindaje contractual SLA.</p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-top: 12px;">
+                  <div style="background: var(--bg-main); padding: 10px; border-radius: 6px;">
+                    <label><strong>Área Filas:</strong></label>
+                    <select id="td_filas" class="u-select" style="width: 100%; margin-top: 4px; padding: 6px;">
+                      <option value="">-- Selecciona campo --</option>
+                      <option value="ok">Campo: Destino Turístico</option>
+                      <option value="err1">Campo: Tipo de Servicio</option>
+                      <option value="err2">Campo: Importe Venta</option>
+                    </select>
+                  </div>
+                  <div style="background: var(--bg-main); padding: 10px; border-radius: 6px;">
+                    <label><strong>Área Columnas:</strong></label>
+                    <select id="td_cols" class="u-select" style="width: 100%; margin-top: 4px; padding: 6px;">
+                      <option value="">-- Selecciona campo --</option>
+                      <option value="err1">Campo: Destino Turístico</option>
+                      <option value="ok">Campo: Tipo de Servicio</option>
+                      <option value="err2">Campo: Importe Venta</option>
+                    </select>
+                  </div>
+                  <div style="background: var(--bg-main); padding: 10px; border-radius: 6px;">
+                    <label><strong>Área Valores:</strong></label>
+                    <select id="td_vals" class="u-select" style="width: 100%; margin-top: 4px; padding: 6px;">
+                      <option value="">-- Selecciona campo --</option>
+                      <option value="err1">Campo: Destino Turístico</option>
+                      <option value="err2">Campo: Tipo de Servicio</option>
+                      <option value="ok">Campo: Suma de Importe Venta</option>
+                    </select>
                   </div>
                 </div>
-                <div style="text-align: right;">
-                  <span class="sim-badge sim-badge--success" style="font-size: 0.82rem; padding: 6px 12px;">
-                    <i class="fas fa-certificate"></i> Evidencia para Portafolio ESIT
-                  </span>
-                </div>
+                <div id="fb_td" class="a-feedback" style="display: none; margin-top: 12px;"></div>
               </div>
 
-              <div class="sim-actions-row">
-                <button type="button" class="sim-btn sim-btn--secondary" id="btn-imprimir-u3">
-                  <i class="fas fa-print"></i> Imprimir / Guardar en PDF
-                </button>
-                <button type="button" class="sim-btn sim-btn--primary" id="btn-guardar-dictamen-u3">
-                  <i class="fas fa-floppy-disk"></i> Guardar Dictamen en Portafolio Digital
-                </button>
+              <!-- Lista de Cotejo de Impresión -->
+              <div class="a-card" style="padding: 18px; background: var(--surface);">
+                <h4 style="margin: 0 0 10px; color: var(--primary, #0284c7);"><i class="fas fa-check-double"></i> Lista de Cotejo de Impresión y Exportación a PDF</h4>
+                <p>Marca los 4 criterios de configuración esenciales antes de enviar el archivo a impresión para el consejo directivo:</p>
+
+                <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 10px;">
+                  <label style="cursor: pointer; display: flex; align-items: center; gap: 8px;">
+                    <input type="checkbox" id="chk_imp_1" value="1">
+                    <span><strong>Definir Área de Impresión:</strong> Seleccionar únicamente la tabla dinámica y los gráficos ejecutivos, omitiendo notas y cálculos temporales auxiliares.</span>
+                  </label>
+                  <label style="cursor: pointer; display: flex; align-items: center; gap: 8px;">
+                    <input type="checkbox" id="chk_imp_2" value="2">
+                    <span><strong>Orientación Horizontal y Ajuste de Escala:</strong> Configurar orientación horizontal (Landscape) y ajustar escala para que todas las columnas quepan en 1 página de ancho.</span>
+                  </label>
+                  <label style="cursor: pointer; display: flex; align-items: center; gap: 8px;">
+                    <input type="checkbox" id="chk_imp_3" value="3">
+                    <span><strong>Repetir Filas en el Extremo Superior:</strong> Configurar en Configurar Página para que los títulos de columna se impriman en cada hoja si el reporte excede una página.</span>
+                  </label>
+                  <label style="cursor: pointer; display: flex; align-items: center; gap: 8px;">
+                    <input type="checkbox" id="chk_imp_4" value="4">
+                    <span><strong>Vista Previa de Salto de Página:</strong> Verificar que ninguna tabla quede cortada a la mitad por un salto de página automático inadecuado.</span>
+                  </label>
+                </div>
+                <div id="fb_imp" class="a-feedback" style="display: none; margin-top: 12px;"></div>
+              </div>
+            </div>
+
+            <div style="margin-top: 24px; display: flex; gap: 12px; align-items: center;">
+              <button class="u-btn u-btn--primary" id="btnComprobarU3F4"><i class="fas fa-stamp"></i> Validar Informe Ejecutivo Final</button>
+            </div>
+
+            <!-- Resumen Global de Desempeño -->
+            <div id="resumenGlobalU3" class="a-card" style="display: none; margin-top: 24px; background: #ecfdf5; border-left: 6px solid #10b981; padding: 22px;">
+              <div style="display: flex; align-items: center; gap: 14px;">
+                <i class="fas fa-circle-check" style="font-size: 2.2rem; color: #10b981;"></i>
+                <div>
+                  <h3 style="margin: 0; color: #065f46; font-size: 1.25rem;">¡Evaluación Integradora de Unidad III Aprobada con Distinción!</h3>
+                  <p style="margin: 6px 0 0; color: #047857; font-size: 0.95rem;">
+                    Has completado con éxito la auditoría y modelado analítico de la agencia turística en Microsoft Excel. Demostraste pericia en tipos de datos, referencias relativas y absolutas, funciones especializadas (estadísticas, lógicas, financieras), diseño de tablas dinámicas y control de calidad de impresión.
+                  </p>
+                </div>
+              </div>
+              <div style="margin-top: 18px; display: flex; gap: 12px;">
+                <a href="../index.html" class="u-btn u-btn--primary"><i class="fas fa-arrow-left"></i> Volver a Unidad III</a>
+                <a href="../../../practicas.html" class="u-btn u-btn--secondary"><i class="fas fa-laptop-code"></i> Ir a Prácticas de Laboratorio</a>
               </div>
             </div>
           </div>
         </section>
-
-        <!-- Navegación inferior unificada -->
-        <nav class="t-pager" id="actividadNavegacion" aria-label="Navegación de la actividad" style="margin-top: 24px;">
-          <a class="t-pager__prev" href="../temas/tema-03-05.html"><i class="fas fa-arrow-left" aria-hidden="true"></i> Volver al tema 3.5</a>
-          <a class="u-btn u-btn--primary" href="../../unidad-04/index.html">Continuar a la Unidad IV <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
-        </nav>
       </div>
 
-      <!-- Barra lateral desplegable y compacta -->
-      <aside class="a-sidebar" aria-label="Información de la actividad">
-        <details class="a-sidebar-details" open>
-          <summary class="a-sidebar-summary">
-            <span class="a-sidebar-summary-label"><i class="fas fa-layer-group"></i> Panel de apoyo</span>
-            <i class="fas fa-chevron-down a-sidebar-chevron"></i>
-          </summary>
-          <div class="a-sidebar-inner">
-            <section class="a-side-card a-side-card--dark">
-              <p class="a-side-title">Laboratorio ESIT</p>
-              <p class="a-side-text">La correcta selección de proveedores previene cuellos de botella y asegura el cumplimiento del programa de confección.</p>
-              <a class="a-side-link" href="../index.html"><i class="fas fa-arrow-left" aria-hidden="true"></i> <span>Volver a la Unidad III</span></a>
-            </section>
-
-            <nav class="a-side-card">
-              <p class="a-side-title">Temas Clave de Apoyo</p>
-              <a class="a-side-item" href="../temas/tema-03-01.html"><i class="fas fa-book-open"></i> 3.1 Cadena de suministro textil</a>
-              <a class="a-side-item" href="../temas/tema-03-02.html"><i class="fas fa-book-open"></i> 3.2 Planificación de compras</a>
-              <a class="a-side-item" href="../temas/tema-03-03.html"><i class="fas fa-book-open"></i> 3.3 Selección y evaluación</a>
-              <a class="a-side-item" href="../temas/tema-03-05.html"><i class="fas fa-book-open"></i> 3.5 Matriz multicriterio</a>
-            </nav>
-          </div>
-        </details>
+      <!-- Barra lateral de navegación rápida -->
+      <aside class="a-aside">
+        <section class="a-card" style="position: sticky; top: 88px;">
+          <h2 class="a-card__title"><i class="fas fa-compass" aria-hidden="true"></i> Guía del Consultor</h2>
+          <p style="font-size: 0.88rem; color: var(--text-muted, #64748b); line-height: 1.5;">
+            Secuencia para entregar el modelo financiero en Excel al Consejo Directivo:
+          </p>
+          <ul class="a-checklist" style="list-style: none; padding: 0; margin: 12px 0 0; font-size: 0.88rem; display: flex; flex-direction: column; gap: 10px;">
+            <li id="chk-u3-1" style="display: flex; align-items: center; gap: 8px;"><i class="far fa-circle" style="color: var(--text-muted);"></i> Fase 1: Auditoría de Datos</li>
+            <li id="chk-u3-2" style="display: flex; align-items: center; gap: 8px;"><i class="far fa-circle" style="color: var(--text-muted);"></i> Fase 2: Fórmulas y Referencias</li>
+            <li id="chk-u3-3" style="display: flex; align-items: center; gap: 8px;"><i class="far fa-circle" style="color: var(--text-muted);"></i> Fase 3: Funciones Avanzadas</li>
+            <li id="chk-u3-4" style="display: flex; align-items: center; gap: 8px;"><i class="far fa-circle" style="color: var(--text-muted);"></i> Fase 4: Tablas Dinámicas e Impresión</li>
+          </ul>
+        </section>
       </aside>
     </div>
   </main>
 
-  <footer class="u-footer">
+  <footer class="u-footer" style="margin-top: 48px;">
     <div class="u-footer__inner">
-      <p>Logística y cadena de suministro · Polilibro académico · ESIT-IPN</p>
+      <p>TIC aplicadas al turismo · Polilibro académico · EST-IPN</p>
       <p>Desarrollado con fines educativos · © 2026</p>
     </div>
   </footer>
 
-  <script src="../../../assets/js/data-manager.js"></script>
   <script src="../../../assets/js/componentes.js"></script>
-  <script src="../../../assets/js/unidades-ui.js"></script>
-  <script src="../../../assets/js/simuladores/simulador-u3.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Stepper
+      const stepBtns = document.querySelectorAll('.sim-step-btn');
+      const panels = document.querySelectorAll('.sim-panel');
+
+      function switchStep(step) {
+        stepBtns.forEach(btn => {
+          btn.classList.toggle('is-active', btn.dataset.step === String(step));
+        });
+        panels.forEach((p, idx) => {
+          p.classList.toggle('is-active', idx + 1 === Number(step));
+        });
+      }
+
+      stepBtns.forEach(btn => {
+        btn.addEventListener('click', () => switchStep(btn.dataset.step));
+      });
+
+      document.getElementById('btnNextU3_1').addEventListener('click', () => switchStep(2));
+      document.getElementById('btnNextU3_2').addEventListener('click', () => switchStep(3));
+      document.getElementById('btnNextU3_3').addEventListener('click', () => switchStep(4));
+
+      // Fase 1: Auditoría
+      document.getElementById('btnComprobarU3F1').addEventListener('click', () => {
+        const correct = { u3_f1_p1: 'b', u3_f1_p2: 'a', u3_f1_p3: 'a' };
+        const expl = {
+          u3_f1_p1: 'El símbolo ### indica columna estrecha; autoajustar el ancho revela el valor inmediatamente.',
+          u3_f1_p2: 'Los números almacenados como texto tienen alineación izquierda y son ignorados por SUMA hasta ser convertidos.',
+          u3_f1_p3: 'Las fechas en Excel son enteros secuenciales, por lo que su resta da los días exactos transcurridos.'
+        };
+
+        for (const [key, val] of Object.entries(correct)) {
+          const sel = document.querySelector(`input[name="${key}"]:checked`);
+          const fb = document.getElementById(`fb_${key}`);
+          fb.style.display = 'block';
+          if (sel && sel.value === val) {
+            fb.className = 'a-feedback a-feedback--ok';
+            fb.innerHTML = `<i class="fas fa-check-circle"></i> Correcto: ${expl[key]}`;
+          } else {
+            fb.className = 'a-feedback a-feedback--bad';
+            fb.innerHTML = `<i class="fas fa-times-circle"></i> Incorrecto. La solución correcta es (${val}). ${expl[key]}`;
+          }
+        }
+        document.getElementById('btnNextU3_1').style.display = 'inline-flex';
+        document.getElementById('chk-u3-1').innerHTML = '<i class="fas fa-check-circle" style="color: #10b981;"></i> Fase 1: Auditoría de Datos';
+      });
+
+      // Fase 2: Fórmulas y Referencias
+      document.getElementById('btnComprobarU3F2').addEventListener('click', () => {
+        const correct = { u3_f2_p1: 'v', u3_f2_p2: 'v', u3_f2_p3: 'v' };
+        for (const key of Object.keys(correct)) {
+          const sel = document.querySelector(`input[name="${key}"]:checked`);
+          const fb = document.getElementById(`fb_${key}`);
+          fb.style.display = 'block';
+          if (sel && sel.value === 'v') {
+            fb.className = 'a-feedback a-feedback--ok';
+            fb.innerHTML = '<i class="fas fa-check-circle"></i> Correcto: Aplicación rigurosa de sintaxis, jerarquía y referencias absolutas.';
+          } else {
+            fb.className = 'a-feedback a-feedback--bad';
+            fb.innerHTML = '<i class="fas fa-times-circle"></i> Respuesta errónea. Recuerda que el signo $ inmoviliza la fila/columna y los operadores respetan la jerarquía estándar.';
+          }
+        }
+        document.getElementById('btnNextU3_2').style.display = 'inline-flex';
+        document.getElementById('chk-u3-2').innerHTML = '<i class="fas fa-check-circle" style="color: #10b981;"></i> Fase 2: Fórmulas y Referencias';
+      });
+
+      // Fase 3: Funciones
+      document.getElementById('btnComprobarU3F3').addEventListener('click', () => {
+        const correct = { u3_f3_p1: 'v', u3_f3_p2: 'v', u3_f3_p3: 'v' };
+        for (const key of Object.keys(correct)) {
+          const sel = document.querySelector(`input[name="${key}"]:checked`);
+          const fb = document.getElementById(`fb_${key}`);
+          fb.style.display = 'block';
+          if (sel && sel.value === 'v') {
+            fb.className = 'a-feedback a-feedback--ok';
+            fb.innerHTML = '<i class="fas fa-check-circle"></i> Correcto: Dominio de funciones de cálculo condicional y matemática financiera.';
+          } else {
+            fb.className = 'a-feedback a-feedback--bad';
+            fb.innerHTML = '<i class="fas fa-times-circle"></i> Respuesta errónea. Repasa los argumentos de SUMAR.SI, SI y PAGO.';
+          }
+        }
+        document.getElementById('btnNextU3_3').style.display = 'inline-flex';
+        document.getElementById('chk-u3-3').innerHTML = '<i class="fas fa-check-circle" style="color: #10b981;"></i> Fase 3: Funciones Avanzadas';
+      });
+
+      // Fase 4: Tablas e Impresión
+      document.getElementById('btnComprobarU3F4').addEventListener('click', () => {
+        const f = document.getElementById('td_filas').value;
+        const c = document.getElementById('td_cols').value;
+        const v = document.getElementById('td_vals').value;
+
+        const fb_td = document.getElementById('fb_td');
+        fb_td.style.display = 'block';
+        if (f === 'ok' && c === 'ok' && v === 'ok') {
+          fb_td.className = 'a-feedback a-feedback--ok';
+          fb_td.innerHTML = '<i class="fas fa-check-circle"></i> ¡Estructura de Tabla Dinámica Correcta! Filas: Destino, Columnas: Tipo de Servicio, Valores: Suma de Importe Venta.';
+        } else {
+          fb_td.className = 'a-feedback a-feedback--bad';
+          fb_td.innerHTML = '<i class="fas fa-times-circle"></i> Configuración de tabla dinámica incorrecta. Verifica la ubicación de cada campo.';
+        }
+
+        const c1 = document.getElementById('chk_imp_1').checked;
+        const c2 = document.getElementById('chk_imp_2').checked;
+        const c3 = document.getElementById('chk_imp_3').checked;
+        const c4 = document.getElementById('chk_imp_4').checked;
+
+        const fb_imp = document.getElementById('fb_imp');
+        fb_imp.style.display = 'block';
+        if (c1 && c2 && c3 && c4) {
+          fb_imp.className = 'a-feedback a-feedback--ok';
+          fb_imp.innerHTML = '<i class="fas fa-check-circle"></i> ¡Lista de Cotejo de Impresión 100% Validada! El reporte cumple los más altos estándares de presentación corporativa.';
+        } else {
+          fb_imp.className = 'a-feedback a-feedback--bad';
+          fb_imp.innerHTML = '<i class="fas fa-times-circle"></i> Debes verificar los 4 puntos de la lista de cotejo antes de autorizar la entrega ejecutiva.';
+        }
+
+        if (f === 'ok' && c === 'ok' && v === 'ok' && c1 && c2 && c3 && c4) {
+          document.getElementById('chk-u3-4').innerHTML = '<i class="fas fa-check-circle" style="color: #10b981;"></i> Fase 4: Tablas Dinámicas e Impresión';
+          document.getElementById('resumenGlobalU3').style.display = 'block';
+          document.getElementById('resumenGlobalU3').scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>

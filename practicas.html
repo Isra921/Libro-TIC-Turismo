@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prácticas de Laboratorio | TIC aplicadas al turismo</title>
+  <meta name="description" content="Catálogo oficial de las 12 prácticas de laboratorio del polilibro TIC aplicadas al turismo (EST-IPN). Guías paso a paso, escenarios turísticos y rúbricas de evaluación.">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/comun.css?v=2.1">
+  <link rel="stylesheet" href="assets/css/unidades-base.css?v=2.1">
+  <link rel="stylesheet" href="assets/css/unidades.css?v=2.1">
+  <link rel="stylesheet" href="assets/css/actividad.css?v=2.1">
+  <link rel="stylesheet" href="assets/css/simulador-casos.css?v=2.1">
+
+  <link rel="icon" type="image/png" href="assets/img/est.png">
+  <style>
+    .p-hero {
+      background: linear-gradient(135deg, #0b2545 0%, #134074 100%);
+      color: #ffffff;
+      padding: 36px 32px;
+      border-radius: var(--radius-md, 12px);
+      margin-bottom: 28px;
+      box-shadow: 0 10px 25px -5px rgba(11, 37, 69, 0.25);
+    }
+    .p-hero__badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(8px);
+      padding: 6px 14px;
+      border-radius: 9999px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .p-hero__title {
+      font-size: 2.1rem;
+      font-weight: 700;
+      margin: 0 0 10px;
+      color: #ffffff;
+    }
+    .p-hero__desc {
+      font-size: 1.05rem;
+      line-height: 1.6;
+      color: #e2e8f0;
+      max-width: 900px;
+      margin: 0 0 20px;
+    }
+    .p-filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 24px;
+      background: var(--surface, #ffffff);
+      padding: 14px 18px;
+      border-radius: var(--radius-md, 12px);
+      border: 1px solid var(--border-color, #e2e8f0);
+    }
+    .p-filter-btn {
+      padding: 8px 16px;
+      border-radius: 9999px;
+      border: 1px solid var(--border-color, #cbd5e1);
+      background: var(--surface, #ffffff);
+      color: var(--text-main, #334155);
+      font-weight: 600;
+      font-size: 0.88rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .p-filter-btn:hover, .p-filter-btn.is-active {
+      background: var(--primary, #0284c7);
+      color: #ffffff;
+      border-color: var(--primary, #0284c7);
+    }
+    .p-search {
+      margin-left: auto;
+      position: relative;
+      min-width: 240px;
+    }
+    .p-search input {
+      width: 100%;
+      padding: 8px 14px 8px 34px;
+      border-radius: 9999px;
+      border: 1px solid var(--border-color, #cbd5e1);
+      font-size: 0.88rem;
+    }
+    .p-search i {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted, #94a3b8);
+      font-size: 0.85rem;
+    }
+    .p-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 22px;
+    }
+    .p-card {
+      background: var(--surface, #ffffff);
+      border: 1px solid var(--border-color, #e2e8f0);
+      border-radius: var(--radius-md, 12px);
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      position: relative;
+    }
+    .p-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 24px -6px rgba(0,0,0,0.08);
+      border-color: #cbd5e1;
+    }
+    .p-card__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 14px;
+    }
+    .p-card__badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 6px;
+      text-transform: uppercase;
+      background: #f1f5f9;
+      color: #475569;
+    }
+    .p-card__badge--u1 { background: #e0f2fe; color: #0369a1; }
+    .p-card__badge--u2 { background: #eff6ff; color: #1d4ed8; }
+    .p-card__badge--u3 { background: #f0fdf4; color: #15803d; }
+    .p-card__icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      color: #ffffff;
+      flex-shrink: 0;
+    }
+    .p-card__title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin: 0 0 8px;
+      color: var(--text-title, #0f172a);
+      line-height: 1.35;
+    }
+    .p-card__obj {
+      font-size: 0.88rem;
+      line-height: 1.5;
+      color: var(--text-muted, #64748b);
+      margin: 0 0 14px;
+      flex-grow: 1;
+    }
+    .p-card__meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 16px;
+      font-size: 0.8rem;
+    }
+    .p-card__btn {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      background: var(--primary, #0284c7);
+      color: #ffffff;
+      border: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: background 0.2s ease;
+    }
+    .p-card__btn:hover {
+      background: #0369a1;
+    }
+    /* Modal de detalle de práctica */
+    .p-modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.6);
+      backdrop-filter: blur(4px);
+      z-index: 1000;
+      overflow-y: auto;
+      padding: 24px 16px;
+      align-items: center;
+      justify-content: center;
+    }
+    .p-modal.is-open {
+      display: flex;
+    }
+    .p-modal__content {
+      background: var(--surface, #ffffff);
+      max-width: 840px;
+      width: 100%;
+      border-radius: var(--radius-lg, 16px);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      position: relative;
+      max-height: 90vh;
+      overflow-y: auto;
+      padding: 32px;
+    }
+    .p-modal__close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: #f1f5f9;
+      border: none;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      color: #475569;
+      transition: all 0.2s;
+    }
+    .p-modal__close:hover {
+      background: #e2e8f0;
+      color: #0f172a;
+    }
+    .p-step-list {
+      padding-left: 20px;
+      margin: 12px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      line-height: 1.5;
+    }
+    .p-checklist-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 10px 12px;
+      background: var(--bg-main, #f8fafc);
+      border-radius: 6px;
+      margin-bottom: 8px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body class="u-body" data-root="">
+
+  <header class="site-nav" data-componente="navegacion"></header>
+
+  <main class="u-page">
+    <section class="p-hero">
+      <span class="p-hero__badge"><i class="fas fa-graduation-cap"></i> Escuela Superior de Turismo · IPN</span>
+      <h1 class="p-hero__title">Prácticas de Laboratorio</h1>
+      <p class="p-hero__desc">
+        Catálogo oficial con las 12 prácticas de cómputo y laboratorio establecidas en el plan de estudios institucional de <strong>TIC aplicadas al turismo</strong>. Desarrolla competencias prácticas en organizadores gráficos, ofimática avanzada, desarrollo web, sistemas de distribución global (GDS) y análisis numérico con Microsoft Excel.
+      </p>
+      <div class="u-chips" style="gap: 10px;">
+        <span class="u-chip" style="background: rgba(255,255,255,0.15); color: #fff;"><i class="fas fa-list-check"></i> 12 Prácticas Oficiales</span>
+        <span class="u-chip" style="background: rgba(255,255,255,0.15); color: #fff;"><i class="fas fa-clock"></i> 30 Horas de Laboratorio</span>
+        <span class="u-chip" style="background: rgba(255,255,255,0.15); color: #fff;"><i class="fas fa-desktop"></i> Laboratorio de TIC</span>
+        <span class="u-chip" style="background: rgba(255,255,255,0.15); color: #fff;"><i class="fas fa-award"></i> Portafolio de Evidencias</span>
+      </div>
+    </section>
+
+    <!-- Barra de Filtros y Búsqueda -->
+    <div class="p-filters" role="toolbar" aria-label="Filtros de prácticas">
+      <button class="p-filter-btn is-active" data-filter="all"><i class="fas fa-globe"></i> Todas (12)</button>
+      <button class="p-filter-btn" data-filter="I"><i class="fas fa-book"></i> Unidad I (1)</button>
+      <button class="p-filter-btn" data-filter="II"><i class="fas fa-desktop"></i> Unidad II (6)</button>
+      <button class="p-filter-btn" data-filter="III"><i class="fas fa-chart-line"></i> Unidad III (5)</button>
+
+      <div class="p-search">
+        <i class="fas fa-search" aria-hidden="true"></i>
+        <input type="text" id="buscadorPracticas" placeholder="Buscar por tema, software o palabra clave…" aria-label="Buscar práctica">
+      </div>
+    </div>
+
+    <!-- Cuadrícula de Prácticas -->
+    <section class="p-grid" id="gridPracticas" aria-label="Listado de prácticas">
+
+      <article class="p-card" data-unidad="I" data-tags="organizadores gráficos digitales canva, coggle, lucidchart, miro o mindmeister unidad i: las tic">
+        <div class="p-card__top">
+          <span class="p-card__badge p-card__badge--ui"><i class="fas fa-tag"></i> Unidad I: Las TIC</span>
+          <div class="p-card__icon" style="background: #0284c7;">
+            <i class="fas fa-diagram-project"></i>
+          </div>
+        </div>
+        <h2 class="p-card__title">Práctica 1: Organizadores gráficos digitales</h2>
+        <p class="p-card__obj">Diseñar esquemas conceptuales y visuales que sinteticen los componentes fundamentales de las TIC, infraestructura de hardware/software y canales de comunicación en el sector turístico mediante herramientas colaborativas en la nube.</p>
+        <div class="p-card__meta">
+          <span class="u-chip u-chip--soft"><i class="fas fa-clock"></i> 2 horas</span>
+          <span class="u-chip u-chip--soft"><i class="fas fa-laptop-code"></i> Canva</span>
+          <span class="u-chip u-chip--soft"><i class="fas fa-location-dot"></i> Laboratorio de TIC</span>
+        </div>
+        <button class="p-card__btn" onclick="abrirPractica(1)">
+          <i class="fas fa-folder-open"></i> Ver Práctica Completa
+        </button>
+      </article>
+
+      <article class="p-card" data-unidad="II" data-tags="procesador de textos microsoft word, libreoffice writer o google docs unidad ii: digitalización de la información">
+        <div class="p-card__top">
+          <span class="p-card__badge p-card__badge--uii"><i class="fas fa-tag"></i> Unidad II: Digitalización de la información</span>
+          <div class="p-card__icon" style="background: #2563eb;">
+            <i class="fas fa-file-word"></i>
+          </div>
+        </div>
+        <h2 class="p-card__title">Práctica 2: Procesador de textos</h2>
+        <p class="p-card__obj">Aplicar herramientas avanzadas de formato editorial, estilos jerárquicos, tablas tarifarias, notas al pie, saltos de sección y referencias bibliográficas en formato APA para la elaboración formal de un Manual de Políticas y Servicios Turísticos.</p>
+        <div class="p-card__meta">
+          <span class="u-chip u-chip--soft"><i class="fas fa-clock"></i> 2 horas</span>
+          <span class="u-chip u-chip--soft"><i class="fas fa-laptop-code"></i> Microsoft Word</span>
+          <span class="u-chip u-chip--soft"><i class="fas fa-location-dot"></i> Laboratorio de TIC</span>
+        </div>
+        <button class="p-card__btn" onclick="abrirPractica(2)">
+          <i class="fas fa-folder-open"></i> Ver Práctica Completa
+        </button>
+      </article>
+
+      <article class="p-card" data-unidad="II" data-tags="blog blogger, wordpress, wix o medium unidad ii: digitalización de la información">
+        <div class="p-card__top">
+          <span class="p-card__badge p-card__badge--uii"><i class="fas fa-tag"></i> Unidad II: Digitalización de la información</span>
+          <div class="p-card__icon" style="background: #ea580c;">
+            <i class="fas fa-blog"></i>
+          </div>
+        </div>
+        <h2 class="p-card__title">Práctica 3: Blog</h2>
+        <p class="p-card__obj">Diseñar, estructurar y publicar una bitácora digital (blog) orientada a la difusión y marketing de contenidos turísticos, incorporando artículos de valor, galerías fotográficas, etiquetas temáticas y canales de interacción con el viajero.</p>
+        <div class="p-card__meta">
+          <span class="u-chip u-chip--soft"><i class="fas fa-clock"></i> 3 horas</span>
+          <span class="u-chip u-chip--soft"><i class="fas fa-laptop-code"></i> Blogger</span>
+          <span class="u-chip u-chip--soft"><i class="fas fa-location-dot"></i> Laboratorio de TIC</span>
+        </div>
+        <button class="p-card__btn" onclick="abrirPractica(3)">
+          <i class="fas fa-folder-open"></i> Ver Práctica Completa
+        </button>
+      </article>
+
+      <article class="p-card" data-unidad="II" data-tags="página web visual studio code, sublime text, navegador web y devtools unidad ii: digitalización de la información">
+        <div class="p-card__top">
+          <span class="p-card__badge p-card__badge--uii"><i class="fas fa-tag"></i> Unidad II: Digitalización de la información</span>
+          <div class="p-card__icon" style="background: #059669;">
+            <i class="fas fa-code"></i>
+          </div>
+        </div>
+        <h2 class="p-card__title">Práctica 4: Página web</h2>
+        <p class="p-card__obj">Construir una página web promocional para un destino o servicio turístico utilizando lenguaje de marcado semántico HTML5 y estilos CSS3 responsivos, garantizando accesibilidad, legibilidad y estándares de diseño digital.</p>
+        <div class="p-card__meta">
+          <span class="u-chip u-chip--soft"><i class="fas fa-clock"></i> 3 horas</span>
+          <span class="u-chip u-chip--soft"><i class="fas fa-laptop-code"></i> Visual Studio Code</span>
+          <span class="u-chip u-chip--soft"><i class="fas fa-location-dot"></i> Laboratorio de TIC</span>
+        </div>
+        <button class="p-card__btn" onclick="abrirPractica(4)">
+          <i class="fas fa-folder-open"></i> Ver Práctica Completa
+        </button>
+      </article>
+
+      <article class="p-card" data-unidad="II" data-tags="presentaciones digitales con audio y video en medios digitales de almacenamiento microsoft powerpoint, canva, capcut, audacity y servicios de nube (onedrive/google drive) unidad ii: digitalización de la información">
+        <div class="p-card__top">
+          <span class="p-card__badge p-card__badge--uii"><i class="fas fa-tag"></i> Unidad II: Digitalización de la información</span>
+          <div class="p-card__icon" style="background: #7c3aed;">
+            <i class="fas fa-photo-film"></i>
+          </div>
+        </div>
+        <h2 class="p-card__title">Práctica 5: Presentaciones digitales con audio y video en medios digitales de almacenamiento</h2>
+        <p class="p-card__obj">Crear una presentación ejecutiva interactiva que articule diapositivas dinámicas, pistas de narración de audio calibradas y clips de video promocional optimizados, almacenándola y difundiéndola en medios locales y en la nube.</p>
+        <div class="p-card__meta">
+          <span class="u-chip u-chip--soft"><i class="fas fa-clock"></i> 2 horas</span>
+          <span class="u-chip u-chip--soft"><i class="fas fa-laptop-code"></i> Microsoft PowerPoint</span>
+          <span class="u-chip u-chip--soft"><i class="fas fa-location-dot"></i> Laboratorio de TIC</span>
+        </div>
+        <button class="p-card__btn" onclick="abrirPractica(5)">
+          <i class="fas fa-folder-open"></i> Ver Práctica Completa
+        </button>
+      </article>
+
+      <article class="p-card" data-unidad="II" data-tags="sistemas de distribución global (gds) simulador gds (amadeus / sabre e-learning / portales b2b) unidad ii: digitalización de la información">
+        <div class="p-card__top">
+          <span class="p-card__badge p-card__badge--uii"><i class="fas fa-tag"></i> Unidad II: Digitalización de la información</span>
+          <div class="p-card__icon" style="background: #0284c7;">
+            <i class="fas fa-server"></i>
+          </div>
+        </div>
+        <h2 class="p-card__title">Práctica 6: Sistemas de distribución global (GDS)</h2>
+        <p class="p-card__obj">Simular las operaciones esenciales de un Sistema de Distribución Global (GDS): consulta de disponibilidades, cotización de tarifas aéreas y hoteleras, codificación/decodificación IATA y creación de un Registro de Nombre de Pasajero (PNR).</p>
+        <div class="p-card__meta">
+          <span class="u-chip u-chip--soft"><i class="fas fa-clock"></i> 3 horas</span>
+          <span class="u-chip u-chip--soft"><i class="fas fa-laptop-code"></i> Simulador GDS (Amadeus / Sabre e-Learning / Portales B2B)</span>
+          <span class="u-chip u-chip--soft"><i class="fas fa-location-dot"></i> Laboratorio de TIC</span>
+        </div>
+        <button class="p-card__btn" onclick="abrirPractica(6)">
+          <i class="fas fa-folder-open"></i> Ver Práctica Completa
+        </button>
+      </article>
+
+      <article class="p-card" data-unidad="II" data-tags="elementos de la hoja de cálculo microsoft excel o google sheets unidad ii / iii: hojas de cálculo">
+        <div class="p-card__top">
+          <span class="p-card__badge p-card__badge--uii"><i class="fas fa-tag"></i> Unidad II / III: Hojas de cálculo</span>
+          <div class="p-card__icon" style="background: #16a34a;">
+            <i class="fas fa-table"></i>
+          </div>
+        </div>
+        <h2 class="p-card__title">Práctica 7: Elementos de la hoja de cálculo</h2>
+        <p class="p-card__obj">Dominar el entorno operativo de Microsoft Excel: barra de fórmulas, cinta de opciones, cuadros de nombres, formato numérico especializado (moneda, fecha, porcentaje) y validación de datos para la gestión hotelera.</p>
+        <div class="p-card__meta">
+          <span class="u-chip u-chip--soft"><i class="fas fa-clock"></i> 2 horas</span>
+          <span class="u-chip u-chip--soft"><i class="fas fa-laptop-code"></i> Microsoft Excel o Google Sheets</span>
+          <span class="u-chip u-chip--soft"><i class="fas fa-location-dot"></i> Laboratorio de TIC</span>
+        </div>
+        <button class="p-card__btn" onclick="abrirPractica(7)">
+          <i class="fas fa-folder-open"></i> Ver Práctica Completa
+        </button>
+      </article>
+
+      <article class="p-card" data-unidad="III" data-tags="operadores aritméticos y su orden de prioridad microsoft excel unidad iii: tratamiento de datos numéricos">
+        <div class="p-card__top">
+          <span class="p-card__badge p-card__badge--uiii"><i class="fas fa-tag"></i> Unidad III: Tratamiento de datos numéricos</span>
+          <div class="p-card__icon" style="background: #d97706;">
+            <i class="fas fa-calculator"></i>
+          </div>
+        </div>
+        <h2 class="p-card__title">Práctica 8: Operadores aritméticos y su orden de prioridad</h2>
+        <p class="p-card__obj">Construir fórmulas matemáticas complejas aplicando operadores aritméticos (+, -, *, /, %, ^), de comparación y concatenación (&), respetando la jerarquía de operaciones y el uso estratégico de paréntesis para liquidación de servicios turísticos.</p>
+        <div class="p-card__meta">
+          <span class="u-chip u-chip--soft"><i class="fas fa-clock"></i> 2 horas</span>
+          <span class="u-chip u-chip--soft"><i class="fas fa-laptop-code"></i> Microsoft Excel</span>
+          <span class="u-chip u-chip--soft"><i class="fas fa-location-dot"></i> Laboratorio de TIC</span>
+        </div>
+        <button class="p-card__btn" onclick="abrirPractica(8)">
+          <i class="fas fa-folder-open"></i> Ver Práctica Completa
+        </button>
+      </article>
+
+      <article class="p-card" data-unidad="III" data-tags="funciones avanzadas y manejo de fórmulas microsoft excel unidad iii: tratamiento de datos numéricos">
+        <div class="p-card__top">
+          <span class="p-card__badge p-card__badge--uiii"><i class="fas fa-tag"></i> Unidad III: Tratamiento de datos numéricos</span>
+          <div class="p-card__icon" style="background: #2563eb;">
+            <i class="fas fa-square-root-variable"></i>
+          </div>
+        </div>
+        <h2 class="p-card__title">Práctica 9: Funciones avanzadas y manejo de fórmulas</h2>
+        <p class="p-card__obj">Aplicar funciones estadísticas (SUMA, PROMEDIO, CONTAR.SI, SUMAR.SI), lógicas condicionales (SI, Y, O) y financieras (PAGO) utilizando referencias relativas, absolutas ($) y mixtas para la gestión financiera de una agencia de viajes.</p>
+        <div class="p-card__meta">
+          <span class="u-chip u-chip--soft"><i class="fas fa-clock"></i> 3 horas</span>
+          <span class="u-chip u-chip--soft"><i class="fas fa-laptop-code"></i> Microsoft Excel</span>
+          <span class="u-chip u-chip--soft"><i class="fas fa-location-dot"></i> Laboratorio de TIC</span>
+        </div>
+        <button class="p-card__btn" onclick="abrirPractica(9)">
+          <i class="fas fa-folder-open"></i> Ver Práctica Completa
+        </button>
+      </article>
+
+      <article class="p-card" data-unidad="III" data-tags="elaboración de gráficos microsoft excel unidad iii: tratamiento de datos numéricos">
+        <div class="p-card__top">
+          <span class="p-card__badge p-card__badge--uiii"><i class="fas fa-tag"></i> Unidad III: Tratamiento de datos numéricos</span>
+          <div class="p-card__icon" style="background: #9333ea;">
+            <i class="fas fa-chart-column"></i>
+          </div>
+        </div>
+        <h2 class="p-card__title">Práctica 10: Elaboración de gráficos</h2>
+        <p class="p-card__obj">Construir, formatear y personalizar gráficos estadísticos (columnas, líneas, circular y barras), incorporando elementos visuales complementarios (imágenes, figuras geométricas y cuadros de texto) para comunicar efectivamente la toma de decisiones turísticas.</p>
+        <div class="p-card__meta">
+          <span class="u-chip u-chip--soft"><i class="fas fa-clock"></i> 2 horas</span>
+          <span class="u-chip u-chip--soft"><i class="fas fa-laptop-code"></i> Microsoft Excel</span>
+          <span class="u-chip u-chip--soft"><i class="fas fa-location-dot"></i> Laboratorio de TIC</span>
+        </div>
+        <button class="p-card__btn" onclick="abrirPractica(10)">
+          <i class="fas fa-folder-open"></i> Ver Práctica Completa
+        </button>
+      </article>
+
+      <article class="p-card" data-unidad="III" data-tags="tablas dinámicas microsoft excel unidad iii: tratamiento de datos numéricos">
+        <div class="p-card__top">
+          <span class="p-card__badge p-card__badge--uiii"><i class="fas fa-tag"></i> Unidad III: Tratamiento de datos numéricos</span>
+          <div class="p-card__icon" style="background: #0284c7;">
+            <i class="fas fa-chart-pie"></i>
+          </div>
+        </div>
+        <h2 class="p-card__title">Práctica 11: Tablas dinámicas</h2>
+        <p class="p-card__obj">Crear, configurar y manipular tablas dinámicas para resumir, cruzar y analizar grandes volúmenes de reservaciones turísticas, incorporando segmentación de datos interactiva (Slicers) y gráficos dinámicos sincronizados.</p>
+        <div class="p-card__meta">
+          <span class="u-chip u-chip--soft"><i class="fas fa-clock"></i> 3 horas</span>
+          <span class="u-chip u-chip--soft"><i class="fas fa-laptop-code"></i> Microsoft Excel</span>
+          <span class="u-chip u-chip--soft"><i class="fas fa-location-dot"></i> Laboratorio de TIC</span>
+        </div>
+        <button class="p-card__btn" onclick="abrirPractica(11)">
+          <i class="fas fa-folder-open"></i> Ver Práctica Completa
+        </button>
+      </article>
+
+      <article class="p-card" data-unidad="III" data-tags="impresión microsoft excel y visualizador pdf unidad iii: tratamiento de datos numéricos">
+        <div class="p-card__top">
+          <span class="p-card__badge p-card__badge--uiii"><i class="fas fa-tag"></i> Unidad III: Tratamiento de datos numéricos</span>
+          <div class="p-card__icon" style="background: #475569;">
+            <i class="fas fa-print"></i>
+          </div>
+        </div>
+        <h2 class="p-card__title">Práctica 12: Impresión</h2>
+        <p class="p-card__obj">Configurar de manera avanzada las propiedades de página, área de impresión, escala, márgenes, encabezados de fila repetidos y pie de página institucional para generar reportes impresos y archivos PDF con estándares profesionales de entrega directiva.</p>
+        <div class="p-card__meta">
+          <span class="u-chip u-chip--soft"><i class="fas fa-clock"></i> 2 horas</span>
+          <span class="u-chip u-chip--soft"><i class="fas fa-laptop-code"></i> Microsoft Excel y visualizador PDF</span>
+          <span class="u-chip u-chip--soft"><i class="fas fa-location-dot"></i> Laboratorio de TIC</span>
+        </div>
+        <button class="p-card__btn" onclick="abrirPractica(12)">
+          <i class="fas fa-folder-open"></i> Ver Práctica Completa
+        </button>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- Modal Detallado de Práctica -->
+  <div class="p-modal" id="modalPractica" role="dialog" aria-modal="true" aria-labelledby="modalTitulo">
+    <div class="p-modal__content">
+      <button class="p-modal__close" onclick="cerrarModal()" aria-label="Cerrar ventana">&times;</button>
+      <div id="modalCuerpo"></div>
+    </div>
+  </div>
+
+  <footer class="u-footer" style="margin-top: 48px;">
+    <div class="u-footer__inner">
+      <p>TIC aplicadas al turismo · Polilibro académico · EST-IPN</p>
+      <p>Desarrollado con fines educativos · © 2026</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/componentes.js"></script>
+  <script>
+    const practicas = [{"id": 1, "numero": 1, "nombre": "Organizadores gráficos digitales", "unidad": "I", "unidad_nombre": "Unidad I: Las TIC", "horas": "2 horas", "lugar": "Laboratorio de TIC", "icono": "fa-diagram-project", "color": "#0284c7", "objetivo": "Diseñar esquemas conceptuales y visuales que sinteticen los componentes fundamentales de las TIC, infraestructura de hardware/software y canales de comunicación en el sector turístico mediante herramientas colaborativas en la nube.", "software": "Canva, Coggle, Lucidchart, Miro o MindMeister", "escenario": "La agencia de viajes 'Rutas Mágicas de México' requiere capacitar a su personal de nuevo ingreso en la comprensión de la infraestructura tecnológica interna (servidores, terminales POS, canales sincrónicos/asincrónicos y redes de comunicación).", "pasos": ["Explora y selecciona una herramienta digital de organizadores gráficos en línea (ej. Coggle o Canva) creando una cuenta con tu correo institucional.", "Estructura un mapa conceptual jerárquico que clasifique: Hardware (terminales de recepción, servidores, periféricos), Software (Sistemas Operativos, suites ofimáticas, navegadores) y Conectividad (redes LAN, fibra óptica, internet).", "Incorpora una rama dedicada a la 'Comunicación en las Organizaciones Turísticas', distinguiendo canales sincrónicos (videoconferencias, chats en vivo) y asincrónicos (correo institucional, wikis, foros).", "Aplica diseño visual armónico: utiliza conectores con palabras de enlace, códigos de color diferenciados por categoría e iconografía representativa.", "Exporta el organizador gráfico en formato PDF de alta resolución y genera el enlace público de visualización interactiva."], "entregable": "Documento en formato PDF con portada institucional EST-IPN, enlace web al organizador gráfico interactivo, imagen incrustada en alta resolución y conclusión de 150 palabras sobre el impacto de las TIC en la competitividad de las agencias de viajes.", "criterios": ["Jerarquía conceptual clara y correcta clasificación de hardware, software y conectividad.", "Distinción precisa entre canales sincrónicos y asincrónicos aplicados a casos turísticos.", "Uso óptimo de la herramienta digital (colores legibles, enlaces funcionales, ortografía impecable).", "Entrega puntual en tiempo y forma en el portafolio de evidencias digital."]}, {"id": 2, "numero": 2, "nombre": "Procesador de textos", "unidad": "II", "unidad_nombre": "Unidad II: Digitalización de la información", "horas": "2 horas", "lugar": "Laboratorio de TIC", "icono": "fa-file-word", "color": "#2563eb", "objetivo": "Aplicar herramientas avanzadas de formato editorial, estilos jerárquicos, tablas tarifarias, notas al pie, saltos de sección y referencias bibliográficas en formato APA para la elaboración formal de un Manual de Políticas y Servicios Turísticos.", "software": "Microsoft Word, LibreOffice Writer o Google Docs", "escenario": "El Hotel Boutique 'Hacienda del Sol' requiere formalizar su Manual de Atención al Huésped y Procedimientos de Recepción para su certificación de calidad turística.", "pasos": ["Configura el documento con márgenes estándar (2.5 cm en los 4 lados), orientación vertical y tipografía institucional (Arial o Calibri a 11 pts con interlineado de 1.5 líneas).", "Diseña una portada institucional formal con logotipos, título del manual, versión, autoría institucional y fecha de actualización.", "Crea y aplica Estilos de Título (Título 1, Título 2, Título 3) para generar una Tabla de Contenido (Índice general) automatizada.", "Inserta una tabla de tarifas por tipo de habitación (Estándar, Suite, Master) con formato personalizado, alineación numérica y encabezados repetidos.", "Incluye saltos de sección para numerar las páginas preliminares en números romanos y el cuerpo del documento en arábigos; agrega notas al pie de página aclarando términos de hospedaje (ej. check-in, check-out, no-show) y citas en formato APA."], "entregable": "Archivo en formato .docx y su versión exportada en .pdf del Manual de Procedimientos Turísticos, con índice automático, estilos de texto consistentes y tabla de tarifas estandarizada.", "criterios": ["Estructura formal con portada, índice automático vinculado y saltos de sección adecuados.", "Uso estricto de estilos de párrafo y formato editorial profesional sin dobles espaciados manuales.", "Tabla de tarifas adecuadamente formateada y notas explicativas al pie de página pertinentes.", "Ortografía, sintaxis y presentación ejecutiva acorde al nivel superior politécnico."]}, {"id": 3, "numero": 3, "nombre": "Blog", "unidad": "II", "unidad_nombre": "Unidad II: Digitalización de la información", "horas": "3 horas", "lugar": "Laboratorio de TIC", "icono": "fa-blog", "color": "#ea580c", "objetivo": "Diseñar, estructurar y publicar una bitácora digital (blog) orientada a la difusión y marketing de contenidos turísticos, incorporando artículos de valor, galerías fotográficas, etiquetas temáticas y canales de interacción con el viajero.", "software": "Blogger, WordPress, Wix o Medium", "escenario": "Creación del blog de viajes 'Pasaporte Politécnico: Destinos y Cultura', destinado a difundir atractivos naturales y patrimonio cultural de México entre estudiantes y turistas nacionales e internacionales.", "pasos": ["Crea un blog en una plataforma de gestión de contenidos (Blogger o WordPress) personalizando el nombre del sitio, descripción, diseño de plantilla e identidad gráfica turística.", "Publica una primera entrada de bienvenida que explique el propósito del blog, la importancia del turismo sustentable y los autores de la Escuela Superior de Turismo.", "Redacta y publica una segunda entrada dedicada a un 'Pueblo Mágico' o destino ecoturístico, incluyendo: título persuasivo, introducción, atractivos imperdibles, gastronomía típica, costos estimados y recomendaciones de viaje.", "Inserta al menos 3 fotografías con derechos de uso o autoría propia optimizadas en peso (formato WebP o JPG comprimido), etiquetas (tags) y mapa interactivo de Google Maps incrustado.", "Habilita y modera la sección de comentarios, configurando una barra lateral con enlaces a redes sociales y perfil del autor."], "entregable": "Ficha técnica en PDF que incluya la URL pública activa del blog, capturas de pantalla de la configuración, enlaces a las dos publicaciones y una reflexión analítica sobre el papel del content marketing en la decisión de compra del viajero.", "criterios": ["Diseño de interfaz atractivo, intuitivo y adaptado a dispositivos móviles.", "Contenido original, informativo y persuasivo con excelente redacción turística.", "Integración adecuada de medios multimedia (imágenes optimizadas y mapa interactivo).", "Funcionamiento correcto del enlace web público y módulo de comentarios."]}, {"id": 4, "numero": 4, "nombre": "Página web", "unidad": "II", "unidad_nombre": "Unidad II: Digitalización de la información", "horas": "3 horas", "lugar": "Laboratorio de TIC", "icono": "fa-code", "color": "#059669", "objetivo": "Construir una página web promocional para un destino o servicio turístico utilizando lenguaje de marcado semántico HTML5 y estilos CSS3 responsivos, garantizando accesibilidad, legibilidad y estándares de diseño digital.", "software": "Visual Studio Code, Sublime Text, navegador web y DevTools", "escenario": "Desarrollo del portal web de aterrizaje (Landing Page) para la operadora 'Aventura Huasteca', cuyo fin es captar reservaciones de turismo de aventura (rafting, rappel y senderismo).", "pasos": ["Estructura el árbol de carpetas del proyecto local: archivo `index.html`, carpeta `css/` con `estilos.css` y carpeta `img/` con imágenes turísticas optimizadas.", "Escribe la estructura semántica obligatoria en HTML5: `<!DOCTYPE html>`, `<header>` con navegación, `<main>` con secciones destacadas (`<section>`, `<article>`), formulario de contacto (`<form>`) y `<footer>`.", "Aplica diseño con CSS3: tipografía moderna (Google Fonts), paleta de colores institucional, modelo de caja, diseño flexible (Flexbox o CSS Grid) y diseño adaptativo con Media Queries para pantallas móviles y de escritorio.", "Integra una sección de paquetes turísticos con tarjetas (cards) que incluyan imagen del destino, precio, duración y botón de 'Reservar ahora'.", "Valida el código en el validador oficial del W3C (HTML Validator) para corroborar la ausencia de errores de etiquetas o sintaxis."], "entregable": "Archivo comprimido (.zip) con el código fuente del proyecto web (`index.html`, hoja de estilos CSS y carpeta de imágenes) junto con reporte técnico en PDF con capturas del navegador en vista móvil y de escritorio.", "criterios": ["Uso riguroso de etiquetas semánticas de HTML5 sin abusar de contenedores genéricos `<div>`.", "Diseño responsivo que se adapta correctamente a diferentes anchos de pantalla mediante CSS.", "Estética visual acorde a la promoción turística (colores armónicos, tipografías legibles).", "Código limpio, ordenado, debidamente indentado y validado."]}, {"id": 5, "numero": 5, "nombre": "Presentaciones digitales con audio y video en medios digitales de almacenamiento", "unidad": "II", "unidad_nombre": "Unidad II: Digitalización de la información", "horas": "2 horas", "lugar": "Laboratorio de TIC", "icono": "fa-photo-film", "color": "#7c3aed", "objetivo": "Crear una presentación ejecutiva interactiva que articule diapositivas dinámicas, pistas de narración de audio calibradas y clips de video promocional optimizados, almacenándola y difundiéndola en medios locales y en la nube.", "software": "Microsoft PowerPoint, Canva, CapCut, Audacity y servicios de nube (OneDrive/Google Drive)", "escenario": "Preparación del pitch comercial y material audiovisual para la postulación de la ruta ecoturística 'Cañón del Sumidero y Selva Negra' ante el comité evaluador de financiamiento de la Secretaría de Turismo.", "pasos": ["Diseña una presentación digital de 8 a 10 diapositivas basada en una plantilla ejecutiva con contraste adecuado y reglas visuales (no sobrecargar de texto, tamaño mínimo de letra 20 pts).", "Graba o edita una pista de voz en off con la narración descriptiva del recorrido turístico usando Audacity o grabadora de audio, eliminando ruidos de fondo y ecualizando niveles.", "Inserta un video promocional de alta definición (formato MP4 h.264 comprimido a menos de 50 MB) configurado para reproducción automática al llegar a la diapositiva correspondiente.", "Configura transiciones fluidas, animaciones sutiles y botones de navegación interactiva (hipervínculos a diferentes secciones de la presentación).", "Guarda la presentación en dos medios: un archivo local empaquetado para CD/USB con todos los medios vinculados y una copia sincronizada en almacenamiento en la nube con permisos de visualización pública."], "entregable": "Archivo de la presentación interactiva (.pptx o exportación ejecutable), enlace a la carpeta compartida en la nube con permisos de lectura y documento en PDF con la justificación del balance acústico y visual empleado.", "criterios": ["Calidad y nitidez del material audiovisual (audio sin saturación y video sincronizado).", "Diseño gráfico profesional enfocado a presentaciones de negocios turísticos.", "Interactividad y navegación no lineal mediante hipervínculos funcionales.", "Correcto almacenamiento y respaldo tanto local como en la nube."]}, {"id": 6, "numero": 6, "nombre": "Sistemas de distribución global (GDS)", "unidad": "II", "unidad_nombre": "Unidad II: Digitalización de la información", "horas": "3 horas", "lugar": "Laboratorio de TIC", "icono": "fa-server", "color": "#0284c7", "objetivo": "Simular las operaciones esenciales de un Sistema de Distribución Global (GDS): consulta de disponibilidades, cotización de tarifas aéreas y hoteleras, codificación/decodificación IATA y creación de un Registro de Nombre de Pasajero (PNR).", "software": "Simulador GDS (Amadeus / Sabre e-Learning / Portales B2B)", "escenario": "Un cliente corporativo solicita un itinerario aéreo para 3 ejecutivos que viajan de Ciudad de México (MEX) a Cancún (CUN) y regreso, requiriendo tarifas que incluyan equipaje documentado y selección de asientos.", "pasos": ["Realiza la decodificación y codificación de aeropuertos, ciudades y líneas aéreas aplicando comandos estandarizados (ej. códigos IATA MEX, CUN, AM, VB).", "Ejecuta una consulta de disponibilidad de vuelos para la ruta solicitada en fechas específicas, interpretando clases de servicio, horarios y escalas.", "Construye el PNR registrando los 5 elementos obligatorios mínimos: 1. Nombres de pasajeros (Name), 2. Segmentos de vuelo (Itinerary), 3. Datos de contacto (Contact), 4. Límite de emisión (Ticketing Time Limit) y 5. Quién solicita la reserva (Received From).", "Cotiza la tarifa más económica disponible y añade servicios especiales (SSR: comidas especiales o selección de asiento en ventana).", "Genera el código de confirmación alfanumérico (Localizador PNR de 6 caracteres) y emite el itinerario de viaje desglosado con tarifas e impuestos correspondientes."], "entregable": "Reporte de laboratorio en PDF que detalle la secuencia de comandos o pantallas utilizadas en la simulación, el PNR completo emitido con su código localizador y el análisis comparativo entre cotizar en un GDS frente a una agencia online minorista (OTA).", "criterios": ["Construcción correcta del PNR con todos sus elementos obligatorios sin inconsistencias.", "Dominio de la nomenclatura aeronáutica, códigos IATA y clases de reservación.", "Cotización precisa de tarifas con desglose de impuestos aeroportuarios (TUA, IVA).", "Capacidad analítica sobre la ventaja operativa del GDS en agencias mayoristas."]}, {"id": 7, "numero": 7, "nombre": "Elementos de la hoja de cálculo", "unidad": "II", "unidad_nombre": "Unidad II / III: Hojas de cálculo", "horas": "2 horas", "lugar": "Laboratorio de TIC", "icono": "fa-table", "color": "#16a34a", "objetivo": "Dominar el entorno operativo de Microsoft Excel: barra de fórmulas, cinta de opciones, cuadros de nombres, formato numérico especializado (moneda, fecha, porcentaje) y validación de datos para la gestión hotelera.", "software": "Microsoft Excel o Google Sheets", "escenario": "Diseño de la plantilla maestra de registro de habitaciones, huéspedes y consumos para la recepción del Hotel Posada del Tepozteco.", "pasos": ["Identifica y personaliza la barra de herramientas de acceso rápido, la cinta de opciones y la barra de fórmulas en Excel.", "Diseña la tabla principal asignando nombres descriptivos a los rangos de celdas mediante el Cuadro de Nombres (ej. `TarifasBase`, `CatalogoHabitaciones`).", "Aplica formato de celda específico a cada columna: tipo Moneda ($ MXN) con 2 decimales para importes, formato Fecha corta (dd/mm/aaaa) para entradas y salidas, y formato Porcentaje para descuentos.", "Implementa Validación de Datos con listas desplegables para el tipo de habitación (Sencilla, Doble, Suite Presidencial) y método de pago (Efectivo, Tarjeta, Transferencia), evitando errores de captura.", "Configura formato condicional que resalte automáticamente en color rojo las habitaciones en mantenimiento y en verde las disponibles."], "entregable": "Libro de cálculo de Excel (.xlsx) con la plantilla de recepción completamente formateada, listas desplegables activas y formato condicional funcional, adjuntando breve manual de usuario para el recepcionista.", "criterios": ["Estructuración lógica y visualmente limpia de la base de datos de habitaciones.", "Correcta asignación de formatos de celda (evitar números almacenados como texto).", "Implementación exitosa de validación de datos por listas y reglas de formato condicional.", "Uso eficiente de rangos nombrados para facilitar fórmulas posteriores."]}, {"id": 8, "numero": 8, "nombre": "Operadores aritméticos y su orden de prioridad", "unidad": "III", "unidad_nombre": "Unidad III: Tratamiento de datos numéricos", "horas": "2 horas", "lugar": "Laboratorio de TIC", "icono": "fa-calculator", "color": "#d97706", "objetivo": "Construir fórmulas matemáticas complejas aplicando operadores aritméticos (+, -, *, /, %, ^), de comparación y concatenación (&), respetando la jerarquía de operaciones y el uso estratégico de paréntesis para liquidación de servicios turísticos.", "software": "Microsoft Excel", "escenario": "Auditoría de cuentas en el restaurante y bar del hotel: liquidación de comandas con cargos por servicio, propinas voluntarias, descuentos por membresía de lealtad e impuestos desglosados.", "pasos": ["Elabora una hoja de cálculo con 15 registros de consumo que contengan: Folio, Huésped, Consumo de alimentos, Consumo de bebidas, % Descuento y % Propina.", "Construye la fórmula del Subtotal con descuento aplicando la jerarquía adecuada: `=ConsumoAlimentos + ConsumoBebidas - (ConsumoAlimentos + ConsumoBebidas) * PorcentajeDescuento`.", "Calcula el IVA (16%) multiplicando el Subtotal con descuento por 0.16 (o usando el operador %: `=Subtotal * 16%`).", "Calcula la propina sugerida y obtén el Total a Pagar sumando: Subtotal neto + IVA + Propina.", "Genera una columna con el operador de concatenación (&) para crear el código de factura uniendo la serie 'FAC-', el número de folio y la clave de la habitación (ej. `=\"FAC-\" & A5 & \"-HAB\" & B5`)."], "entregable": "Archivo .xlsx con todas las fórmulas aritméticas debidamente comprobadas, demostrando el uso de paréntesis para controlar la prioridad de operaciones, y hoja con tabla comparativa de resultados con y sin paréntesis.", "criterios": ["Aplicación correcta de la jerarquía de operadores matemáticos sin inconsistencias.", "Uso adecuado de paréntesis para agrupar sumas previas a multiplicaciones impositivas.", "Concatenación de texto y valores numéricos limpia y funcional.", "Precisión numérica total en los 15 registros de consumo auditados."]}, {"id": 9, "numero": 9, "nombre": "Funciones avanzadas y manejo de fórmulas", "unidad": "III", "unidad_nombre": "Unidad III: Tratamiento de datos numéricos", "horas": "3 horas", "lugar": "Laboratorio de TIC", "icono": "fa-square-root-variable", "color": "#2563eb", "objetivo": "Aplicar funciones estadísticas (SUMA, PROMEDIO, CONTAR.SI, SUMAR.SI), lógicas condicionales (SI, Y, O) y financieras (PAGO) utilizando referencias relativas, absolutas ($) y mixtas para la gestión financiera de una agencia de viajes.", "software": "Microsoft Excel", "escenario": "Cálculo de nómina de comisiones por ventas para agentes de viajes y diseño de un cotizador de financiamiento a meses para paquetes vacacionales a Cancún y Los Cabos.", "pasos": ["Crea la base de datos de agentes con: Ventas Totales, Meta de Ventas, Destino Principal y Clientes Atendidos.", "Aplica la función `=SI(Ventas >= Meta, Ventas * $TasaComisionAlta$, Ventas * $TasaComisionBaja$)` utilizando referencias absolutas a las celdas de tasas de comisión.", "Utiliza `=SUMAR.SI(RangoDestinos, \"Cancún\", RangoVentas)` para calcular el ingreso total por destino y `=CONTAR.SI(RangoDestinos, \"Los Cabos\")` para conocer el volumen de operaciones.", "Calcula indicadores estadísticos globales: `=PROMEDIO(...)`, `=MAX(...)` y `=MIN(...)` de las ventas del equipo.", "Diseña el cotizador de crédito turístico empleando la función financiera `=PAGO(TasaMensual, PlazoMeses, -MontoFinanciado)` para obtener la cuota mensual fija para el turista."], "entregable": "Libro de cálculo (.xlsx) estructurado en dos hojas: 'Comisiones de Ventas' y 'Cotizador Financiero PAGO', con fórmulas validadas y ausencia absoluta de errores (#¡VALOR!, #¡REF!, #¿NOMBRE?).", "criterios": ["Uso impecable de referencias absolutas ($A$1) al arrastrar fórmulas complejas.", "Implementación correcta de funciones condicionales y estadísticas parametrizadas.", "Modelado matemático correcto de la función financiera PAGO.", "Orden y diseño visual profesional en las hojas de trabajo."]}, {"id": 10, "numero": 10, "nombre": "Elaboración de gráficos", "unidad": "III", "unidad_nombre": "Unidad III: Tratamiento de datos numéricos", "horas": "2 horas", "lugar": "Laboratorio de TIC", "icono": "fa-chart-column", "color": "#9333ea", "objetivo": "Construir, formatear y personalizar gráficos estadísticos (columnas, líneas, circular y barras), incorporando elementos visuales complementarios (imágenes, figuras geométricas y cuadros de texto) para comunicar efectivamente la toma de decisiones turísticas.", "software": "Microsoft Excel", "escenario": "Elaboración del informe semestral de desempeño turístico para la Secretaría de Turismo: comparativo de llegada de turistas internacionales, estacionalidad mes a mes y participación de mercado de aerolíneas.", "pasos": ["Selecciona los rangos de datos numéricos y encabezados para generar un gráfico de columnas agrupadas comparando llegadas de turistas en 2024 vs 2025.", "Crea un gráfico de líneas para representar la estacionalidad de ocupación hotelera mes con mes a lo largo del año, agregando marcadores en los puntos altos.", "Diseña un gráfico circular (o de anillos) que represente la cuota de mercado de los 5 principales canales de venta, agregando etiquetas de porcentaje desglosadas.", "Personaliza cada gráfico: títulos informativos, nombres de ejes, eliminación de líneas de cuadrícula redundantes y paleta de colores institucional.", "Inserta formas geométricas y cuadros de texto explicativos para destacar hallazgos clave (ej. 'Pico máximo de ocupación en Semana Santa')."], "entregable": "Dashboard gráfico en Excel integrado en una hoja titulada 'Tablero Visual', con 3 gráficos interactivos perfectamente estilizados y reporte ejecutivo exportado a PDF.", "criterios": ["Selección coherente del tipo de gráfico según la naturaleza de la variable (tiempo, comparación, partes de un todo).", "Eliminación de ruido visual y aplicación de buenas prácticas de visualización de datos.", "Integración armónica de imágenes, etiquetas y leyendas legibles.", "Claridad en las conclusiones analíticas plasmadas en las anotaciones."]}, {"id": 11, "numero": 11, "nombre": "Tablas dinámicas", "unidad": "III", "unidad_nombre": "Unidad III: Tratamiento de datos numéricos", "horas": "3 horas", "lugar": "Laboratorio de TIC", "icono": "fa-chart-pie", "color": "#0284c7", "objetivo": "Crear, configurar y manipular tablas dinámicas para resumir, cruzar y analizar grandes volúmenes de reservaciones turísticas, incorporando segmentación de datos interactiva (Slicers) y gráficos dinámicos sincronizados.", "software": "Microsoft Excel", "escenario": "Análisis estratégico de una base de datos con 500 reservaciones de la cadena hotelera, requiriendo cruzar ingresos por destino, canal de adquisición, tipo de cliente y temporada.", "pasos": ["Convierte el rango de datos planos en una Tabla Oficial de Excel (`Ctrl + T`) y asígnale el nombre `Reservaciones2025`.", "Inserta una Tabla Dinámica en una nueva hoja y estructura los 4 cuadrantes: Filas (Destino Turístico), Columnas (Canal de Venta: Web, OTA, Mostrador), Valores (Suma de Importe) y Filtros (Año).", "Modifica la configuración del campo de valor para mostrar las cifras con formato de moneda ($) y crea una segunda tabla dinámica que muestre el % del total general.", "Agrega Segmentadores de Datos interactivos (Slicers) para 'Tipo de Paquete' y 'Método de Pago', vinculándolos a las tablas dinámicas.", "Inserta un Gráfico Dinámico vinculado que se actualice en tiempo real al pulsar los botones de la segmentación."], "entregable": "Libro de Excel (.xlsx) con la base de datos origen y la hoja 'Análisis Dinámico' con la tabla dinámica cruzada, segmentadores estilizados y gráfico dinámico vinculado.", "criterios": ["Correcta asignación de campos en filas, columnas, valores y filtros.", "Formato numérico consistente dentro de la tabla dinámica.", "Segmentadores de datos funcionales y conectados correctamente.", "Capacidad para responder preguntas operativas de negocio a través de la tabla dinámica."]}, {"id": 12, "numero": 12, "nombre": "Impresión", "unidad": "III", "unidad_nombre": "Unidad III: Tratamiento de datos numéricos", "horas": "2 horas", "lugar": "Laboratorio de TIC", "icono": "fa-print", "color": "#475569", "objetivo": "Configurar de manera avanzada las propiedades de página, área de impresión, escala, márgenes, encabezados de fila repetidos y pie de página institucional para generar reportes impresos y archivos PDF con estándares profesionales de entrega directiva.", "software": "Microsoft Excel y visualizador PDF", "escenario": "Preparación del Reporte Financiero y Auditoría de Ventas Semestral de la agencia de viajes para su entrega física encuadernada a los directores de la empresa y envío digital en PDF.", "pasos": ["Selecciona el rango de la tabla y los gráficos del informe y define el 'Área de Impresión' en la pestaña Disposición de Página.", "Configura la orientación de página en Horizontal (Landscape) y establece márgenes personalizados estrechos (1.5 cm).", "Ajusta la escala de impresión configurando la opción 'Ajustar a 1 página de ancho' para evitar que las últimas columnas se corten y salgan en hojas separadas.", "Accede a Configurar Página -> Hoja y activa 'Repetir filas en el extremo superior' (seleccionando la fila de títulos de columna) para que aparezcan en todas las páginas impresas.", "Inserta en el Encabezado el logotipo del Polilibro / EST-IPN y en el Pie de Página la numeración automática 'Página &[Página] de &[Páginas]', fecha actual y nombre del analista; finalmente exporta a formato PDF."], "entregable": "Archivo PDF resultante de la exportación en Excel, acompañado del archivo .xlsx con la configuración de página guardada, verificando que no existan tablas cortadas ni columnas huérfanas.", "criterios": ["Delimitación impecable del área de impresión sin celdas residuales ni notas de trabajo.", "Ajuste perfecto a una página de ancho en orientación horizontal.", "Repetición correcta de títulos en la parte superior de cada hoja.", "Encabezado y pie de página institucionales con campos automáticos funcionales."]}];
+
+    // Filtros
+    const filterBtns = document.querySelectorAll('.p-filter-btn');
+    const cards = document.querySelectorAll('.p-card');
+    const searchInput = document.getElementById('buscadorPracticas');
+
+    function aplicarFiltros() {
+      const activeFilter = document.querySelector('.p-filter-btn.is-active').dataset.filter;
+      const term = searchInput.value.toLowerCase().trim();
+
+      cards.forEach(card => {
+        const u = card.dataset.unidad;
+        const tags = card.dataset.tags;
+        const matchUnit = activeFilter === 'all' || u === activeFilter;
+        const matchTerm = !term || tags.includes(term);
+
+        if (matchUnit && matchTerm) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('is-active'));
+        btn.classList.add('is-active');
+        aplicarFiltros();
+      });
+    });
+
+    searchInput.addEventListener('input', aplicarFiltros);
+
+    // Modal
+    function abrirPractica(id) {
+      const p = practicas.find(item => item.id === id);
+      if (!p) return;
+
+      const pasosHtml = p.pasos.map((paso, i) => `<li><strong>Paso ${i + 1}:</strong> ${paso}</li>`).join('');
+      const criteriosHtml = p.criterios.map(c => `
+        <label class="p-checklist-item" style="cursor: pointer;">
+          <input type="checkbox" style="margin-top: 3px;">
+          <span>${c}</span>
+        </label>
+      `).join('');
+
+      document.getElementById('modalCuerpo').innerHTML = `
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+          <div style="width: 44px; height: 44px; border-radius: 10px; background: ${p.color}; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.25rem;">
+            <i class="fas ${p.icono}"></i>
+          </div>
+          <div>
+            <span style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted);">${p.unidad_nombre}</span>
+            <h2 id="modalTitulo" style="font-size: 1.4rem; margin: 2px 0 0; color: var(--text-title);">Práctica ${p.numero}: ${p.nombre}</h2>
+          </div>
+        </div>
+
+        <div class="u-chips" style="gap: 8px; margin-bottom: 20px;">
+          <span class="u-chip u-chip--soft"><i class="fas fa-clock"></i> ${p.horas}</span>
+          <span class="u-chip u-chip--soft"><i class="fas fa-laptop-code"></i> ${p.software}</span>
+          <span class="u-chip u-chip--soft"><i class="fas fa-location-dot"></i> ${p.lugar}</span>
+        </div>
+
+        <section style="margin-bottom: 18px;">
+          <h3 style="font-size: 1.05rem; color: var(--primary); margin: 0 0 6px;"><i class="fas fa-bullseye"></i> Objetivo de la Práctica</h3>
+          <p style="font-size: 0.92rem; line-height: 1.5; color: var(--text-main); margin: 0;">${p.objetivo}</p>
+        </section>
+
+        <section style="margin-bottom: 18px; background: var(--bg-main, #f8fafc); padding: 14px; border-radius: 8px; border-left: 4px solid ${p.color};">
+          <h3 style="font-size: 1.05rem; color: var(--text-title); margin: 0 0 6px;"><i class="fas fa-building"></i> Escenario y Caso Práctico</h3>
+          <p style="font-size: 0.9rem; line-height: 1.5; margin: 0;">${p.escenario}</p>
+        </section>
+
+        <section style="margin-bottom: 20px;">
+          <h3 style="font-size: 1.05rem; color: var(--primary); margin: 0 0 8px;"><i class="fas fa-list-ol"></i> Procedimiento Metodológico</h3>
+          <ol class="p-step-list">
+            ${pasosHtml}
+          </ol>
+        </section>
+
+        <section style="margin-bottom: 20px;">
+          <h3 style="font-size: 1.05rem; color: var(--primary); margin: 0 0 6px;"><i class="fas fa-file-arrow-up"></i> Producto Entregable (Portafolio de Evidencias)</h3>
+          <p style="font-size: 0.9rem; line-height: 1.5; margin: 0; background: #ecfdf5; padding: 12px; border-radius: 6px; border: 1px solid #a7f3d0; color: #065f46;">
+            <i class="fas fa-check-circle"></i> ${p.entregable}
+          </p>
+        </section>
+
+        <section style="margin-bottom: 20px;">
+          <h3 style="font-size: 1.05rem; color: var(--primary); margin: 0 0 8px;"><i class="fas fa-clipboard-check"></i> Lista de Cotejo y Autoevaluación del Estudiante</h3>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0 0 8px;">Marca los criterios que cumple tu práctica antes de entregarla:</p>
+          <div>
+            ${criteriosHtml}
+          </div>
+        </section>
+
+        <div style="display: flex; gap: 12px; justify-content: flex-end; margin-top: 24px; border-top: 1px solid var(--border-color); padding-top: 16px;">
+          <button class="u-btn u-btn--secondary" onclick="window.print()"><i class="fas fa-print"></i> Imprimir Guía</button>
+          <button class="u-btn u-btn--primary" onclick="cerrarModal()"><i class="fas fa-check"></i> Entendido</button>
+        </div>
+      `;
+
+      document.getElementById('modalPractica').classList.add('is-open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function cerrarModal() {
+      document.getElementById('modalPractica').classList.remove('is-open');
+      document.body.style.overflow = '';
+    }
+
+    // Cerrar con Escape o clic fuera
+    window.addEventListener('keydown', e => {
+      if (e.key === 'Escape') cerrarModal();
+    });
+    document.getElementById('modalPractica').addEventListener('click', e => {
+      if (e.target.id === 'modalPractica') cerrarModal();
+    });
+  </script>
+</body>
+
+</html>
