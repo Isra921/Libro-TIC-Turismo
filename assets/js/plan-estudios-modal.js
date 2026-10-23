@@ -116,6 +116,29 @@
         secUnidades.append(listUnidades);
         contenedor.append(secUnidades);
 
+        // 6.1 Prácticas de Laboratorio Oficiales
+        if (datos.practicas && datos.practicas.length) {
+            const secPracticas = el('div', 'pe-section-card');
+            const h4Practicas = el('h4', '');
+            h4Practicas.append(icono('fa-laptop-code'), el('span', '', ' Prácticas de Laboratorio'));
+            secPracticas.append(h4Practicas);
+
+            const gridPracticas = el('div', 'pe-practicas-grid');
+            datos.practicas.forEach(p => {
+                const card = el('div', 'pe-practica-card');
+                const head = el('div', 'pe-practica-head');
+                head.append(
+                    el('span', 'pe-practica-badge', `Práctica ${p.numero}`),
+                    el('span', 'pe-practica-hours', `Unidad ${p.unidad}`)
+                );
+                const name = el('p', 'pe-practica-name', p.nombre);
+                card.append(head, name);
+                gridPracticas.append(card);
+            });
+            secPracticas.append(gridPracticas);
+            contenedor.append(secPracticas);
+        }
+
         // 7. Evaluación y Acreditación
         const cardEval = el('div', 'pe-section-card');
         const h4Eval = el('h4', '');

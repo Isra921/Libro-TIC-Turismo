@@ -6,7 +6,7 @@
     "buscador_placeholder": "Escribe un término o una palabra de su definición…",
     "contador_total": "{total} términos",
     "contador_filtrado": "{visibles} de {total} términos",
-    "sin_resultados": "No hay términos registrados en el glosario actualmente."
+    "sin_resultados": "No se encontraron términos que coincidan con \"{busqueda}\"."
   },
   "unidades": [
     {
@@ -15,60 +15,140 @@
       "titulo": "Unidad 1: Las TIC",
       "terminos": [
         {
-          "termino": "Punto de venta (POS)",
-          "definicion": "Combinación de equipo y programas que registra una compra y procesa el pago; según su configuración, también lleva el registro de ventas, inventario, datos de clientes y reportes. Se encuentra en recepciones de hotel, taquillas, restaurantes y agencias."
+          "termino": "Acceso a Internet",
+          "definicion": "Forma o medio mediante el que nos conectamos a la red de comunicación 'Internet' gracias a equipos que permiten la conexión y acceso (ordenador personal, portátil, PDA, tablet, teléfono móvil, etc.)."
         },
         {
-          "termino": "Sistema de distribución global (GDS)",
-          "definicion": "Red informatizada que reúne información de servicios de viaje (vuelos, hoteles, alquiler de autos y otros) para que las agencias busquen y reserven opciones de distintos proveedores desde un mismo entorno."
+          "termino": "Bases de datos",
+          "definicion": "Conjunto ordenado de datos referentes a entidades, registros o personas, condicionados a criterios determinados, con independencia de la forma o modalidad de su creación, tipo de soporte, procesamiento, almacenamiento y organización."
         },
         {
-          "termino": "Planificación de recursos empresariales (ERP)",
-          "definicion": "Sistema que relaciona datos y procesos de varias áreas de una organización, como finanzas, compras, recursos humanos y gestión de productos, para que la información no quede aislada en cada departamento."
+          "termino": "Blog (Bitácora)",
+          "definicion": "Procedente de los términos en inglés web y log ('log' = diario). Sitio web periódicamente actualizado que recopila artículos de uno o varios autores, que aparecen de forma cronológica inversa en su visualización (primero el más reciente)."
         },
         {
-          "termino": "Módulo (ERP)",
-          "definicion": "Componente de un ERP dedicado a un área de la empresa (finanzas, compras, nómina, mantenimiento, etc.) que comparte información con los demás módulos."
+          "termino": "Buscador",
+          "definicion": "Herramienta digital que nos ayuda a encontrar información, documentos y recursos en Internet mediante algoritmos de indexación."
         },
         {
-          "termino": "Terminal de pago",
-          "definicion": "Dispositivo con lector de tarjetas, conectado o integrado a un POS, que permite cobrar con tarjeta y emitir un recibo."
+          "termino": "Chat",
+          "definicion": "Comunicación simultánea y en tiempo real entre dos o más usuarios de Internet. Es el equivalente a una conversación sincrónica a través de cualquier sistema de mensajería instantánea disponible en aplicaciones."
         },
         {
-          "termino": "Comprobante de pago",
-          "definicion": "Documento impreso o digital que el POS entrega al cliente como constancia del servicio vendido, su precio y la forma de pago."
+          "termino": "Correo electrónico (e-mail)",
+          "definicion": "Servicio de Internet, aplicaciones webmail (Gmail, Outlook, Yahoo) o clientes de escritorio que permiten a los usuarios intercambiar mensajes de texto y archivos adjuntos de forma electrónica y asincrónica."
         },
         {
-          "termino": "Inventario",
-          "definicion": "Registro de los productos, lugares o servicios disponibles para la venta; un POS conectado puede actualizarlo en cada operación."
+          "termino": "Ejecutar",
+          "definicion": "En informática, introducir o accionar una orden al sistema para que el procesador realice una operación determinada."
         },
         {
-          "termino": "Reporte de ventas",
-          "definicion": "Resumen generado por el sistema que muestra qué se vendió y en qué periodo; ayuda a reconocer temporadas con más movimiento."
+          "termino": "Enlace (Link / Hipervínculo)",
+          "definicion": "Palabra, icono o bloque de texto que conecta con otra información o documento digital en la World Wide Web mediante la inserción de una dirección URL de destino."
         },
         {
-          "termino": "Proveedor turístico",
-          "definicion": "Empresa que ofrece un servicio de viaje, como una aerolínea, un hotel o una arrendadora de autos, y comparte su oferta en sistemas como el GDS."
+          "termino": "Excel (Hoja de cálculo)",
+          "definicion": "Software de análisis numérico que permite estructurar datos en celdas, realizar operaciones matemáticas mediante fórmulas y funciones, y generar gráficos y tablas dinámicas para la toma de decisiones."
         },
         {
-          "termino": "Reserva",
-          "definicion": "Apartado de un servicio turístico (asiento, habitación, auto, excursión) para una fecha y un cliente determinados."
+          "termino": "Facebook",
+          "definicion": "Plataforma de red social que permite la interconexión, creación de perfiles, difusión de comunidades virtuales y compartición de contenidos multimedia entre usuarios y empresas."
         },
         {
-          "termino": "Itinerario",
-          "definicion": "Plan de un viaje que reúne en orden los servicios contratados: vuelos, hospedaje, traslados y actividades."
+          "termino": "Gmail",
+          "definicion": "Servicio de correo electrónico basado en web proporcionado por Google (@gmail.com) con funciones avanzadas de filtrado, almacenamiento y sincronización en la nube."
         },
         {
-          "termino": "Tarifa",
-          "definicion": "Precio de un servicio turístico sujeto a condiciones de emisión, cambios y cancelación."
+          "termino": "Google",
+          "definicion": "Motor de búsqueda de páginas web en Internet que indexa y categoriza información digital por medio de rastreadores automatizados y algoritmos de relevancia."
         },
         {
-          "termino": "Reglas de emisión",
-          "definicion": "Condiciones que establece un proveedor para confirmar, cambiar o cancelar una reserva y los costos que aplica a cada operación."
+          "termino": "Hardware",
+          "definicion": "Equipos informáticos o componentes físicos tangibles de un sistema computacional, periféricos de entrada/salida y elementos de conectividad de red."
         },
         {
-          "termino": "Integración de sistemas",
-          "definicion": "Conexión entre programas (por ejemplo, GDS, POS y ERP) para transferir datos de uno a otro y evitar capturas duplicadas."
+          "termino": "HTTPS",
+          "definicion": "Protocolo de transferencia de hipertexto seguro (HyperText Transfer Protocol Secure) basado en cifrado SSL/TLS para autenticar servidores y proteger la privacidad e integridad de los datos en tránsito."
+        },
+        {
+          "termino": "Internet",
+          "definicion": "Red mundial descentralizada de redes de comunicación y computadoras interconectadas que operan mediante la familia de protocolos TCP/IP, permitiendo el intercambio global de información."
+        },
+        {
+          "termino": "Intranet",
+          "definicion": "Red informática privada interna de una empresa u organización, protegida del acceso público exterior, que utiliza protocolos de Internet para compartir recursos e información corporativa."
+        },
+        {
+          "termino": "Macro",
+          "definicion": "Conjunto de instrucciones y comandos de una aplicación informática organizados para ejecutarse secuencialmente bajo una petición única, con el fin de automatizar tareas rutinarias y repetitivas."
+        },
+        {
+          "termino": "Metabuscador",
+          "definicion": "Herramienta de búsqueda que remite la consulta del usuario a varios motores de búsqueda simultáneamente, recopilando y combinando los resultados en una única lista consolidada."
+        },
+        {
+          "termino": "Motor de búsqueda",
+          "definicion": "Sistema informático accesible a través de navegadores web que localiza archivos y páginas web en función de palabras clave e intenciones de búsqueda introducidas por los usuarios."
+        },
+        {
+          "termino": "Navegador web (Browser)",
+          "definicion": "Software o aplicación instalada en computadoras, tabletas o teléfonos móviles que interpreta el código HTML, CSS y JavaScript para visualizar e interactuar con sitios web en Internet."
+        },
+        {
+          "termino": "Página web (Webpage)",
+          "definicion": "Documento electrónico digital adaptado para la World Wide Web que contiene texto, imágenes, enlaces y recursos multimedia, consultable mediante un navegador."
+        },
+        {
+          "termino": "Portal web",
+          "definicion": "Sitio web integral que ofrece de forma centralizada una amplia gama de recursos, servicios, enlaces y puntos de acceso agrupados bajo una misma marca o institución."
+        },
+        {
+          "termino": "PowerPoint",
+          "definicion": "Programa ofimático diseñado para crear y proyectar presentaciones visuales estructuradas mediante diapositivas con texto, imágenes, diagramas, transiciones y recursos multimedia."
+        },
+        {
+          "termino": "Sitio web (Website)",
+          "definicion": "Conjunto organizado de páginas web interconectadas bajo un mismo nombre de dominio en Internet, accesibles públicamente a través de la red."
+        },
+        {
+          "termino": "Software",
+          "definicion": "Conjunto de programas, instrucciones, lenguajes de programación y reglas informáticas que dirigen el funcionamiento del hardware para ejecutar tareas específicas del usuario."
+        },
+        {
+          "termino": "TIC (Tecnologías de la Información y la Comunicación)",
+          "definicion": "Conjunto de recursos, herramientas, dispositivos y programas informáticos utilizados para la captura, almacenamiento, procesamiento, transmisión y presentación de la información en formatos digitales."
+        },
+        {
+          "termino": "Twitter (X)",
+          "definicion": "Plataforma social de microblogging caracterizada por la inmediatez y brevedad de sus publicaciones (tweets), facilitando la conversación en tiempo real y la difusión rápida de noticias y tendencias."
+        },
+        {
+          "termino": "URL (Uniform Resource Locator)",
+          "definicion": "Cadena estandarizada de caracteres que identifica de manera unívoca la dirección y ubicación de un recurso específico (página web, imagen, documento) en Internet."
+        },
+        {
+          "termino": "Usuario",
+          "definicion": "Persona física que interactúa con un sistema informático, software, plataforma digital o contenido web para satisfacer una necesidad informativa o comunicativa."
+        },
+        {
+          "termino": "Videoconferencia / Videollamada",
+          "definicion": "Sistema de comunicación bidireccional y simultáneo de audio y video en tiempo real entre personas geográficamente distantes, empleando dispositivos con cámara, micrófono y conexión de red."
+        },
+        {
+          "termino": "Web",
+          "definicion": "Sistema de distribución de información basado en hipertexto desarrollado originalmente por Tim Berners-Lee en el CERN; término comúnmente empleado para designar a la red y al ecosistema de páginas interconectadas."
+        },
+        {
+          "termino": "WhatsApp",
+          "definicion": "Aplicación multiplataforma de mensajería instantánea y telefonía por Internet que permite el envío de texto, mensajes de voz, llamadas, videollamadas, documentos y ubicación geográfica."
+        },
+        {
+          "termino": "Wiki",
+          "definicion": "Sitio web cuyas páginas pueden ser editadas directamente y de forma colaborativa por múltiples usuarios desde el navegador web, permitiendo construir contenidos consensuados y actualizados."
+        },
+        {
+          "termino": "World Wide Web (WWW)",
+          "definicion": "Red global de documentos hipermediales interconectados a través de Internet que son interpretados y visualizados mediante navegadores web utilizando protocolos de comunicación estándar."
         }
       ]
     },
@@ -76,7 +156,44 @@
       "id": "unidad-02",
       "pestana": "Unidad 2",
       "titulo": "Unidad 2: Digitalización de la información",
-      "terminos": []
+      "terminos": [
+        {
+          "termino": "Digitalización de la información",
+          "definicion": "Proceso técnico y metodológico de convertir información analógica (física, impresa, sonora) a un formato digital codificado en bits para guardarla, procesarla, compartirla o utilizarla en una computadora."
+        },
+        {
+          "termino": "Procesadores de texto",
+          "definicion": "Programas ofimáticos que permiten redactar, corregir, estructurar y dar formato a documentos; gestionan jerarquías tipográficas, márgenes, tablas, imágenes y exportación a formatos portables como PDF."
+        },
+        {
+          "termino": "Editores de imágenes",
+          "definicion": "Aplicaciones informáticas orientadas a crear, modificar, recortar, retocar y optimizar elementos gráficos, distinguiendo entre gráficos rasterizados (mapas de bits) y gráficos vectoriales."
+        },
+        {
+          "termino": "Editor de audio",
+          "definicion": "Software digital (DAW) que permite registrar, editar, cortar fragmentos, limpiar ruidos parásitos, mezclar pistas acústicas y exportar grabaciones sonoras como locuciones y audioguías turísticas."
+        },
+        {
+          "termino": "Editores de video",
+          "definicion": "Herramientas de edición y montaje audiovisual que permiten estructurar secuencias de video, sincronizar pistas de audio, aplicar transiciones, títulos y subtítulos a lo largo de una línea de tiempo (timeline)."
+        },
+        {
+          "termino": "Integradores de medios",
+          "definicion": "Herramientas o plataformas digitales que permiten articular armónicamente texto, imágenes, audio, video, mapas y enlaces interactivos en una sola experiencia comunicativa o presentación multimedia."
+        },
+        {
+          "termino": "Utilerías típicas",
+          "definicion": "Programas auxiliares de soporte que facilitan tareas técnicas concretas en el manejo digital: antivirus, compresores de archivos (PDF/ZIP), convertidores de formatos y herramientas de captura de pantalla."
+        },
+        {
+          "termino": "Medios de almacenamiento",
+          "definicion": "Dispositivos físicos (magnéticos HDD, flash SSD/USB, ópticos) y servicios en la nube donde se resguardan y preservan los archivos digitales para garantizar su disponibilidad, integridad y recuperación."
+        },
+        {
+          "termino": "Creación de páginas web",
+          "definicion": "Desarrollo y publicación de sitios accesibles por Internet mediante la articulación de tres capas fundamentales: estructura semántica con HTML, diseño visual con CSS y dinamismo interactivo con JavaScript."
+        }
+      ]
     },
     {
       "id": "unidad-03",
@@ -84,116 +201,84 @@
       "titulo": "Unidad 3: Software de tratamiento de datos numéricos",
       "terminos": [
         {
-          "termino": "Gráfico",
-          "definicion": "Representación visual de datos que facilita comparar categorías, reconocer tendencias y comunicar resultados."
+          "termino": "Software para análisis e interpretación de información",
+          "definicion": "Programas y aplicaciones informáticas que permiten capturar, organizar, procesar y examinar datos cuantitativos para entender tendencias, comparar resultados y fundamentar la toma de decisiones."
         },
         {
-          "termino": "Gráfico de columnas",
-          "definicion": "Gráfico de barras verticales que compara valores entre destinos, productos o periodos."
+          "termino": "Hoja de cálculo",
+          "definicion": "Aplicación digital organizada en una cuadrícula bidimensional de filas y columnas que permite capturar, calcular, analizar y graficar datos numéricos y alfanuméricos mediante fórmulas y funciones matemáticas."
         },
         {
-          "termino": "Gráfico de líneas",
-          "definicion": "Gráfico que muestra cambios a través del tiempo, como la ocupación mensual de un hotel."
+          "termino": "Elementos de la hoja de cálculo",
+          "definicion": "Componentes estructurales y visuales de la interfaz de la hoja de cálculo: filas (números), columnas (letras), celdas (intersección fila-columna), rangos de datos, barra de fórmulas y hojas de trabajo."
         },
         {
-          "termino": "Gráfico circular",
-          "definicion": "Gráfico que representa las proporciones de un total; se recomienda con pocas categorías y valores comparables."
+          "termino": "Operadores aritméticos",
+          "definicion": "Símbolos convencionales (+ suma, - resta, * multiplicación, / división, % porcentaje, ^ exponenciación) que definen la operación matemática que debe realizarse entre valores o referencias de celda."
         },
         {
-          "termino": "Gráfico de barras",
-          "definicion": "Gráfico de barras horizontales que facilita comparar categorías, sobre todo cuando sus nombres son largos."
+          "termino": "Orden de prioridad",
+          "definicion": "Reglas algebraicas que determinan la secuencia estricta en que una hoja de cálculo evalúa las operaciones en una fórmula (paréntesis, exponentes, multiplicación/división y suma/resta)."
         },
         {
-          "termino": "Eje",
-          "definicion": "Línea de referencia de un gráfico que muestra la escala de los valores o las categorías representadas."
+          "termino": "Fórmulas elementales",
+          "definicion": "Expresiones matemáticas personalizadas introducidas por el usuario que inician obligatoriamente con el signo igual (=) y operan sobre valores constantes o referencias de celda (relativas, absolutas $ o mixtas)."
         },
         {
-          "termino": "Leyenda",
-          "definicion": "Recuadro de un gráfico que indica qué representa cada color o serie de datos."
+          "termino": "Funciones",
+          "definicion": "Fórmulas predefinidas en el software que ejecutan cálculos complejos y especializados de manera automática a partir de argumentos específicos bajo una sintaxis obligatoria."
         },
         {
-          "termino": "Rango de datos",
-          "definicion": "Conjunto de celdas seleccionadas que se utiliza como origen de un gráfico o de una tabla dinámica."
+          "termino": "Funciones Estadísticas",
+          "definicion": "Herramientas matemáticas predefinidas diseñadas para resumir conjuntos numéricos, calcular promedios, medianas, modas, desviaciones estándar, conteos condicionales y valores máximos o mínimos."
         },
         {
-          "termino": "Controladores de tamaño",
-          "definicion": "Pequeños círculos en las esquinas y bordes de un gráfico o imagen seleccionados que se arrastran para modificar sus dimensiones."
+          "termino": "Funciones Matemáticas",
+          "definicion": "Funciones diseñadas para resolver cálculos numéricos generales, sumatorias simples y acumuladas, productos, redondeos de precisión decimal, raíces cuadradas y valores absolutos."
         },
         {
-          "termino": "Forma",
-          "definicion": "Figura prediseñada de Excel (línea, flecha, rectángulo, círculo) que se inserta desde Insertar → Formas para organizar un reporte o destacar un dato."
+          "termino": "Funciones Trigonométricas",
+          "definicion": "Operaciones matemáticas avanzadas destinadas al cálculo de razones geométricas de los triángulos (seno, coseno, tangente, cotangente) aplicadas a valores angulares convertidos comúnmente en radianes."
         },
         {
-          "termino": "Cuadro de texto",
-          "definicion": "Forma que contiene texto libre y se coloca en cualquier parte de la hoja, por ejemplo, para agregar una nota a un gráfico."
+          "termino": "Funciones Financieras",
+          "definicion": "Fórmulas orientadas a la gestión contable y económica que automatizan cálculos de amortizaciones de préstamos, tasas de interés efectivas, valor presente neto (VPN) y rentabilidad de inversiones en el tiempo."
         },
         {
-          "termino": "Tabla dinámica",
-          "definicion": "Herramienta que resume, organiza y analiza grandes conjuntos de registros mediante campos distribuidos en Filas, Columnas, Valores y Filtros, sin construir manualmente todas las fórmulas de resumen."
+          "termino": "Funciones de texto",
+          "definicion": "Comandos especializados que permiten manipular, limpiar, extraer subcadenas, concatenar, convertir a mayúsculas o minúsculas y medir la longitud de cadenas de caracteres alfanuméricas."
         },
         {
-          "termino": "Campo",
-          "definicion": "Columna de la tabla de origen (por ejemplo, Destino o Total a pagar) que se arrastra a un área de la tabla dinámica."
+          "termino": "Funciones lógicas",
+          "definicion": "Operaciones basadas en el álgebra de Boole que evalúan condiciones lógicas para devolver valores condicionales verdaderos o falsos (ej. funciones SI, Y, O, SI.ERROR)."
         },
         {
-          "termino": "Filas (área)",
-          "definicion": "Área de la tabla dinámica que agrupa los registros por categorías, como destino o tipo de servicio."
+          "termino": "Funciones de fecha y hora",
+          "definicion": "Rutinas que procesan valores cronológicos para extraer días, meses o años, calcular diferencias entre fechas, determinar plazos laborales y sincronizar el tiempo del sistema."
         },
         {
-          "termino": "Columnas (área)",
-          "definicion": "Área de la tabla dinámica que distribuye las categorías horizontalmente para comparar grupos."
+          "termino": "Funciones de Anidación",
+          "definicion": "Técnica de estructuración avanzada que consiste en utilizar una función como argumento dentro de otra función para evaluar condiciones complejas y resolver cálculos jerárquicos."
         },
         {
-          "termino": "Valores (área)",
-          "definicion": "Área de la tabla dinámica que calcula sumas, recuentos, promedios y otras medidas."
+          "termino": "Elaboración de gráficos",
+          "definicion": "Representación visual de series de datos cuantitativos mediante barras, columnas, líneas o sectores circulares que facilita la comparación de indicadores y la comunicación de resultados."
         },
         {
-          "termino": "Filtros (área)",
-          "definicion": "Área de la tabla dinámica que limita el análisis a una categoría o grupo de registros."
+          "termino": "Modificación del tamaño en gráficos",
+          "definicion": "Ajuste de las dimensiones físicas proporcionales (ancho y alto) y escala del área gráfica para garantizar legibilidad, equilibrio visual e inserción armónica en informes y reportes."
         },
         {
-          "termino": "Recuento",
-          "definicion": "Cálculo que cuenta cuántos registros hay en cada grupo; no equivale necesariamente al número de personas."
+          "termino": "Insertar imágenes en los gráficos",
+          "definicion": "Incorporación de recursos gráficos externos (logotipos, iconos vectoriales o fotografías) como fondo o marcadores de serie dentro del lienzo de un gráfico para potenciar su identidad."
         },
         {
-          "termino": "Actualizar (tabla dinámica)",
-          "definicion": "Comando que vuelve a leer la tabla de origen para incluir registros nuevos o modificados en la tabla dinámica."
+          "termino": "Insertar líneas y figuras geométricas",
+          "definicion": "Empleo de primitivas gráficas (flechas, rectángulos, líneas de tendencia o llamadas de texto) para destacar metas, valores atípicos o umbrales críticos en la visualización de datos."
         },
         {
-          "termino": "Gráfico dinámico",
-          "definicion": "Gráfico vinculado a una tabla dinámica que cambia al modificar sus campos o filtros."
-        },
-        {
-          "termino": "Área de impresión",
-          "definicion": "Rango de la hoja de cálculo que se define para imprimir solo esa parte."
-        },
-        {
-          "termino": "Orientación",
-          "definicion": "Disposición del papel: vertical, adecuada para pocas columnas, u horizontal, útil para tablas extensas."
-        },
-        {
-          "termino": "Márgenes",
-          "definicion": "Espacio en blanco que se deja alrededor del contenido de la página impresa."
-        },
-        {
-          "termino": "Escala de impresión",
-          "definicion": "Ajuste que reduce o amplía el contenido para que quepa en un número determinado de páginas, por ejemplo, todas las columnas en una página."
-        },
-        {
-          "termino": "Salto de página",
-          "definicion": "Marca que indica dónde comienza una nueva página impresa."
-        },
-        {
-          "termino": "Encabezado y pie de página",
-          "definicion": "Zonas superior e inferior de la página impresa donde se incluyen título, fecha, numeración y otros datos."
-        },
-        {
-          "termino": "Vista previa de impresión",
-          "definicion": "Pantalla (Archivo → Imprimir o Ctrl + P) que muestra cómo quedará el documento impreso antes de imprimirlo."
-        },
-        {
-          "termino": "PDF",
-          "definicion": "Formato de documento portátil que conserva el diseño de la hoja al exportarla para compartirla o imprimirla."
+          "termino": "Tablas dinámicas",
+          "definicion": "Herramienta analítica interactiva de la hoja de cálculo que permite sintetizar, agrupar, filtrar y cruzar grandes volúmenes de datos tabulares desde múltiples dimensiones sin alterar la tabla fuente."
         }
       ]
     }
