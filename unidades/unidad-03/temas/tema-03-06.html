@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>3.6 Tablas dinámicas | Unidad III | TIC aplicadas al turismo</title>
-  <meta name="description" content="Construcción de tablas dinámicas para el análisis multidimensional, agrupación y filtrado de grandes bases de datos turísticas.">
+  <meta name="description" content="Elementos, creación y análisis de tablas y gráficos dinámicos con datos de reservaciones turísticas.">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="../../../assets/css/comun.css">
@@ -40,27 +40,133 @@
         <h1 class="t-title">Tablas dinámicas</h1>
 
         <p class="t-lead" id="idea-central" data-toc="Presentación">
-          Construcción de tablas dinámicas para el análisis multidimensional, agrupación y filtrado de grandes bases de datos turísticas.
+          Las tablas dinámicas permiten resumir, analizar y agrupar grandes volúmenes de datos mediante campos distribuidos en Filas, Columnas, Valores y Filtros <span class="t-cita">(<a href="../referencias.html" title="Microsoft. (s. f.-n). Información general sobre tablas dinámicas y gráficos dinámicos. Microsoft Support.">Microsoft, s. f.-n</a>)</span>.
         </p>
 
         <div class="t-prose">
-          <section id="plan-tema" data-toc="Desglose temático">
-            <h2>Estructura curricular del tema</h2>
-            <aside class="t-callout t-callout--note">
-              <i class="fas fa-info-circle t-callout__icon" aria-hidden="true"></i>
+          <section id="concepto" data-toc="¿Qué es una tabla dinámica?">
+            <h2>¿Qué es una tabla dinámica?</h2>
+            <p>
+              Una tabla dinámica es una herramienta que permite resumir, organizar, explorar y analizar grandes conjuntos de registros sin necesidad de construir manualmente todas las fórmulas de resumen. Puede agrupar datos y calcular sumas, promedios, recuentos y otros resultados <span class="t-cita">(<a href="../referencias.html" title="Microsoft. (s. f.-r). Crear una tabla dinámica para analizar datos de una hoja de cálculo. Microsoft Support.">Microsoft, s. f.-r</a>)</span>.
+            </p>
+            <aside class="t-callout t-callout--example">
+              <i class="fas fa-suitcase-rolling t-callout__icon" aria-hidden="true"></i>
               <div>
-                <p class="t-callout__label">Tema en desarrollo</p>
-                <p>
-                  El desarrollo y recursos interactivos de este tema se encuentran en fase de elaboración conforme al programa académico oficial de la <strong>Escuela Superior de Turismo (EST - IPN)</strong> para la asignatura <strong>TIC aplicadas al turismo</strong>.
-                </p>
+                <p class="t-callout__label">Ejemplo</p>
+                <p>Una agencia puede registrar cientos de reservaciones y utilizar una tabla dinámica para identificar los ingresos por destino, comparar los tipos de servicios vendidos o analizar las ventas por mes.</p>
               </div>
             </aside>
-            <p>Conforme al plan de estudios oficial, este tema comprende los siguientes contenidos temáticos:</p>
-            <ul>
-              <li><strong>Concepto y arquitectura de una tabla dinámica</strong></li>
-              <li><strong>Organización de campos: Filtros, Columnas, Filas y Valores</strong></li>
-              <li><strong>Cálculos personalizados, segmentación de datos y gráficos dinámicos</strong></li>
-            </ul>
+          </section>
+
+          <section id="elementos" data-toc="Elementos de una tabla dinámica">
+            <h2>Elementos de una tabla dinámica</h2>
+            <div class="t-grid t-grid--sm">
+              <div class="t-card t-card--top">
+                <h4><i class="fas fa-bars" aria-hidden="true"></i> Filas</h4>
+                <p>Agrupan los registros por categorías, como destino o tipo de servicio.</p>
+              </div>
+              <div class="t-card t-card--top">
+                <h4><i class="fas fa-table-columns" aria-hidden="true"></i> Columnas</h4>
+                <p>Distribuyen las categorías horizontalmente para comparar grupos.</p>
+              </div>
+              <div class="t-card t-card--top">
+                <h4><i class="fas fa-calculator" aria-hidden="true"></i> Valores</h4>
+                <p>Calculan sumas, recuentos, promedios y otras medidas.</p>
+              </div>
+              <div class="t-card t-card--top">
+                <h4><i class="fas fa-filter" aria-hidden="true"></i> Filtros</h4>
+                <p>Permiten limitar el análisis a una categoría o grupo de registros.</p>
+              </div>
+            </div>
+          </section>
+
+          <section id="procedimiento" data-toc="Procedimiento en Excel 365">
+            <h2>Procedimiento para crear una tabla dinámica en Excel 365</h2>
+            <ol>
+              <li>Selecciona una celda dentro de la tabla <strong>Reservaciones</strong>.</li>
+              <li>Entra a <strong>Insertar → Tabla dinámica</strong>.</li>
+              <li>Comprueba que el rango de origen sea correcto.</li>
+              <li>Selecciona una hoja nueva para colocar la tabla dinámica.</li>
+              <li>En la lista de campos, arrastra <strong>Destino</strong> al área <strong>Filas</strong>.</li>
+              <li>Arrastra <strong>Total a pagar</strong> al área <strong>Valores</strong>.</li>
+              <li>Comprueba que el campo se resuma mediante <strong>Suma</strong> y no mediante <strong>Recuento</strong>.</li>
+              <li>Da formato de moneda a los resultados.</li>
+            </ol>
+            <aside class="t-callout t-callout--info">
+              <i class="fas fa-rotate t-callout__icon" aria-hidden="true"></i>
+              <div>
+                <p class="t-callout__label">Actualizar</p>
+                <p>Si agregas registros a la tabla de origen, actualiza la tabla dinámica mediante <strong>Analizar tabla dinámica → Actualizar</strong>, o el comando equivalente disponible en tu versión.</p>
+              </div>
+            </aside>
+          </section>
+
+          <section id="practica-17" data-toc="Práctica 17">
+            <h2>Práctica 17. Analizar las ventas por destino</h2>
+            <p>Utiliza la base de seis reservaciones de la práctica inicial (práctica 2), resumida en los campos que usarás. El <strong>Total a pagar</strong> se calculó en la práctica 4 (importe bruto menos descuento):</p>
+            <div class="t-table">
+              <table>
+                <caption class="u-sr-only">Base de reservaciones de la práctica 2 con el total a pagar calculado</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Folio</th>
+                    <th scope="col">Destino</th>
+                    <th scope="col">Servicio</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Total a pagar</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>R001</td><td>Cancún</td><td>Paquete</td><td>2</td><td>$16,150</td></tr>
+                  <tr><td>R002</td><td>Oaxaca</td><td>Tour</td><td>4</td><td>$4,800</td></tr>
+                  <tr><td>R003</td><td>Mérida</td><td>Hospedaje</td><td>3</td><td>$4,860</td></tr>
+                  <tr><td>R004</td><td>Puebla</td><td>Tour</td><td>5</td><td>$4,750</td></tr>
+                  <tr><td>R005</td><td>Cancún</td><td>Hospedaje</td><td>2</td><td>$4,180</td></tr>
+                  <tr><td>R006</td><td>Oaxaca</td><td>Paquete</td><td>1</td><td>$6,480</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>Crea las siguientes tablas dinámicas:</p>
+            <div class="t-table">
+              <table>
+                <caption class="u-sr-only">Tablas dinámicas que se deben construir en la práctica 17</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Tabla</th>
+                    <th scope="col">Filas</th>
+                    <th scope="col">Valores</th>
+                    <th scope="col">Pregunta que responde</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td class="t-key">1</td><td>Destino</td><td>Suma de Total a pagar</td><td>¿Qué destino genera más ingresos?</td></tr>
+                  <tr><td class="t-key">2</td><td>Servicio</td><td>Recuento de Folio</td><td>¿Qué servicio aparece más veces?</td></tr>
+                  <tr><td class="t-key">3</td><td>Destino</td><td>Promedio de Total a pagar</td><td>¿Cuál es el importe promedio por registro en cada destino?</td></tr>
+                  <tr><td class="t-key">4</td><td>Destino</td><td>Suma de Cantidad</td><td>¿Cuántas unidades o servicios se registraron por destino?</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <aside class="t-callout t-callout--important">
+              <i class="fas fa-circle-exclamation t-callout__icon" aria-hidden="true"></i>
+              <div>
+                <p class="t-callout__label">Importante</p>
+                <p>El recuento de folios indica el número de registros, no necesariamente el número de turistas. La suma de cantidad solo puede interpretarse como pasajeros si los datos representan efectivamente pasajeros.</p>
+              </div>
+            </aside>
+          </section>
+
+          <section id="grafico-dinamico" data-toc="Práctica complementaria: gráfico dinámico">
+            <h2>Práctica complementaria: gráfico dinámico</h2>
+            <ol>
+              <li>Selecciona una celda de la tabla dinámica.</li>
+              <li>Accede a <strong>Insertar → Gráfico dinámico</strong>, si la opción está disponible.</li>
+              <li>Selecciona un gráfico de columnas.</li>
+              <li>Agrega un título.</li>
+              <li>Cambia los filtros de la tabla dinámica y observa cómo cambia la visualización.</li>
+            </ol>
+            <p>
+              Los gráficos dinámicos están vinculados a la información resumida y permiten explorar comparaciones y tendencias de forma interactiva <span class="t-cita">(<a href="../referencias.html" title="Microsoft. (s. f.-n). Información general sobre tablas dinámicas y gráficos dinámicos. Microsoft Support.">Microsoft, s. f.-n</a>)</span>.
+            </p>
           </section>
 
           <section id="comprension" data-toc="Comprueba tu comprensión">
@@ -105,5 +211,3 @@
 </body>
 
 </html>
-
-

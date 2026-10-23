@@ -1,11 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>3.5 Elaboración de gráficos | Unidad III | TIC aplicadas al turismo</title>
-  <meta name="description" content="Visualización gráfica de datos cuantitativos para la toma de decisiones y comunicación efectiva de resultados turísticos.">
+  <meta name="description" content="Tipos de gráficos, modificación de tamaño, inserción de imágenes, líneas y figuras geométricas en Excel aplicados a datos turísticos.">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="../../../assets/css/comun.css">
@@ -40,36 +40,200 @@
         <h1 class="t-title">Elaboración de gráficos</h1>
 
         <p class="t-lead" id="idea-central" data-toc="Presentación">
-          Visualización gráfica de datos cuantitativos para la toma de decisiones y comunicación efectiva de resultados turísticos.
+          Un gráfico representa datos de manera visual para facilitar la comparación de categorías, reconocer tendencias y comunicar resultados.
         </p>
 
         <div class="t-prose">
-          <section id="plan-tema" data-toc="Desglose temático">
-            <h2>Estructura curricular del tema</h2>
-            <aside class="t-callout t-callout--note">
-              <i class="fas fa-info-circle t-callout__icon" aria-hidden="true"></i>
+          <section id="tipos-graficos" data-toc="Tipos de gráficos">
+            <h2>Tipos de gráficos</h2>
+            <p>
+              En Excel para Microsoft 365, los gráficos se crean seleccionando los datos y utilizando la pestaña <strong>Insertar</strong>. El tipo de gráfico debe responder a la pregunta que se quiere analizar <span class="t-cita">(<a href="../referencias.html" title="Microsoft. (s. f.-l). Crear un gráfico de principio a fin. Microsoft Support.">Microsoft, s. f.-l</a>)</span>.
+            </p>
+
+            <h3>Gráfico de columnas</h3>
+            <p>Compara ingresos entre destinos, productos o periodos.</p>
+            <figure class="t-figure" data-ampliable>
+              <figcaption><span class="t-figure__titulo">Gráfico de columnas agrupadas creado a partir de una tabla de ventas mensuales</span></figcaption>
+              <div class="t-figure__media"><img src="../../../assets/img/u3-openstax-grafico-columnas.jpg" alt="Hoja de Excel con ventas mensuales de tres tiendas y un gráfico de columnas agrupadas titulado Sales by Month by Location; a la derecha, el menú contextual del gráfico." loading="lazy"></div>
+              <p class="t-figure__nota"><em>Nota.</em> Tomado de <em>Workplace Software and Skills</em> (Figura 11.94), por T. Bolling, A. Mitchell, T. Scott y N. Wheeler, 2023, OpenStax (<a href="https://openstax.org/books/workplace-software-skills/pages/11-5-data-analysis-charts" target="_blank" rel="noopener noreferrer">https://openstax.org/books/workplace-software-skills/pages/11-5-data-analysis-charts</a>). CC BY-NC-SA 4.0. Captura de pantalla de Microsoft Excel usada con permiso de Microsoft.</p>
+            </figure>
+
+            <h3>Gráfico de líneas</h3>
+            <p>Muestra cambios a través del tiempo, como la ocupación mensual.</p>
+            <figure class="t-figure t-figure--narrow" data-ampliable>
+              <figcaption><span class="t-figure__titulo">Gráfico de líneas de la ocupación hotelera mensual</span></figcaption>
+              <div class="t-figure__media"><img src="../../../assets/img/u3-grafico-lineas-ocupacion.png" alt="Gráfico de líneas con la ocupación hotelera de enero a diciembre; los valores más altos se presentan en julio, agosto y diciembre." loading="lazy"></div>
+              <p class="t-figure__nota"><em>Nota.</em> Elaboración propia con datos ilustrativos.</p>
+            </figure>
+
+            <h3>Gráfico circular</h3>
+            <p>Representa proporciones de un total cuando existen pocas categorías y los valores son comparables.</p>
+            <figure class="t-figure t-figure--narrow" data-ampliable>
+              <figcaption><span class="t-figure__titulo">Gráfico circular del total a pagar por tipo de servicio</span></figcaption>
+              <div class="t-figure__media"><img src="../../../assets/img/u3-grafico-circular-servicios.png" alt="Gráfico circular: paquete 54.9 %, tour 23.2 % y hospedaje 21.9 % del total a pagar." loading="lazy"></div>
+              <p class="t-figure__nota"><em>Nota.</em> Elaboración propia con los datos de la base de reservaciones de la práctica 2 (columna Total a pagar).</p>
+            </figure>
+
+            <h3>Gráfico de barras</h3>
+            <p>Facilita comparar categorías, especialmente cuando sus nombres son largos.</p>
+            <figure class="t-figure t-figure--narrow" data-ampliable>
+              <figcaption><span class="t-figure__titulo">Gráfico de barras de las reservaciones confirmadas por canal de venta</span></figcaption>
+              <div class="t-figure__media"><img src="../../../assets/img/u3-grafico-barras-canales.png" alt="Gráfico de barras horizontales: agencia de viajes en línea 420, venta directa en sitio web 260, agencia de viajes tradicional 190, grupos y convenciones 120 y cuentas corporativas 85 reservaciones." loading="lazy"></div>
+              <p class="t-figure__nota"><em>Nota.</em> Elaboración propia con datos ilustrativos.</p>
+            </figure>
+          </section>
+
+          <section id="procedimiento-grafico" data-toc="Procedimiento para crear un gráfico">
+            <h2>Procedimiento para crear un gráfico</h2>
+            <ol>
+              <li>Prepara una tabla con encabezados y datos.</li>
+              <li>Selecciona el rango.</li>
+              <li>Entra a <strong>Insertar → Gráficos</strong>.</li>
+              <li>Selecciona el tipo apropiado.</li>
+              <li>Agrega un título descriptivo.</li>
+              <li>Revisa los ejes, las etiquetas, las unidades y la leyenda.</li>
+              <li>Comprueba que el gráfico corresponde a los datos de origen.</li>
+            </ol>
+
+            <aside class="t-callout t-callout--example" id="practica-13" data-toc="Práctica 13">
+              <i class="fas fa-laptop-code t-callout__icon" aria-hidden="true"></i>
               <div>
-                <p class="t-callout__label">Tema en desarrollo</p>
-                <p>
-                  El desarrollo y recursos interactivos de este tema se encuentran en fase de elaboración conforme al programa académico oficial de la <strong>Escuela Superior de Turismo (EST - IPN)</strong> para la asignatura <strong>TIC aplicadas al turismo</strong>.
-                </p>
+                <p class="t-callout__label">Práctica 13</p>
+                <h3>Gráfico de ingresos por destino</h3>
+                <p>En la hoja <strong>Resumen</strong>, crea esta tabla de ejemplo:</p>
+                <div class="t-table">
+                  <table>
+                    <thead>
+                      <tr><th scope="col">Destino</th><th scope="col">Ingresos</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>Cancún</td><td>20,000</td></tr>
+                      <tr><td>Oaxaca</td><td>18,000</td></tr>
+                      <tr><td>Mérida</td><td>12,000</td></tr>
+                      <tr><td>Puebla</td><td>9,500</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p>Inserta un gráfico de columnas con el título <strong>Ingresos por destino turístico</strong>. Contesta:</p>
+                <ul>
+                  <li>¿Qué destino presenta el ingreso más alto?</li>
+                  <li>¿Cuál presenta el más bajo?</li>
+                  <li>¿Qué información adicional necesitarías para decidir en qué destino invertir más en publicidad?</li>
+                </ul>
+                <p><em>Estos valores son ilustrativos y no corresponden a estadísticas reales de destinos turísticos.</em></p>
               </div>
             </aside>
-            <p>Conforme al plan de estudios oficial, este tema comprende los siguientes contenidos temáticos:</p>
-            <ul>
-              <li><strong>3.5.1 Modificación de tamaño y ajuste de área gráfica</strong></li>
-              <li><strong>3.5.2 Insertar imágenes en los gráficos</strong></li>
-              <li><strong>3.5.3 Insertar líneas y figuras geométricas</strong></li>
+          </section>
+
+          <section id="tamano" data-toc="3.5.1 Modificación del tamaño">
+            <h2><span class="t-section__num">3.5.1</span>Modificación del tamaño del gráfico</h2>
+            <p>
+              Ajustar las dimensiones de un gráfico permite adaptar la presentación manteniendo la legibilidad de títulos, ejes y leyendas <span class="t-cita">(<a href="../referencias.html" title="Microsoft. (s. f.-p). Mover un gráfico o cambiarlo de tamaño. Microsoft Support.">Microsoft, s. f.-p</a>)</span>.
+            </p>
+            <h3>Procedimiento</h3>
+            <ol>
+              <li>Selecciona el gráfico.</li>
+              <li>Arrastra los controladores de las esquinas para modificar sus dimensiones.</li>
+              <li>Para establecer medidas precisas, utiliza las opciones de formato de tamaño que estén disponibles en tu versión de Excel.</li>
+              <li>Revisa que el título, las etiquetas y la leyenda sigan siendo legibles.</li>
+            </ol>
+
+            <aside class="t-callout t-callout--example" id="practica-14" data-toc="Práctica 14">
+              <i class="fas fa-laptop-code t-callout__icon" aria-hidden="true"></i>
+              <div>
+                <p class="t-callout__label">Práctica 14</p>
+                <h3>Dos versiones del gráfico de ingresos</h3>
+                <p>Crea dos versiones del gráfico de ingresos:</p>
+                <ul>
+                  <li>Una versión pequeña para colocar junto a una tabla.</li>
+                  <li>Una versión grande para una hoja de reporte.</li>
+                </ul>
+                <p>Compara la legibilidad de ambas y explica cuál conviene utilizar en una presentación y cuál en un informe impreso.</p>
+              </div>
+            </aside>
+          </section>
+
+          <section id="imagenes" data-toc="3.5.2 Insertar imágenes">
+            <h2><span class="t-section__num">3.5.2</span>Insertar imágenes en los gráficos</h2>
+            <p>
+              Las imágenes pueden complementar un gráfico para identificar destinos, hoteles, atractivos o categorías de servicios. Sin embargo, deben utilizarse con moderación para no dificultar la interpretación de los datos <span class="t-cita">(<a href="../referencias.html" title="Microsoft. (s. f.-q). Insertar imágenes. Microsoft Support.">Microsoft, s. f.-q</a>)</span>.
+            </p>
+            <p>Existen dos posibilidades:</p>
+            <div class="t-grid">
+              <div class="t-card t-card--side t-card--ok">
+                <h4><i class="fas fa-image" aria-hidden="true"></i> Imagen cercana al gráfico</h4>
+                <p>Insertar una fotografía o un logotipo junto al gráfico, dentro de la hoja de Excel. Es la opción más sencilla y recomendable para principiantes.</p>
+              </div>
+              <div class="t-card t-card--side t-card--info">
+                <h4><i class="fas fa-chart-column" aria-hidden="true"></i> Imagen dentro del área del gráfico</h4>
+                <p>Dependiendo de la versión y del tipo de gráfico, puede colocarse una imagen como fondo o como relleno de determinados elementos. Las opciones disponibles pueden variar.</p>
+              </div>
+            </div>
+
+            <aside class="t-callout t-callout--example" id="practica-15" data-toc="Práctica 15">
+              <i class="fas fa-laptop-code t-callout__icon" aria-hidden="true"></i>
+              <div>
+                <p class="t-callout__label">Práctica 15</p>
+                <h3>Reporte visual de destinos</h3>
+                <ol>
+                  <li>Selecciona la hoja <strong>Resumen</strong>.</li>
+                  <li>Inserta el gráfico de ingresos.</li>
+                  <li>Utiliza <strong>Insertar → Imágenes</strong> para agregar una fotografía relacionada con el turismo.</li>
+                  <li>Ajusta su tamaño y colócala junto al gráfico sin ocultar los datos.</li>
+                  <li>Agrega un pie de imagen con el nombre del destino y la fuente de la fotografía.</li>
+                </ol>
+              </div>
+            </aside>
+            <aside class="t-callout t-callout--alert">
+              <i class="fas fa-copyright t-callout__icon" aria-hidden="true"></i>
+              <div>
+                <p class="t-callout__label">Importante</p>
+                <p>Utiliza imágenes propias o con licencia adecuada y registra su procedencia.</p>
+              </div>
+            </aside>
+          </section>
+
+          <section id="formas" data-toc="3.5.3 Líneas y figuras geométricas">
+            <h2><span class="t-section__num">3.5.3</span>Insertar líneas y figuras geométricas</h2>
+            <p>
+              Las formas (rectángulos, flechas, cuadros de texto) permiten estructurar reportes visuales y destacar indicadores clave. Las líneas y figuras ayudan a organizar visualmente un reporte, separar secciones y señalar aspectos importantes <span class="t-cita">(<a href="../referencias.html" title="Microsoft. (s. f.-m). Agregar formas. Microsoft Support.">Microsoft, s. f.-m</a>)</span>.
+            </p>
+            <p>
+              En Excel, puedes acceder a estas opciones mediante <strong>Insertar → Formas</strong>. Según la versión, también puedes utilizar cuadros de texto y otros elementos gráficos. Elementos frecuentes:
+            </p>
+            <ul class="t-icon-list">
+              <li><i class="fas fa-arrow-right-long" aria-hidden="true"></i> Líneas rectas y flechas.</li>
+              <li><i class="far fa-square" aria-hidden="true"></i> Rectángulos y rectángulos redondeados.</li>
+              <li><i class="far fa-circle" aria-hidden="true"></i> Círculos y óvalos.</li>
+              <li><i class="fas fa-font" aria-hidden="true"></i> Cuadros de texto.</li>
+              <li><i class="fas fa-star" aria-hidden="true"></i> Formas para destacar indicadores.</li>
             </ul>
+
+            <aside class="t-callout t-callout--example" id="practica-16" data-toc="Práctica 16">
+              <i class="fas fa-laptop-code t-callout__icon" aria-hidden="true"></i>
+              <div>
+                <p class="t-callout__label">Práctica 16</p>
+                <h3>Diseñar una hoja ejecutiva</h3>
+                <p>En la hoja <strong>Resumen</strong>:</p>
+                <ol>
+                  <li>Coloca un título en la parte superior: <strong>Reporte de ventas turísticas</strong>.</li>
+                  <li>Inserta el gráfico de ingresos.</li>
+                  <li>Agrega un rectángulo para destacar el ingreso total.</li>
+                  <li>Utiliza una flecha para señalar el destino con mayor ingreso.</li>
+                  <li>Incorpora una nota que indique el periodo y el origen de los datos.</li>
+                  <li>Mantén una distribución clara y evita elementos decorativos innecesarios.</li>
+                </ol>
+              </div>
+            </aside>
           </section>
 
           <section class="t-video" id="video-tema" data-toc="Video del tema">
             <div class="t-video__head">
               <span class="t-video__icon"><i class="fas fa-circle-play" aria-hidden="true"></i></span>
-              <p class="t-video__title">Video: 3.3 Elaboración de gráficos</p>
+              <p class="t-video__title">Video: Elaboración de gráficos</p>
             </div>
             <div class="t-video__frame">
-              <iframe src="https://www.youtube.com/embed/HKp0GgZD5Jk" title="Video: 3.3 Elaboración de gráficos" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+              <iframe src="https://www.youtube.com/embed/HKp0GgZD5Jk" title="Video: Elaboración de gráficos" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
             </div>
             <p class="t-video__meta">
               <span>Fuente: <a href="https://youtu.be/HKp0GgZD5Jk" target="_blank" rel="noopener noreferrer">Ver en YouTube <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a></span>
@@ -118,5 +282,3 @@
 </body>
 
 </html>
-
-

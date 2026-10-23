@@ -2,142 +2,119 @@
   {
     "id": 1,
     "type": "opcion_multiple",
-    "question": "¿Qué es la logística inversa?",
-    "options": [
-      "La recuperación de materiales, componentes o artículos al final de su vida útil para reutilizarlos.",
-      "El transporte de prendas nuevas del fabricante a la tienda.",
-      "La importación temporal de maquinaria textil.",
-      "La compra de materia prima a proveedores extranjeros."
-    ],
-    "answer": "La recuperación de materiales, componentes o artículos al final de su vida útil para reutilizarlos.",
-    "explicacion": "La logística inversa recorre la cadena en sentido contrario: del cliente de regreso hacia la empresa."
+    "question": "¿Qué gráfico conviene para mostrar la ocupación hotelera mes a mes?",
+    "options": ["Gráfico de líneas", "Gráfico circular", "Gráfico de barras", "Tabla dinámica"],
+    "answer": "Gráfico de líneas",
+    "explicacion": "El gráfico de líneas muestra cambios a través del tiempo."
   },
   {
     "id": 2,
     "type": "opcion_multiple",
-    "question": "¿Cuál de los siguientes es un ejemplo de logística inversa?",
-    "options": [
-      "Recuperar los sobrantes de corte para reutilizarlos.",
-      "Enviar prendas nuevas a un centro comercial.",
-      "Comprar algodón a un nuevo proveedor.",
-      "Teñir un lote de tela."
-    ],
-    "answer": "Recuperar los sobrantes de corte para reutilizarlos.",
-    "explicacion": "Otros ejemplos: devoluciones, reciclaje de textiles, recuperación de empaques y tarimas, y gestión de residuos textiles."
+    "question": "Necesitas comparar canales de venta con nombres largos, como «Agencia de viajes tradicional». ¿Qué gráfico facilita la lectura?",
+    "options": ["Gráfico de barras", "Gráfico de líneas", "Gráfico circular", "Ningún gráfico"],
+    "answer": "Gráfico de barras",
+    "explicacion": "Las barras horizontales dejan espacio para leer categorías con nombres largos."
   },
   {
     "id": 3,
     "type": "verdadero_falso",
-    "statement": "La economía circular ha incrementado la importancia de la logística inversa.",
-    "answer": true,
-    "explicacion": "La economía circular busca reaprovechar materiales; la logística inversa hace posible ese regreso."
+    "statement": "El gráfico circular es adecuado cuando hay muchas categorías con valores muy distintos.",
+    "answer": false,
+    "explicacion": "Representa proporciones de un total cuando existen pocas categorías y los valores son comparables."
   },
   {
     "id": 4,
     "type": "opcion_multiple",
-    "question": "¿En qué consiste el nearshoring?",
-    "options": [
-      "En trasladar operaciones productivas a países cercanos al mercado de compra.",
-      "En trasladar la producción al país más lejano con la mano de obra más barata.",
-      "En vender únicamente en el mercado local.",
-      "En contratar transporte aéreo para todos los envíos."
-    ],
-    "answer": "En trasladar operaciones productivas a países cercanos al mercado de compra.",
-    "explicacion": "Producir cerca del mercado reduce los tiempos de tránsito y los riesgos de la cadena."
+    "question": "¿Qué gráfico se recomienda para comparar ingresos entre destinos?",
+    "options": ["Gráfico de columnas", "Gráfico de líneas", "Gráfico circular", "Cuadro de texto"],
+    "answer": "Gráfico de columnas",
+    "explicacion": "El gráfico de columnas compara ingresos entre destinos, productos o periodos."
   },
   {
     "id": 5,
-    "type": "opcion_multiple",
-    "question": "¿Qué tratado comercial favorece el nearshoring de la industria textil hacia México?",
-    "options": [
-      "T-MEC",
-      "Incoterms® 2020",
-      "Ley Aduanera",
-      "Kanban"
-    ],
-    "answer": "T-MEC",
-    "explicacion": "El T-MEC (tratado entre México, Estados Unidos y Canadá) da preferencias arancelarias y certidumbre jurídica."
+    "type": "completar_oracion",
+    "question": "En Excel, los gráficos se crean seleccionando los _____ y utilizando la pestaña _____.",
+    "wordBank": ["datos", "Insertar", "márgenes", "Revisar"],
+    "answer": ["datos", "Insertar"],
+    "explicacion": "Después se elige el tipo de gráfico que responda a la pregunta que se quiere analizar."
   },
   {
     "id": 6,
-    "type": "verdadero_falso",
-    "statement": "Una ventaja de México es que puede enviar mercancía por carretera a Estados Unidos en días, en lugar de semanas desde Asia.",
-    "answer": true,
-    "explicacion": "La proximidad geográfica reduce drásticamente el ciclo pedido-entrega."
+    "type": "ordenar_oracion",
+    "question": "Ordena los pasos para crear un gráfico.",
+    "segments": [
+      "Preparar una tabla con encabezados y datos",
+      "Seleccionar el rango",
+      "Entrar a Insertar → Gráficos y elegir el tipo",
+      "Agregar un título descriptivo"
+    ],
+    "answer": [
+      "Preparar una tabla con encabezados y datos",
+      "Seleccionar el rango",
+      "Entrar a Insertar → Gráficos y elegir el tipo",
+      "Agregar un título descriptivo"
+    ],
+    "explicacion": "Al final se revisan ejes, etiquetas, unidades y leyenda, y se comprueba que el gráfico corresponda a los datos de origen."
   },
   {
     "id": 7,
-    "type": "completar_oracion",
-    "question": "El indicador _____ mide las entregas completas y puntuales, mientras que el _____ mide el tiempo total desde el pedido hasta la entrega.",
-    "wordBank": [
-      "OTIF",
-      "Lead Time",
-      "Fill Rate",
-      "nivel de servicio"
+    "type": "opcion_multiple",
+    "question": "Para cambiar el tamaño de un gráfico con el ratón, debes:",
+    "options": [
+      "Arrastrar los controladores de las esquinas",
+      "Cambiar el tamaño de fuente de la hoja",
+      "Insertar una tabla dinámica",
+      "Modificar el área de impresión"
     ],
-    "answer": [
-      "OTIF",
-      "Lead Time"
-    ],
-    "explicacion": "OTIF significa On Time In Full (a tiempo y completo); Lead Time es el tiempo total de respuesta."
+    "answer": "Arrastrar los controladores de las esquinas",
+    "explicacion": "Para medidas precisas se usan las opciones de formato de tamaño de tu versión de Excel."
   },
   {
     "id": 8,
-    "type": "opcion_multiple",
-    "question": "¿Qué indicador mide los pedidos surtidos completamente en la primera entrega?",
-    "options": [
-      "Fill Rate",
-      "OTIF",
-      "Lead Time",
-      "Rotación de inventarios"
-    ],
-    "answer": "Fill Rate",
-    "explicacion": "El Fill Rate mide qué tan completos se surten los pedidos; el OTIF además exige que lleguen a tiempo."
+    "type": "verdadero_falso",
+    "statement": "Después de reducir un gráfico, conviene revisar que el título, las etiquetas y la leyenda sigan siendo legibles.",
+    "answer": true,
+    "explicacion": "Ajustar el tamaño debe mantener la legibilidad de títulos, ejes y leyendas."
   },
   {
     "id": 9,
     "type": "opcion_multiple",
-    "question": "¿Qué mide la rotación de inventarios?",
+    "question": "¿Cuál es la forma más sencilla y recomendable para principiantes de acompañar un gráfico con una fotografía?",
     "options": [
-      "La velocidad con que se renueva el inventario.",
-      "El número de proveedores de la empresa.",
-      "El tiempo que tarda un camión en llegar al cliente.",
-      "La cantidad de prendas devueltas por defectos."
+      "Insertar la imagen junto al gráfico, dentro de la hoja",
+      "Usar la imagen como relleno de cada barra",
+      "Pegar la imagen sobre los datos del gráfico",
+      "Sustituir el título por la imagen"
     ],
-    "answer": "La velocidad con que se renueva el inventario.",
-    "explicacion": "Una rotación alta indica que el inventario se vende y se repone con rapidez."
+    "answer": "Insertar la imagen junto al gráfico, dentro de la hoja",
+    "explicacion": "Colocar la imagen dentro del área del gráfico depende de la versión y del tipo de gráfico."
   },
   {
     "id": 10,
-    "type": "opcion_multiple",
-    "question": "De 200 pedidos, 170 llegaron completos y a tiempo. ¿Cuál es el OTIF?",
-    "options": [
-      "85 %",
-      "15 %",
-      "170 %",
-      "90 %"
-    ],
-    "answer": "85 %",
-    "explicacion": "OTIF = pedidos completos y a tiempo ÷ pedidos totales × 100 = 170 ÷ 200 × 100 = 85 %."
+    "type": "verdadero_falso",
+    "statement": "Puedes usar cualquier fotografía de internet en tu reporte sin registrar su procedencia.",
+    "answer": false,
+    "explicacion": "Utiliza imágenes propias o con licencia adecuada y registra su procedencia en un pie de imagen."
   },
   {
     "id": 11,
     "type": "opcion_multiple",
-    "question": "Según el apartado \"¿Sabías que...?\", ¿en cuánto tiempo suele producir Zara frente a las colecciones tradicionales?",
-    "options": [
-      "De 2 a 4 semanas, frente a 6 a 12 meses.",
-      "De 6 a 12 meses, frente a 2 a 4 semanas.",
-      "De 1 a 2 días, frente a 1 mes.",
-      "De 1 a 2 años, frente a 6 meses."
-    ],
-    "answer": "De 2 a 4 semanas, frente a 6 a 12 meses.",
-    "explicacion": "Su ciclo corto le permite responder rápido a la demanda con menos inventario."
+    "question": "¿En qué menú de Excel se encuentran las líneas, flechas y rectángulos?",
+    "options": ["Insertar → Formas", "Archivo → Imprimir", "Datos → Ordenar", "Inicio → Portapapeles"],
+    "answer": "Insertar → Formas",
+    "explicacion": "Según la versión, también puedes utilizar cuadros de texto y otros elementos gráficos."
   },
   {
     "id": 12,
-    "type": "verdadero_falso",
-    "statement": "Un aumento en las devoluciones de los clientes puede ser una señal de alarma de fallas en la cadena de suministro.",
-    "answer": true,
-    "explicacion": "El programa oficial (tema 3.6) trata las devoluciones como alarma de fallas en la cadena; la logística inversa las gestiona."
+    "type": "opcion_multiple",
+    "question": "En una hoja ejecutiva, ¿para qué sirve agregar un rectángulo o una flecha?",
+    "options": [
+      "Para destacar indicadores clave, como el ingreso total o el destino con mayor ingreso",
+      "Para calcular el promedio de los ingresos",
+      "Para actualizar los datos del gráfico",
+      "Para decorar la hoja con la mayor cantidad de elementos posible"
+    ],
+    "answer": "Para destacar indicadores clave, como el ingreso total o el destino con mayor ingreso",
+    "explicacion": "Las formas organizan el reporte y señalan lo importante; se evitan elementos decorativos innecesarios."
   }
 ]

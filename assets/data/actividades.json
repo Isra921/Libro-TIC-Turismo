@@ -49,10 +49,10 @@
           "tag": "Actividad formativa",
           "reactivos": "10 reactivos",
           "tiempo": "10 min",
-          "titulo": "Actividad 1.5: Tipos de cadena de suministro",
-          "descripcion": "Diferencia las cadenas tradicional, integrada, sincronizada y digital por sus características.",
+          "titulo": "Actividad 1.5: Tecnologías utilizadas en el turismo",
+          "descripcion": "Distingue la función del POS, el GDS y el ERP en las empresas turísticas y cómo se relacionan en una misma operación.",
           "url": "unidades/unidad-01/actividades/actividad-1-5.html",
-          "icono": "fa-diagram-project"
+          "icono": "fa-cash-register"
         },
         {
           "tag": "Actividad formativa",
@@ -168,17 +168,17 @@
           "tag": "Actividad formativa",
           "reactivos": "8 reactivos al azar",
           "tiempo": "10 min",
-          "titulo": "Actividad 3.5: Logística inversa, nearshoring e indicadores (KPI)",
-          "descripcion": "Relaciona la logística inversa y el nearshoring con la competitividad, e interpreta los indicadores Fill Rate, OTIF, rotación de inventarios y Lead Time.",
+          "titulo": "Actividad 3.5: Elaboración de gráficos",
+          "descripcion": "Elige el tipo de gráfico adecuado, ajusta su tamaño y complementa el reporte con imágenes y formas.",
           "url": "unidades/unidad-03/actividades/actividad-3-5.html",
-          "icono": "fa-recycle"
+          "icono": "fa-chart-column"
         },
         {
           "tag": "Actividad formativa",
           "reactivos": "8 reactivos al azar",
           "tiempo": "10 min",
           "titulo": "Actividad 3.6: Tablas dinámicas",
-          "descripcion": "Diseño, estructuración de campos, filtros, segmentación y análisis interactivo de datos turísticos.",
+          "descripcion": "Identifica las áreas de una tabla dinámica y resume reservaciones por destino y servicio.",
           "url": "unidades/unidad-03/actividades/actividad-3-6.html",
           "icono": "fa-table"
         },
@@ -187,7 +187,7 @@
           "reactivos": "8 reactivos al azar",
           "tiempo": "10 min",
           "titulo": "Actividad 3.7: Impresión",
-          "descripcion": "Configuración de área de impresión, ajuste de escala, márgenes, encabezados y reportes finales.",
+          "descripcion": "Configura área de impresión, orientación, márgenes, escala y encabezados para un reporte impreso o en PDF.",
           "url": "unidades/unidad-03/actividades/actividad-3-7.html",
           "icono": "fa-print"
         },

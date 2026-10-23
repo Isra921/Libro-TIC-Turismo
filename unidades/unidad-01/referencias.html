@@ -36,6 +36,9 @@
         <button type="button" class="r-filter-btn is-active" data-filter="todos">
           <i class="fas fa-border-all" aria-hidden="true"></i> Todos <span class="r-count">0</span>
         </button>
+        <button type="button" class="r-filter-btn" data-filter="sistemas">
+          <i class="fas fa-cash-register" aria-hidden="true"></i> Tecnologías turísticas <span class="r-count">0</span>
+        </button>
       </div>
 
       <div class="r-search-box">
@@ -45,11 +48,67 @@
     </section>
 
     <div class="r-grid" id="rGrid">
-      <!-- Sin referencias registradas por el momento -->
+      <!-- Referencia 1 -->
+      <article class="r-card" data-category="sistemas">
+        <div class="r-card__top">
+          <span class="r-badge r-badge--libro"><i class="fas fa-globe" aria-hidden="true"></i> Glosario</span>
+          <span class="r-card__unit-tag">Tema 1.5.2</span>
+        </div>
+        <div class="r-card__body">
+          <p class="r-card__citation">
+            HSMAI Academy. (s. f.). <em>GDS</em>. HSMAI Academy Glossary. https://academy.hsmai.org/glossary/gds/
+          </p>
+          <p class="r-card__desc">
+            Definición de los sistemas de distribución global como redes de reservación computarizadas con datos de vuelos, hoteles y alquiler de autos.
+          </p>
+        </div>
+        <div class="r-card__actions">
+          <button type="button" class="r-btn-copy" aria-label="Copiar cita APA"><i class="fas fa-copy"></i> Cita APA</button>
+          <a class="r-btn-link" href="https://academy.hsmai.org/glossary/gds/" target="_blank" rel="noopener noreferrer">Consultar recurso <i class="fas fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </article>
+      <!-- Referencia 2 -->
+      <article class="r-card" data-category="sistemas">
+        <div class="r-card__top">
+          <span class="r-badge r-badge--libro"><i class="fas fa-building" aria-hidden="true"></i> Artículo técnico</span>
+          <span class="r-card__unit-tag">Tema 1.5.3</span>
+        </div>
+        <div class="r-card__body">
+          <p class="r-card__citation">
+            IBM. (2024, 11 de junio). <em>What is enterprise resource planning (ERP)?</em> IBM Think. https://www.ibm.com/think/topics/enterprise-resource-planning
+          </p>
+          <p class="r-card__desc">
+            Describe el ERP, sus módulos de finanzas, compras y recursos humanos, y el uso de una base de datos común para eliminar silos de información.
+          </p>
+        </div>
+        <div class="r-card__actions">
+          <button type="button" class="r-btn-copy" aria-label="Copiar cita APA"><i class="fas fa-copy"></i> Cita APA</button>
+          <a class="r-btn-link" href="https://www.ibm.com/think/topics/enterprise-resource-planning" target="_blank" rel="noopener noreferrer">Consultar recurso <i class="fas fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </article>
+      <!-- Referencia 3 -->
+      <article class="r-card" data-category="sistemas">
+        <div class="r-card__top">
+          <span class="r-badge r-badge--libro"><i class="fas fa-cash-register" aria-hidden="true"></i> Guía técnica</span>
+          <span class="r-card__unit-tag">Tema 1.5.1</span>
+        </div>
+        <div class="r-card__body">
+          <p class="r-card__citation">
+            Salesforce. (2026). <em>Sistemas de punto de venta (POS): conceptos clave</em>. Salesforce. https://www.salesforce.com/es/commerce/point-of-sale/pos/
+          </p>
+          <p class="r-card__desc">
+            Explica qué es un POS como combinación de hardware y software para gestionar ventas y pagos, sus dispositivos habituales y sus funciones de inventario, clientes y reportes.
+          </p>
+        </div>
+        <div class="r-card__actions">
+          <button type="button" class="r-btn-copy" aria-label="Copiar cita APA"><i class="fas fa-copy"></i> Cita APA</button>
+          <a class="r-btn-link" href="https://www.salesforce.com/es/commerce/point-of-sale/pos/" target="_blank" rel="noopener noreferrer">Consultar recurso <i class="fas fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </article>
     </div>
 
-    <div class="r-empty" id="rEmpty" style="display: block; text-align: center; padding: 40px;">
-      <p><i class="fas fa-book-open" style="font-size: 2rem; color: var(--primary); margin-bottom: 12px; display: block;"></i>Sin referencias registradas por el momento.</p>
+    <div class="r-empty" id="rEmpty" style="display: none; text-align: center; padding: 40px;">
+      <p><i class="fas fa-magnifying-glass" style="font-size: 2rem; color: var(--primary); margin-bottom: 12px; display: block;"></i>No se encontraron referencias con el criterio de búsqueda seleccionado.</p>
     </div>
   </main>
 

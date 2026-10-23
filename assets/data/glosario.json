@@ -13,7 +13,64 @@
       "id": "unidad-01",
       "pestana": "Unidad 1",
       "titulo": "Unidad 1: Las TIC",
-      "terminos": []
+      "terminos": [
+        {
+          "termino": "Punto de venta (POS)",
+          "definicion": "Combinación de equipo y programas que registra una compra y procesa el pago; según su configuración, también lleva el registro de ventas, inventario, datos de clientes y reportes. Se encuentra en recepciones de hotel, taquillas, restaurantes y agencias."
+        },
+        {
+          "termino": "Sistema de distribución global (GDS)",
+          "definicion": "Red informatizada que reúne información de servicios de viaje (vuelos, hoteles, alquiler de autos y otros) para que las agencias busquen y reserven opciones de distintos proveedores desde un mismo entorno."
+        },
+        {
+          "termino": "Planificación de recursos empresariales (ERP)",
+          "definicion": "Sistema que relaciona datos y procesos de varias áreas de una organización, como finanzas, compras, recursos humanos y gestión de productos, para que la información no quede aislada en cada departamento."
+        },
+        {
+          "termino": "Módulo (ERP)",
+          "definicion": "Componente de un ERP dedicado a un área de la empresa (finanzas, compras, nómina, mantenimiento, etc.) que comparte información con los demás módulos."
+        },
+        {
+          "termino": "Terminal de pago",
+          "definicion": "Dispositivo con lector de tarjetas, conectado o integrado a un POS, que permite cobrar con tarjeta y emitir un recibo."
+        },
+        {
+          "termino": "Comprobante de pago",
+          "definicion": "Documento impreso o digital que el POS entrega al cliente como constancia del servicio vendido, su precio y la forma de pago."
+        },
+        {
+          "termino": "Inventario",
+          "definicion": "Registro de los productos, lugares o servicios disponibles para la venta; un POS conectado puede actualizarlo en cada operación."
+        },
+        {
+          "termino": "Reporte de ventas",
+          "definicion": "Resumen generado por el sistema que muestra qué se vendió y en qué periodo; ayuda a reconocer temporadas con más movimiento."
+        },
+        {
+          "termino": "Proveedor turístico",
+          "definicion": "Empresa que ofrece un servicio de viaje, como una aerolínea, un hotel o una arrendadora de autos, y comparte su oferta en sistemas como el GDS."
+        },
+        {
+          "termino": "Reserva",
+          "definicion": "Apartado de un servicio turístico (asiento, habitación, auto, excursión) para una fecha y un cliente determinados."
+        },
+        {
+          "termino": "Itinerario",
+          "definicion": "Plan de un viaje que reúne en orden los servicios contratados: vuelos, hospedaje, traslados y actividades."
+        },
+        {
+          "termino": "Tarifa",
+          "definicion": "Precio de un servicio turístico sujeto a condiciones de emisión, cambios y cancelación."
+        },
+        {
+          "termino": "Reglas de emisión",
+          "definicion": "Condiciones que establece un proveedor para confirmar, cambiar o cancelar una reserva y los costos que aplica a cada operación."
+        },
+        {
+          "termino": "Integración de sistemas",
+          "definicion": "Conexión entre programas (por ejemplo, GDS, POS y ERP) para transferir datos de uno a otro y evitar capturas duplicadas."
+        }
+      ]
     },
     {
       "id": "unidad-02",
@@ -25,7 +82,120 @@
       "id": "unidad-03",
       "pestana": "Unidad 3",
       "titulo": "Unidad 3: Software de tratamiento de datos numéricos",
-      "terminos": []
+      "terminos": [
+        {
+          "termino": "Gráfico",
+          "definicion": "Representación visual de datos que facilita comparar categorías, reconocer tendencias y comunicar resultados."
+        },
+        {
+          "termino": "Gráfico de columnas",
+          "definicion": "Gráfico de barras verticales que compara valores entre destinos, productos o periodos."
+        },
+        {
+          "termino": "Gráfico de líneas",
+          "definicion": "Gráfico que muestra cambios a través del tiempo, como la ocupación mensual de un hotel."
+        },
+        {
+          "termino": "Gráfico circular",
+          "definicion": "Gráfico que representa las proporciones de un total; se recomienda con pocas categorías y valores comparables."
+        },
+        {
+          "termino": "Gráfico de barras",
+          "definicion": "Gráfico de barras horizontales que facilita comparar categorías, sobre todo cuando sus nombres son largos."
+        },
+        {
+          "termino": "Eje",
+          "definicion": "Línea de referencia de un gráfico que muestra la escala de los valores o las categorías representadas."
+        },
+        {
+          "termino": "Leyenda",
+          "definicion": "Recuadro de un gráfico que indica qué representa cada color o serie de datos."
+        },
+        {
+          "termino": "Rango de datos",
+          "definicion": "Conjunto de celdas seleccionadas que se utiliza como origen de un gráfico o de una tabla dinámica."
+        },
+        {
+          "termino": "Controladores de tamaño",
+          "definicion": "Pequeños círculos en las esquinas y bordes de un gráfico o imagen seleccionados que se arrastran para modificar sus dimensiones."
+        },
+        {
+          "termino": "Forma",
+          "definicion": "Figura prediseñada de Excel (línea, flecha, rectángulo, círculo) que se inserta desde Insertar → Formas para organizar un reporte o destacar un dato."
+        },
+        {
+          "termino": "Cuadro de texto",
+          "definicion": "Forma que contiene texto libre y se coloca en cualquier parte de la hoja, por ejemplo, para agregar una nota a un gráfico."
+        },
+        {
+          "termino": "Tabla dinámica",
+          "definicion": "Herramienta que resume, organiza y analiza grandes conjuntos de registros mediante campos distribuidos en Filas, Columnas, Valores y Filtros, sin construir manualmente todas las fórmulas de resumen."
+        },
+        {
+          "termino": "Campo",
+          "definicion": "Columna de la tabla de origen (por ejemplo, Destino o Total a pagar) que se arrastra a un área de la tabla dinámica."
+        },
+        {
+          "termino": "Filas (área)",
+          "definicion": "Área de la tabla dinámica que agrupa los registros por categorías, como destino o tipo de servicio."
+        },
+        {
+          "termino": "Columnas (área)",
+          "definicion": "Área de la tabla dinámica que distribuye las categorías horizontalmente para comparar grupos."
+        },
+        {
+          "termino": "Valores (área)",
+          "definicion": "Área de la tabla dinámica que calcula sumas, recuentos, promedios y otras medidas."
+        },
+        {
+          "termino": "Filtros (área)",
+          "definicion": "Área de la tabla dinámica que limita el análisis a una categoría o grupo de registros."
+        },
+        {
+          "termino": "Recuento",
+          "definicion": "Cálculo que cuenta cuántos registros hay en cada grupo; no equivale necesariamente al número de personas."
+        },
+        {
+          "termino": "Actualizar (tabla dinámica)",
+          "definicion": "Comando que vuelve a leer la tabla de origen para incluir registros nuevos o modificados en la tabla dinámica."
+        },
+        {
+          "termino": "Gráfico dinámico",
+          "definicion": "Gráfico vinculado a una tabla dinámica que cambia al modificar sus campos o filtros."
+        },
+        {
+          "termino": "Área de impresión",
+          "definicion": "Rango de la hoja de cálculo que se define para imprimir solo esa parte."
+        },
+        {
+          "termino": "Orientación",
+          "definicion": "Disposición del papel: vertical, adecuada para pocas columnas, u horizontal, útil para tablas extensas."
+        },
+        {
+          "termino": "Márgenes",
+          "definicion": "Espacio en blanco que se deja alrededor del contenido de la página impresa."
+        },
+        {
+          "termino": "Escala de impresión",
+          "definicion": "Ajuste que reduce o amplía el contenido para que quepa en un número determinado de páginas, por ejemplo, todas las columnas en una página."
+        },
+        {
+          "termino": "Salto de página",
+          "definicion": "Marca que indica dónde comienza una nueva página impresa."
+        },
+        {
+          "termino": "Encabezado y pie de página",
+          "definicion": "Zonas superior e inferior de la página impresa donde se incluyen título, fecha, numeración y otros datos."
+        },
+        {
+          "termino": "Vista previa de impresión",
+          "definicion": "Pantalla (Archivo → Imprimir o Ctrl + P) que muestra cómo quedará el documento impreso antes de imprimirlo."
+        },
+        {
+          "termino": "PDF",
+          "definicion": "Formato de documento portátil que conserva el diseño de la hoja al exportarla para compartirla o imprimirla."
+        }
+      ]
     }
   ]
 }

@@ -2,142 +2,125 @@
   {
     "id": 1,
     "type": "opcion_multiple",
-    "question": "¿Qué es la logística inversa?",
-    "options": [
-      "La recuperación de materiales, componentes o artículos al final de su vida útil para reutilizarlos.",
-      "El transporte de prendas nuevas del fabricante a la tienda.",
-      "La importación temporal de maquinaria textil.",
-      "La compra de materia prima a proveedores extranjeros."
-    ],
-    "answer": "La recuperación de materiales, componentes o artículos al final de su vida útil para reutilizarlos.",
-    "explicacion": "La logística inversa recorre la cadena en sentido contrario: del cliente de regreso hacia la empresa."
+    "question": "¿Qué opción define qué rango de la hoja se imprimirá?",
+    "options": ["Área de impresión", "Saltos de página", "Márgenes", "Encabezado y pie de página"],
+    "answer": "Área de impresión",
+    "explicacion": "El área de impresión limita la salida al rango que eliges."
   },
   {
     "id": 2,
     "type": "opcion_multiple",
-    "question": "¿Cuál de los siguientes es un ejemplo de logística inversa?",
-    "options": [
-      "Recuperar los sobrantes de corte para reutilizarlos.",
-      "Enviar prendas nuevas a un centro comercial.",
-      "Comprar algodón a un nuevo proveedor.",
-      "Teñir un lote de tela."
-    ],
-    "answer": "Recuperar los sobrantes de corte para reutilizarlos.",
-    "explicacion": "Otros ejemplos: devoluciones, reciclaje de textiles, recuperación de empaques y tarimas, y gestión de residuos textiles."
+    "question": "Tu tabla de reservaciones tiene muchas columnas. ¿Qué orientación conviene?",
+    "options": ["Horizontal", "Vertical", "Cualquiera, no influye", "Ninguna, se debe dividir el archivo"],
+    "answer": "Horizontal",
+    "explicacion": "La orientación horizontal es útil para tablas extensas; la vertical, para reportes con pocas columnas."
   },
   {
     "id": 3,
     "type": "verdadero_falso",
-    "statement": "La economía circular ha incrementado la importancia de la logística inversa.",
-    "answer": true,
-    "explicacion": "La economía circular busca reaprovechar materiales; la logística inversa hace posible ese regreso."
+    "statement": "Si un libro se ve bien en pantalla, siempre se imprimirá de forma adecuada.",
+    "answer": false,
+    "explicacion": "Columnas extensas, gráficos grandes o tablas con muchos registros pueden dividirse en varias páginas."
   },
   {
     "id": 4,
     "type": "opcion_multiple",
-    "question": "¿En qué consiste el nearshoring?",
-    "options": [
-      "En trasladar operaciones productivas a países cercanos al mercado de compra.",
-      "En trasladar la producción al país más lejano con la mano de obra más barata.",
-      "En vender únicamente en el mercado local.",
-      "En contratar transporte aéreo para todos los envíos."
-    ],
-    "answer": "En trasladar operaciones productivas a países cercanos al mercado de compra.",
-    "explicacion": "Producir cerca del mercado reduce los tiempos de tránsito y los riesgos de la cadena."
+    "question": "¿Qué atajo abre la vista previa de impresión?",
+    "options": ["Ctrl + P", "Ctrl + C", "Ctrl + Z", "Ctrl + B"],
+    "answer": "Ctrl + P",
+    "explicacion": "También puedes entrar a Archivo → Imprimir."
   },
   {
     "id": 5,
     "type": "opcion_multiple",
-    "question": "¿Qué tratado comercial favorece el nearshoring de la industria textil hacia México?",
+    "question": "¿Para qué sirve «Repetir filas de encabezado»?",
     "options": [
-      "T-MEC",
-      "Incoterms® 2020",
-      "Ley Aduanera",
-      "Kanban"
+      "Para identificar las columnas en todas las páginas impresas",
+      "Para duplicar los datos de la tabla",
+      "Para centrar la tabla en la hoja",
+      "Para ocultar los encabezados"
     ],
-    "answer": "T-MEC",
-    "explicacion": "El T-MEC (tratado entre México, Estados Unidos y Canadá) da preferencias arancelarias y certidumbre jurídica."
+    "answer": "Para identificar las columnas en todas las páginas impresas",
+    "explicacion": "Es útil cuando la tabla ocupa varias páginas."
   },
   {
     "id": 6,
-    "type": "verdadero_falso",
-    "statement": "Una ventaja de México es que puede enviar mercancía por carretera a Estados Unidos en días, en lugar de semanas desde Asia.",
-    "answer": true,
-    "explicacion": "La proximidad geográfica reduce drásticamente el ciclo pedido-entrega."
+    "type": "completar_oracion",
+    "question": "Puedes ajustar el ancho a una _____, pero evita reducir demasiado la _____.",
+    "wordBank": ["página", "letra", "fórmula", "leyenda"],
+    "answer": ["página", "letra"],
+    "explicacion": "Ajustar la escala no debe sacrificar la legibilidad."
   },
   {
     "id": 7,
-    "type": "completar_oracion",
-    "question": "El indicador _____ mide las entregas completas y puntuales, mientras que el _____ mide el tiempo total desde el pedido hasta la entrega.",
-    "wordBank": [
-      "OTIF",
-      "Lead Time",
-      "Fill Rate",
-      "nivel de servicio"
+    "type": "ordenar_oracion",
+    "question": "Ordena el procedimiento para preparar la impresión.",
+    "segments": [
+      "Abrir la vista previa",
+      "Configurar la página",
+      "Ajustar la escala",
+      "Revisar y exportar"
     ],
     "answer": [
-      "OTIF",
-      "Lead Time"
+      "Abrir la vista previa",
+      "Configurar la página",
+      "Ajustar la escala",
+      "Revisar y exportar"
     ],
-    "explicacion": "OTIF significa On Time In Full (a tiempo y completo); Lead Time es el tiempo total de respuesta."
+    "explicacion": "Primero se observa el resultado, luego se ajusta y al final se imprime o se guarda como PDF."
   },
   {
     "id": 8,
     "type": "opcion_multiple",
-    "question": "¿Qué indicador mide los pedidos surtidos completamente en la primera entrega?",
-    "options": [
-      "Fill Rate",
-      "OTIF",
-      "Lead Time",
-      "Rotación de inventarios"
-    ],
-    "answer": "Fill Rate",
-    "explicacion": "El Fill Rate mide qué tan completos se surten los pedidos; el OTIF además exige que lleguen a tiempo."
+    "question": "¿Qué opción controla dónde comienza una nueva página?",
+    "options": ["Saltos de página", "Área de impresión", "Orientación vertical", "Márgenes"],
+    "answer": "Saltos de página",
+    "explicacion": "Los saltos de página evitan que una tabla o un gráfico se corten en un lugar inconveniente."
   },
   {
     "id": 9,
     "type": "opcion_multiple",
-    "question": "¿Qué mide la rotación de inventarios?",
+    "question": "¿Qué permite incluir el encabezado y pie de página?",
     "options": [
-      "La velocidad con que se renueva el inventario.",
-      "El número de proveedores de la empresa.",
-      "El tiempo que tarda un camión en llegar al cliente.",
-      "La cantidad de prendas devueltas por defectos."
+      "Título, fecha, numeración y otros datos",
+      "Fórmulas de suma",
+      "Filtros de la tabla dinámica",
+      "Formato de moneda"
     ],
-    "answer": "La velocidad con que se renueva el inventario.",
-    "explicacion": "Una rotación alta indica que el inventario se vende y se repone con rapidez."
+    "answer": "Título, fecha, numeración y otros datos",
+    "explicacion": "Ayuda a identificar el reporte impreso o en PDF."
   },
   {
     "id": 10,
-    "type": "opcion_multiple",
-    "question": "De 200 pedidos, 170 llegaron completos y a tiempo. ¿Cuál es el OTIF?",
-    "options": [
-      "85 %",
-      "15 %",
-      "170 %",
-      "90 %"
-    ],
-    "answer": "85 %",
-    "explicacion": "OTIF = pedidos completos y a tiempo ÷ pedidos totales × 100 = 170 ÷ 200 × 100 = 85 %."
+    "type": "verdadero_falso",
+    "statement": "Además de imprimir en papel, una hoja de cálculo puede guardarse como documento PDF.",
+    "answer": true,
+    "explicacion": "Se usa la exportación de Excel o la impresión a PDF disponible en el equipo."
   },
   {
     "id": 11,
     "type": "opcion_multiple",
-    "question": "Según el apartado \"¿Sabías que...?\", ¿en cuánto tiempo suele producir Zara frente a las colecciones tradicionales?",
+    "question": "¿Cuál de estos puntos forma parte de la lista de cotejo para impresión?",
     "options": [
-      "De 2 a 4 semanas, frente a 6 a 12 meses.",
-      "De 6 a 12 meses, frente a 2 a 4 semanas.",
-      "De 1 a 2 días, frente a 1 mes.",
-      "De 1 a 2 años, frente a 6 meses."
+      "No hay columnas o gráficos cortados",
+      "La hoja tiene al menos diez gráficos",
+      "Todas las celdas tienen color de relleno",
+      "El archivo no tiene título"
     ],
-    "answer": "De 2 a 4 semanas, frente a 6 a 12 meses.",
-    "explicacion": "Su ciclo corto le permite responder rápido a la demanda con menos inventario."
+    "answer": "No hay columnas o gráficos cortados",
+    "explicacion": "También se verifica que el reporte incluya título y periodo de análisis, y que el PDF se abra correctamente."
   },
   {
     "id": 12,
-    "type": "verdadero_falso",
-    "statement": "Un aumento en las devoluciones de los clientes puede ser una señal de alarma de fallas en la cadena de suministro.",
-    "answer": true,
-    "explicacion": "El programa oficial (tema 3.6) trata las devoluciones como alarma de fallas en la cadena; la logística inversa las gestiona."
+    "type": "opcion_multiple",
+    "question": "¿Qué función tienen los márgenes?",
+    "options": [
+      "Controlar el espacio alrededor del contenido",
+      "Definir el rango que se imprime",
+      "Repetir los encabezados",
+      "Cambiar la orientación del papel"
+    ],
+    "answer": "Controlar el espacio alrededor del contenido",
+    "explicacion": "Al ajustarlos, comprueba el número de páginas en la vista previa."
   }
 ]

@@ -2,142 +2,124 @@
   {
     "id": 1,
     "type": "opcion_multiple",
-    "question": "¿Qué es la logística inversa?",
+    "question": "¿Qué permite una tabla dinámica?",
     "options": [
-      "La recuperación de materiales, componentes o artículos al final de su vida útil para reutilizarlos.",
-      "El transporte de prendas nuevas del fabricante a la tienda.",
-      "La importación temporal de maquinaria textil.",
-      "La compra de materia prima a proveedores extranjeros."
+      "Resumir, agrupar y analizar muchos registros sin construir manualmente todas las fórmulas de resumen",
+      "Imprimir automáticamente la hoja en tamaño carta",
+      "Insertar fotografías dentro de las celdas",
+      "Cambiar el tamaño de un gráfico"
     ],
-    "answer": "La recuperación de materiales, componentes o artículos al final de su vida útil para reutilizarlos.",
-    "explicacion": "La logística inversa recorre la cadena en sentido contrario: del cliente de regreso hacia la empresa."
+    "answer": "Resumir, agrupar y analizar muchos registros sin construir manualmente todas las fórmulas de resumen",
+    "explicacion": "Puede calcular sumas, promedios, recuentos y otros resultados."
   },
   {
     "id": 2,
     "type": "opcion_multiple",
-    "question": "¿Cuál de los siguientes es un ejemplo de logística inversa?",
-    "options": [
-      "Recuperar los sobrantes de corte para reutilizarlos.",
-      "Enviar prendas nuevas a un centro comercial.",
-      "Comprar algodón a un nuevo proveedor.",
-      "Teñir un lote de tela."
-    ],
-    "answer": "Recuperar los sobrantes de corte para reutilizarlos.",
-    "explicacion": "Otros ejemplos: devoluciones, reciclaje de textiles, recuperación de empaques y tarimas, y gestión de residuos textiles."
+    "question": "¿Qué área de la tabla dinámica agrupa los registros por categorías, como destino o tipo de servicio?",
+    "options": ["Filas", "Valores", "Filtros", "Encabezado"],
+    "answer": "Filas",
+    "explicacion": "Las columnas distribuyen categorías horizontalmente; los valores calculan y los filtros limitan el análisis."
   },
   {
     "id": 3,
-    "type": "verdadero_falso",
-    "statement": "La economía circular ha incrementado la importancia de la logística inversa.",
-    "answer": true,
-    "explicacion": "La economía circular busca reaprovechar materiales; la logística inversa hace posible ese regreso."
+    "type": "opcion_multiple",
+    "question": "¿En qué área colocas «Total a pagar» para obtener la suma de ingresos?",
+    "options": ["Valores", "Filas", "Columnas", "Filtros"],
+    "answer": "Valores",
+    "explicacion": "El área Valores calcula sumas, recuentos, promedios y otras medidas."
   },
   {
     "id": 4,
     "type": "opcion_multiple",
-    "question": "¿En qué consiste el nearshoring?",
+    "question": "¿Para qué sirve el área Filtros?",
     "options": [
-      "En trasladar operaciones productivas a países cercanos al mercado de compra.",
-      "En trasladar la producción al país más lejano con la mano de obra más barata.",
-      "En vender únicamente en el mercado local.",
-      "En contratar transporte aéreo para todos los envíos."
+      "Para limitar el análisis a una categoría o grupo de registros",
+      "Para sumar los importes",
+      "Para dar formato de moneda",
+      "Para insertar un gráfico"
     ],
-    "answer": "En trasladar operaciones productivas a países cercanos al mercado de compra.",
-    "explicacion": "Producir cerca del mercado reduce los tiempos de tránsito y los riesgos de la cadena."
+    "answer": "Para limitar el análisis a una categoría o grupo de registros",
+    "explicacion": "Por ejemplo, analizar solo las reservaciones de un destino."
   },
   {
     "id": 5,
-    "type": "opcion_multiple",
-    "question": "¿Qué tratado comercial favorece el nearshoring de la industria textil hacia México?",
-    "options": [
-      "T-MEC",
-      "Incoterms® 2020",
-      "Ley Aduanera",
-      "Kanban"
-    ],
-    "answer": "T-MEC",
-    "explicacion": "El T-MEC (tratado entre México, Estados Unidos y Canadá) da preferencias arancelarias y certidumbre jurídica."
+    "type": "completar_oracion",
+    "question": "Después de arrastrar «Total a pagar» a Valores, comprueba que se resuma mediante _____ y no mediante _____.",
+    "wordBank": ["Suma", "Recuento", "Promedio", "Filtro"],
+    "answer": ["Suma", "Recuento"],
+    "explicacion": "Si se resume por Recuento, obtendrás cuántos registros hay, no el importe total."
   },
   {
     "id": 6,
-    "type": "verdadero_falso",
-    "statement": "Una ventaja de México es que puede enviar mercancía por carretera a Estados Unidos en días, en lugar de semanas desde Asia.",
-    "answer": true,
-    "explicacion": "La proximidad geográfica reduce drásticamente el ciclo pedido-entrega."
+    "type": "ordenar_oracion",
+    "question": "Ordena los pasos para crear la tabla dinámica de ingresos por destino.",
+    "segments": [
+      "Seleccionar una celda de la tabla Reservaciones",
+      "Entrar a Insertar → Tabla dinámica",
+      "Comprobar el rango de origen y elegir una hoja nueva",
+      "Arrastrar Destino a Filas y Total a pagar a Valores"
+    ],
+    "answer": [
+      "Seleccionar una celda de la tabla Reservaciones",
+      "Entrar a Insertar → Tabla dinámica",
+      "Comprobar el rango de origen y elegir una hoja nueva",
+      "Arrastrar Destino a Filas y Total a pagar a Valores"
+    ],
+    "explicacion": "Al final se revisa que el campo se resuma por Suma y se da formato de moneda."
   },
   {
     "id": 7,
-    "type": "completar_oracion",
-    "question": "El indicador _____ mide las entregas completas y puntuales, mientras que el _____ mide el tiempo total desde el pedido hasta la entrega.",
-    "wordBank": [
-      "OTIF",
-      "Lead Time",
-      "Fill Rate",
-      "nivel de servicio"
-    ],
-    "answer": [
-      "OTIF",
-      "Lead Time"
-    ],
-    "explicacion": "OTIF significa On Time In Full (a tiempo y completo); Lead Time es el tiempo total de respuesta."
+    "type": "verdadero_falso",
+    "statement": "Si agregas registros a la tabla de origen, la tabla dinámica debe actualizarse para incluirlos.",
+    "answer": true,
+    "explicacion": "Se usa Analizar tabla dinámica → Actualizar, o el comando equivalente de tu versión."
   },
   {
     "id": 8,
-    "type": "opcion_multiple",
-    "question": "¿Qué indicador mide los pedidos surtidos completamente en la primera entrega?",
-    "options": [
-      "Fill Rate",
-      "OTIF",
-      "Lead Time",
-      "Rotación de inventarios"
-    ],
-    "answer": "Fill Rate",
-    "explicacion": "El Fill Rate mide qué tan completos se surten los pedidos; el OTIF además exige que lleguen a tiempo."
+    "type": "verdadero_falso",
+    "statement": "El recuento de folios indica siempre el número de turistas.",
+    "answer": false,
+    "explicacion": "El recuento de folios indica el número de registros, no necesariamente el número de turistas."
   },
   {
     "id": 9,
     "type": "opcion_multiple",
-    "question": "¿Qué mide la rotación de inventarios?",
+    "question": "¿Qué combinación responde «¿Qué servicio aparece más veces?»",
     "options": [
-      "La velocidad con que se renueva el inventario.",
-      "El número de proveedores de la empresa.",
-      "El tiempo que tarda un camión en llegar al cliente.",
-      "La cantidad de prendas devueltas por defectos."
+      "Filas: Servicio · Valores: Recuento de Folio",
+      "Filas: Destino · Valores: Suma de Total a pagar",
+      "Filas: Destino · Valores: Promedio de Total a pagar",
+      "Filas: Destino · Valores: Suma de Cantidad"
     ],
-    "answer": "La velocidad con que se renueva el inventario.",
-    "explicacion": "Una rotación alta indica que el inventario se vende y se repone con rapidez."
+    "answer": "Filas: Servicio · Valores: Recuento de Folio",
+    "explicacion": "Contar los folios por servicio indica cuántos registros tiene cada tipo de servicio."
   },
   {
     "id": 10,
     "type": "opcion_multiple",
-    "question": "De 200 pedidos, 170 llegaron completos y a tiempo. ¿Cuál es el OTIF?",
-    "options": [
-      "85 %",
-      "15 %",
-      "170 %",
-      "90 %"
-    ],
-    "answer": "85 %",
-    "explicacion": "OTIF = pedidos completos y a tiempo ÷ pedidos totales × 100 = 170 ÷ 200 × 100 = 85 %."
+    "question": "Con la base de la práctica 2, ¿qué destino genera más ingresos (suma de Total a pagar)?",
+    "options": ["Cancún", "Oaxaca", "Mérida", "Puebla"],
+    "answer": "Cancún",
+    "explicacion": "Cancún suma $16,150 + $4,180 = $20,330, frente a Oaxaca con $11,280."
   },
   {
     "id": 11,
-    "type": "opcion_multiple",
-    "question": "Según el apartado \"¿Sabías que...?\", ¿en cuánto tiempo suele producir Zara frente a las colecciones tradicionales?",
-    "options": [
-      "De 2 a 4 semanas, frente a 6 a 12 meses.",
-      "De 6 a 12 meses, frente a 2 a 4 semanas.",
-      "De 1 a 2 días, frente a 1 mes.",
-      "De 1 a 2 años, frente a 6 meses."
-    ],
-    "answer": "De 2 a 4 semanas, frente a 6 a 12 meses.",
-    "explicacion": "Su ciclo corto le permite responder rápido a la demanda con menos inventario."
+    "type": "verdadero_falso",
+    "statement": "La suma del campo Cantidad siempre puede interpretarse como número de pasajeros.",
+    "answer": false,
+    "explicacion": "Solo puede interpretarse así si los datos representan efectivamente pasajeros."
   },
   {
     "id": 12,
-    "type": "verdadero_falso",
-    "statement": "Un aumento en las devoluciones de los clientes puede ser una señal de alarma de fallas en la cadena de suministro.",
-    "answer": true,
-    "explicacion": "El programa oficial (tema 3.6) trata las devoluciones como alarma de fallas en la cadena; la logística inversa las gestiona."
+    "type": "opcion_multiple",
+    "question": "¿Qué ocurre con un gráfico dinámico al cambiar los filtros de su tabla dinámica?",
+    "options": [
+      "La visualización cambia, porque está vinculado a la información resumida",
+      "No cambia, porque es una imagen fija",
+      "Se elimina la tabla dinámica",
+      "Se imprime automáticamente"
+    ],
+    "answer": "La visualización cambia, porque está vinculado a la información resumida",
+    "explicacion": "Los gráficos dinámicos permiten explorar comparaciones y tendencias de forma interactiva."
   }
 ]

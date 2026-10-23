@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>3.7 Impresión | Unidad III | TIC aplicadas al turismo</title>
-  <meta name="description" content="Configuración de página, escala, márgenes y preparación de documentos de hoja de cálculo para exportación e impresión.">
+  <meta name="description" content="Configuración de área de impresión, orientación, márgenes, escala, encabezados y exportación a PDF de reportes turísticos.">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="../../../assets/css/comun.css">
@@ -40,28 +40,105 @@
         <h1 class="t-title">Impresión</h1>
 
         <p class="t-lead" id="idea-central" data-toc="Presentación">
-          Configuración de página, escala, márgenes y preparación de documentos de hoja de cálculo para exportación e impresión.
+          Preparar una hoja para impresión requiere configurar correctamente el área de impresión, la orientación (horizontal o vertical), los márgenes, la escala de ajuste y la repetición de encabezados <span class="t-cita">(<a href="../referencias.html" title="Microsoft. (s. f.-o). Imprimir una hoja de cálculo o un libro; (s. f.-s). Establecer o eliminar un área de impresión en una hoja de cálculo; (s. f.-t). Repetir filas o columnas específicas en cada página impresa. Microsoft Support.">Microsoft, s. f.-o, s. f.-s, s. f.-t</a>)</span>.
         </p>
 
         <div class="t-prose">
-          <section id="plan-tema" data-toc="Desglose temático">
-            <h2>Estructura curricular del tema</h2>
-            <aside class="t-callout t-callout--note">
-              <i class="fas fa-info-circle t-callout__icon" aria-hidden="true"></i>
+          <section id="introduccion" data-toc="Impresión de hojas de cálculo">
+            <h2>Impresión de hojas de cálculo</h2>
+            <p>
+              La impresión permite convertir una hoja de cálculo en un reporte físico o en un documento PDF. Antes de imprimir, es necesario verificar la distribución, los márgenes, el tamaño del papel, la orientación y la legibilidad.
+            </p>
+            <aside class="t-callout t-callout--alert">
+              <i class="fas fa-triangle-exclamation t-callout__icon" aria-hidden="true"></i>
               <div>
-                <p class="t-callout__label">Tema en desarrollo</p>
-                <p>
-                  El desarrollo y recursos interactivos de este tema se encuentran en fase de elaboración conforme al programa académico oficial de la <strong>Escuela Superior de Turismo (EST - IPN)</strong> para la asignatura <strong>TIC aplicadas al turismo</strong>.
-                </p>
+                <p class="t-callout__label">Ten en cuenta</p>
+                <p>Un libro que se visualiza correctamente en pantalla no necesariamente se imprime de forma adecuada. Las columnas extensas, los gráficos grandes o las tablas con muchos registros pueden dividirse en varias páginas.</p>
               </div>
             </aside>
-            <p>Conforme al plan de estudios oficial, este tema comprende los siguientes contenidos temáticos:</p>
-            <ul>
-              <li><strong>Configuración de página: orientación, tamaño de papel y márgenes</strong></li>
-              <li><strong>Establecer y borrar áreas de impresión</strong></li>
-              <li><strong>Ajuste de escala a una página, saltos de página y repetición de filas de encabezado</strong></li>
-              <li><strong>Encabezados, pies de página y exportación en formato PDF</strong></li>
-            </ul>
+          </section>
+
+          <section id="procedimiento" data-toc="Procedimiento para preparar la impresión">
+            <h2>Procedimiento para preparar la impresión</h2>
+            <div class="t-stack">
+              <div class="t-card t-card--side">
+                <h4><i class="fas fa-print" aria-hidden="true"></i> 1. Abrir la vista previa</h4>
+                <p>Entra a <strong>Archivo → Imprimir</strong> o utiliza <kbd>Ctrl</kbd> + <kbd>P</kbd>.</p>
+              </div>
+              <div class="t-card t-card--side">
+                <h4><i class="fas fa-file-lines" aria-hidden="true"></i> 2. Configurar la página</h4>
+                <p>En <strong>Diseño de página</strong>, ajusta tamaño de papel, orientación, márgenes y área de impresión.</p>
+              </div>
+              <div class="t-card t-card--side">
+                <h4><i class="fas fa-up-right-and-down-left-from-center" aria-hidden="true"></i> 3. Ajustar la escala</h4>
+                <p>Puedes adaptar el ancho a una página, pero evita reducir demasiado la letra.</p>
+              </div>
+              <div class="t-card t-card--side">
+                <h4><i class="fas fa-circle-check" aria-hidden="true"></i> 4. Revisar y exportar</h4>
+                <p>Comprueba que no se corten encabezados, importes, gráficos ni columnas. Después imprime o guarda como PDF.</p>
+              </div>
+            </div>
+          </section>
+
+          <section id="configuraciones" data-toc="Configuraciones importantes">
+            <h2>Configuraciones importantes</h2>
+            <div class="t-table">
+              <table>
+                <caption class="u-sr-only">Opciones de configuración de impresión y su función</caption>
+                <thead>
+                  <tr><th scope="col">Opción</th><th scope="col">Función</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td class="t-key">Área de impresión</td><td>Define qué rango se imprimirá.</td></tr>
+                  <tr><td class="t-key">Orientación vertical</td><td>Adecuada para reportes con pocas columnas.</td></tr>
+                  <tr><td class="t-key">Orientación horizontal</td><td>Útil para tablas extensas.</td></tr>
+                  <tr><td class="t-key">Márgenes</td><td>Controlan el espacio alrededor del contenido.</td></tr>
+                  <tr><td class="t-key">Ajustar todas las columnas en una página</td><td>Reduce el ancho del contenido para que quepa horizontalmente.</td></tr>
+                  <tr><td class="t-key">Repetir filas de encabezado</td><td>Facilita identificar las columnas en varias páginas.</td></tr>
+                  <tr><td class="t-key">Saltos de página</td><td>Controlan dónde comienza una nueva página.</td></tr>
+                  <tr><td class="t-key">Encabezado y pie de página</td><td>Permiten incluir título, fecha, numeración y otros datos.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section id="practica-18" data-toc="Práctica 18">
+            <h2>Práctica 18. Imprimir el reporte turístico</h2>
+            <p>Utiliza las hojas <strong>Reservaciones</strong> y <strong>Resumen</strong>.</p>
+            <ol>
+              <li>Establece un área de impresión para la tabla de reservaciones.</li>
+              <li>Configura el papel en tamaño carta.</li>
+              <li>Selecciona orientación horizontal si la tabla es demasiado ancha.</li>
+              <li>Ajusta los márgenes y comprueba el número de páginas.</li>
+              <li>Revisa que los importes tengan formato de moneda y los porcentajes sean legibles.</li>
+              <li>Prepara una segunda página con el gráfico y las conclusiones.</li>
+              <li>Guarda el resultado como PDF mediante las opciones de exportación de Excel o la impresión a PDF disponible en tu equipo.</li>
+            </ol>
+          </section>
+
+          <section id="lista-cotejo" data-toc="Lista de cotejo para impresión">
+            <h2>Lista de cotejo para impresión</h2>
+            <p>Marca cada punto conforme lo verifiques en tu archivo antes de entregarlo.</p>
+            <div class="t-checklist" data-cotejo="cotejo-impresion-3-7">
+              <div class="t-checklist__head">
+                <p class="t-checklist__title">Verificación final</p>
+                <p class="t-checklist__count" aria-live="polite"><span data-cotejo-hechos>0</span> de <span data-cotejo-total>7</span></p>
+              </div>
+              <div class="t-checklist__track" aria-hidden="true"><span class="t-checklist__bar"></span></div>
+              <ul class="t-checklist__list">
+                <li><label><input type="checkbox"> <span>La tabla contiene encabezados claros.</span></label></li>
+                <li><label><input type="checkbox"> <span>Los importes y porcentajes son legibles.</span></label></li>
+                <li><label><input type="checkbox"> <span>No hay columnas o gráficos cortados.</span></label></li>
+                <li><label><input type="checkbox"> <span>El tamaño y la orientación son adecuados.</span></label></li>
+                <li><label><input type="checkbox"> <span>La vista previa muestra la cantidad de páginas esperada.</span></label></li>
+                <li><label><input type="checkbox"> <span>El reporte incluye título y periodo de análisis.</span></label></li>
+                <li><label><input type="checkbox"> <span>El archivo PDF se abre correctamente.</span></label></li>
+              </ul>
+              <div class="t-checklist__actions">
+                <button type="button" class="u-btn u-btn--secondary" data-cotejo-copiar><i class="fas fa-copy" aria-hidden="true"></i> <span>Copiar lista de cotejo</span></button>
+                <button type="button" class="t-checklist__reset" data-cotejo-reiniciar><i class="fas fa-rotate-left" aria-hidden="true"></i> Reiniciar</button>
+              </div>
+            </div>
           </section>
 
           <section id="comprension" data-toc="Comprueba tu comprensión">
@@ -103,8 +180,7 @@
   <script src="../../../assets/js/unidades-ui.js"></script>
   <script src="../../../assets/js/paginas/tema-plantilla.js"></script>
   <script src="../../../assets/js/visor-figuras.js"></script>
+  <script src="../../../assets/js/lista-cotejo.js"></script>
 </body>
 
 </html>
-
-

@@ -294,6 +294,7 @@ a.t-index__link:hover { background: var(--primary-soft); color: var(--text-light
   margin: 24px 0;
 }
 .t-grid--sm { grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); }
+.t-grid--xs { grid-template-columns: repeat(auto-fit, minmax(min(100%, 170px), 1fr)); } /* tres o cuatro tarjetas breves en una fila */
 .t-stack { display: flex; flex-direction: column; gap: 14px; margin: 24px 0; }
 .t-card {
   --tone: var(--accent);
@@ -843,3 +844,69 @@ body:has(.t-viewer[open]) { overflow: hidden; }
   .t-pager__prev { justify-content: center; }
   .t-callout { padding: 16px 18px; }
 }
+
+/* Tecla dentro del texto: <kbd>Ctrl</kbd> */
+.t-prose kbd {
+  display: inline-block;
+  padding: 1px 7px;
+  border: 1px solid var(--border-color);
+  border-bottom-width: 2px;
+  border-radius: 5px;
+  background: var(--u-inset);
+  font-family: inherit;
+  font-size: .85em;
+  font-weight: 600;
+  color: var(--text-light);
+}
+
+/* Lista de cotejo interactiva (lista-cotejo.js):
+   <div class="t-checklist" data-cotejo="clave"> … <ul class="t-checklist__list"><li><label><input type="checkbox"> <span>Punto</span></label></li></ul> */
+.t-checklist {
+  margin: 24px 0;
+  padding: 20px 22px;
+  border: 1px solid var(--u-card-border);
+  border-radius: var(--u-radius-inner);
+  background: var(--surface);
+  max-width: var(--t-reading-width);
+}
+.t-checklist__head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.t-prose .t-checklist__title { margin: 0; font-weight: 700; color: var(--text-light); }
+.t-prose .t-checklist__count { margin: 0; font-size: .85rem; font-weight: 600; color: var(--accent); white-space: nowrap; }
+.t-checklist__track {
+  height: 6px;
+  margin: 12px 0 14px;
+  border-radius: var(--radius-pill);
+  background: var(--u-inset);
+  overflow: hidden;
+}
+.t-checklist__bar { display: block; width: 0; height: 100%; background: var(--primary); transition: width .25s var(--u-ease); }
+.t-prose .t-checklist__list { list-style: none; padding: 0; margin: 0 0 16px; }
+.t-prose .t-checklist__list li { text-align: left; }
+.t-prose .t-checklist__list li + li { margin-top: 2px; }
+.t-checklist__list label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 7px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  line-height: 1.4;
+}
+.t-checklist__list label:hover { background: var(--surface-hover); }
+.t-checklist__list input { flex: none; width: 18px; height: 18px; margin: 1px 0 0; accent-color: var(--primary); cursor: pointer; }
+.t-checklist__list input:checked + span { color: var(--text-muted); text-decoration: line-through; text-decoration-color: var(--accent); }
+.t-checklist__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.t-checklist__reset {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 4px;
+  border: 0;
+  background: none;
+  color: var(--text-muted);
+  font: inherit;
+  font-size: .85rem;
+  cursor: pointer;
+}
+.t-checklist__reset:hover { color: var(--accent); }
+.t-checklist.is-completa { border-color: color-mix(in srgb, var(--primary) 55%, transparent); }

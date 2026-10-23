@@ -2,130 +2,110 @@
   {
     "id": 1,
     "type": "opcion_multiple",
-    "question": "¿Qué tipo de cadena se caracteriza porque cada empresa trabaja de forma independiente?",
+    "question": "¿Qué sistema combina equipo y programas para registrar una compra y procesar el pago?",
     "options": [
-      "Cadena tradicional",
-      "Cadena integrada",
-      "Cadena sincronizada",
-      "Cadena digital"
+      "Punto de venta (POS)",
+      "Sistema de distribución global (GDS)",
+      "Planificación de recursos empresariales (ERP)",
+      "Motor de búsqueda"
     ],
-    "answer": "Cadena tradicional",
-    "explicacion": "En la cadena tradicional cada empresa trabaja por su cuenta y la comunicación es limitada."
+    "answer": "Punto de venta (POS)",
+    "explicacion": "El POS puede funcionar en una computadora, tableta o terminal con lector de tarjetas e impresora de recibos."
   },
   {
     "id": 2,
-    "type": "verdadero_falso",
-    "statement": "En la cadena tradicional generalmente existen altos inventarios.",
-    "answer": true,
-    "explicacion": "Como la comunicación es limitada, las empresas acumulan inventario para protegerse."
+    "type": "opcion_multiple",
+    "question": "¿En cuál de estos lugares es más probable encontrar un POS?",
+    "options": [
+      "En la taquilla que cobra una visita guiada",
+      "En la red que reúne vuelos, hoteles y autos de distintos proveedores",
+      "En el módulo de nómina de un hotel",
+      "En un foro de viajeros"
+    ],
+    "answer": "En la taquilla que cobra una visita guiada",
+    "explicacion": "En turismo, el POS se encuentra en la recepción de un hotel, una taquilla, un restaurante o una agencia que cobra una excursión."
   },
   {
     "id": 3,
-    "type": "opcion_multiple",
-    "question": "En la cadena integrada:",
-    "options": [
-      "Existe intercambio permanente de información.",
-      "La comunicación es limitada.",
-      "Generalmente existen altos inventarios.",
-      "Cada empresa trabaja de forma independiente."
-    ],
-    "answer": "Existe intercambio permanente de información.",
-    "explicacion": "Gracias a ese intercambio se reducen inventarios y mejoran los tiempos de respuesta."
+    "type": "verdadero_falso",
+    "statement": "Todos los POS incluyen la función de reservaciones por defecto.",
+    "answer": false,
+    "explicacion": "La conexión con reservaciones depende de cómo estén configurados los programas; no todos los POS la incluyen."
   },
   {
     "id": 4,
     "type": "completar_oracion",
-    "question": "En la cadena integrada se _____ los inventarios y mejoran los tiempos de _____.",
-    "wordBank": [
-      "reducen",
-      "respuesta",
-      "duplican",
-      "vacaciones"
-    ],
-    "answer": [
-      "reducen",
-      "respuesta"
-    ],
-    "explicacion": "Compartir información permite trabajar con menos inventario y responder más rápido."
+    "question": "Como el POS maneja _____ y, a veces, datos de clientes, la empresa debe _____ quién puede consultar esa información.",
+    "wordBank": ["pagos", "limitar", "itinerarios", "publicar"],
+    "answer": ["pagos", "limitar"],
+    "explicacion": "Además, la empresa debe seguir las medidas de seguridad de su proveedor."
   },
   {
     "id": 5,
     "type": "opcion_multiple",
-    "question": "¿Qué tipo de cadena coordina toda la producción prácticamente en tiempo real?",
+    "question": "Para una agencia de viajes, ¿cuál es la utilidad principal de un GDS?",
     "options": [
-      "Cadena sincronizada",
-      "Cadena tradicional",
-      "Cadena integrada",
-      "Ninguna, eso no es posible"
+      "Buscar y reservar opciones de distintos proveedores desde un mismo entorno",
+      "Imprimir los recibos de cada venta",
+      "Calcular la nómina del personal",
+      "Publicar entradas de blog sobre destinos"
     ],
-    "answer": "Cadena sincronizada",
-    "explicacion": "La cadena sincronizada coordina la producción casi en tiempo real."
+    "answer": "Buscar y reservar opciones de distintos proveedores desde un mismo entorno",
+    "explicacion": "Por medio del GDS se consultan datos de vuelos, hoteles, alquiler de autos y otros servicios."
   },
   {
     "id": 6,
-    "type": "opcion_multiple",
-    "question": "Toyota y Zara son ejemplos de empresas que utilizan una cadena:",
-    "options": [
-      "Sincronizada",
-      "Tradicional",
-      "Integrada",
-      "Independiente"
-    ],
-    "answer": "Sincronizada",
-    "explicacion": "Ambas ajustan su producción a la demanda real, el rasgo de la cadena sincronizada."
+    "type": "verdadero_falso",
+    "statement": "Un GDS siempre muestra todas las empresas y todas las tarifas del mercado.",
+    "answer": false,
+    "explicacion": "Lo que aparece depende de los acuerdos y datos que cada proveedor comparte; por eso conviene revisar reglas y costos antes de confirmar."
   },
   {
     "id": 7,
-    "type": "verdadero_falso",
-    "statement": "La cadena digital utiliza tecnologías como inteligencia artificial, Big Data, IoT, RFID, ERP y Blockchain.",
-    "answer": true,
-    "explicacion": "Esas son las tecnologías que menciona el tema para la cadena digital."
+    "type": "opcion_multiple",
+    "question": "Antes de confirmar una reserva hecha en un GDS, conviene revisar:",
+    "options": [
+      "Las reglas de emisión, cambios, cancelaciones y los costos de la operación",
+      "El inventario de la tienda de recuerdos",
+      "Los márgenes de impresión del boleto",
+      "El número de seguidores del proveedor en redes sociales"
+    ],
+    "answer": "Las reglas de emisión, cambios, cancelaciones y los costos de la operación",
+    "explicacion": "Estas condiciones pueden cambiar el costo final y lo que el viajero puede modificar después."
   },
   {
     "id": 8,
     "type": "opcion_multiple",
-    "question": "¿Cuál de estas tecnologías es propia de la cadena digital?",
+    "question": "¿Qué característica distingue a un ERP?",
     "options": [
-      "RFID",
-      "Comunicación limitada",
-      "Altos inventarios",
-      "Trabajo independiente"
+      "Sus módulos comparten información para que los datos no queden aislados en cada departamento",
+      "Solo sirve para cobrar con tarjeta",
+      "Únicamente consulta horarios de vuelos",
+      "Funciona sin necesidad de capturar datos"
     ],
-    "answer": "RFID",
-    "explicacion": "RFID es una de las tecnologías de la cadena digital; las demás opciones describen la cadena tradicional."
+    "answer": "Sus módulos comparten información para que los datos no queden aislados en cada departamento",
+    "explicacion": "Sus módulos pueden cubrir finanzas, compras, recursos humanos y gestión de productos, entre otras funciones."
   },
   {
     "id": 9,
-    "type": "completar_oracion",
-    "question": "En la cadena tradicional cada empresa trabaja de forma _____ y la comunicación es _____.",
-    "wordBank": [
-      "independiente",
-      "limitada",
-      "integrada",
-      "permanente"
-    ],
-    "answer": [
-      "independiente",
-      "limitada"
-    ],
-    "explicacion": "Esas dos características definen a la cadena tradicional."
+    "type": "verdadero_falso",
+    "statement": "Aunque una empresa use un ERP, la información compartida puede tener errores si se cargan datos incompletos.",
+    "answer": true,
+    "explicacion": "También hay errores si cada área utiliza el sistema de manera diferente."
   },
   {
     "id": 10,
     "type": "ordenar_oracion",
-    "question": "Ordena los tipos de cadena de suministro como se presentan en el tema, del más básico al más avanzado.",
     "segments": [
-      "Cadena tradicional",
-      "Cadena integrada",
-      "Cadena sincronizada",
-      "Cadena digital"
+      "el GDS ubica y reserva los servicios,",
+      "el POS registra el pago del cliente",
+      "y el ERP verifica compras, gastos e ingresos."
     ],
     "answer": [
-      "Cadena tradicional",
-      "Cadena integrada",
-      "Cadena sincronizada",
-      "Cadena digital"
+      "el GDS ubica y reserva los servicios,",
+      "el POS registra el pago del cliente",
+      "y el ERP verifica compras, gastos e ingresos."
     ],
-    "explicacion": "Se pasa de empresas aisladas (tradicional) a compartir información (integrada), coordinarse en tiempo real (sincronizada) y apoyarse en tecnología (digital)."
+    "explicacion": "Los tres sistemas pueden intervenir en una misma operación turística y, si están conectados, evitan capturas duplicadas."
   }
 ]
