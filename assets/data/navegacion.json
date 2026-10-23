@@ -37,6 +37,11 @@
       "url": "practicas.html"
     },
     {
+      "texto": "Actividades",
+      "icono": "fa-list-check",
+      "modal": "actividades"
+    },
+    {
       "texto": "Referencias",
       "icono": "fa-bookmark",
       "url": "unidades/unidad-01/referencias.html"
