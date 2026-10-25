@@ -17,7 +17,7 @@
         // 1. Barra de descarga de PDF
         const headerAction = el('div', 'pe-header-action');
         const headerTitle = el('div', 'pe-header-title');
-        headerTitle.append(icono('fa-file-pdf'), el('span', '', `${datos.datos_generales.unidad_aprendizaje} · Plan Oficial ${datos.datos_generales.vigencia}`));
+        headerTitle.append(icono('fa-file-pdf'), el('span', '', datos.datos_generales.unidad_aprendizaje));
 
         const btnDownload = el('a', 'pe-btn-download');
         btnDownload.href = DataManager.ruta(datos.archivo_pdf);

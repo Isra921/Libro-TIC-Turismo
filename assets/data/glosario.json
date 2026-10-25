@@ -222,40 +222,224 @@
       "titulo": "Unidad 2: Digitalización de la información",
       "terminos": [
         {
-          "termino": "Digitalización de la información",
-          "definicion": "Proceso técnico y metodológico de convertir información analógica (física, impresa, sonora) a un formato digital codificado en bits para guardarla, procesarla, compartirla o utilizarla en una computadora."
+          "termino": "Accesibilidad Web (WCAG)",
+          "definicion": "Pautas internacionales de accesibilidad para el contenido web que garantizan que los portales turísticos puedan ser consultados por personas con distintas capacidades sensoriales, visuales o motrices."
         },
         {
-          "termino": "Procesadores de texto",
-          "definicion": "Programas ofimáticos que permiten redactar, corregir, estructurar y dar formato a documentos; gestionan jerarquías tipográficas, márgenes, tablas, imágenes y exportación a formatos portables como PDF."
+          "termino": "Almacenamiento Electrónico (Memoria Flash / SSD)",
+          "definicion": "Tecnología de almacenamiento no volátil basada en semiconductores (memorias NAND flash) de alta velocidad, libre de componentes mecánicos, empleada en unidades de estado sólido y tarjetas de memoria."
         },
         {
-          "termino": "Editores de imágenes",
-          "definicion": "Aplicaciones informáticas orientadas a crear, modificar, recortar, retocar y optimizar elementos gráficos, distinguiendo entre gráficos rasterizados (mapas de bits) y gráficos vectoriales."
+          "termino": "Almacenamiento en la Nube (Cloud Storage)",
+          "definicion": "Modelo de computación que permite resguardar, administrar y sincronizar archivos digitales de organizaciones turísticas en centros de datos remotos accesibles mediante Internet con alta disponibilidad."
         },
         {
-          "termino": "Editor de audio",
-          "definicion": "Software digital (DAW) que permite registrar, editar, cortar fragmentos, limpiar ruidos parásitos, mezclar pistas acústicas y exportar grabaciones sonoras como locuciones y audioguías turísticas."
+          "termino": "Almacenamiento Magnético",
+          "definicion": "Dispositivos secundarios (como discos duros HDD o cintas) que emplean propiedades de magnetización sobre superficies ferromagnéticas para registrar volúmenes masivos de datos a bajo costo."
         },
         {
-          "termino": "Editores de video",
-          "definicion": "Herramientas de edición y montaje audiovisual que permiten estructurar secuencias de video, sincronizar pistas de audio, aplicar transiciones, títulos y subtítulos a lo largo de una línea de tiempo (timeline)."
+          "termino": "Almacenamiento Óptico",
+          "definicion": "Soportes de almacenamiento digital (CD, DVD, Blu-ray) que registran información mediante surcos microscópicos grabados y leídos mediante rayos láser de distintas longitudes de onda."
         },
         {
-          "termino": "Integradores de medios",
-          "definicion": "Herramientas o plataformas digitales que permiten articular armónicamente texto, imágenes, audio, video, mapas y enlaces interactivos en una sola experiencia comunicativa o presentación multimedia."
+          "termino": "Ancho de Banda",
+          "definicion": "Capacidad máxima de transferencia de datos a través de un canal o conexión de red en un lapso determinado, esencial para la carga ágil de páginas web y transmisión de videos turísticos."
         },
         {
-          "termino": "Utilerías típicas",
-          "definicion": "Programas auxiliares de soporte que facilitan tareas técnicas concretas en el manejo digital: antivirus, compresores de archivos (PDF/ZIP), convertidores de formatos y herramientas de captura de pantalla."
+          "termino": "Audio Digital",
+          "definicion": "Representación numérica y discreta de una onda sonora continua mediante procesos de muestreo periódico y cuantificación de amplitud codificada en bits."
         },
         {
-          "termino": "Medios de almacenamiento",
-          "definicion": "Dispositivos físicos (magnéticos HDD, flash SSD/USB, ópticos) y servicios en la nube donde se resguardan y preservan los archivos digitales para garantizar su disponibilidad, integridad y recuperación."
+          "termino": "Autenticación en Dos Factores (2FA)",
+          "definicion": "Mecanismo de ciberseguridad que exige dos formas independientes de verificación para autorizar el acceso a plataformas de gestión turística, nubes corporativas o gestores web."
         },
         {
-          "termino": "Creación de páginas web",
-          "definicion": "Desarrollo y publicación de sitios accesibles por Internet mediante la articulación de tres capas fundamentales: estructura semántica con HTML, diseño visual con CSS y dinamismo interactivo con JavaScript."
+          "termino": "Backend",
+          "definicion": "Capa lógica de servidores, microservicios y bases de datos que procesa transacciones, cálculos de tarifas y reservas turísticas detrás del entorno visible para el usuario."
+        },
+        {
+          "termino": "Backup (Copia de Seguridad)",
+          "definicion": "Duplicación preventiva de información y bases de datos en soportes secundarios o remotos para asegurar su recuperación integral ante fallas físicas, borrados accidentales o ataques informáticos."
+        },
+        {
+          "termino": "Bitrate (Tasa de Bits)",
+          "definicion": "Tasa o caudal de datos procesados por segundo en un flujo audiovisual (expresado en kbps o Mbps), determinante directo del peso del archivo y su calidad perceptual."
+        },
+        {
+          "termino": "Buffer (Almacenamiento Intermedio)",
+          "definicion": "Espacio de memoria temporal que almacena fragmentos de datos multimedia durante la transmisión en línea para evitar interrupciones por fluctuaciones en la red."
+        },
+        {
+          "termino": "CDN (Content Delivery Network)",
+          "definicion": "Red de servidores distribuidos geográficamente que despachan contenidos estáticos (fotografías, estilos CSS, videos) desde el nodo más próximo al turista para minimizar el tiempo de carga."
+        },
+        {
+          "termino": "Cifrado de Datos (Encriptación)",
+          "definicion": "Procedimiento criptográfico que convierte datos legibles en un formato ininteligible mediante una clave secreta, protegiendo información financiera y confidencial en reposo o transmisión."
+        },
+        {
+          "termino": "CMS (Content Management System)",
+          "definicion": "Sistema de gestión de contenidos (como WordPress) que facilita la creación, edición, publicación y mantenimiento de portales web turísticos sin requerir programación manual continua."
+        },
+        {
+          "termino": "Códec (Codificador / Descodificador)",
+          "definicion": "Algoritmo especializado de compresión y descompresión de señales de audio o video que equilibra la calidad sensorial y el tamaño del archivo multimedia para su distribución digital."
+        },
+        {
+          "termino": "Compresión con Pérdida (Lossy)",
+          "definicion": "Técnica de reducción de tamaño de archivo que descarta datos no esenciales o imperceptibles para el ojo u oído humano, logrando archivos muy ligeros pero con ligera degradación matemática."
+        },
+        {
+          "termino": "Compresión sin Pérdida (Lossless)",
+          "definicion": "Algoritmo de compactación digital que reduce el tamaño del archivo preservando de forma íntegra e idéntica cada bit de información original (por ejemplo, PNG, FLAC o ZIP)."
+        },
+        {
+          "termino": "Creación de Páginas Web",
+          "definicion": "Proceso multidisciplinario de planeación, diseño estructural, codificación y publicación de documentos interactivos accesibles por Internet para difundir servicios o destinos turísticos."
+        },
+        {
+          "termino": "CSS (Cascading Style Sheets)",
+          "definicion": "Lenguaje formal de diseño y presentación utilizado para gobernar la estética, tipografía, paleta de colores, márgenes y adaptabilidad responsiva de un sitio web elaborado en HTML."
+        },
+        {
+          "termino": "Cuantificación de Audio",
+          "definicion": "Etapa de la conversión analógica a digital en la que los valores continuos de amplitud de la onda sonora se asignan a niveles discretos según una profundidad de bits específica."
+        },
+        {
+          "termino": "DAW (Digital Audio Workstation)",
+          "definicion": "Entorno de software integral diseñado para grabar, editar, procesar efectos, ecualizar, mezclar y masterizar pistas de audio y cápsulas sonoras de promoción turística."
+        },
+        {
+          "termino": "Digitalización de la Información",
+          "definicion": "Proceso técnico y metodológico de transformar información analógica (física, impresa, audiovisual) en señales binarias codificadas para su resguardo, edición y difusión informática."
+        },
+        {
+          "termino": "Disco de Estado Sólido (SSD)",
+          "definicion": "Unidad de almacenamiento secundario sin componentes mecánicos en rotación que ofrece tiempos de acceso casi instantáneos y alta tolerancia a vibraciones físicas en equipos portátiles."
+        },
+        {
+          "termino": "Disco Duro Magnético (HDD)",
+          "definicion": "Dispositivo electromecánico que almacena datos mediante la orientación magnética de sectores sobre platos metálicos o de vidrio que giran a altas revoluciones por minuto."
+        },
+        {
+          "termino": "DNS (Domain Name System)",
+          "definicion": "Servicio de red jerárquico que traduce direcciones alfanuméricas familiares (como 'ipn.mx') en direcciones numéricas IP requeridas para enrutar los paquetes en Internet."
+        },
+        {
+          "termino": "DOM (Document Object Model)",
+          "definicion": "Modelo de objetos del documento que representa el árbol jerárquico de elementos de una página web, permitiendo a JavaScript alterar contenidos, atributos y estilos en tiempo real."
+        },
+        {
+          "termino": "Dominio Web",
+          "definicion": "Nombre exclusivo que identifica un portal o servidor en la red mundial, compuesto por el nombre de la organización y una extensión de nivel superior (como .com, .gob o .travel)."
+        },
+        {
+          "termino": "DPI / PPI (Puntos / Píxeles por Pulgada)",
+          "definicion": "Medidas de resolución espacial: PPI mide la densidad de píxeles en dispositivos de pantalla digital, mientras que DPI determina la concentración de puntos de tinta por pulgada en impresión física."
+        },
+        {
+          "termino": "Edición de Video no Lineal (NLE)",
+          "definicion": "Técnica contemporánea de montaje audiovisual que permite manipular tomas, audios y efectos en cualquier orden sobre una línea temporal sin alterar los archivos de origen."
+        },
+        {
+          "termino": "Editor de Audio",
+          "definicion": "Programa informático orientado a capturar, cortar, limpiar ruido de fondo, amplificar y masterizar material acústico y locuciones para guías o videos turísticos."
+        },
+        {
+          "termino": "Editores de Imágenes",
+          "definicion": "Aplicaciones informáticas dirigidas a componer, retocar, corregir color o generar gráficos visuales tanto en formato de mapa de bits como en representaciones vectoriales."
+        },
+        {
+          "termino": "Editores de Video",
+          "definicion": "Software de producción audiovisual que integra cortes de video, pistas de música, rótulos, transiciones y corrección cromática para campañas promocionales turísticas."
+        },
+        {
+          "termino": "Formato Vectorial",
+          "definicion": "Gráfico digital formulado a partir de fórmulas matemáticas (coordenadas, líneas, curvas Bézier) que permite redimensionar la figura sin experimentar pérdida alguna de nitidez ni pixelación."
+        },
+        {
+          "termino": "Frame Rate (Cuadros por Segundo - FPS)",
+          "definicion": "Frecuencia con que se proyectan fotogramas consecutivos por unidad de tiempo en una animación o video, determinando la sensación de fluidez en recorridos turísticos audiovisuales."
+        },
+        {
+          "termino": "Frontend",
+          "definicion": "Parte visual e interactiva de un sitio web que se procesa y ejecuta en el navegador del usuario, encargada de la interfaz gráfica y la experiencia directa del visitante."
+        },
+        {
+          "termino": "Hosting (Alojamiento Web)",
+          "definicion": "Servicio de infraestructura que suministra espacio de almacenamiento, memoria y enlace permanente a Internet para alojar los archivos constitutivos de un sitio web."
+        },
+        {
+          "termino": "HTML (HyperText Markup Language)",
+          "definicion": "Lenguaje de marcado fundamental de la World Wide Web que establece la estructura conceptual, jerárquica y semántica de los elementos de una página informativa."
+        },
+        {
+          "termino": "HTTPS / SSL",
+          "definicion": "Protocolo seguro de transferencia de hipertexto que utiliza certificados digitales de cifrado (SSL/TLS) para blindar la privacidad e integridad de los datos entre cliente y servidor."
+        },
+        {
+          "termino": "Imagen Raster (Mapa de Bits)",
+          "definicion": "Estructura gráfica compuesta por una matriz bidimensional de píxeles; su resolución está predefinida, por lo que su ampliación excesiva produce pixelación y pérdida de detalle."
+        },
+        {
+          "termino": "Integradores de Medios",
+          "definicion": "Plataformas de software que articulan de manera armónica texto, fotografía, audio, video y botones interactivos para construir experiencias o presentaciones multimedia enriquecidas."
+        },
+        {
+          "termino": "Interfaz de Usuario (UI)",
+          "definicion": "Entorno gráfico conformado por menús, tipografías, botones e iconografía que permite una comunicación clara e intuitiva entre la persona usuaria y el sistema digital."
+        },
+        {
+          "termino": "JavaScript",
+          "definicion": "Lenguaje de programación interpretado en navegadores que confiere reactividad, validación interactiva de reservas y dinamismo funcional a las páginas web turísticas."
+        },
+        {
+          "termino": "Línea de Tiempo (Timeline)",
+          "definicion": "Área gráfica horizontal en editores multimedia donde se posicionan y secuencian cronológicamente las pistas de audio, video, efectos y títulos de un proyecto."
+        },
+        {
+          "termino": "Medios de Almacenamiento",
+          "definicion": "Soportes materiales o lógicos que retienen información digital de manera permanente o semipermanente para su resguardo, consulta o transporte en la gestión turística."
+        },
+        {
+          "termino": "Metadatos (EXIF)",
+          "definicion": "Datos informativos encapsulados en archivos multimedia que consignan detalles técnicos como autoría, fecha, geolocalización GPS, cámara utilizada y parámetros de captura fotográfica."
+        },
+        {
+          "termino": "Muestreo de Audio (Sample Rate)",
+          "definicion": "Frecuencia con que se toman lecturas instantáneas del voltaje de una señal de audio por segundo (habitualmente 44.1 kHz o 48 kHz) durante la conversión analógica-digital."
+        },
+        {
+          "termino": "Píxel",
+          "definicion": "Unidad mínima direccionable de color que constituye una imagen digital de mapa de bits en una pantalla o dispositivo de visualización electrónica."
+        },
+        {
+          "termino": "Procesadores de Texto",
+          "definicion": "Herramientas ofimáticas avanzadas para la creación, edición, formateo, maquetación e impresión de documentos textuales profesionales en el ámbito corporativo y académico."
+        },
+        {
+          "termino": "Redundancia de Datos (RAID)",
+          "definicion": "Arquitectura de almacenamiento que combina múltiples discos físicos en una sola unidad lógica para garantizar la continuidad operativa y evitar pérdidas de datos ante roturas de hardware."
+        },
+        {
+          "termino": "Responsive Design (Diseño Adaptativo)",
+          "definicion": "Filosofía de diseño web que emplea rejillas fluidas y consultas de medios para que la interfaz se reorganice automáticamente al tamaño de pantalla de teléfonos, tabletas o computadoras."
+        },
+        {
+          "termino": "SEO On-Page (Optimización para Buscadores)",
+          "definicion": "Conjunto de prácticas en la redacción, etiquetado HTML y optimización técnica de un sitio web para mejorar su posición orgánica en los resultados de motores de búsqueda turísticos."
+        },
+        {
+          "termino": "SVG (Scalable Vector Graphics)",
+          "definicion": "Formato vectorial abierto basado en XML ideal para reproducir logotipos, diagramas y mapas turísticos en navegadores sin pérdida de nitidez y con un peso de archivo reducido."
+        },
+        {
+          "termino": "Utilerías Típicas",
+          "definicion": "Programas complementarios de apoyo que optimizan la gestión informática, tales como compresores de archivos (ZIP/RAR), reproductores de medios, antivirus y utilidades de captura."
+        },
+        {
+          "termino": "UX (Experiencia de Usuario)",
+          "definicion": "Grado de satisfacción, facilidad, claridad cognitiva y bienestar emocional que experimenta un turista o usuario al interactuar con un portal, aplicación o servicio digital."
         }
       ]
     },

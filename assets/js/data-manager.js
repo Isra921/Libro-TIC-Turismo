@@ -45,7 +45,10 @@ const DataManager = {
 
         const promesa = (async () => {
             try {
-                const respuesta = await fetch(this.ruta(rutaDesdeRaiz));
+                const url = this.ruta(rutaDesdeRaiz);
+                const esWeb = typeof window !== 'undefined' && window.location && window.location.protocol.startsWith('http');
+                const urlFetch = esWeb ? (url.includes('?') ? (url + '&v=2.2') : (url + '?v=2.2')) : url;
+                const respuesta = await fetch(urlFetch);
                 if (respuesta.ok) {
                     const texto = await respuesta.text();
                     return JSON.parse(texto);
@@ -143,7 +146,7 @@ const DataManager = {
             "temas": [
                 { "numero": "2.1", "nombre": "Digitalización de la información", "sintesis": "Procesadores de texto, editores de imágenes, audio y video, integradores de medios y utilerías típicas de digitalización.", "url": "unidades/unidad-02/temas/tema-02-01.html" },
                 { "numero": "2.2", "nombre": "Medios de almacenamiento", "sintesis": "Medios magnéticos, ópticos, electrónicos y servicios de almacenamiento en la nube para resguardo de información turística.", "url": "unidades/unidad-02/temas/tema-02-02.html" },
-                { "numero": "2.3", "nombre": "Creación de páginas web", "sintesis": "Principios de diseño, estructura, publicación y promoción de páginas web enfocadas al turismo.", "url": "unidades/unidad-02/temas/tema-02-03.html" }
+                { "numero": "2.3", "nombre": "Creación de páginas web", "sintesis": "Principios de diseño, estructura, publicación y promoción de páginas web enfocadas para el turismo.", "url": "unidades/unidad-02/temas/tema-02-03.html" }
             ]
         },
         'assets/data/unidades/unidad-03.json': {

@@ -18,12 +18,15 @@
         'plan-estudios-modal.js'// Ventana emergente de Plan de Estudios
     ];
 
+    // Versión para evitar que navegadores móviles sirvan archivos antiguos en caché
+    const VERSION = '2.2';
+
     // Carpeta de este archivo; así las rutas no dependen de la profundidad de la página
     const carpeta = new URL('./', document.currentScript.src);
 
     COMPONENTES.forEach(nombre => {
         const script = document.createElement('script');
-        script.src = new URL(nombre, carpeta).href;
+        script.src = new URL(`${nombre}?v=${VERSION}`, carpeta).href;
         script.async = false; // Conserva el orden de ejecución de la lista
         document.body.append(script);
     });
