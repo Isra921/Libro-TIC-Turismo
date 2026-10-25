@@ -393,7 +393,7 @@
             const numeral = UI.romano(unidad.numero);
             const primerTema = UI.lista(unidad.temas).find(t => t.url);
 
-            document.title = `Unidad ${numeral}: ${unidad.titulo} | TIC aplicadas al turismo`;
+            document.title = `Unidad ${numeral}: ${unidad.titulo} | TIC aplicadas para el turismo`;
 
             app.innerHTML = `
                 ${hero(unidad, numeral, primerTema)}

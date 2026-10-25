@@ -1,5 +1,5 @@
 {
-  "titulo": "Prácticas y Actividades de Aprendizaje",
+  "titulo": "Actividades de Aprendizaje",
   "boton_cerrar": "Cerrar ventana",
   "secciones": [
     {
@@ -9,15 +9,6 @@
       "descripcion": "Fundamentos de las Tecnologías de la Información y la Comunicación, infraestructura de conectividad, entornos colaborativos y sistemas turísticos especializados.",
       "nota": "Domina los fundamentos de Internet, comunicación sincrónica/asincrónica y las plataformas operativas clave del turismo (POS, GDS, ERP).",
       "items": [
-        {
-          "tag": "Práctica de laboratorio",
-          "reactivos": "Laboratorio TIC",
-          "tiempo": "2 horas",
-          "titulo": "Práctica 1: Organizadores gráficos digitales",
-          "descripcion": "Diseña esquemas conceptuales y visuales que sinteticen los componentes fundamentales de las TIC y canales de comunicación en agencias turísticas.",
-          "url": "practicas.html#practica-1",
-          "icono": "fa-diagram-project"
-        },
         {
           "tag": "Actividad formativa",
           "reactivos": "10 reactivos al azar",
@@ -92,60 +83,6 @@
       "nota": "Domina la producción digital y la estructuración web para promover la riqueza turística y patrimonial.",
       "items": [
         {
-          "tag": "Práctica de laboratorio",
-          "reactivos": "Laboratorio TIC",
-          "tiempo": "2 horas",
-          "titulo": "Práctica 2: Procesador de textos",
-          "descripcion": "Aplica formato editorial profesional, estilos, tablas tarifarias, notas al pie e índices automáticos para un Manual de Servicios Turísticos.",
-          "url": "practicas.html#practica-2",
-          "icono": "fa-file-word"
-        },
-        {
-          "tag": "Práctica de laboratorio",
-          "reactivos": "Laboratorio TIC",
-          "tiempo": "3 horas",
-          "titulo": "Práctica 3: Blog",
-          "descripcion": "Diseña y publica una bitácora digital orientada a la promoción de destinos turísticos y Pueblos Mágicos de México con contenido multimedia.",
-          "url": "practicas.html#practica-3",
-          "icono": "fa-blog"
-        },
-        {
-          "tag": "Práctica de laboratorio",
-          "reactivos": "Laboratorio TIC",
-          "tiempo": "3 horas",
-          "titulo": "Práctica 4: Página web",
-          "descripcion": "Desarrolla la estructura semántica en HTML5 y hojas de estilo CSS3 responsivas para una landing page de turismo de aventura.",
-          "url": "practicas.html#practica-4",
-          "icono": "fa-code"
-        },
-        {
-          "tag": "Práctica de laboratorio",
-          "reactivos": "Laboratorio TIC",
-          "tiempo": "2 horas",
-          "titulo": "Práctica 5: Presentaciones digitales con audio y video",
-          "descripcion": "Crea una presentación ejecutiva multimedia con narración de audio balanceado y video comprimido para proyectar en ferias turísticas.",
-          "url": "practicas.html#practica-5",
-          "icono": "fa-photo-film"
-        },
-        {
-          "tag": "Práctica de laboratorio",
-          "reactivos": "Laboratorio TIC",
-          "tiempo": "3 horas",
-          "titulo": "Práctica 6: Sistemas de distribución global (GDS)",
-          "descripcion": "Simula disponibilidad de vuelos, tarifas aéreas, codificación IATA y emisión de un PNR con servicios especiales en entorno GDS.",
-          "url": "practicas.html#practica-6",
-          "icono": "fa-server"
-        },
-        {
-          "tag": "Práctica de laboratorio",
-          "reactivos": "Laboratorio TIC",
-          "tiempo": "2 horas",
-          "titulo": "Práctica 7: Elementos de la hoja de cálculo",
-          "descripcion": "Configura el entorno de Excel, cuadros de nombres, formato de celdas (moneda, fecha) y validación de datos para recepción hotelera.",
-          "url": "practicas.html#practica-7",
-          "icono": "fa-table"
-        },
-        {
           "tag": "Actividad formativa",
           "reactivos": "8 reactivos al azar",
           "tiempo": "10 min",
@@ -191,51 +128,6 @@
       "descripcion": "Modelado de datos en Microsoft Excel para turismo: fórmulas elementales, funciones especializadas (estadísticas, financieras, lógicas), gráficos estadísticos y tablas dinámicas.",
       "nota": "Desarrolla habilidades analíticas para calcular presupuestos, comisiones, ocupación hotelera y reportes ejecutivos.",
       "items": [
-        {
-          "tag": "Práctica de laboratorio",
-          "reactivos": "Laboratorio TIC",
-          "tiempo": "2 horas",
-          "titulo": "Práctica 8: Operadores aritméticos y su orden de prioridad",
-          "descripcion": "Aplica operadores de cálculo y la jerarquía matemática PEMDAS con paréntesis para liquidar cuentas de restaurante y comisiones.",
-          "url": "practicas.html#practica-8",
-          "icono": "fa-calculator"
-        },
-        {
-          "tag": "Práctica de laboratorio",
-          "reactivos": "Laboratorio TIC",
-          "tiempo": "3 horas",
-          "titulo": "Práctica 9: Funciones avanzadas y manejo de fórmulas",
-          "descripcion": "Implementa referencias absolutas ($), funciones estadísticas (SUMAR.SI, CONTAR.SI), lógicas (SI) y financieras (PAGO) para cotizar créditos.",
-          "url": "practicas.html#practica-9",
-          "icono": "fa-square-root-variable"
-        },
-        {
-          "tag": "Práctica de laboratorio",
-          "reactivos": "Laboratorio TIC",
-          "tiempo": "2 horas",
-          "titulo": "Práctica 10: Elaboración de gráficos",
-          "descripcion": "Crea y personaliza gráficos de columnas, líneas y circulares con elementos geométricos para comunicar indicadores de ocupación hotelera.",
-          "url": "practicas.html#practica-10",
-          "icono": "fa-chart-column"
-        },
-        {
-          "tag": "Práctica de laboratorio",
-          "reactivos": "Laboratorio TIC",
-          "tiempo": "3 horas",
-          "titulo": "Práctica 11: Tablas dinámicas",
-          "descripcion": "Estructura tablas dinámicas con segmentación de datos interactiva (Slicers) para cruzar destinos, servicios y ventas.",
-          "url": "practicas.html#practica-11",
-          "icono": "fa-chart-pie"
-        },
-        {
-          "tag": "Práctica de laboratorio",
-          "reactivos": "Laboratorio TIC",
-          "tiempo": "2 horas",
-          "titulo": "Práctica 12: Impresión y exportación",
-          "descripcion": "Configura área de impresión, orientación horizontal, ajuste a una página, encabezados repetidos y exportación a PDF para la dirección general.",
-          "url": "practicas.html#practica-12",
-          "icono": "fa-print"
-        },
         {
           "tag": "Actividad formativa",
           "reactivos": "8 reactivos al azar",
@@ -308,123 +200,6 @@
           "url": "unidades/unidad-03/actividades/actividad-final.html",
           "icono": "fa-file-excel",
           "destacada": true
-        }
-      ]
-    },
-    {
-      "id": "practicas-laboratorio",
-      "pestana": "12 Prácticas",
-      "titulo": "12 Prácticas Oficiales de Laboratorio (EST-IPN)",
-      "descripcion": "Programa curricular completo de prácticas de cómputo y laboratorio para la unidad de aprendizaje TIC aplicadas al turismo (Hoja 7 del plan de estudios).",
-      "nota": "Accede al catálogo interactivo de prácticas para consultar las guías metodológicas paso a paso, los escenarios turísticos y las listas de cotejo de evaluación.",
-      "items": [
-        {
-          "tag": "Práctica Unidad I",
-          "reactivos": "Laboratorio TIC",
-          "tiempo": "2 horas",
-          "titulo": "Práctica 1: Organizadores gráficos digitales",
-          "descripcion": "Mapas conceptuales e infografías de hardware, software y comunicación en agencias de viajes.",
-          "url": "practicas.html#practica-1",
-          "icono": "fa-diagram-project"
-        },
-        {
-          "tag": "Práctica Unidad II",
-          "reactivos": "Laboratorio TIC",
-          "tiempo": "2 horas",
-          "titulo": "Práctica 2: Procesador de textos",
-          "descripcion": "Formato editorial, estilos, tablas tarifarias e índice automatizado para manual de hotelería.",
-          "url": "practicas.html#practica-2",
-          "icono": "fa-file-word"
-        },
-        {
-          "tag": "Práctica Unidad II",
-          "reactivos": "Laboratorio TIC",
-          "tiempo": "3 horas",
-          "titulo": "Práctica 3: Blog",
-          "descripcion": "Bitácora digital turística en Blogger/WordPress para marketing de destinos y Pueblos Mágicos.",
-          "url": "practicas.html#practica-3",
-          "icono": "fa-blog"
-        },
-        {
-          "tag": "Práctica Unidad II",
-          "reactivos": "Laboratorio TIC",
-          "tiempo": "3 horas",
-          "titulo": "Práctica 4: Página web",
-          "descripcion": "Estructura semántica HTML5 y estilos CSS3 adaptativos para landing page de turismo receptivo.",
-          "url": "practicas.html#practica-4",
-          "icono": "fa-code"
-        },
-        {
-          "tag": "Práctica Unidad II",
-          "reactivos": "Laboratorio TIC",
-          "tiempo": "2 horas",
-          "titulo": "Práctica 5: Presentaciones con audio y video",
-          "descripcion": "Presentación ejecutiva multimedia con locución ecualizada y video promocional para FITUR.",
-          "url": "practicas.html#practica-5",
-          "icono": "fa-photo-film"
-        },
-        {
-          "tag": "Práctica Unidad II",
-          "reactivos": "Laboratorio TIC",
-          "tiempo": "3 horas",
-          "titulo": "Práctica 6: Sistemas de distribución global (GDS)",
-          "descripcion": "Simulación en GDS: disponibilidad, tarifas aéreas, códigos IATA y emisión de PNR con servicios especiales.",
-          "url": "practicas.html#practica-6",
-          "icono": "fa-server"
-        },
-        {
-          "tag": "Práctica Unidad II",
-          "reactivos": "Laboratorio TIC",
-          "tiempo": "2 horas",
-          "titulo": "Práctica 7: Elementos de la hoja de cálculo",
-          "descripcion": "Entorno Excel, rangos nombrados, formato de celdas y validación con listas desplegables.",
-          "url": "practicas.html#practica-7",
-          "icono": "fa-table"
-        },
-        {
-          "tag": "Práctica Unidad III",
-          "reactivos": "Laboratorio TIC",
-          "tiempo": "2 horas",
-          "titulo": "Práctica 8: Operadores aritméticos y jerarquía",
-          "descripcion": "Fórmulas matemáticas con prioridad PEMDAS y paréntesis para liquidación de restaurantes y bares.",
-          "url": "practicas.html#practica-8",
-          "icono": "fa-calculator"
-        },
-        {
-          "tag": "Práctica Unidad III",
-          "reactivos": "Laboratorio TIC",
-          "tiempo": "3 horas",
-          "titulo": "Práctica 9: Funciones avanzadas y manejo de fórmulas",
-          "descripcion": "Referencias absolutas ($), funciones estadísticas, lógicas y cotizador de crédito con función PAGO.",
-          "url": "practicas.html#practica-9",
-          "icono": "fa-square-root-variable"
-        },
-        {
-          "tag": "Práctica Unidad III",
-          "reactivos": "Laboratorio TIC",
-          "tiempo": "2 horas",
-          "titulo": "Práctica 10: Elaboración de gráficos",
-          "descripcion": "Gráficos estadísticos con figuras e imágenes para reportes de ocupación y estacionalidad hotelera.",
-          "url": "practicas.html#practica-10",
-          "icono": "fa-chart-column"
-        },
-        {
-          "tag": "Práctica Unidad III",
-          "reactivos": "Laboratorio TIC",
-          "tiempo": "3 horas",
-          "titulo": "Práctica 11: Tablas dinámicas",
-          "descripcion": "Tablas dinámicas y segmentadores de datos (Slicers) para análisis multidimensional de ventas.",
-          "url": "practicas.html#practica-11",
-          "icono": "fa-chart-pie"
-        },
-        {
-          "tag": "Práctica Unidad III",
-          "reactivos": "Laboratorio TIC",
-          "tiempo": "2 horas",
-          "titulo": "Práctica 12: Impresión y exportación",
-          "descripcion": "Configuración de área de impresión, márgenes, escala a 1 página y exportación ejecutiva a PDF.",
-          "url": "practicas.html#practica-12",
-          "icono": "fa-print"
         }
       ]
     }

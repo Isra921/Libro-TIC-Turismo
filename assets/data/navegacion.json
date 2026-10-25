@@ -1,7 +1,7 @@
 {
   "marca": {
     "titulo": "EST · Polilibro académico",
-    "subtitulo": "TIC aplicadas al turismo",
+    "subtitulo": "TIC aplicadas para el turismo",
     "url": "index.html",
     "logo_izq": {
       "src": "assets/img/IPNb.png",
@@ -30,11 +30,6 @@
       "texto": "Unidades",
       "icono": "fa-book-open",
       "url": "unidades.html"
-    },
-    {
-      "texto": "Prácticas",
-      "icono": "fa-laptop-code",
-      "url": "practicas.html"
     },
     {
       "texto": "Actividades",

@@ -2,7 +2,7 @@
 
 <img src="assets/img/est.png" alt="Escudo EST-IPN" width="120">
 
-# TIC aplicadas al turismo
+# TIC aplicadas para el turismo
 
 ### Polilibro académico digital e interactivo
 
@@ -19,7 +19,7 @@
 
 ## 📖 Acerca del proyecto
 
-**TIC aplicadas al turismo** es un polilibro digital interactivo que acompaña a la unidad de aprendizaje homónima de la carrera de **Licenciatura en Turismo** en la **Escuela Superior de Turismo (EST)** del **Instituto Politécnico Nacional (IPN)**.
+**TIC aplicadas para el turismo** es un polilibro digital interactivo que acompaña a la unidad de aprendizaje homónima de la carrera de **Licenciatura en Turismo** en la **Escuela Superior de Turismo (EST)** del **Instituto Politécnico Nacional (IPN)**.
 
 Su objetivo es que el estudiantado desarrolle aplicaciones de temas turísticos a partir de las Tecnologías de la Información y la Comunicación (TIC), la digitalización de la información y el software de tratamiento de datos numéricos, impulsando habilidades para innovar y diseñar productos, servicios y organizaciones del ámbito turístico con ética, etiqueta en internet, respeto, tolerancia, comunicación efectiva y trabajo colaborativo en equipo.
 
@@ -152,7 +152,7 @@ Luego abre tu navegador en <http://localhost:8000>.
 
 ## 📄 Licencia
 
-**TIC aplicadas al turismo (polilibro académico)** © 2026, Escuela Superior de Turismo (EST - IPN).  
+**TIC aplicadas para el turismo (polilibro académico)** © 2026, Escuela Superior de Turismo (EST - IPN).  
 Distribuido bajo la licencia [Creative Commons Atribución-NoComercial-SinDerivadas 4.0 Internacional (CC BY-NC-ND 4.0)](https://creativecommons.org/licenses/by-nc-nd/4.0/).
 
 ---

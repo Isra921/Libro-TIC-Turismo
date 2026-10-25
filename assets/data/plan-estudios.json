@@ -7,10 +7,10 @@
     "secretaria": "Secretaría Académica · Dirección de Educación Superior",
     "unidad_academica": "Escuela Superior de Turismo (EST)",
     "programa_academico": "Licenciatura en Turismo",
-    "unidad_aprendizaje": "TIC aplicadas al Turismo",
+    "unidad_aprendizaje": "TIC aplicadas para el Turismo",
     "semestre": "I Semestre",
     "area_formacion": "Formación institucional",
-    "modalidad": "Escolarizada y No escolarizada",
+    "modalidad": "Escolarizada",
     "tipo": "Teórico-Práctica / Obligatoria",
     "vigencia": "A partir de enero de 2020",
     "creditos_tepic": "6.0",
@@ -113,80 +113,6 @@
       ],
       "estrategias": "Solución de problemas estadísticos de bases de datos turísticas mediante fórmulas, funciones estadísticas y financieras, visualización en gráficos y generación de tablas dinámicas.",
       "evaluacion": "Portafolio de evidencias: hojas de cálculo aplicadas, tablas dinámicas, gráficas estadísticas, reporte de prácticas, evaluación escrita."
-    }
-  ],
-  "practicas": [
-    {
-      "numero": 1,
-      "nombre": "Organizadores gráficos digitales",
-      "unidad": "I",
-      "lugar": "Laboratorio TIC"
-    },
-    {
-      "numero": 2,
-      "nombre": "Procesador de textos",
-      "unidad": "II",
-      "lugar": "Laboratorio TIC"
-    },
-    {
-      "numero": 3,
-      "nombre": "Blog",
-      "unidad": "II",
-      "lugar": "Laboratorio TIC"
-    },
-    {
-      "numero": 4,
-      "nombre": "Página web",
-      "unidad": "II",
-      "lugar": "Laboratorio TIC"
-    },
-    {
-      "numero": 5,
-      "nombre": "Presentaciones digitales con audio y video en medios digitales de almacenamiento",
-      "unidad": "II",
-      "lugar": "Laboratorio TIC"
-    },
-    {
-      "numero": 6,
-      "nombre": "Sistemas de distribución global (GDS)",
-      "unidad": "II",
-      "lugar": "Laboratorio TIC"
-    },
-    {
-      "numero": 7,
-      "nombre": "Elementos de la hoja de cálculo",
-      "unidad": "II",
-      "lugar": "Laboratorio TIC"
-    },
-    {
-      "numero": 8,
-      "nombre": "Operadores aritméticos y su orden de prioridad",
-      "unidad": "III",
-      "lugar": "Laboratorio TIC"
-    },
-    {
-      "numero": 9,
-      "nombre": "Funciones avanzadas y manejo de fórmulas",
-      "unidad": "III",
-      "lugar": "Laboratorio TIC"
-    },
-    {
-      "numero": 10,
-      "nombre": "Elaboración de gráficos",
-      "unidad": "III",
-      "lugar": "Laboratorio TIC"
-    },
-    {
-      "numero": 11,
-      "nombre": "Tablas dinámicas",
-      "unidad": "III",
-      "lugar": "Laboratorio TIC"
-    },
-    {
-      "numero": 12,
-      "nombre": "Impresión",
-      "unidad": "III",
-      "lugar": "Laboratorio TIC"
     }
   ],
   "evaluacion": [

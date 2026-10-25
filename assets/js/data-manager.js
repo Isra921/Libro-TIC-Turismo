@@ -106,7 +106,7 @@ const DataManager = {
     DATOS_EMBEBIDOS: {
         'assets/data/unidades-data.json': {
             "titulo": "Unidades temáticas",
-            "descripcion": "Programa académico de TIC aplicadas al turismo de la Escuela Superior de Turismo (EST - IPN).",
+            "descripcion": "Programa académico de TIC aplicadas para el turismo de la Escuela Superior de Turismo (EST - IPN).",
             "unidades": ["unidad-01", "unidad-02", "unidad-03"]
         },
         'assets/data/unidades/unidad-01.json': {

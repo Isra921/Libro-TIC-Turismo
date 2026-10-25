@@ -23,7 +23,7 @@
         btnDownload.href = DataManager.ruta(datos.archivo_pdf);
         btnDownload.target = '_blank';
         btnDownload.rel = 'noopener';
-        btnDownload.download = 'TIC_aplicadas_al_turismo_Plan_Oficial.pdf';
+        btnDownload.download = 'TIC_aplicadas_para_el_turismo_Plan_Oficial.pdf';
         btnDownload.append(icono('fa-download'), el('span', '', 'Descargar PDF oficial'));
 
         headerAction.append(headerTitle, btnDownload);
