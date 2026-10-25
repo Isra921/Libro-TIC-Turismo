@@ -1876,6 +1876,22 @@ body {
     font-size: clamp(1.25rem, 2.5vw, 1.7rem);
 }
 
+/* Aviso de licencia Creative Commons (ventana "Términos de uso y licenciamiento") */
+.cc-aviso {
+    text-align: center;
+    line-height: 1.6;
+}
+.cc-iconos {
+    display: inline-flex;
+    gap: .2em;
+    margin-left: .3em;
+    vertical-align: -.15em;
+}
+.cc-iconos img {
+    width: 1em;
+    height: 1em;
+}
+
 .modal-subsection-nav,
 .activity-subsections {
     display: flex;
