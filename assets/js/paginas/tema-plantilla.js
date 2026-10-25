@@ -223,6 +223,8 @@
     // El número ("Figura 1.1", "Figura 1.2"…) se escribe solo arriba del título. La numeración
     // es continua en la unidad: se cuentan las figuras de los temas anteriores (en el orden de
     // la lista "temas" del JSON de la unidad). Para que una figura no lleve número: data-sin-numero.
+    // Para fijar el número que trae el documento fuente: data-numero="11" ("Figura 11"); las
+    // figuras siguientes, en este tema y en los posteriores, continúan desde ahí (12, 13…).
     // Opcional: data-fuentes="id1 id2" (ids de referencias.json) agrega abajo la nota
     // "Nota. Elaboración propia con base en …" cuando la unidad tenga su archivo de referencias.
 
@@ -236,24 +238,44 @@
         return `${lista.slice(0, -1).join(', ')} ${conector} ${lista[lista.length - 1]}`;
     }
 
-    /** Cuenta las figuras numeradas de los temas anteriores al actual (falla si alguno no se pudo leer). */
+    /** Figuras numeradas de los temas anteriores al actual, en orden (falla si alguno no se pudo leer). */
     async function figurasPrevias(temas, temaActual) {
         const anteriores = temas.slice(0, temas.indexOf(temaActual)).filter(t => t.url);
-        const conteos = await Promise.all(anteriores.map(async t => {
+        const listas = await Promise.all(anteriores.map(async t => {
             const respuesta = await fetch(DataManager.ruta(t.url));
             if (!respuesta.ok) throw new Error(`No se pudo leer ${t.url} para numerar las figuras.`);
             const html = new DOMParser().parseFromString(await respuesta.text(), 'text/html');
-            return html.querySelectorAll(`.t-article ${SELECTOR_NUMERADA}`).length;
+            return [...html.querySelectorAll(`.t-article ${SELECTOR_NUMERADA}`)];
         }));
-        return conteos.reduce((total, n) => total + n, 0);
+        return listas.flat();
     }
 
-    /** Escribe "Figura <unidad>.<n>" en el pie de cada figura del tema. */
+    /**
+     * Número de cada figura: "<unidad>.<n>" consecutivo; a partir de una figura con
+     * data-numero, ese número y los que le siguen (sin prefijo de unidad).
+     */
+    function numerosDeFiguras(figuras, numeroUnidad) {
+        let actual = 0;
+        let fijo = false;
+        return figuras.map(figura => {
+            const indicado = parseInt(figura.dataset.numero, 10);
+            if (Number.isInteger(indicado)) {
+                actual = indicado;
+                fijo = true;
+            } else {
+                actual += 1;
+            }
+            return fijo ? `${actual}` : `${numeroUnidad}.${actual}`;
+        });
+    }
+
+    /** Escribe "Figura <número>" en el pie de cada figura del tema. */
     async function numerarFiguras(unidad, temaActual) {
         const figuras = [...document.querySelectorAll(`.t-article ${SELECTOR_NUMERADA}`)];
         if (!figuras.length) return;
 
         const previas = await figurasPrevias(UI.lista(unidad.temas), temaActual);
+        const numeros = numerosDeFiguras([...previas, ...figuras], unidad.numero).slice(previas.length);
         figuras.forEach((figura, indice) => {
             let pie = figura.querySelector('figcaption');
             if (!pie) {
@@ -269,7 +291,7 @@
             pie.querySelector('.t-figure__num')?.remove();
             const numero = document.createElement('strong');
             numero.className = 't-figure__num';
-            numero.textContent = `${ETIQUETA_FIGURA} ${unidad.numero}.${previas + indice + 1}`;
+            numero.textContent = `${ETIQUETA_FIGURA} ${numeros[indice]}`;
             pie.prepend(numero);
         });
     }

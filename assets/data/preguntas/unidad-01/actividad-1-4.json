@@ -4,13 +4,13 @@
     "type": "opcion_multiple",
     "question": "¿Cuál es la diferencia entre comunicación sincrónica y asincrónica en medios digitales?",
     "options": [
-      "La sincrónica ocurre en tiempo real y simultáneamente entre los participantes; la asincrónica permite interactuar en momentos diferidos con flexibilidad horaria.",
+      "En la sincrónica los participantes interactúan simultáneamente; la asincrónica posibilita la participación en diferentes momentos.",
       "La sincrónica solo utiliza papel y la asincrónica utiliza señales de radio analógicas.",
       "La sincrónica se realiza exclusivamente por correo postal y la asincrónica por videollamada.",
-      "Son modalidades idénticas que exigen que todos los usuarios estén conectados al mismo segundo."
+      "Son modalidades idénticas que exigen que todos los usuarios estén conectados al mismo tiempo."
     ],
-    "answer": "La sincrónica ocurre en tiempo real y simultáneamente entre los participantes; la asincrónica permite interactuar en momentos diferidos con flexibilidad horaria.",
-    "explicacion": "Ejemplos de comunicación sincrónica son videollamadas y chats en vivo; ejemplos asincrónicos son foros de discusión y correos electrónicos."
+    "answer": "En la sincrónica los participantes interactúan simultáneamente; la asincrónica posibilita la participación en diferentes momentos.",
+    "explicacion": "Una videollamada o un chat atendido en vivo son comunicación sincrónica; los foros o las secciones de comentarios de un blog son asincrónicos. Ninguna modalidad es mejor que otra en todos los casos."
   },
   {
     "id": 2,
@@ -23,106 +23,106 @@
       "Un debate formal de tres semanas en un foro académico."
     ],
     "answer": "Un chat corporativo interno de mensajería instantánea.",
-    "explicacion": "La mensajería instantánea ofrece rapidez, dinamismo y contacto directo para resolver imprevistos operativos en minutos."
+    "explicacion": "El uso principal del chat es coordinar y resolver dudas breves; su fortaleza es la rapidez y el contacto directo."
   },
   {
     "id": 3,
     "type": "opcion_multiple",
     "question": "¿Cuál es la principal fortaleza de un foro digital de discusión (como los de Moodle)?",
     "options": [
-      "Organizar debates estructurados en hilos temáticos, permitiendo argumentar reflexivamente y consultar el histórico de aportaciones.",
+      "Organizar la conversación en hilos por tema, de forma estructurada y consultable, para que se lean respuestas previas y se aporten argumentos.",
       "Emitir sonidos instantáneos que obliguen a contestar en menos de dos segundos.",
       "Borrar automáticamente los mensajes una vez que son leídos.",
       "Limitar los mensajes a 140 caracteres sin permitir archivos adjuntos."
     ],
-    "answer": "Organizar debates estructurados en hilos temáticos, permitiendo argumentar reflexivamente y consultar el histórico de aportaciones.",
-    "explicacion": "Los foros favorecen la deliberación pausada, la construcción comunitaria de conocimiento y el registro permanente de ideas."
+    "answer": "Organizar la conversación en hilos por tema, de forma estructurada y consultable, para que se lean respuestas previas y se aporten argumentos.",
+    "explicacion": "En contraste con un chat, el foro facilita una conversación más estructurada y consultable, aunque las respuestas no siempre son instantáneas. En Moodle, además, permite incluir archivos y evaluar las intervenciones."
   },
   {
     "id": 4,
     "type": "opcion_multiple",
-    "question": "¿Qué define formalmente a un Blog (bitácora digital)?",
+    "question": "¿Qué es un blog?",
     "options": [
-      "Un espacio web donde se publican artículos o entradas de forma periódica, organizados cronológicamente desde el más reciente al más antiguo.",
+      "Un lugar o sección de una página web donde se publica información sobre un tema específico, clasificada por categorías o etiquetas y ordenada cronológicamente.",
       "Un software para editar fórmulas matemáticas complejas en hojas de cálculo.",
       "Una base de datos cerrada accesible únicamente con contraseña bancaria.",
       "Un dispositivo de hardware para imprimir tickets de venta."
     ],
-    "answer": "Un espacio web donde se publican artículos o entradas de forma periódica, organizados cronológicamente desde el más reciente al más antiguo.",
-    "explicacion": "Los blogs combinan artículos de opinión, guías de viaje, novedades y recursos multimedia con interacción de comentarios de lectores."
+    "answer": "Un lugar o sección de una página web donde se publica información sobre un tema específico, clasificada por categorías o etiquetas y ordenada cronológicamente.",
+    "explicacion": "Su propósito es difundir información actualizada con regularidad, como noticias, reflexiones, guías o progresos de proyectos."
   },
   {
     "id": 5,
     "type": "verdadero_falso",
-    "statement": "En un foro académico o corporativo, el respeto a las normas de netiqueta, el uso de títulos claros y la citación de fuentes son esenciales para una discusión provechosa.",
+    "statement": "La utilidad de un foro se basa en la moderación y en reglas explícitas, como emplear títulos descriptivos, respetar otras perspectivas y citar fuentes.",
     "answer": true,
-    "explicacion": "La moderación y las pautas explícitas de convivencia digital aseguran diálogos constructivos y pertinentes."
+    "explicacion": "También se pide que los mensajes estén relacionados con el tema de discusión."
   },
   {
     "id": 6,
     "type": "completar_oracion",
-    "question": "Un blog turístico comercial permite difundir _____, recomendaciones de viaje y novedades de destinos para atraer a viajeros de las generaciones _____ y Gen Z.",
+    "question": "En el medio laboral, los blogs permiten difundir sugerencias, _____, novedades de la institución y describir productos o _____.",
     "wordBank": [
       "experiencias",
-      "millennials",
+      "servicios",
       "reclamaciones",
-      "estáticas"
+      "contraseñas"
     ],
     "answer": [
       "experiencias",
-      "millennials"
+      "servicios"
     ],
-    "explicacion": "El marketing de contenidos en blogs inspira y orienta a viajeros digitales antes de realizar sus reservaciones (Cajal 2022)."
+    "explicacion": "En la educación, los blogs son útiles para divulgar reflexiones e investigaciones de los alumnos."
   },
   {
     "id": 7,
     "type": "opcion_multiple",
-    "question": "¿Cuál es una limitación habitual de los chats grupales en las organizaciones si no se establecen reglas claras de uso?",
+    "question": "¿Cuál es una limitación habitual de los chats?",
     "options": [
-      "Los mensajes importantes pueden perderse o dispersarse fácilmente entre comentarios informales.",
-      "No permiten adjuntar fotografías ni enlaces.",
+      "Los mensajes pueden dispersarse.",
+      "No permiten adjuntar archivos, imágenes, audios ni enlaces.",
       "Solo pueden usarse durante una hora al día.",
       "Impiden saber quién envió cada mensaje."
     ],
-    "answer": "Los mensajes importantes pueden perderse o dispersarse fácilmente entre comentarios informales.",
-    "explicacion": "El exceso de mensajes en chats dificulta recuperar información crítica, por lo que temas de fondo deben gestionarse en foros o correos."
+    "answer": "Los mensajes pueden dispersarse.",
+    "explicacion": "Así lo señala la tabla comparativa de herramientas de comunicación digital; en cambio, el chat sí permite agregar archivos, imágenes, audios y enlaces."
   },
   {
     "id": 8,
     "type": "verdadero_falso",
-    "statement": "La comunicación digital elimina por completo las barreras geográficas permitiendo la trazabilidad y registro de acuerdos entre sedes distantes.",
+    "statement": "Una ventaja fundamental de la comunicación digital es la reducción de barreras geográficas, y además mejora la trazabilidad cuando se conservan acuerdos y materiales.",
     "answer": true,
-    "explicacion": "Posibilita coordinar operaciones globales conservando registros históricos verificables de las interacciones."
+    "explicacion": "Un mensaje puede enviarse a distintas sedes sin requerir desplazamientos, y un equipo puede compartir avances desde varios lugares."
   },
   {
     "id": 9,
     "type": "ordenar_oracion",
-    "question": "Ordena de mayor a menor inmediatez de respuesta esperada los canales de comunicación:",
+    "question": "Ordena los fragmentos para formar la recomendación sobre cómo resolver dudas en los portales:",
     "segments": [
-      "Videollamada o llamada sincrónica",
-      "Chat de mensajería instantánea",
-      "Correo electrónico institucional",
-      "Aportación en un foro de discusión temática"
+      "Para resolver una duda sobre un servicio",
+      "existen chats en los portales;",
+      "cuando se tienen dudas más extensas,",
+      "es mejor enviar un correo electrónico."
     ],
     "answer": [
-      "Videollamada o llamada sincrónica",
-      "Chat de mensajería instantánea",
-      "Correo electrónico institucional",
-      "Aportación en un foro de discusión temática"
+      "Para resolver una duda sobre un servicio",
+      "existen chats en los portales;",
+      "cuando se tienen dudas más extensas,",
+      "es mejor enviar un correo electrónico."
     ],
-    "explicacion": "La interacción en vivo exige inmediatez, el chat es casi instantáneo, mientras que el correo y el foro admiten tiempos de reflexión diferidos."
+    "explicacion": "El chat ofrece rapidez para dudas breves; el correo electrónico es más adecuado para dudas que requieren una respuesta más amplia."
   },
   {
     "id": 10,
     "type": "opcion_multiple",
-    "question": "¿Qué tipo de blog se enfoca en compartir proyectos estudiantiles, reflexiones teóricas y evidencias de aprendizaje?",
+    "question": "En la educación, ¿para qué son útiles los blogs?",
     "options": [
-      "Blog educativo o académico.",
-      "Blog de microtransacciones bursátiles.",
-      "Blog de spam comercial automatizado.",
-      "Blog cerrado de configuración de routers."
+      "Para divulgar reflexiones e investigaciones de los alumnos.",
+      "Para realizar microtransacciones bursátiles.",
+      "Para enviar spam comercial automatizado.",
+      "Para configurar routers de forma remota."
     ],
-    "answer": "Blog educativo o académico.",
-    "explicacion": "Los edublogs potencian la escritura reflexiva, la alfabetización digital y la divulgación del conocimiento turístico."
+    "answer": "Para divulgar reflexiones e investigaciones de los alumnos.",
+    "explicacion": "Entre los tipos de blog está el educativo, cuyo uso académico es compartir aprendizajes y producción de los estudiantes."
   }
 ]

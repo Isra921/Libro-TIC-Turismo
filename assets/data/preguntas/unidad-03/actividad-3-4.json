@@ -2,129 +2,103 @@
   {
     "id": 1,
     "type": "opcion_multiple",
-    "question": "¿Cuál es la sintaxis general correcta de una función en Microsoft Excel?",
-    "options": [
-      "`=NOMBRE_FUNCION(argumento1, argumento2, ...)`",
-      "`NOMBRE_FUNCION = [argumento1 + argumento2]`",
-      "`(argumento1, argumento2) -> NOMBRE_FUNCION`",
-      "`=FUNCION:argumento1:argumento2`"
-    ],
-    "answer": "`=NOMBRE_FUNCION(argumento1, argumento2, ...)`",
-    "explicacion": "Toda función inicia con el signo '=', seguido del nombre oficial en mayúsculas y sus argumentos encerrados entre paréntesis y separados por comas o punto y coma."
+    "question": "¿Cuál es la sintaxis general de una función en Excel, con el separador que se usa en el tema?",
+    "options": ["=NOMBRE_FUNCION(argumento1; argumento2; ...)", "NOMBRE_FUNCION = [argumento1 + argumento2]", "(argumento1; argumento2) → NOMBRE_FUNCION", "=FUNCION:argumento1:argumento2"],
+    "answer": "=NOMBRE_FUNCION(argumento1; argumento2; ...)",
+    "explicacion": "Las funciones son fórmulas predefinidas: inician con el signo igual, siguen con el nombre y llevan sus argumentos entre paréntesis. En configuraciones regionales en español se separan con punto y coma; si tu instalación usa comas, cambia el separador."
   },
   {
     "id": 2,
     "type": "opcion_multiple",
-    "question": "En el análisis de ocupación de un hotel, ¿qué función estadística calcula la media aritmética de huéspedes por habitación en el rango C2:C31?",
-    "options": [
-      "`=PROMEDIO(C2:C31)`",
-      "`=MEDIANA(C2:C31)`",
-      "`=MEDIA(C2:C31)`",
-      "`=SUMA(C2:C31) / 100`"
-    ],
-    "answer": "`=PROMEDIO(C2:C31)`",
-    "explicacion": "La función PROMEDIO suma todos los valores numéricos del rango y los divide entre la cantidad total de celdas con números."
+    "question": "En la base de reservaciones, los destinos están en B2:B7. ¿Qué fórmula cuenta cuántas reservaciones corresponden a Cancún?",
+    "options": ["=CONTAR.SI(B2:B7;\"Cancún\")", "=SUMAR.SI(B2:B7;\"Cancún\";I2:I7)", "=CONTAR(B2:B7)", "=CONTARA(B2:B7)"],
+    "answer": "=CONTAR.SI(B2:B7;\"Cancún\")",
+    "explicacion": "CONTAR.SI cuenta los registros que cumplen un criterio. SUMAR.SI, en cambio, suma los importes de I2:I7 que corresponden a Cancún."
   },
   {
     "id": 3,
-    "type": "opcion_multiple",
-    "question": "Deseas saber cuántos paquetes turísticos se vendieron hacia el destino 'Cancún' en la columna de destinos (B2:B50). ¿Qué función condicionada debes aplicar?",
-    "options": [
-      "`=CONTAR.SI(B2:B50, \"Cancún\")`",
-      "`=SUMAR.SI(B2:B50, \"Cancún\")`",
-      "`=CONTAR(B2:B50)`",
-      "`=BUSCARV(\"Cancún\", B2:B50, 1, FALSO)`"
-    ],
-    "answer": "`=CONTAR.SI(B2:B50, \"Cancún\")`",
-    "explicacion": "CONTAR.SI evalúa el rango indicado y cuenta únicamente las celdas que cumplen con el criterio especificado."
+    "type": "verdadero_falso",
+    "statement": "La función CONTAR cuenta todas las celdas no vacías de un rango, incluidas las que contienen texto.",
+    "answer": false,
+    "explicacion": "CONTAR cuenta las celdas que contienen números. Para contar las celdas no vacías se usa CONTARA."
   },
   {
     "id": 4,
     "type": "opcion_multiple",
-    "question": "Para sumar el importe total de ingresos generados exclusivamente por vuelos de aerolínea (columna D2:D50) cuando el tipo de servicio (columna C2:C50) sea 'Transportación Aérea', ¿cuál es la función adecuada?",
-    "options": [
-      "`=SUMAR.SI(C2:C50, \"Transportación Aérea\", D2:D50)`",
-      "`=CONTAR.SI(C2:C50, D2:D50)`",
-      "`=SUMA(C2:C50 + D2:D50)`",
-      "`=SI(C2:C50=\"Transportación Aérea\", D2:D50)`"
-    ],
-    "answer": "`=SUMAR.SI(C2:C50, \"Transportación Aérea\", D2:D50)`",
-    "explicacion": "SUMAR.SI requiere tres argumentos: rango a evaluar (C2:C50), criterio (\"Transportación Aérea\") y el rango que contiene los montos a sumar (D2:D50)."
+    "question": "¿Qué resultado devuelve =REDONDEAR(1250.678;2)?",
+    "options": ["1250.68", "1250.67", "1251", "1250.7"],
+    "answer": "1250.68",
+    "explicacion": "REDONDEAR redondea un número a la cantidad de decimales indicada en su segundo argumento; en este caso, dos."
   },
   {
     "id": 5,
-    "type": "verdadero_falso",
-    "statement": "La función lógica `=SI(prueba_lógica, valor_si_verdadero, valor_si_falso)` permite evaluar si las ventas de un agente superaron la meta para asignarle un bono o comisión.",
-    "answer": true,
-    "explicacion": "La función SI es fundamental para tomar decisiones condicionales automatizadas en reportes administrativos."
+    "type": "opcion_multiple",
+    "question": "En la práctica 6, las cantidades están en B2:B4 y los precios unitarios en C2:C4. ¿Qué fórmula obtiene el ingreso total directamente?",
+    "options": ["=SUMAPRODUCTO(B2:B4;C2:C4)", "=SUMA(B2:B4;C2:C4)", "=SUMA(B2:B4)*SUMA(C2:C4)", "=POTENCIA(B2:B4;C2:C4)"],
+    "answer": "=SUMAPRODUCTO(B2:B4;C2:C4)",
+    "explicacion": "SUMAPRODUCTO multiplica los elementos correspondientes (cantidad por precio de cada servicio) y suma los resultados. Debe coincidir con el total obtenido con SUMA de los importes de cada servicio."
   },
   {
     "id": 6,
-    "type": "completar_oracion",
-    "question": "La función _____ devuelve el valor más alto de un rango de reservaciones, mientras que _____ obtiene la cifra mínima registrada.",
-    "wordBank": [
-      "MAX",
-      "MIN",
-      "ALTO",
-      "BAJO"
-    ],
-    "answer": [
-      "MAX",
-      "MIN"
-    ],
-    "explicacion": "MAX y MIN identifican los valores extremos dentro de un conjunto de datos numéricos."
+    "type": "opcion_multiple",
+    "question": "¿Qué fórmula calcula correctamente el seno de un ángulo de 30°?",
+    "options": ["=SENO(RADIANES(30))", "=SENO(30)", "=RADIANES(SENO(30))", "=GRADOS(SENO(30))"],
+    "answer": "=SENO(RADIANES(30))",
+    "explicacion": "Excel utiliza radianes en las funciones trigonométricas; por eso, cuando el dato está en grados, conviene convertirlo antes con RADIANES. El resultado es 0.5."
   },
   {
     "id": 7,
     "type": "opcion_multiple",
-    "question": "En el financiamiento de viajes vacacionales a plazos fijos, ¿qué función financiera de Excel calcula el monto de la cuota mensual periódica a una tasa de interés dada?",
-    "options": [
-      "`=PAGO(tasa, nper, va)`",
-      "`=INTERES(tasa, plazo, total)`",
-      "`=AMORTIZACION(capital, meses)`",
-      "`=CUOTA.MENSUAL(monto, tiempo)`"
-    ],
-    "answer": "`=PAGO(tasa, nper, va)`",
-    "explicacion": "La función PAGO calcula pagos periódicos constantes con tasa de interés fija, común para cotizar créditos de agencias turísticas."
+    "question": "El monto del préstamo está en A2, la tasa nominal anual en B2 y el plazo en meses en C2. ¿Qué fórmula calcula el pago mensual?",
+    "options": ["=PAGO(B2/12;C2;-A2)", "=PAGO(B2;C2;A2)", "=VA(B2/12;C2;-A2)", "=PAGO(B2*12;C2;-A2)"],
+    "answer": "=PAGO(B2/12;C2;-A2)",
+    "explicacion": "PAGO calcula el pago periódico de un préstamo con tasa y pagos constantes. La tasa anual se divide entre 12 porque los pagos son mensuales."
   },
   {
     "id": 8,
-    "type": "verdadero_falso",
-    "statement": "La función `=CONTARA(A1:A20)` cuenta únicamente las celdas vacías del rango.",
-    "answer": false,
-    "explicacion": "CONTARA cuenta todas las celdas no vacías (números, texto, errores). Para celdas vacías se utiliza la función CONTAR.BLANCO."
+    "type": "completar_oracion",
+    "question": "Para estimar el costo financiero, se multiplica el pago mensual por el número de _____ y al total pagado se le resta el _____ del préstamo.",
+    "wordBank": ["meses", "monto", "días", "impuesto"],
+    "answer": ["meses", "monto"],
+    "explicacion": "Es una simulación: no incluye comisiones, seguros, impuestos ni otras condiciones que pudiera aplicar una institución financiera."
   },
   {
     "id": 9,
-    "type": "ordenar_oracion",
-    "instruction": "Ordena la estructura de una función condicional SI con descuento para clientes VIP:",
-    "words": [
-      "=SI(",
-      "TipoCliente=\"VIP\",",
-      "Total*0.80,",
-      "Total",
-      ")"
-    ],
-    "answer": [
-      "=SI(",
-      "TipoCliente=\"VIP\",",
-      "Total*0.80,",
-      "Total",
-      ")"
-    ],
-    "explicacion": "La función SI primero evalúa la condición; si es verdadera aplica el 20% de descuento (Total*0.80) y si es falsa mantiene el total regular."
+    "type": "opcion_multiple",
+    "question": "En A2 está escrito «hotel camino real». ¿Qué función lo convierte en «Hotel Camino Real»?",
+    "options": ["NOMPROPIO", "MAYUSC", "MINUSC", "ESPACIOS"],
+    "answer": "NOMPROPIO",
+    "explicacion": "NOMPROPIO pone en mayúscula la inicial de cada palabra. Normalizar los datos facilita filtrarlos, compararlos o utilizarlos en un reporte."
   },
   {
     "id": 10,
+    "type": "verdadero_falso",
+    "statement": "Si I2 contiene exactamente $5,000, la fórmula =SI(I2>=5000;\"Venta alta\";\"Venta regular\") muestra «Venta alta».",
+    "answer": true,
+    "explicacion": "La condición I2>=5000 incluye el valor 5000, así que se cumple y SI devuelve el primer resultado."
+  },
+  {
+    "id": 11,
     "type": "opcion_multiple",
-    "question": "¿Qué función de texto se utiliza para convertir una cadena a formato de título (primera letra de cada palabra en mayúscula), ideal para nombres de destinos y pasajeros?",
-    "options": [
-      "`=NOMPROPIO(texto)`",
-      "`=MAYUSC(texto)`",
-      "`=MINUSC(texto)`",
-      "`=TITULO(texto)`"
+    "question": "Un huésped entra el 15/11/2026 (B2) y sale el 18/11/2026 (C2). ¿Qué resultado devuelve =DIAS(C2;B2)?",
+    "options": ["3", "4", "-3", "18"],
+    "answer": "3",
+    "explicacion": "DIAS calcula los días entre dos fechas: primero la fecha final y después la inicial. Excel puede hacerlo porque almacena las fechas como valores numéricos."
+  },
+  {
+    "id": 12,
+    "type": "ordenar_oracion",
+    "question": "Ordena los fragmentos para formar la fórmula anidada de la práctica 12.",
+    "segments": [
+      "=SI(I2>=5000;",
+      "SI(F2>0;\"Venta alta con descuento\";\"Venta alta sin descuento\");",
+      "\"Venta regular\")"
     ],
-    "answer": "`=NOMPROPIO(texto)`",
-    "explicacion": "NOMPROPIO pone en mayúscula la letra inicial de cada palabra de una cadena alfanumérica."
+    "answer": [
+      "=SI(I2>=5000;",
+      "SI(F2>0;\"Venta alta con descuento\";\"Venta alta sin descuento\");",
+      "\"Venta regular\")"
+    ],
+    "explicacion": "En la anidación, una función se usa dentro de otra: el SI interior se convierte en el resultado del SI exterior cuando el importe es igual o superior a $5,000."
   }
 ]

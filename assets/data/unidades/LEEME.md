@@ -65,7 +65,17 @@ El **contenido** del tema se escribe en el HTML; el **índice lateral** de la un
      ```
      - El número (**Figura 1.1, 1.2…**) se pone solo: `tema-plantilla.js` cuenta las figuras de los temas
        anteriores de la unidad. **No lo escribas a mano.** Para una figura sin número: `data-sin-numero`.
+     - Si el documento fuente trae su propia numeración, fíjala con `data-numero="11"` (se muestra **Figura 11**);
+       las figuras siguientes, en ese tema y en los posteriores, continúan solas (12, 13…).
      - `data-ampliable` permite abrir la imagen en el visor con zoom. La nota (`t-figure__nota`) es opcional.
+     - Si la imagen todavía no está lista, deja en `t-figure__media` un espacio reservado; al tener la imagen,
+       cámbialo por el `<img>` (conviene dejar comentado junto al espacio el `<img>` con la ruta y el `alt` previstos):
+       ```html
+       <div class="t-figure__placeholder">
+         <i class="fas fa-image" aria-hidden="true"></i>
+         <span>Espacio reservado para la imagen</span>
+       </div>
+       ```
    - `<aside class="t-callout t-callout--note">` / `t-callout--example`: nota o ejemplo.
    - `<div class="t-table"><table>…</table></div>`: tabla.
      En una celda: `class="t-key"` la pone en negritas; `t-ok`, `t-bad`, `t-warn`, `t-info` o `t-accent` le dan color.

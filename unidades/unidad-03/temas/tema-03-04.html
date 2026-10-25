@@ -40,32 +40,434 @@
         <h1 class="t-title">Funciones</h1>
 
         <p class="t-lead" id="idea-central" data-toc="Presentación">
-          Uso y sintaxis de funciones predefinidas para el procesamiento matemático, financiero y estadístico de datos turísticos.
+          Las funciones son fórmulas predefinidas que ejecutan cálculos utilizando argumentos organizados bajo una sintaxis específica.
         </p>
 
         <div class="t-prose">
-          <section id="plan-tema" data-toc="Desglose temático">
-            <h2>Estructura curricular del tema</h2>
-            <aside class="t-callout t-callout--note">
-              <i class="fas fa-info-circle t-callout__icon" aria-hidden="true"></i>
+          <section id="sintaxis" data-toc="Sintaxis de una función">
+            <h2>Sintaxis de una función</h2>
+            <p>
+              La sintaxis general es <code>=NOMBRE_FUNCION(argumento1; argumento2; ...)</code> <span class="t-cita">(<a href="../referencias.html" title="Microsoft. (s. f.-d). Funciones de Excel (por categoría). Microsoft Support.">Microsoft, s. f.-d</a>)</span>.
+            </p>
+            <aside class="t-callout t-callout--example">
+              <i class="fas fa-calculator t-callout__icon" aria-hidden="true"></i>
               <div>
-                <p class="t-callout__label">Tema en desarrollo</p>
-                <p>
-                  El desarrollo y recursos interactivos de este tema se encuentran en fase de elaboración conforme al programa académico oficial de la <strong>Escuela Superior de Turismo (EST - IPN)</strong> para la asignatura <strong>TIC aplicadas al turismo</strong>.
-                </p>
+                <p class="t-callout__label">Ejemplo</p>
+                <p><code>=SUMA(I2:I7)</code></p>
+                <ul>
+                  <li><strong>SUMA</strong> es el nombre de la función.</li>
+                  <li><strong>I2:I7</strong> es el rango de datos.</li>
+                  <li>El resultado es la suma de los importes registrados.</li>
+                </ul>
               </div>
             </aside>
-            <p>Conforme al plan de estudios oficial, este tema comprende los siguientes contenidos temáticos:</p>
+            <p>
+              Excel dispone de funciones agrupadas en categorías estadísticas, matemáticas, financieras, de texto, lógicas, de fecha y hora, entre otras <span class="t-cita">(<a href="../referencias.html" title="Microsoft. (s. f.-d). Funciones de Excel (por categoría). Microsoft Support.">Microsoft, s. f.-d</a>)</span>.
+            </p>
+            <aside class="t-callout t-callout--info">
+              <i class="fas fa-keyboard t-callout__icon" aria-hidden="true"></i>
+              <div>
+                <p class="t-callout__label">Nota</p>
+                <p>En los ejemplos se emplea el punto y coma (<kbd>;</kbd>) para separar argumentos, como suele ocurrir en configuraciones regionales en español. Si tu instalación utiliza comas, sustituye el separador según corresponda.</p>
+              </div>
+            </aside>
+          </section>
+
+          <section id="estadisticas" data-toc="3.4.1 Funciones estadísticas">
+            <h2><span class="t-section__num">3.4.1</span>Funciones estadísticas</h2>
+            <p>
+              Las funciones estadísticas ayudan a describir, comparar y resumir datos. Son útiles para estudiar ventas, tarifas, ocupación hotelera y calificaciones de satisfacción <span class="t-cita">(<a href="../referencias.html" title="Microsoft. (s. f.-e). Funciones estadísticas (referencia). Microsoft Support.">Microsoft, s. f.-e</a>)</span>.
+            </p>
+            <div class="t-table">
+              <table>
+                <caption class="u-sr-only">Funciones estadísticas, su aplicación y un ejemplo</caption>
+                <thead>
+                  <tr><th scope="col">Función</th><th scope="col">Aplicación</th><th scope="col">Ejemplo</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td class="t-key">SUMA</td><td>Total de importes.</td><td><code>=SUMA(I2:I7)</code></td></tr>
+                  <tr><td class="t-key">PROMEDIO</td><td>Media aritmética.</td><td><code>=PROMEDIO(I2:I7)</code></td></tr>
+                  <tr><td class="t-key">MAX</td><td>Valor máximo.</td><td><code>=MAX(I2:I7)</code></td></tr>
+                  <tr><td class="t-key">MIN</td><td>Valor mínimo.</td><td><code>=MIN(I2:I7)</code></td></tr>
+                  <tr><td class="t-key">CONTAR</td><td>Celdas que contienen números.</td><td><code>=CONTAR(I2:I7)</code></td></tr>
+                  <tr><td class="t-key">CONTARA</td><td>Celdas no vacías.</td><td><code>=CONTARA(B2:B7)</code></td></tr>
+                  <tr><td class="t-key">CONTAR.SI</td><td>Cuenta registros que cumplen un criterio.</td><td><code>=CONTAR.SI(B2:B7;"Cancún")</code></td></tr>
+                  <tr><td class="t-key">SUMAR.SI</td><td>Suma importes que cumplen un criterio.</td><td><code>=SUMAR.SI(B2:B7;"Cancún";I2:I7)</code></td></tr>
+                  <tr><td class="t-key">MEDIANA</td><td>Valor central de los datos ordenados.</td><td><code>=MEDIANA(I2:I7)</code></td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <aside class="t-callout t-callout--example" id="practica-5" data-toc="Práctica 5">
+              <i class="fas fa-laptop-code t-callout__icon" aria-hidden="true"></i>
+              <div>
+                <p class="t-callout__label">Práctica 5</p>
+                <h3>Analizar las reservaciones</h3>
+                <p>En la hoja <strong>Resumen</strong>, registra las siguientes preguntas y fórmulas:</p>
+                <ol>
+                  <li>¿Cuál es el importe total de las reservaciones?</li>
+                  <li>¿Cuál es el promedio de los importes?</li>
+                  <li>¿Cuál es la reservación de mayor importe?</li>
+                  <li>¿Cuál es la de menor importe?</li>
+                  <li>¿Cuántos servicios corresponden a Cancún?</li>
+                  <li>¿Cuánto dinero representan las reservaciones de Cancún?</li>
+                </ol>
+                <p>Utiliza las funciones de la tabla anterior y redacta una conclusión de tres líneas.</p>
+              </div>
+            </aside>
+
+            <aside class="t-callout t-callout--tip">
+              <i class="fas fa-circle-check t-callout__icon" aria-hidden="true"></i>
+              <div>
+                <p class="t-callout__label">Solución de la práctica 5</p>
+                <p>En la hoja <strong>Resumen</strong>, aplica las siguientes fórmulas sobre la base de reservaciones:</p>
+                <ol>
+                  <li>Total de ingresos: <code>=SUMA(I2:I7)</code></li>
+                  <li>Promedio de importes: <code>=PROMEDIO(I2:I7)</code></li>
+                  <li>Importe máximo y mínimo: <code>=MAX(I2:I7)</code> y <code>=MIN(I2:I7)</code></li>
+                  <li>Reservaciones a Cancún: <code>=CONTAR.SI(B2:B7; "Cancún")</code></li>
+                  <li>Total ingresado por Cancún: <code>=SUMAR.SI(B2:B7; "Cancún"; I2:I7)</code></li>
+                  <li>Redacta una conclusión de tres líneas interpretando los resultados.</li>
+                </ol>
+                <p><strong>Interpretación:</strong> el resultado numérico debe acompañarse de una explicación. Por ejemplo, conocer el destino que concentra más ingresos puede ayudar a orientar campañas comerciales, pero seis registros de práctica no bastan para establecer una tendencia general del mercado.</p>
+              </div>
+            </aside>
+          </section>
+
+          <section id="matematicas" data-toc="3.4.2 Funciones matemáticas">
+            <h2><span class="t-section__num">3.4.2</span>Funciones matemáticas</h2>
+            <p>
+              Permiten realizar operaciones matemáticas que van más allá de las operaciones aritméticas básicas <span class="t-cita">(<a href="../referencias.html" title="Microsoft. (s. f.-f). Funciones matemáticas y trigonométricas (referencia). Microsoft Support.">Microsoft, s. f.-f</a>)</span>.
+            </p>
+            <div class="t-table">
+              <table>
+                <caption class="u-sr-only">Funciones matemáticas, su uso y un ejemplo</caption>
+                <thead>
+                  <tr><th scope="col">Función</th><th scope="col">Uso</th><th scope="col">Ejemplo</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td class="t-key">ABS</td><td>Devuelve el valor absoluto.</td><td><code>=ABS(-250)</code> → 250</td></tr>
+                  <tr><td class="t-key">REDONDEAR</td><td>Redondea a un número de decimales.</td><td><code>=REDONDEAR(1250.678;2)</code> → 1250.68</td></tr>
+                  <tr><td class="t-key">ENTERO</td><td>Redondea hacia abajo al entero.</td><td><code>=ENTERO(18.9)</code> → 18</td></tr>
+                  <tr><td class="t-key">RESIDUO</td><td>Devuelve el residuo de una división.</td><td><code>=RESIDUO(17;5)</code> → 2</td></tr>
+                  <tr><td class="t-key">POTENCIA</td><td>Eleva un número a una potencia.</td><td><code>=POTENCIA(4;3)</code> → 64</td></tr>
+                  <tr><td class="t-key">RAIZ</td><td>Calcula la raíz cuadrada.</td><td><code>=RAIZ(144)</code> → 12</td></tr>
+                  <tr><td class="t-key">SUMAPRODUCTO</td><td>Multiplica elementos correspondientes y suma los resultados.</td><td><code>=SUMAPRODUCTO(D2:D7;E2:E7)</code></td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <aside class="t-callout t-callout--example" id="practica-6" data-toc="Práctica 6">
+              <i class="fas fa-laptop-code t-callout__icon" aria-hidden="true"></i>
+              <div>
+                <p class="t-callout__label">Práctica 6</p>
+                <h3>Cálculo de tarifas</h3>
+                <p>Una operadora turística vende tres servicios:</p>
+                <div class="t-table">
+                  <table>
+                    <caption class="u-sr-only">Servicios de la operadora turística con su cantidad y precio unitario</caption>
+                    <thead>
+                      <tr><th scope="col">Servicio</th><th scope="col">Cantidad</th><th scope="col">Precio unitario</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>Tour cultural</td><td>12</td><td>$950</td></tr>
+                      <tr><td>Visita guiada</td><td>8</td><td>$450</td></tr>
+                      <tr><td>Transporte turístico</td><td>15</td><td>$380</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                <ol>
+                  <li>Calcula el total de cada servicio.</li>
+                  <li>Obtén el ingreso total con <strong>SUMA</strong>.</li>
+                  <li>Calcula el total directamente con <strong>SUMAPRODUCTO</strong>.</li>
+                  <li>Redondea a dos decimales los importes que lo requieran.</li>
+                </ol>
+                <p>Compara los dos procedimientos para verificar que se obtiene el mismo ingreso total.</p>
+              </div>
+            </aside>
+          </section>
+
+          <section id="trigonometricas" data-toc="3.4.3 Funciones trigonométricas">
+            <h2><span class="t-section__num">3.4.3</span>Funciones trigonométricas</h2>
+            <p>
+              Las funciones trigonométricas permiten trabajar con ángulos y relaciones entre lados de triángulos. Pueden aplicarse a problemas de orientación, cartografía, levantamientos y cálculos geométricos relacionados con recorridos turísticos.
+            </p>
+            <p>Las funciones más utilizadas son:</p>
+            <div class="t-table">
+              <table>
+                <caption class="u-sr-only">Funciones trigonométricas, su operación y un ejemplo</caption>
+                <thead>
+                  <tr><th scope="col">Función</th><th scope="col">Operación</th><th scope="col">Ejemplo</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td class="t-key">SENO</td><td>Seno de un ángulo.</td><td><code>=SENO(RADIANES(30))</code> → 0.5</td></tr>
+                  <tr><td class="t-key">COS</td><td>Coseno de un ángulo.</td><td><code>=COS(RADIANES(60))</code> → 0.5</td></tr>
+                  <tr><td class="t-key">TAN</td><td>Tangente de un ángulo.</td><td><code>=TAN(RADIANES(45))</code> → 1</td></tr>
+                  <tr><td class="t-key">RADIANES</td><td>Convierte grados a radianes.</td><td><code>=RADIANES(90)</code></td></tr>
+                  <tr><td class="t-key">GRADOS</td><td>Convierte radianes a grados.</td><td><code>=GRADOS(PI())</code> → 180</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <aside class="t-callout t-callout--info">
+              <i class="fas fa-circle-info t-callout__icon" aria-hidden="true"></i>
+              <div>
+                <p class="t-callout__label">Importante</p>
+                <p>Excel utiliza radianes en estas funciones. Por eso, cuando el dato se proporciona en grados, conviene convertirlo mediante <strong>RADIANES</strong>.</p>
+              </div>
+            </aside>
+
+            <aside class="t-callout t-callout--example" id="practica-7" data-toc="Práctica 7">
+              <i class="fas fa-laptop-code t-callout__icon" aria-hidden="true"></i>
+              <div>
+                <p class="t-callout__label">Práctica 7</p>
+                <h3>Interpretar un ángulo</h3>
+                <p>Un equipo turístico estudia un trayecto representado por un triángulo rectángulo. Para un ángulo de 30°, registra en Excel:</p>
+                <ul>
+                  <li><strong>A1:</strong> 30</li>
+                  <li><strong>B1:</strong> <code>=SENO(RADIANES(A1))</code></li>
+                  <li><strong>C1:</strong> <code>=COS(RADIANES(A1))</code></li>
+                  <li><strong>D1:</strong> <code>=TAN(RADIANES(A1))</code></li>
+                </ul>
+                <p>Explica qué representa cada resultado matemático. Recuerda que los valores trigonométricos por sí solos no indican distancias reales: para ello se necesitan medidas y un modelo geométrico definido.</p>
+              </div>
+            </aside>
+          </section>
+
+          <section id="financieras" data-toc="3.4.4 Funciones financieras">
+            <h2><span class="t-section__num">3.4.4</span>Funciones financieras</h2>
+            <p>
+              Las funciones financieras permiten estimar pagos, intereses, rendimientos y costos de financiamiento. Son útiles para analizar la adquisición de equipo, el financiamiento de paquetes turísticos y las inversiones de una empresa.
+            </p>
+            <div class="t-table">
+              <table>
+                <caption class="u-sr-only">Funciones financieras, su aplicación y un ejemplo</caption>
+                <thead>
+                  <tr><th scope="col">Función</th><th scope="col">Aplicación</th><th scope="col">Ejemplo</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td class="t-key">PAGO</td><td>Calcula el pago periódico de un préstamo con tasa y pagos constantes.</td><td><code>=PAGO(12%/12;12;-12000)</code></td></tr>
+                  <tr><td class="t-key">VA</td><td>Calcula el valor actual de una serie de pagos.</td><td><code>=VA(12%/12;12;-1100)</code></td></tr>
+                  <tr><td class="t-key">VF</td><td>Calcula el valor futuro.</td><td><code>=VF(1%;12;0;-10000)</code></td></tr>
+                  <tr><td class="t-key">TASA</td><td>Estima la tasa por periodo de una operación financiera.</td><td><code>=TASA(12;-1100;12000)</code></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>
+              En los ejemplos se supone que las tasas son nominales anuales cuando se dividen entre 12 y que los pagos se realizan al final de cada mes. Las condiciones concretas del contrato pueden cambiar el resultado.
+            </p>
+
+            <aside class="t-callout t-callout--example" id="practica-8" data-toc="Práctica 8">
+              <i class="fas fa-laptop-code t-callout__icon" aria-hidden="true"></i>
+              <div>
+                <p class="t-callout__label">Práctica 8</p>
+                <h3>Financiar equipo turístico</h3>
+                <p>Una agencia desea financiar equipo con un préstamo de $12,000, a una tasa nominal anual del 12%, durante 12 meses, mediante pagos mensuales constantes.</p>
+                <ol>
+                  <li>Escribe el monto del préstamo en <strong>A2</strong>.</li>
+                  <li>Registra la tasa anual en <strong>B2</strong>.</li>
+                  <li>Registra el plazo en meses en <strong>C2</strong>.</li>
+                  <li>Calcula el pago mensual con: <code>=PAGO(B2/12;C2;-A2)</code></li>
+                  <li>Multiplica el pago mensual por el número de meses.</li>
+                  <li>Resta el monto del préstamo al total pagado para estimar el costo financiero.</li>
+                </ol>
+              </div>
+            </aside>
+            <aside class="t-callout t-callout--alert">
+              <i class="fas fa-triangle-exclamation t-callout__icon" aria-hidden="true"></i>
+              <div>
+                <p class="t-callout__label">Considera</p>
+                <p>Este ejercicio es una simulación: no incluye comisiones, seguros, impuestos ni otras condiciones que pudiera aplicar una institución financiera.</p>
+              </div>
+            </aside>
+          </section>
+
+          <section id="texto" data-toc="3.4.5 Funciones de texto">
+            <h2><span class="t-section__num">3.4.5</span>Funciones de texto</h2>
+            <p>
+              Las funciones de texto permiten limpiar, extraer, combinar y transformar caracteres. Son útiles para organizar nombres de clientes, folios, códigos de reservación y datos importados de otros sistemas.
+            </p>
+            <div class="t-table">
+              <table>
+                <caption class="u-sr-only">Funciones de texto, su utilidad y un ejemplo</caption>
+                <thead>
+                  <tr><th scope="col">Función</th><th scope="col">Utilidad</th><th scope="col">Ejemplo</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td class="t-key">CONCAT</td><td>Une textos.</td><td><code>=CONCAT(A2;"-";B2)</code></td></tr>
+                  <tr><td class="t-key">IZQUIERDA</td><td>Extrae caracteres desde la izquierda.</td><td><code>=IZQUIERDA("R001";1)</code> → R</td></tr>
+                  <tr><td class="t-key">DERECHA</td><td>Extrae caracteres desde la derecha.</td><td><code>=DERECHA("R001";3)</code> → 001</td></tr>
+                  <tr><td class="t-key">EXTRAE</td><td>Extrae texto desde una posición.</td><td><code>=EXTRAE("TUR2026";4;4)</code> → 2026</td></tr>
+                  <tr><td class="t-key">LARGO</td><td>Cuenta caracteres.</td><td><code>=LARGO("CANCUN")</code> → 6</td></tr>
+                  <tr><td class="t-key">MAYUSC</td><td>Convierte a mayúsculas.</td><td><code>=MAYUSC("oaxaca")</code> → OAXACA</td></tr>
+                  <tr><td class="t-key">MINUSC</td><td>Convierte a minúsculas.</td><td><code>=MINUSC("CANCUN")</code> → cancun</td></tr>
+                  <tr><td class="t-key">NOMPROPIO</td><td>Pone en mayúscula la inicial de cada palabra.</td><td><code>=NOMPROPIO("agencia de viajes")</code></td></tr>
+                  <tr><td class="t-key">ESPACIOS</td><td>Elimina espacios innecesarios.</td><td><code>=ESPACIOS(" Hotel Centro ")</code></td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <aside class="t-callout t-callout--example" id="practica-9" data-toc="Práctica 9">
+              <i class="fas fa-laptop-code t-callout__icon" aria-hidden="true"></i>
+              <div>
+                <p class="t-callout__label">Práctica 9</p>
+                <h3>Limpiar una base de datos</h3>
+                <p>Escribe en <strong>A2</strong> los datos <strong>hotel camino real</strong> y en <strong>A3</strong> el folio <strong>RES-2026-0045</strong>. Aplica estas fórmulas:</p>
+                <ul>
+                  <li><strong>En B2:</strong> <code>=ESPACIOS(A2)</code></li>
+                  <li><strong>En C2:</strong> <code>=NOMPROPIO(B2)</code></li>
+                  <li><strong>En B3:</strong> <code>=IZQUIERDA(A3;3)</code></li>
+                  <li><strong>En C3:</strong> <code>=DERECHA(A3;4)</code></li>
+                  <li><strong>En D3:</strong> <code>=LARGO(A3)</code></li>
+                </ul>
+                <p>Explica por qué es conveniente normalizar los datos antes de filtrarlos, compararlos o utilizarlos en un reporte.</p>
+              </div>
+            </aside>
+          </section>
+
+          <section id="logicas" data-toc="3.4.6 Funciones lógicas">
+            <h2><span class="t-section__num">3.4.6</span>Funciones lógicas</h2>
+            <p>
+              Las funciones lógicas permiten evaluar condiciones y devolver resultados distintos según se cumplan o no ciertos criterios.
+            </p>
+            <div class="t-table">
+              <table>
+                <caption class="u-sr-only">Funciones lógicas, su utilidad y un ejemplo</caption>
+                <thead>
+                  <tr><th scope="col">Función</th><th scope="col">Utilidad</th><th scope="col">Ejemplo</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td class="t-key">SI</td><td>Devuelve un resultado si se cumple una condición y otro si no.</td><td><code>=SI(A2&gt;=1000;"Alto";"Bajo")</code></td></tr>
+                  <tr><td class="t-key">Y</td><td>Comprueba si todas las condiciones son verdaderas.</td><td><code>=Y(A2&gt;=1000;B2="Cancún")</code></td></tr>
+                  <tr><td class="t-key">O</td><td>Comprueba si al menos una condición es verdadera.</td><td><code>=O(A2&gt;=1000;B2="Cancún")</code></td></tr>
+                  <tr><td class="t-key">SI.ERROR</td><td>Devuelve un resultado alternativo si hay error.</td><td><code>=SI.ERROR(A2/B2;0)</code></td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <aside class="t-callout t-callout--example" id="practica-10" data-toc="Práctica 10">
+              <i class="fas fa-laptop-code t-callout__icon" aria-hidden="true"></i>
+              <div>
+                <p class="t-callout__label">Práctica 10</p>
+                <h3>Clasificar las ventas</h3>
+                <p>Supón que la celda <strong>I2</strong> contiene el total de una reservación. En <strong>J2</strong> escribe:</p>
+                <p><code>=SI(I2&gt;=5000;"Venta alta";"Venta regular")</code></p>
+                <p>Copia la fórmula hacia abajo. Después, agrega una columna llamada <strong>Seguimiento</strong> y utiliza:</p>
+                <p><code>=SI(Y(I2&gt;=5000;F2&gt;0);"Revisar descuento";"Sin revisión especial")</code></p>
+                <p>Interpreta los resultados y explica por qué una clasificación automática debe basarse en criterios definidos y no sustituye el análisis comercial.</p>
+              </div>
+            </aside>
+          </section>
+
+          <section id="fecha-hora" data-toc="3.4.7 Funciones de fecha y hora">
+            <h2><span class="t-section__num">3.4.7</span>Funciones de fecha y hora</h2>
+            <p>
+              Excel permite almacenar fechas y horas como valores numéricos para calcular diferencias, ordenar cronológicamente y generar reportes por periodos.
+            </p>
+            <div class="t-table">
+              <table>
+                <caption class="u-sr-only">Funciones de fecha y hora, su utilidad y un ejemplo</caption>
+                <thead>
+                  <tr><th scope="col">Función</th><th scope="col">Utilidad</th><th scope="col">Ejemplo</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td class="t-key">HOY</td><td>Devuelve la fecha actual.</td><td><code>=HOY()</code></td></tr>
+                  <tr><td class="t-key">AHORA</td><td>Devuelve fecha y hora actuales.</td><td><code>=AHORA()</code></td></tr>
+                  <tr><td class="t-key">DIA</td><td>Extrae el día.</td><td><code>=DIA(A2)</code></td></tr>
+                  <tr><td class="t-key">MES</td><td>Extrae el mes.</td><td><code>=MES(A2)</code></td></tr>
+                  <tr><td class="t-key">AÑO</td><td>Extrae el año.</td><td><code>=AÑO(A2)</code></td></tr>
+                  <tr><td class="t-key">FECHA</td><td>Construye una fecha.</td><td><code>=FECHA(2026;12;15)</code></td></tr>
+                  <tr><td class="t-key">DIAS</td><td>Calcula días entre dos fechas.</td><td><code>=DIAS(B2;A2)</code></td></tr>
+                  <tr><td class="t-key">DIASEM</td><td>Devuelve el número correspondiente al día de la semana.</td><td><code>=DIASEM(A2;2)</code></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <aside class="t-callout t-callout--info">
+              <i class="fas fa-clock t-callout__icon" aria-hidden="true"></i>
+              <div>
+                <p class="t-callout__label">Importante</p>
+                <p><strong>HOY()</strong> y <strong>AHORA()</strong> se actualizan según el recálculo del libro; no representan necesariamente una marca de tiempo fija.</p>
+              </div>
+            </aside>
+
+            <aside class="t-callout t-callout--example" id="practica-11" data-toc="Práctica 11">
+              <i class="fas fa-laptop-code t-callout__icon" aria-hidden="true"></i>
+              <div>
+                <p class="t-callout__label">Práctica 11</p>
+                <h3>Calcular la estancia hotelera</h3>
+                <p>En una hoja llamada <strong>Hospedaje</strong>, registra:</p>
+                <div class="t-table">
+                  <table>
+                    <caption class="u-sr-only">Registros de hospedaje con folio, fecha de entrada y fecha de salida</caption>
+                    <thead>
+                      <tr><th scope="col">Folio</th><th scope="col">Entrada</th><th scope="col">Salida</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>H001</td><td>15/11/2026</td><td>18/11/2026</td></tr>
+                      <tr><td>H002</td><td>20/11/2026</td><td>25/11/2026</td></tr>
+                      <tr><td>H003</td><td>02/12/2026</td><td>04/12/2026</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p>Agrega una columna <strong>Noches</strong> y escribe en <strong>D2</strong>: <code>=DIAS(C2;B2)</code></p>
+                <p>Copia la fórmula hacia abajo. El primer registro debe mostrar tres noches.</p>
+                <p><strong>Reto:</strong> agrega una columna que identifique el año de entrada y otra que muestre el mes. Explica cómo se utilizarían estos datos para analizar la demanda por temporada.</p>
+              </div>
+            </aside>
+          </section>
+
+          <section id="anidacion" data-toc="3.4.8 Anidación de funciones">
+            <h2><span class="t-section__num">3.4.8</span>Anidación de funciones</h2>
+            <p>
+              La anidación consiste en utilizar una función dentro de otra. El resultado de la función interior se convierte en un argumento de la función exterior.
+            </p>
+            <aside class="t-callout t-callout--example">
+              <i class="fas fa-layer-group t-callout__icon" aria-hidden="true"></i>
+              <div>
+                <p class="t-callout__label">Ejemplo</p>
+                <p><code>=SI(PROMEDIO(I2:I7)&gt;=5000;"Ingreso promedio alto";"Ingreso promedio moderado")</code></p>
+                <p>Excel calcula primero el promedio y después utiliza ese valor para evaluar la condición.</p>
+              </div>
+            </aside>
+            <p>Otros ejemplos:</p>
             <ul>
-              <li><strong>3.4.1 Estadísticas (PROMEDIO, CONTAR, MAX, MIN, etc.)</strong></li>
-              <li><strong>3.4.2 Matemáticas (SUMA, ENTERO, REDONDEAR, etc.)</strong></li>
-              <li><strong>3.4.3 Trigonométricas</strong></li>
-              <li><strong>3.4.4 Financieras (PAGO, VA, VF, etc.)</strong></li>
-              <li><strong>3.4.5 Texto (CONCATENAR, MAYUSC, MINUSC, EXTRAE, etc.)</strong></li>
-              <li><strong>3.4.6 Lógicas (SI, Y, O, etc.)</strong></li>
-              <li><strong>3.4.7 Fecha y hora (HOY, AHORA, DIAS, etc.)</strong></li>
-              <li><strong>3.4.8 Anidación de funciones compuestas</strong></li>
+              <li><code>=SI.ERROR(PROMEDIO(I2:I7);0)</code> devuelve cero si se produce un error al calcular el promedio.</li>
+              <li><code>=SI(Y(I2&gt;=5000;F2&gt;0);"Prioridad";"Normal")</code> evalúa dos condiciones.</li>
+              <li><code>=REDONDEAR(SUMAPRODUCTO(D2:D7;E2:E7);2)</code> calcula un importe acumulado y lo redondea a dos decimales.</li>
             </ul>
+
+            <aside class="t-callout t-callout--example" id="practica-12" data-toc="Práctica 12">
+              <i class="fas fa-laptop-code t-callout__icon" aria-hidden="true"></i>
+              <div>
+                <p class="t-callout__label">Práctica 12</p>
+                <h3>Clasificación de reservaciones</h3>
+                <p>Clasifica cada reservación de acuerdo con su importe final y su descuento:</p>
+                <ul>
+                  <li>Si el importe final es igual o superior a $5,000 y el descuento es mayor que cero, mostrar <strong>Venta alta con descuento</strong>.</li>
+                  <li>Si el importe final es igual o superior a $5,000 y no tiene descuento, mostrar <strong>Venta alta sin descuento</strong>.</li>
+                  <li>En los demás casos, mostrar <strong>Venta regular</strong>.</li>
+                </ul>
+                <p>Una fórmula posible en <strong>J2</strong> es:</p>
+                <p><code>=SI(I2&gt;=5000;SI(F2&gt;0;"Venta alta con descuento";"Venta alta sin descuento");"Venta regular")</code></p>
+                <p>Copia la fórmula hacia abajo y comprueba los resultados.</p>
+              </div>
+            </aside>
+
+            <aside class="t-callout t-callout--accent" id="actividad-integradora" data-toc="Actividad integradora de funciones">
+              <i class="fas fa-puzzle-piece t-callout__icon" aria-hidden="true"></i>
+              <div>
+                <p class="t-callout__label">Actividad integradora de funciones</p>
+                <p>Con la base de reservaciones:</p>
+                <ol>
+                  <li>Calcula el total de ingresos.</li>
+                  <li>Obtén el promedio, el máximo y el mínimo.</li>
+                  <li>Cuenta cuántas reservaciones corresponden a cada destino.</li>
+                  <li>Clasifica los importes con <strong>SI</strong>.</li>
+                  <li>Limpia los nombres con funciones de texto.</li>
+                  <li>Calcula noches de estancia para una base adicional de hospedaje.</li>
+                  <li>Redacta tres conclusiones respaldadas por los resultados.</li>
+                </ol>
+              </div>
+            </aside>
           </section>
 
           <section class="t-video" id="video-tema" data-toc="Video del tema">

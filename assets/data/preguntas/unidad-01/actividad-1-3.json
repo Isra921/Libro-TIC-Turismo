@@ -2,121 +2,119 @@
   {
     "id": 1,
     "type": "opcion_multiple",
-    "question": "¿Cómo contribuyen las TIC a la productividad y competitividad en las empresas turísticas?",
+    "question": "De acuerdo con la OCDE (2021), ¿qué pueden lograr las herramientas digitales en las empresas pequeñas y medianas?",
     "options": [
-      "Automatizando tareas repetitivas, integrando datos en tiempo real y habilitando canales de comercialización y atención 24/7.",
-      "Aumentando el uso de documentos físicos en papel para cada reservación.",
-      "Impidiendo que los colaboradores puedan comunicarse entre departamentos.",
-      "Obligando a los turistas a acudir presencialmente a pagar en taquilla."
+      "Reducir costos operativos y de transacción, apoyar la automatización y ampliar su alcance comercial.",
+      "Aumentar el uso de documentos físicos en papel para cada reservación.",
+      "Impedir que los colaboradores puedan comunicarse entre departamentos.",
+      "Obligar a los turistas a acudir presencialmente a pagar en taquilla."
     ],
-    "answer": "Automatizando tareas repetitivas, integrando datos en tiempo real y habilitando canales de comercialización y atención 24/7.",
-    "explicacion": "La digitalización agiliza procesos, disminuye costos de transacción y expande el alcance de mercado nacional e internacional (OCDE 2021)."
+    "answer": "Reducir costos operativos y de transacción, apoyar la automatización y ampliar su alcance comercial.",
+    "explicacion": "La implementación de TIC se relaciona con la transformación digital: la revisión de procesos, competencias y modelos de trabajo mediante tecnologías (OCDE, 2021)."
   },
   {
     "id": 2,
     "type": "opcion_multiple",
-    "question": "¿Qué beneficio aporta el almacenamiento en la nube en el entorno laboral turístico?",
+    "question": "¿Qué ha permitido la nube de internet en el ámbito laboral?",
     "options": [
-      "Permite el acceso a expedientes, reservaciones y reportes desde cualquier lugar y dispositivo sin depender de una sola computadora local.",
-      "Elimina la necesidad de contar con conexión a Internet en la empresa.",
-      "Garantiza que nadie pueda volver a editar los documentos compartidos.",
-      "Sustituye la necesidad de capacitar al personal de la agencia."
+      "Tener archivos alojados en la web y acceder a ellos desde cualquier lugar.",
+      "Eliminar la necesidad de contar con conexión a Internet en la empresa.",
+      "Garantizar que nadie pueda volver a editar los documentos compartidos.",
+      "Sustituir la necesidad de capacitar al personal de la empresa."
     ],
-    "answer": "Permite el acceso a expedientes, reservaciones y reportes desde cualquier lugar y dispositivo sin depender de una sola computadora local.",
-    "explicacion": "La nube respalda la colaboración remota, sincronización multidispositivo y continuidad operativa del negocio turístico."
+    "answer": "Tener archivos alojados en la web y acceder a ellos desde cualquier lugar.",
+    "explicacion": "Una de las principales ventajas de las TIC en la web es que se pueden realizar tareas a distancia, apoyadas en archivos alojados en la nube."
   },
   {
     "id": 3,
     "type": "verdadero_falso",
-    "statement": "Las redes sociales corporativas como WhatsApp Business, Facebook e Instagram permiten una comunicación directa, inmediata y bidireccional con los turistas.",
+    "statement": "Los chats de las empresas, WhatsApp y redes sociales como Facebook, Twitter e Instagram permiten a las empresas turísticas mantener un diálogo activo con sus clientes.",
     "answer": true,
-    "explicacion": "Facilitan responder dudas al instante, compartir itinerarios, resolver eventualidades y monitorear la percepción y satisfacción del cliente."
+    "explicacion": "Ayudan a aclarar dudas en el momento en que se requiere, y los usuarios los usan para expresar lo bueno y lo malo de una empresa turística, lo que abre el diálogo con los clientes."
   },
   {
     "id": 4,
     "type": "opcion_multiple",
-    "question": "¿Cuál es uno de los principales riesgos de seguridad informática que enfrentan las organizaciones turísticas?",
+    "question": "¿Cuáles son algunos de los riesgos importantes que implica el uso de las TIC en las organizaciones?",
     "options": [
-      "Fugas de información sensible de clientes, ciberataques con malware o phishing y caída de servidores de reservaciones.",
-      "Contar con demasiados respaldos de seguridad en ubicaciones independientes.",
-      "Actualizar periódicamente los programas y sistemas operativos.",
-      "Capacitar al personal en el uso responsable de contraseñas seguras."
+      "Pérdida o exposición de información, interrupciones de servicios y errores por sistemas desactualizados.",
+      "Contar con copias de seguridad de la información.",
+      "Actualizar periódicamente los programas y sistemas.",
+      "Usar autenticación multifactor en las cuentas de la empresa."
     ],
-    "answer": "Fugas de información sensible de clientes, ciberataques con malware o phishing y caída de servidores de reservaciones.",
-    "explicacion": "El manejo de datos financieros y personales de viajeros requiere protocolos estrictos de ciberseguridad y prevención de incidentes."
+    "answer": "Pérdida o exposición de información, interrupciones de servicios y errores por sistemas desactualizados.",
+    "explicacion": "Otros riesgos son la dependencia de proveedores, la exclusión de personal con poca capacitación y los ataques o virus que pueden afectar a la compañía. Las demás opciones son prácticas de protección."
   },
   {
     "id": 5,
     "type": "completar_oracion",
-    "question": "Para proteger la información corporativa se recomienda implementar autenticación _____, respaldos periódicos y _____ continua del personal.",
+    "question": "Como prácticas de protección se recomiendan la autenticación _____, las copias de _____, las actualizaciones y la formación contra engaños digitales.",
     "wordBank": [
       "multifactor",
-      "capacitación",
+      "seguridad",
       "unilateral",
       "eliminación"
     ],
     "answer": [
       "multifactor",
-      "capacitación"
+      "seguridad"
     ],
-    "explicacion": "La autenticación en dos pasos (2FA/MFA) y la formación del equipo reducen sustancialmente los riesgos de accesos no autorizados."
+    "explicacion": "Estas medidas muestran que la seguridad debe formar parte de la gestión cotidiana, no considerarse una actividad aislada."
   },
   {
     "id": 6,
     "type": "verdadero_falso",
     "statement": "La adopción de tecnologías digitales por sí sola garantiza el éxito de una empresa sin necesidad de capacitar a su personal ni rediseñar sus procesos.",
     "answer": false,
-    "explicacion": "La transformación digital requiere tanto tecnología como formación humana, procedimientos claros y cultura de gestión de datos."
+    "explicacion": "La transformación digital implica revisar procesos, competencias y modelos de trabajo; además, un sistema digital solo integra la información si hay procedimientos claros para capturar y actualizar los datos."
   },
   {
     "id": 7,
     "type": "opcion_multiple",
-    "question": "¿Qué función cumplen las redes de contactos profesionales (como LinkedIn) en el ámbito laboral turístico?",
+    "question": "¿Por qué es importante que una empresa turística establezca una red de contactos profesionales con el uso de las TIC?",
     "options": [
-      "Fomentar alianzas comerciales, reclutamiento de talento especializado e intercambio de mejores prácticas de la industria.",
-      "Descargar videojuegos para los clientes durante sus traslados.",
-      "Emitir boletos de avión sin autorización de las aerolíneas.",
-      "Sustituir por completo las páginas web oficiales de los hoteles."
+      "Porque le permite atender las necesidades del cliente y disminuir la cantidad de clientes que dejan de comprar en ella.",
+      "Porque le permite descargar videojuegos para los clientes durante sus traslados.",
+      "Porque le permite emitir boletos de avión sin autorización de las aerolíneas.",
+      "Porque sustituye por completo la página web oficial de la empresa."
     ],
-    "answer": "Fomentar alianzas comerciales, reclutamiento de talento especializado e intercambio de mejores prácticas de la industria.",
-    "explicacion": "El networking digital potencia la vinculación entre prestadores de servicios, comités de promoción turística y profesionales del ramo."
+    "answer": "Porque le permite atender las necesidades del cliente y disminuir la cantidad de clientes que dejan de comprar en ella.",
+    "explicacion": "Las empresas deben estar atentas a las necesidades o beneficios que requiere un cliente para obtener un servicio turístico; así disminuye la pérdida de clientes."
   },
   {
     "id": 8,
     "type": "ordenar_oracion",
-    "question": "Ordena los pasos de una estrategia segura para compartir archivos de trabajo en equipo:",
+    "question": "Ordena los fragmentos para formar la definición de las TIC:",
     "segments": [
-      "Crear una carpeta organizada por proyecto en la nube",
-      "Definir permisos específicos de acceso (solo lectura o edición)",
-      "Compartir mediante enlace protegido o correo institucional",
-      "Mantener un respaldo independiente de las versiones clave"
+      "Las TIC son un recurso tecnológico",
+      "que ayuda para crear, almacenar, procesar,",
+      "transmitir y compartir información."
     ],
     "answer": [
-      "Crear una carpeta organizada por proyecto en la nube",
-      "Definir permisos específicos de acceso (solo lectura o edición)",
-      "Compartir mediante enlace protegido o correo institucional",
-      "Mantener un respaldo independiente de las versiones clave"
+      "Las TIC son un recurso tecnológico",
+      "que ayuda para crear, almacenar, procesar,",
+      "transmitir y compartir información."
     ],
-    "explicacion": "Controlar los accesos y preservar copias de seguridad evita borrados accidentales y protege la confidencialidad."
+    "explicacion": "Incluyen computadoras, redes, teléfonos móviles, internet, plataformas colaborativas, servicios en la nube, correo electrónico y sistemas especializados."
   },
   {
     "id": 9,
     "type": "opcion_multiple",
-    "question": "En la gestión turística moderna, ¿qué aporta la analítica de datos en el plano laboral?",
+    "question": "En el plano estratégico, ¿qué aporta conocer mejor a clientes y usuarios mediante registros, encuestas y análisis de datos?",
     "options": [
-      "Permite identificar tendencias de demanda, evaluar satisfacción del huésped y orientar presupuestos de mercadotecnia con base en hechos.",
-      "Elimina la necesidad de conocer las opiniones y reseñas de los turistas.",
-      "Impide conocer cuáles son los destinos más vendidos de la temporada.",
-      "Garantiza que los precios permanezcan inmutables durante todo el año."
+      "Contribuye a detectar necesidades, corregir fallas y decidir qué servicios mejorar.",
+      "Elimina la necesidad de conocer las opiniones de los turistas.",
+      "Impide conocer cuáles son los servicios más vendidos de la temporada.",
+      "Garantiza que los precios permanezcan sin cambios durante todo el año."
     ],
-    "answer": "Permite identificar tendencias de demanda, evaluar satisfacción del huésped y orientar presupuestos de mercadotecnia con base en hechos.",
-    "explicacion": "Tomar decisiones basadas en datos reduce la incertidumbre y maximiza la rentabilidad y calidad del servicio turístico."
+    "answer": "Contribuye a detectar necesidades, corregir fallas y decidir qué servicios mejorar.",
+    "explicacion": "Es parte del impacto de las TIC en las organizaciones: la información de clientes y usuarios orienta la toma de decisiones."
   },
   {
     "id": 10,
     "type": "verdadero_falso",
-    "statement": "El teletrabajo y la colaboración a distancia en el turismo han sido impulsados por la combinación de herramientas en la nube, videollamadas y mensajería corporativa.",
-    "answer": true,
-    "explicacion": "Estas plataformas permiten coordinar equipos distribuidos geográficamente en tiempo real con alta trazabilidad."
+    "statement": "La digitalización siempre reduce la brecha entre organizaciones, sin importar los recursos con los que cuente cada una.",
+    "answer": false,
+    "explicacion": "La digitalización puede aumentar la competitividad, pero una adopción desigual también puede ampliar la brecha entre organizaciones con distintos recursos."
   }
 ]

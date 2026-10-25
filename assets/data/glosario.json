@@ -19,6 +19,14 @@
           "definicion": "Forma o medio mediante el que nos conectamos a la red de comunicación 'Internet' gracias a equipos que permiten la conexión y acceso (ordenador personal, portátil, PDA, tablet, teléfono móvil, etc.)."
         },
         {
+          "termino": "Autenticación multifactor",
+          "definicion": "Práctica de protección que solicita más de un factor de verificación para acceder a una cuenta o sistema (por ejemplo, una contraseña y un código enviado al teléfono). Se recomienda junto con las copias de seguridad, las actualizaciones y la formación contra engaños digitales."
+        },
+        {
+          "termino": "Automatización",
+          "definicion": "Uso de sistemas digitales que realizan tareas repetitivas sin intervención manual constante. En las empresas turísticas permite ahorrar tiempo y reducir costos operativos y de transacción."
+        },
+        {
           "termino": "Bases de datos",
           "definicion": "Conjunto ordenado de datos referentes a entidades, registros o personas, condicionados a criterios determinados, con independencia de la forma o modalidad de su creación, tipo de soporte, procesamiento, almacenamiento y organización."
         },
@@ -27,12 +35,32 @@
           "definicion": "Procedente de los términos en inglés web y log ('log' = diario). Sitio web periódicamente actualizado que recopila artículos de uno o varios autores, que aparecen de forma cronológica inversa en su visualización (primero el más reciente)."
         },
         {
+          "termino": "Brecha digital",
+          "definicion": "Diferencia entre personas u organizaciones en el acceso y uso de las TIC. Una adopción desigual de la digitalización puede ampliar la brecha entre organizaciones con distintos recursos."
+        },
+        {
           "termino": "Buscador",
           "definicion": "Herramienta digital que nos ayuda a encontrar información, documentos y recursos en Internet mediante algoritmos de indexación."
         },
         {
           "termino": "Chat",
           "definicion": "Comunicación simultánea y en tiempo real entre dos o más usuarios de Internet. Es el equivalente a una conversación sincrónica a través de cualquier sistema de mensajería instantánea disponible en aplicaciones."
+        },
+        {
+          "termino": "Comunicación asincrónica",
+          "definicion": "Modalidad de comunicación digital que posibilita la participación en diferentes momentos, sin que los participantes coincidan en el tiempo; por ejemplo, los foros o las secciones de comentarios de un blog."
+        },
+        {
+          "termino": "Comunicación digital",
+          "definicion": "Intercambio de información, datos y mensajes a través de dispositivos electrónicos, plataformas digitales y redes, en forma de texto, audio, imagen o video. Permite comunicarse a distancia y conservar un histórico de los mensajes enviados."
+        },
+        {
+          "termino": "Comunicación sincrónica",
+          "definicion": "Modalidad de comunicación digital en la que los participantes interactúan simultáneamente, como en una videollamada o en un chat atendido en vivo."
+        },
+        {
+          "termino": "Copia de seguridad (Respaldo)",
+          "definicion": "Duplicado de la información que se guarda en otro medio o ubicación para recuperarla en caso de pérdida, falla o ataque informático. Es una de las prácticas de protección recomendadas en las organizaciones."
         },
         {
           "termino": "Correo electrónico (e-mail)",
@@ -55,6 +83,10 @@
           "definicion": "Plataforma de red social que permite la interconexión, creación de perfiles, difusión de comunidades virtuales y compartición de contenidos multimedia entre usuarios y empresas."
         },
         {
+          "termino": "Foro",
+          "definicion": "Espacio de comunicación digital organizado por temas y estructurado en hilos de conversación, donde los participantes leen respuestas previas, aportan argumentos y participan en distintos momentos. Su utilidad depende de la moderación y de reglas explícitas."
+        },
+        {
           "termino": "Gmail",
           "definicion": "Servicio de correo electrónico basado en web proporcionado por Google (@gmail.com) con funciones avanzadas de filtrado, almacenamiento y sincronización en la nube."
         },
@@ -65,6 +97,10 @@
         {
           "termino": "Hardware",
           "definicion": "Equipos informáticos o componentes físicos tangibles de un sistema computacional, periféricos de entrada/salida y elementos de conectividad de red."
+        },
+        {
+          "termino": "Hilo de conversación",
+          "definicion": "Secuencia de mensajes de un foro que reúne una publicación inicial y sus respuestas sobre un mismo tema; hace que la conversación sea más estructurada y consultable."
         },
         {
           "termino": "HTTPS",
@@ -87,12 +123,20 @@
           "definicion": "Herramienta de búsqueda que remite la consulta del usuario a varios motores de búsqueda simultáneamente, recopilando y combinando los resultados en una única lista consolidada."
         },
         {
+          "termino": "Moodle",
+          "definicion": "Plataforma de aprendizaje en línea. Su actividad de foro permite el intercambio de ideas mediante publicaciones y respuestas, la inclusión de archivos y la evaluación de las intervenciones."
+        },
+        {
           "termino": "Motor de búsqueda",
           "definicion": "Sistema informático accesible a través de navegadores web que localiza archivos y páginas web en función de palabras clave e intenciones de búsqueda introducidas por los usuarios."
         },
         {
           "termino": "Navegador web (Browser)",
           "definicion": "Software o aplicación instalada en computadoras, tabletas o teléfonos móviles que interpreta el código HTML, CSS y JavaScript para visualizar e interactuar con sitios web en Internet."
+        },
+        {
+          "termino": "Nube (Servicios en la nube)",
+          "definicion": "Servicios de Internet que permiten alojar archivos y aplicaciones en servidores remotos para acceder a ellos desde cualquier lugar y dispositivo con conexión. En el ámbito laboral facilitan realizar tareas a distancia."
         },
         {
           "termino": "Página web (Webpage)",
@@ -107,6 +151,18 @@
           "definicion": "Programa ofimático diseñado para crear y proyectar presentaciones visuales estructuradas mediante diapositivas con texto, imágenes, diagramas, transiciones y recursos multimedia."
         },
         {
+          "termino": "Red de contactos profesionales",
+          "definicion": "Conjunto de relaciones profesionales que una persona o empresa establece y mantiene con apoyo de las TIC. En turismo ayuda a atender las necesidades de los clientes y a disminuir la cantidad de clientes que dejan de comprar en la empresa."
+        },
+        {
+          "termino": "Redes sociales",
+          "definicion": "Plataformas digitales (como Facebook, Instagram o Twitter) que permiten a personas y empresas publicar contenido e interactuar. En el ámbito laboral funcionan como instrumento de conectividad y facilitan un diálogo activo entre la empresa turística y sus clientes."
+        },
+        {
+          "termino": "Seguridad informática",
+          "definicion": "Conjunto de medidas y prácticas para proteger la información y los sistemas de una organización contra pérdidas, accesos no autorizados, ataques o virus. Debe formar parte de la gestión cotidiana, no considerarse una actividad aislada."
+        },
+        {
           "termino": "Sitio web (Website)",
           "definicion": "Conjunto organizado de páginas web interconectadas bajo un mismo nombre de dominio en Internet, accesibles públicamente a través de la red."
         },
@@ -117,6 +173,14 @@
         {
           "termino": "TIC (Tecnologías de la Información y la Comunicación)",
           "definicion": "Conjunto de recursos, herramientas, dispositivos y programas informáticos utilizados para la captura, almacenamiento, procesamiento, transmisión y presentación de la información en formatos digitales."
+        },
+        {
+          "termino": "Transformación digital",
+          "definicion": "Revisión de los procesos, las competencias y los modelos de trabajo de una organización mediante tecnologías. Las herramientas digitales pueden reducir costos, apoyar la automatización y ampliar el alcance comercial de las empresas."
+        },
+        {
+          "termino": "Trazabilidad",
+          "definicion": "Posibilidad de dar seguimiento a la información, los acuerdos y los materiales intercambiados, gracias a que la comunicación digital conserva un registro de los mensajes."
         },
         {
           "termino": "Twitter (X)",
@@ -229,32 +293,88 @@
           "definicion": "Fórmulas predefinidas en el software que ejecutan cálculos complejos y especializados de manera automática a partir de argumentos específicos bajo una sintaxis obligatoria."
         },
         {
+          "termino": "Sintaxis de una función",
+          "definicion": "Estructura que debe respetar una función para que Excel la ejecute: inicia con el signo igual, sigue el nombre de la función y, entre paréntesis, sus argumentos: =NOMBRE_FUNCION(argumento1; argumento2; ...)."
+        },
+        {
+          "termino": "Argumento",
+          "definicion": "Dato que recibe una función para realizar su cálculo; puede ser un número, un texto, una referencia, un rango de celdas o el resultado de otra función. En =SUMA(I2:I7), el rango I2:I7 es el argumento."
+        },
+        {
+          "termino": "Separador de argumentos",
+          "definicion": "Signo que separa los argumentos de una función. En configuraciones regionales en español suele ser el punto y coma (;); si la instalación utiliza comas, se sustituye el separador según corresponda."
+        },
+        {
           "termino": "Funciones Estadísticas",
           "definicion": "Herramientas matemáticas predefinidas diseñadas para resumir conjuntos numéricos, calcular promedios, medianas, modas, desviaciones estándar, conteos condicionales y valores máximos o mínimos."
+        },
+        {
+          "termino": "CONTAR.SI y SUMAR.SI",
+          "definicion": "Funciones estadísticas que trabajan con un criterio: CONTAR.SI cuenta los registros que lo cumplen y SUMAR.SI suma los importes de esos registros. Por ejemplo, =SUMAR.SI(B2:B7;\"Cancún\";I2:I7) suma lo vendido a Cancún."
+        },
+        {
+          "termino": "Mediana",
+          "definicion": "Valor central de un conjunto de datos ordenados. En Excel se obtiene con la función MEDIANA."
         },
         {
           "termino": "Funciones Matemáticas",
           "definicion": "Funciones diseñadas para resolver cálculos numéricos generales, sumatorias simples y acumuladas, productos, redondeos de precisión decimal, raíces cuadradas y valores absolutos."
         },
         {
+          "termino": "SUMAPRODUCTO",
+          "definicion": "Función matemática que multiplica los elementos correspondientes de dos o más rangos y suma los resultados; por ejemplo, cantidades por precios unitarios para obtener el ingreso total en una sola fórmula."
+        },
+        {
           "termino": "Funciones Trigonométricas",
           "definicion": "Operaciones matemáticas avanzadas destinadas al cálculo de razones geométricas de los triángulos (seno, coseno, tangente, cotangente) aplicadas a valores angulares convertidos comúnmente en radianes."
+        },
+        {
+          "termino": "Radianes",
+          "definicion": "Unidad de medida de ángulos que utilizan las funciones trigonométricas de Excel. Cuando el ángulo está en grados se convierte con la función RADIANES; la función GRADOS hace la conversión inversa."
         },
         {
           "termino": "Funciones Financieras",
           "definicion": "Fórmulas orientadas a la gestión contable y económica que automatizan cálculos de amortizaciones de préstamos, tasas de interés efectivas, valor presente neto (VPN) y rentabilidad de inversiones en el tiempo."
         },
         {
+          "termino": "Valor actual (VA)",
+          "definicion": "Valor presente de una serie de pagos futuros. En Excel se calcula con la función VA a partir de la tasa por periodo, el número de periodos y el pago."
+        },
+        {
+          "termino": "Valor futuro (VF)",
+          "definicion": "Valor que alcanzará una inversión o una serie de pagos al final de un número de periodos con una tasa determinada. En Excel se calcula con la función VF."
+        },
+        {
+          "termino": "Costo financiero",
+          "definicion": "Diferencia entre el total pagado por un préstamo y el monto prestado. Se estima multiplicando el pago periódico (función PAGO) por el número de pagos y restando el monto del préstamo."
+        },
+        {
           "termino": "Funciones de texto",
           "definicion": "Comandos especializados que permiten manipular, limpiar, extraer subcadenas, concatenar, convertir a mayúsculas o minúsculas y medir la longitud de cadenas de caracteres alfanuméricas."
+        },
+        {
+          "termino": "Concatenación",
+          "definicion": "Unión de dos o más textos en uno solo. En Excel se realiza con la función CONCAT o con el operador &."
+        },
+        {
+          "termino": "Normalización de datos",
+          "definicion": "Limpieza y unificación del formato de los datos (espacios sobrantes, mayúsculas y minúsculas, partes de un folio) mediante funciones de texto como ESPACIOS, NOMPROPIO o IZQUIERDA, para poder filtrarlos, compararlos o utilizarlos en un reporte."
         },
         {
           "termino": "Funciones lógicas",
           "definicion": "Operaciones basadas en el álgebra de Boole que evalúan condiciones lógicas para devolver valores condicionales verdaderos o falsos (ej. funciones SI, Y, O, SI.ERROR)."
         },
         {
+          "termino": "Prueba lógica",
+          "definicion": "Condición que se evalúa como VERDADERO o FALSO, como I2>=5000. Es el primer argumento de la función SI y determina cuál de los dos resultados devuelve."
+        },
+        {
           "termino": "Funciones de fecha y hora",
           "definicion": "Rutinas que procesan valores cronológicos para extraer días, meses o años, calcular diferencias entre fechas, determinar plazos laborales y sincronizar el tiempo del sistema."
+        },
+        {
+          "termino": "Fecha como valor numérico",
+          "definicion": "Forma en que Excel almacena fechas y horas: como números. Esto permite calcular diferencias entre fechas (por ejemplo, las noches de estancia con DIAS), ordenarlas cronológicamente y generar reportes por periodos."
         },
         {
           "termino": "Funciones de Anidación",
