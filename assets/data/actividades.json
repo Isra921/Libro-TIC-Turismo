@@ -160,7 +160,7 @@
           "reactivos": "8 reactivos al azar",
           "tiempo": "12 min",
           "titulo": "Actividad 3.4: Funciones de Excel",
-          "descripcion": "Aplica funciones estadísticas (SUMA, PROMEDIO, CONTAR.SI, SUMAR.SI), financieras (PAGO), lógicas (SI, Y, O), de texto y anidadas.",
+          "descripcion": "Aplica funciones estadísticas, matemáticas, trigonométricas, financieras, de texto, lógicas, de fecha y hora y anidadas con los datos de una agencia de viajes.",
           "url": "unidades/unidad-03/actividades/actividad-3-4.html",
           "icono": "fa-function"
         },

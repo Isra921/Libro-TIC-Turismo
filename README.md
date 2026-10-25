@@ -152,8 +152,8 @@ Luego abre tu navegador en <http://localhost:8000>.
 
 ## 📄 Licencia
 
-**TIC aplicadas para el turismo (polilibro académico)** © 2026, Escuela Superior de Turismo (EST - IPN).  
-Distribuido bajo la licencia [Creative Commons Atribución-NoComercial-SinDerivadas 4.0 Internacional (CC BY-NC-ND 4.0)](https://creativecommons.org/licenses/by-nc-nd/4.0/).
+[TIC aplicadas para el Turismo](https://isra921.github.io/Libro-TIC-Turismo/index.html) © 2026 by Hermelinda Patricia Leyva López, Israel Salas Ramirez y Benjamín Cruz Torres is licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).  
+Distribuido bajo la licencia [Creative Commons Atribución-NoComercial-SinDerivadas 4.0 Internacional (CC BY-NC-ND 4.0)](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es).
 
 ---
 

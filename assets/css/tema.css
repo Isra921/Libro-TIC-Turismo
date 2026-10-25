@@ -264,6 +264,15 @@ a.t-index__link:hover { background: var(--primary-soft); color: var(--text-light
   color: var(--text-heading);
 }
 .t-table tr:last-child td { border-bottom: 0; }
+/* Título visible de la tabla (APA 7: número y título arriba), mismo formato que el pie de las figuras */
+.t-table caption:not(.u-sr-only) {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--u-card-border);
+  font-size: .88rem;
+  line-height: 1.5;
+  text-align: left;
+  color: var(--text-light);
+}
 .t-table td.t-key { font-weight: 600; }
 /* Fórmula escrita en texto (sin motor de fórmulas): (A / B) × 100 */
 .t-formula { font-weight: 500; color: var(--text-heading); white-space: normal; }
@@ -568,9 +577,9 @@ body:has(.t-viewer[open]) { overflow: hidden; }
   line-height: 1.5;
   color: var(--text-muted);
 }
-/* La nota va alineada a la izquierda (en celular, justificada abre huecos).
+/* La nota va centrada (en celular, justificada abre huecos).
    Más específico que ".u-page p" de unidades-base.css. */
-.u-page .t-figure__nota { text-align: left; hyphens: manual; }
+.u-page .t-figure__nota { text-align: center; hyphens: manual; }
 .t-figure__nota em { color: var(--text-light); }
 
 /* Notas y ejemplos: destacan sin romper el hilo de la lectura */
