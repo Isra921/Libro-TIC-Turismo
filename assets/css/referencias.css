@@ -170,6 +170,7 @@
 /* ---------- Tarjeta de Referencia (.r-card) ---------- */
 .r-card {
   position: relative;
+  min-width: 0; /* no se ensancha más que su columna de la cuadrícula */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -251,6 +252,7 @@
   font-weight: 500;
   color: var(--text-light);
   line-height: 1.5;
+  overflow-wrap: anywhere; /* las URL largas se cortan dentro de la tarjeta */
 }
 
 .r-card__citation em {
