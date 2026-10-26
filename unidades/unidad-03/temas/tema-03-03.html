@@ -1,11 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>3.3 Fórmulas elementales | Unidad III | TIC aplicadas para el turismo</title>
-  <meta name="description" content="Construcción y uso de fórmulas de cálculo, manejo de sintaxis y tipos de referencias en hojas de cálculo.">
+  <meta name="description" content="Estructura de fórmulas en Excel, tipos de referencias (relativas, absolutas y mixtas) y cálculo de importes, descuentos y totales de reservaciones turísticas.">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="../../../assets/css/comun.css">
@@ -40,27 +40,114 @@
         <h1 class="t-title">Fórmulas elementales</h1>
 
         <p class="t-lead" id="idea-central" data-toc="Presentación">
-          Construcción y uso de fórmulas de cálculo, manejo de sintaxis y tipos de referencias en hojas de cálculo.
+          Una fórmula es una expresión personalizada introducida por el usuario que inicia con el signo de igual (=) y combina valores, referencias de celda y operadores aritméticos para calcular resultados dinámicos en la gestión turística.
         </p>
 
         <div class="t-prose">
-          <section id="plan-tema" data-toc="Desglose temático">
-            <h2>Estructura curricular del tema</h2>
+          <section id="concepto-formula" data-toc="3.3 Estructura de una fórmula">
+            <h2><span class="t-section__num">3.3</span>Estructura y funcionamiento de una fórmula</h2>
+            <p>
+              En Excel, toda fórmula comienza obligatoriamente con el signo igual (<code>=</code>). Al incluir referencias a celdas en lugar de valores fijos, el resultado de la operación se recalcula de forma automática cuando cambian los datos de origen (Microsoft, s. f.-c).
+            </p>
+            <p>
+              Por ejemplo, para calcular el importe bruto de una venta de 2 paquetes turísticos a $8,500.00 cada uno, ubicados en las celdas <code>D2</code> (cantidad) y <code>E2</code> (precio unitario), la fórmula elemental es:
+            </p>
+            <p><code>=D2*E2</code></p>
+          </section>
+
+          <section id="tipos-referencias" data-toc="Tipos de referencias">
+            <h2>Tipos de referencias de celda</h2>
+            <p>
+              El modo en que Excel actualiza las coordenadas de una celda al copiar o arrastrar una fórmula depende del tipo de referencia utilizado:
+            </p>
+
+            <div class="t-table-wrapper">
+              <table class="t-table">
+                <thead>
+                  <tr>
+                    <th scope="col">Tipo</th>
+                    <th scope="col">Sintaxis</th>
+                    <th scope="col">Comportamiento al copiar o autorrellenar</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Relativa</strong></td>
+                    <td><code>A2</code></td>
+                    <td>Cambia automáticamente según la nueva posición relativa de la fila y la columna.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Absoluta</strong></td>
+                    <td><code>$A$2</code></td>
+                    <td>Mantiene fija tanto la columna como la fila mediante el signo de pesos (<code>$</code>).</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Mixta (columna fija)</strong></td>
+                    <td><code>$A2</code></td>
+                    <td>Fija la columna A, permitiendo que la fila varíe al desplazarse verticalmente.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Mixta (fila fija)</strong></td>
+                    <td><code>A$2</code></td>
+                    <td>Fija la fila 2, permitiendo que la columna varíe al desplazarse horizontalmente.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
             <aside class="t-callout t-callout--note">
               <i class="fas fa-info-circle t-callout__icon" aria-hidden="true"></i>
               <div>
-                <p class="t-callout__label">Tema en desarrollo</p>
+                <p class="t-callout__label">Uso de referencias absolutas en turismo</p>
                 <p>
-                  El desarrollo y recursos interactivos de este tema se encuentran en fase de elaboración conforme al programa académico oficial de la <strong>Escuela Superior de Turismo (EST - IPN)</strong> para la asignatura <strong>TIC aplicadas para el turismo</strong>.
+                  Si una agencia de viajes aplica un cargo administrativo fijo del 5 % registrado en la celda <code>K1</code> a todas las reservaciones, la fórmula para la fila 2 debe escribirse como <code>=I2*$K$1</code>. Al arrastrarla hacia abajo, la celda <code>$K$1</code> permanecerá invariable para todas las filas.
                 </p>
               </div>
             </aside>
-            <p>Conforme al plan de estudios oficial, este tema comprende los siguientes contenidos temáticos:</p>
-            <ul>
-              <li><strong>Estructura de una fórmula en hojas de cálculo</strong></li>
-              <li><strong>Referencias relativas, absolutas y mixtas con el operador $</strong></li>
-              <li><strong>Aplicación de fórmulas en presupuestos y cotizaciones de servicios turísticos</strong></li>
-            </ul>
+          </section>
+
+          <section id="calculo-reservaciones" data-toc="Cálculo de importes de reservaciones">
+            <h2>Cálculo de importes en la base de reservaciones</h2>
+            <p>
+              Retomando la base de datos de la agencia de viajes, se construyen las fórmulas elementales para determinar el Importe Bruto, el Descuento y el Total a Pagar para cada reservación:
+            </p>
+
+            <div class="t-table-wrapper">
+              <table class="t-table">
+                <thead>
+                  <tr>
+                    <th>Columna</th>
+                    <th>Encabezado</th>
+                    <th>Fórmula en la fila 2</th>
+                    <th>Resultado (Fila 2)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>G</strong></td>
+                    <td>Importe bruto</td>
+                    <td><code>=D2*E2</code></td>
+                    <td>$17,000.00 (2 × $8,500.00)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>H</strong></td>
+                    <td>Descuento</td>
+                    <td><code>=G2*F2</code></td>
+                    <td>$850.00 ($17,000.00 × 5 %)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>I</strong></td>
+                    <td>Total a pagar</td>
+                    <td><code>=G2-H2</code></td>
+                    <td>$16,150.00 ($17,000.00 - $850.00)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p>
+              Al utilizar el controlador de relleno para extender estas tres fórmulas a lo largo de las filas 3 a 7, Excel adapta automáticamente los números de fila correspondientes, calculando con exactitud el total para cada uno de los clientes y destinos.
+            </p>
           </section>
 
           <section id="comprension" data-toc="Comprueba tu comprensión">
@@ -73,7 +160,7 @@
         </div>
 
         <nav class="t-pager" id="temaNavegacion" aria-label="Navegación entre temas">
-          <a class="t-pager__prev" href="../index.html"><i class="fas fa-arrow-left" aria-hidden="true"></i> Volver a la unidad</a>
+          <a class="t-pager__prev" href="tema-03-02.html"><i class="fas fa-arrow-left" aria-hidden="true"></i> Anterior: tema 3.2: Operadores aritméticos</a>
           <a class="u-btn u-btn--primary" href="tema-03-04.html">Siguiente: tema 3.4: Funciones <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
         </nav>
       </article>
@@ -105,5 +192,3 @@
 </body>
 
 </html>
-
-

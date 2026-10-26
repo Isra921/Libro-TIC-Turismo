@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>3.2 Operadores aritméticos | Unidad III | TIC aplicadas para el turismo</title>
-  <meta name="description" content="Tipos de operadores, sintaxis de expresiones de cálculo y reglas de precedencia aritmética.">
+  <meta name="description" content="Tipos de operadores en Excel, sintaxis de operaciones matemáticas y jerarquía u orden de prioridad algebraico aplicado al cálculo de tarifas y cotizaciones turísticas.">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="../../../assets/css/comun.css">
@@ -40,26 +40,174 @@
         <h1 class="t-title">Operadores aritméticos</h1>
 
         <p class="t-lead" id="idea-central" data-toc="Presentación">
-          Tipos de operadores, sintaxis de expresiones de cálculo y reglas de precedencia aritmética.
+          Los operadores especifican el tipo de cálculo que se desea ejecutar en una fórmula. Comprender sus tipos y su estricto orden de prioridad permite obtener resultados exactos en cotizaciones, impuestos y márgenes turísticos.
         </p>
 
         <div class="t-prose">
-          <section id="plan-tema" data-toc="Desglose temático">
-            <h2>Estructura curricular del tema</h2>
-            <aside class="t-callout t-callout--note">
-              <i class="fas fa-info-circle t-callout__icon" aria-hidden="true"></i>
+          <section id="tipos-operadores" data-toc="3.2 Tipos de operadores">
+            <h2><span class="t-section__num">3.2</span>Tipos de operadores en hojas de cálculo</h2>
+            <p>
+              Excel distingue cuatro categorías principales de operadores para el tratamiento y análisis de información cuantitativa:
+            </p>
+
+            <div class="t-table-wrapper">
+              <table class="t-table">
+                <thead>
+                  <tr>
+                    <th scope="col">Categoría</th>
+                    <th scope="col">Operadores</th>
+                    <th scope="col">Propósito</th>
+                    <th scope="col">Ejemplo en Excel</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Aritméticos</strong></td>
+                    <td><code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code>, <code>^</code></td>
+                    <td>Operaciones matemáticas básicas y exponenciación.</td>
+                    <td><code>=2500*4*(1-10%)</code></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Comparación</strong></td>
+                    <td><code>=</code>, <code>&lt;&gt;</code>, <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code>, <code>&gt;=</code></td>
+                    <td>Comparan dos valores y devuelven VERDADERO o FALSO.</td>
+                    <td><code>=B2&gt;=1500</code></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Concatenación</strong></td>
+                    <td><code>&amp;</code></td>
+                    <td>Une dos o más cadenas de texto en una sola.</td>
+                    <td><code>=A2 &amp; " - " &amp; B2</code></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Referencia</strong></td>
+                    <td><code>:</code> (rango), <code>;</code> o <code>,</code> (unión)</td>
+                    <td>Combinan rangos de celdas para cálculos.</td>
+                    <td><code>A2:A10</code></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h4>Operadores aritméticos en detalle</h4>
+            <div class="t-table-wrapper">
+              <table class="t-table">
+                <thead>
+                  <tr>
+                    <th>Operador</th>
+                    <th>Operación</th>
+                    <th>Ejemplo</th>
+                    <th>Resultado</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>+</code></td>
+                    <td>Suma de importes o tarifas</td>
+                    <td><code>=1800+950</code></td>
+                    <td>2750</td>
+                  </tr>
+                  <tr>
+                    <td><code>-</code></td>
+                    <td>Resta o descuento</td>
+                    <td><code>=1800-200</code></td>
+                    <td>1600</td>
+                  </tr>
+                  <tr>
+                    <td><code>*</code></td>
+                    <td>Multiplicación (pasajeros × precio)</td>
+                    <td><code>=1800*3</code></td>
+                    <td>5400</td>
+                  </tr>
+                  <tr>
+                    <td><code>/</code></td>
+                    <td>División (prorrateo por persona)</td>
+                    <td><code>=4590/3</code></td>
+                    <td>1530</td>
+                  </tr>
+                  <tr>
+                    <td><code>%</code></td>
+                    <td>Porcentaje</td>
+                    <td><code>=5400*15%</code></td>
+                    <td>810</td>
+                  </tr>
+                  <tr>
+                    <td><code>^</code></td>
+                    <td>Exponenciación</td>
+                    <td><code>=10^2</code></td>
+                    <td>100</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section id="orden-prioridad" data-toc="3.2.1 Orden de prioridad">
+            <h2><span class="t-section__num">3.2.1</span>Orden de prioridad de los operadores</h2>
+            <p>
+              Cuando una fórmula combina varios operadores, Excel evalúa las operaciones siguiendo un orden estricto de jerarquía algebraica:
+            </p>
+            <ol>
+              <li><strong>Paréntesis <code>()</code>:</strong> Cualquier operación encerrada entre paréntesis se calcula primero, alterando el orden predeterminado.</li>
+              <li><strong>Referencias y rangos:</strong> Dos puntos <code>:</code> e intersección.</li>
+              <li><strong>Negación y porcentaje:</strong> Signo menos unario (<code>-</code>) y porcentaje (<code>%</code>).</li>
+              <li><strong>Potencias:</strong> Operador <code>^</code>.</li>
+              <li><strong>Multiplicaciones y divisiones:</strong> Operadores <code>*</code> y <code>/</code> (se evalúan de izquierda a derecha).</li>
+              <li><strong>Sumas y restas:</strong> Operadores <code>+</code> y <code>-</code> (de izquierda a derecha).</li>
+              <li><strong>Concatenación:</strong> Operador <code>&amp;</code>.</li>
+              <li><strong>Comparaciones:</strong> Operadores de relación (<code>=</code>, <code>&lt;&gt;</code>, <code>&lt;</code>, etc.).</li>
+            </ol>
+
+            <aside class="t-callout t-callout--tip">
+              <i class="fas fa-lightbulb t-callout__icon" aria-hidden="true"></i>
               <div>
-                <p class="t-callout__label">Tema en desarrollo</p>
+                <p class="t-callout__label">Impacto de los paréntesis en los costos turísticos</p>
                 <p>
-                  El desarrollo y recursos interactivos de este tema se encuentran en fase de elaboración conforme al programa académico oficial de la <strong>Escuela Superior de Turismo (EST - IPN)</strong> para la asignatura <strong>TIC aplicadas para el turismo</strong>.
+                  Observa la diferencia de resultado al omitir o colocar paréntesis:<br>
+                  <code>=2500 + 1500 * 2</code> produce <strong>5500</strong> (multiplica primero 1500 × 2 y luego suma 2500).<br>
+                  <code>=(2500 + 1500) * 2</code> produce <strong>8000</strong> (suma primero 2500 + 1500 y luego multiplica por 2).
                 </p>
               </div>
             </aside>
-            <p>Conforme al plan de estudios oficial, este tema comprende los siguientes contenidos temáticos:</p>
-            <ul>
-              <li><strong>3.2.1 Orden de prioridad en las operaciones matemáticas</strong></li>
-              <li><strong>Operadores de cálculo: aritméticos, relacionales, de concatenación y referencia</strong></li>
-            </ul>
+
+            <h4>Caso resuelto: Cotización con descuento en agencia turística</h4>
+            <p>
+              Una agencia vende un paquete de $2,500.00 por persona a cuatro turistas y aplica un descuento promocional del 10 % sobre el importe total:
+            </p>
+
+            <div class="t-table-wrapper">
+              <table class="t-table">
+                <thead>
+                  <tr>
+                    <th>Fórmula</th>
+                    <th>Resultado</th>
+                    <th>Interpretación analítica</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>=2500*4</code></td>
+                    <td>$10,000.00</td>
+                    <td>Importe bruto antes del descuento.</td>
+                  </tr>
+                  <tr>
+                    <td><code>=2500*4*10%</code></td>
+                    <td>$1,000.00</td>
+                    <td>Monto del descuento otorgado.</td>
+                  </tr>
+                  <tr>
+                    <td><code>=2500*4-2500*4*10%</code></td>
+                    <td>$9,000.00</td>
+                    <td>Importe neto a pagar por el grupo.</td>
+                  </tr>
+                  <tr>
+                    <td><code>=(2500*4)*(1-10%)</code></td>
+                    <td>$9,000.00</td>
+                    <td>Fórmula compacta utilizando el factor complementario.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </section>
 
           <section class="t-video" id="video-tema" data-toc="Video del tema">
@@ -85,7 +233,7 @@
         </div>
 
         <nav class="t-pager" id="temaNavegacion" aria-label="Navegación entre temas">
-          <a class="t-pager__prev" href="../index.html"><i class="fas fa-arrow-left" aria-hidden="true"></i> Volver a la unidad</a>
+          <a class="t-pager__prev" href="tema-03-01.html"><i class="fas fa-arrow-left" aria-hidden="true"></i> Anterior: tema 3.1: Software para análisis e interpretación</a>
           <a class="u-btn u-btn--primary" href="tema-03-03.html">Siguiente: tema 3.3: Fórmulas elementales <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
         </nav>
       </article>
@@ -117,5 +265,3 @@
 </body>
 
 </html>
-
-
