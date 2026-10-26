@@ -223,6 +223,12 @@ a.t-index__link:hover { background: var(--primary-soft); color: var(--text-light
   font-weight: 600;
   color: var(--text-light);
 }
+.t-prose h4 {
+  margin: 22px 0 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-light);
+}
 .t-section__num {
   margin-right: 8px;
   font-size: .8em;
