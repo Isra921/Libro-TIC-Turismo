@@ -2,7 +2,7 @@
   "version": 1,
   "modoPrueba": true,
   "titulo": "Examen diagnóstico",
-  "descripcion": "Evaluación diagnóstica de saberes previos para la unidad de aprendizaje TIC aplicadas para el Turismo (Licenciatura en Turismo · Escuela Superior de Turismo).",
+  "descripcion": "Evaluación diagnóstica de saberes previos para la unidad de aprendizaje TIC aplicadas para el turismo (Licenciatura en Turismo · Escuela Superior de Turismo).",
   "configuracion": {
     "mostrarResultado": true,
     "cantidadPreguntas": 10,
