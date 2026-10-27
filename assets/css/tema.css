@@ -582,6 +582,7 @@ body:has(.t-viewer[open]) { overflow: hidden; }
   font-size: .8rem;
   line-height: 1.5;
   color: var(--text-muted);
+  min-width: fit-content;
 }
 /* La nota va centrada (en celular, justificada abre huecos).
    Más específico que ".u-page p" de unidades-base.css. */
