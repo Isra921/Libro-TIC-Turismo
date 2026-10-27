@@ -231,7 +231,6 @@ a.t-index__link:hover { background: var(--primary-soft); color: var(--text-light
 }
 .t-section__num {
   margin-right: 8px;
-  font-size: .8em;
   color: var(--text-number);
 }
 
